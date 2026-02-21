@@ -31,7 +31,7 @@ export function Navbar() {
   return (
     <>
       {/* Top Bar */}
-      <div className="bg-[#1e3a5f] text-white text-sm py-2">
+      <div className="bg-brand text-white text-sm py-2">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-wrap justify-center sm:justify-between items-center gap-2 sm:gap-4">
           <a
             href="tel:8184924265"
@@ -67,7 +67,7 @@ export function Navbar() {
               <Link
                 key={item.name}
                 to={item.href}
-                className={`px-4 py-2 text-sm font-medium transition-colors duration-200 ${isActive(item.href) ? 'text-[#2563eb]' : 'text-slate-600 hover:text-[#2563eb]'}`}>
+                className={`px-4 py-2 text-sm font-medium transition-colors duration-200 ${isActive(item.href) ? 'text-accent' : 'text-slate-600 hover:text-accent'}`}>
 
                   {item.name}
                 </Link>
@@ -78,7 +78,7 @@ export function Navbar() {
             <div className="flex items-center lg:hidden">
               <button
                 onClick={() => setIsOpen(!isOpen)}
-                className="inline-flex items-center justify-center p-2 rounded-md text-slate-400 hover:text-slate-500 hover:bg-slate-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-[#1e3a5f]">
+                className="inline-flex items-center justify-center p-2 rounded-md text-slate-400 hover:text-slate-500 hover:bg-slate-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-brand">
 
                 <span className="sr-only">Open main menu</span>
                 {isOpen ?
@@ -99,7 +99,7 @@ export function Navbar() {
             <Link
               key={item.name}
               to={item.href}
-              className={`block px-3 py-2 rounded-md text-base font-medium ${isActive(item.href) ? 'text-[#2563eb] bg-blue-50' : 'text-slate-600 hover:bg-slate-50 hover:text-[#2563eb]'}`}
+              className={`block px-3 py-2 rounded-md text-base font-medium ${isActive(item.href) ? 'text-accent bg-blue-50' : 'text-slate-600 hover:bg-slate-50 hover:text-accent'}`}
               onClick={() => setIsOpen(false)}>
 
                   {item.name}

@@ -1,5 +1,16 @@
 import React, { useEffect, useState, useRef } from 'react';
 import { TrendingUp, Shield, DollarSign, Clock } from 'lucide-react';
+
+interface StatData {
+  label: string;
+  value: number;
+  prefix?: string;
+  suffix?: string;
+  isDecimal?: boolean;
+  icon: React.ReactNode;
+  subtext: string;
+  progress: number;
+}
 function useCountUp(
 end: number,
 duration: number = 2000,
@@ -81,7 +92,7 @@ export function StatsSection() {
   return (
     <div
       ref={sectionRef}
-      className="bg-[#1e3a5f] py-16 border-y border-[#162c47] overflow-hidden">
+      className="bg-brand py-16 border-y border-brand-dark overflow-hidden">
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-12">
@@ -106,7 +117,7 @@ function StatItem({
 
 
 
-}: {stat: any;isVisible: boolean;delay: number;}) {
+}: {stat: StatData;isVisible: boolean;delay: number;}) {
   const count = useCountUp(
     stat.isDecimal ? stat.value * 100 : stat.value,
     2000,
@@ -120,9 +131,9 @@ function StatItem({
         transitionDelay: `${delay}ms`
       }}>
 
-      <div className="inline-flex items-center justify-center h-12 w-12 rounded-xl bg-white/10 text-[#2563eb] mb-4 group-hover:bg-[#2563eb] group-hover:text-white transition-colors duration-300 relative">
+      <div className="inline-flex items-center justify-center h-12 w-12 rounded-xl bg-white/10 text-accent mb-4 group-hover:bg-accent group-hover:text-white transition-colors duration-300 relative">
         <div
-          className={`absolute inset-0 bg-[#2563eb]/20 rounded-xl ${isVisible ? 'animate-ping' : ''}`}
+          className={`absolute inset-0 bg-accent/20 rounded-xl ${isVisible ? 'animate-ping' : ''}`}
           style={{
             animationDuration: '2s',
             animationIterationCount: 'infinite'
@@ -143,7 +154,7 @@ function StatItem({
 
       <div className="h-1.5 w-full bg-slate-700/50 rounded-full overflow-hidden mb-2">
         <div
-          className="h-full bg-[#2563eb] rounded-full transition-all duration-1000 ease-out"
+          className="h-full bg-accent rounded-full transition-all duration-1000 ease-out"
           style={{
             width: isVisible ? `${stat.progress}%` : '0%',
             transitionDelay: `${delay + 500}ms`

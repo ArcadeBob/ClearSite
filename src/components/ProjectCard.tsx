@@ -27,8 +27,8 @@ export function ProjectCard({
   const [isHovered, setIsHovered] = useState(false);
   const statusColors = {
     Completed: 'bg-green-500 text-white',
-    Current: 'bg-[#2563eb] text-white',
-    Future: 'bg-[#1e3a5f] text-white'
+    Current: 'bg-accent text-white',
+    Future: 'bg-brand text-white'
   };
   return (
     <div
@@ -51,7 +51,7 @@ export function ProjectCard({
 
         {/* Overlay on hover */}
         <div
-          className={`absolute inset-0 bg-gradient-to-t from-[#1e3a5f] via-[#1e3a5f]/60 to-transparent transition-opacity duration-500 ${isHovered ? 'opacity-100' : 'opacity-0'}`}>
+          className={`absolute inset-0 bg-gradient-to-t from-brand via-brand/60 to-transparent transition-opacity duration-500 ${isHovered ? 'opacity-100' : 'opacity-0'}`}>
 
           {/* Quick Stats Overlay */}
           <div
@@ -59,10 +59,10 @@ export function ProjectCard({
 
             <div className="flex items-center justify-between text-white">
               <div className="flex items-center gap-2">
-                <DollarSign className="h-5 w-5 text-[#2563eb]" />
+                <DollarSign className="h-5 w-5 text-accent" />
                 <span className="text-2xl font-bold">{value}</span>
               </div>
-              <div className="flex items-center gap-1 text-[#2563eb]">
+              <div className="flex items-center gap-1 text-accent">
                 <span className="text-sm font-medium">View Details</span>
                 <ArrowUpRight className="h-4 w-4" />
               </div>
@@ -94,13 +94,13 @@ export function ProjectCard({
       {/* Content */}
       <div className="p-6 flex-1 flex flex-col">
         <h3
-          className={`text-xl font-bold mb-1 transition-colors duration-300 ${isHovered ? 'text-[#1e3a5f]' : 'text-slate-900'}`}>
+          className={`text-xl font-bold mb-1 transition-colors duration-300 ${isHovered ? 'text-brand' : 'text-slate-900'}`}>
 
           {title}
         </h3>
         <div className="flex items-center text-slate-500 text-sm mb-4">
           <MapPin
-            className={`h-4 w-4 mr-1 transition-colors duration-300 ${isHovered ? 'text-[#2563eb]' : 'text-slate-400'}`} />
+            className={`h-4 w-4 mr-1 transition-colors duration-300 ${isHovered ? 'text-accent' : 'text-slate-400'}`} />
 
           {location}
         </div>
@@ -121,7 +121,7 @@ export function ProjectCard({
               <DollarSign className="h-3.5 w-3.5 mr-1" /> Value
             </span>
             <span
-              className={`font-bold transition-colors duration-300 ${isHovered ? 'text-[#2563eb]' : 'text-slate-900'}`}>
+              className={`font-bold transition-colors duration-300 ${isHovered ? 'text-accent' : 'text-slate-900'}`}>
 
               {value}
             </span>
@@ -142,7 +142,7 @@ export function ProjectCard({
 
       {/* Bottom Accent Line */}
       <div
-        className={`h-1 bg-gradient-to-r from-[#1e3a5f] via-[#2563eb] to-[#1e3a5f] transition-all duration-500 ${isHovered ? 'opacity-100' : 'opacity-0'}`}>
+        className={`h-1 bg-gradient-to-r from-brand via-accent to-brand transition-all duration-500 ${isHovered ? 'opacity-100' : 'opacity-0'}`}>
       </div>
     </div>);
 

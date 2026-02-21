@@ -39,9 +39,9 @@ function DocumentCard({
   onDownload
 }: DocumentCardProps) {
   return (
-    <div className="bg-white/5 backdrop-blur-sm rounded-xl p-6 border border-white/10 hover:border-[#2563eb]/50 hover:bg-white/[0.07] transition-all group flex flex-col h-full">
+    <div className="bg-white/5 backdrop-blur-sm rounded-xl p-6 border border-white/10 hover:border-accent/50 hover:bg-white/[0.07] transition-all group flex flex-col h-full">
       <div className="flex items-start justify-between mb-4">
-        <div className="h-12 w-12 rounded-lg bg-[#1e3a5f] flex items-center justify-center text-[#2563eb] group-hover:bg-[#2563eb] group-hover:text-white transition-colors">
+        <div className="h-12 w-12 rounded-lg bg-brand flex items-center justify-center text-accent group-hover:bg-accent group-hover:text-white transition-colors">
           {icon}
         </div>
         <div className="bg-white/10 px-2 py-1 rounded text-[10px] font-bold text-slate-300 uppercase tracking-wider">
@@ -49,7 +49,7 @@ function DocumentCard({
         </div>
       </div>
 
-      <h3 className="text-lg font-bold text-white mb-2 group-hover:text-[#2563eb] transition-colors">
+      <h3 className="text-lg font-bold text-white mb-2 group-hover:text-accent transition-colors">
         {title}
       </h3>
       <p className="text-sm text-slate-400 mb-6 flex-1 leading-relaxed">
@@ -67,7 +67,7 @@ function DocumentCard({
           disabled={status !== 'idle'}
           className={`
             w-full flex items-center justify-center gap-2 py-2.5 rounded-lg text-sm font-semibold transition-all duration-300
-            ${status === 'idle' ? 'bg-white/10 text-white hover:bg-[#2563eb] hover:text-white' : status === 'downloading' ? 'bg-[#2563eb]/20 text-[#2563eb] cursor-wait' : 'bg-green-500/20 text-green-400 cursor-default'}
+            ${status === 'idle' ? 'bg-white/10 text-white hover:bg-accent hover:text-white' : status === 'downloading' ? 'bg-accent/20 text-accent cursor-wait' : 'bg-green-500/20 text-green-400 cursor-default'}
           `}>
 
           {status === 'idle' &&
@@ -227,7 +227,7 @@ export function GCResourcesSection() {
   }];
 
   return (
-    <section className="py-24 bg-[#1e3a5f] text-white relative overflow-hidden">
+    <section className="py-24 bg-brand text-white relative overflow-hidden">
       {/* Background Pattern */}
       <div className="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')] opacity-5 pointer-events-none"></div>
 
@@ -235,7 +235,7 @@ export function GCResourcesSection() {
         {/* Header */}
         <div className="flex flex-col md:flex-row justify-between items-start md:items-end mb-12 gap-6">
           <div className="max-w-2xl">
-            <p className="text-sm font-semibold text-[#2563eb] uppercase tracking-wider mb-2">
+            <p className="text-sm font-semibold text-accent uppercase tracking-wider mb-2">
               For General Contractors
             </p>
             <h2 className="text-3xl md:text-4xl font-bold mb-4">
@@ -263,9 +263,9 @@ export function GCResourcesSection() {
           {quickFacts.map((fact) =>
           <div
             key={fact.label}
-            className="bg-white/5 backdrop-blur-sm rounded-xl p-4 text-center border border-white/10 hover:border-[#2563eb]/50 transition-colors group">
+            className="bg-white/5 backdrop-blur-sm rounded-xl p-4 text-center border border-white/10 hover:border-accent/50 transition-colors group">
 
-              <div className="inline-flex items-center justify-center h-10 w-10 rounded-lg bg-[#2563eb]/20 text-[#2563eb] mb-3 group-hover:scale-110 transition-transform">
+              <div className="inline-flex items-center justify-center h-10 w-10 rounded-lg bg-accent/20 text-accent mb-3 group-hover:scale-110 transition-transform">
                 {fact.icon}
               </div>
               <div className="text-2xl font-bold text-white mb-1">
@@ -293,7 +293,7 @@ export function GCResourcesSection() {
         {/* Bottom CTA */}
         <div className="bg-white/5 rounded-xl p-6 md:p-8 border border-white/10 flex flex-col md:flex-row items-center justify-between gap-6">
           <div className="flex items-start gap-4">
-            <div className="h-12 w-12 rounded-lg bg-[#2563eb]/20 flex items-center justify-center text-[#2563eb] shrink-0">
+            <div className="h-12 w-12 rounded-lg bg-accent/20 flex items-center justify-center text-accent shrink-0">
               <File className="h-6 w-6" />
             </div>
             <div>
@@ -310,7 +310,7 @@ export function GCResourcesSection() {
           <Link to="/contact">
             <Button
               variant="outline"
-              className="border-white/20 text-white hover:bg-white hover:text-[#1e3a5f] gap-2 whitespace-nowrap">
+              className="border-white/20 text-white hover:bg-white hover:text-brand gap-2 whitespace-nowrap">
 
               Request Custom Doc <ArrowRight className="h-4 w-4" />
             </Button>

@@ -77,7 +77,7 @@ export function TestimonialsPage() {
 
   return (
     <div className="min-h-screen bg-slate-50">
-      <div className="bg-[#1e3a5f] text-white py-16">
+      <div className="bg-brand text-white py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h1 className="text-4xl font-bold mb-4">Client Testimonials</h1>
           <p className="text-xl text-slate-300 max-w-3xl">
@@ -177,7 +177,7 @@ export function TestimonialsPage() {
               className="p-4 flex items-center justify-center text-center h-20 bg-white hover:border-amber-200 transition-colors group"
               hover>
 
-                <span className="font-semibold text-slate-600 text-sm group-hover:text-[#1e3a5f] transition-colors">
+                <span className="font-semibold text-slate-600 text-sm group-hover:text-brand transition-colors">
                   {client}
                 </span>
               </Card>

@@ -57,7 +57,7 @@ export function AboutPage() {
   return (
     <div className="min-h-screen bg-white">
       {/* Header */}
-      <div className="bg-[#1e3a5f] text-white py-16">
+      <div className="bg-brand text-white py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h1 className="text-4xl font-bold mb-4">
             About Clean Glass Installation
@@ -125,7 +125,7 @@ export function AboutPage() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {values.map((value) =>
             <Card key={value.title} className="p-8 h-full">
-                <div className="h-14 w-14 bg-[#1e3a5f] rounded-xl flex items-center justify-center text-white mb-6">
+                <div className="h-14 w-14 bg-brand rounded-xl flex items-center justify-center text-white mb-6">
                   {value.icon}
                 </div>
                 <h3 className="text-xl font-bold text-slate-900 mb-4">
@@ -258,7 +258,7 @@ export function AboutPage() {
       </section>
 
       {/* CTA */}
-      <section className="py-20 bg-[#1e3a5f] text-white text-center">
+      <section className="py-20 bg-brand text-white text-center">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <Award className="h-16 w-16 text-amber-500 mx-auto mb-6" />
           <h2 className="text-3xl md:text-4xl font-bold mb-6">

@@ -16,7 +16,7 @@ export function ServiceCard({
   const [isHovered, setIsHovered] = useState(false);
   return (
     <div
-      className="group h-full flex flex-col bg-white rounded-xl border border-slate-200 shadow-sm overflow-hidden transition-all duration-500 hover:shadow-xl hover:-translate-y-1 hover:border-[#2563eb]/30"
+      className="group h-full flex flex-col bg-white rounded-xl border border-slate-200 shadow-sm overflow-hidden transition-all duration-500 hover:shadow-xl hover:-translate-y-1 hover:border-accent/30"
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}>
 
@@ -29,7 +29,7 @@ export function ServiceCard({
         <div className="relative z-10">
           {/* Icon Container */}
           <div
-            className={`h-14 w-14 rounded-xl flex items-center justify-center mb-5 transition-all duration-500 ${isHovered ? 'bg-[#1e3a5f] text-white shadow-lg shadow-[#1e3a5f]/30 scale-110' : 'bg-slate-100 text-[#1e3a5f]'}`}>
+            className={`h-14 w-14 rounded-xl flex items-center justify-center mb-5 transition-all duration-500 ${isHovered ? 'bg-brand text-white shadow-lg shadow-brand/30 scale-110' : 'bg-slate-100 text-brand'}`}>
 
             <div
               className={`transition-transform duration-500 ${isHovered ? 'scale-110' : 'scale-100'}`}>
@@ -39,7 +39,7 @@ export function ServiceCard({
           </div>
 
           <h3
-            className={`text-xl font-bold mb-3 transition-colors duration-300 ${isHovered ? 'text-[#1e3a5f]' : 'text-slate-900'}`}>
+            className={`text-xl font-bold mb-3 transition-colors duration-300 ${isHovered ? 'text-brand' : 'text-slate-900'}`}>
 
             {title}
           </h3>
@@ -50,7 +50,7 @@ export function ServiceCard({
           {link ?
           <Link
             to={link}
-            className={`inline-flex items-center font-semibold transition-all duration-300 ${isHovered ? 'text-[#2563eb] translate-x-1' : 'text-[#1e3a5f]'}`}>
+            className={`inline-flex items-center font-semibold transition-all duration-300 ${isHovered ? 'text-accent translate-x-1' : 'text-brand'}`}>
 
               Learn more
               <ArrowRight
@@ -59,9 +59,9 @@ export function ServiceCard({
             </Link> :
 
           <div
-            className={`inline-flex items-center text-sm font-medium transition-all duration-300 ${isHovered ? 'text-[#2563eb] opacity-100' : 'text-slate-400 opacity-0'}`}>
+            className={`inline-flex items-center text-sm font-medium transition-all duration-300 ${isHovered ? 'text-accent opacity-100' : 'text-slate-400 opacity-0'}`}>
 
-              <span className="h-1.5 w-1.5 rounded-full bg-[#2563eb] mr-2"></span>
+              <span className="h-1.5 w-1.5 rounded-full bg-accent mr-2"></span>
               Available
             </div>
           }
@@ -70,7 +70,7 @@ export function ServiceCard({
 
       {/* Bottom accent line */}
       <div
-        className={`h-1 bg-gradient-to-r from-[#1e3a5f] via-[#2563eb] to-[#1e3a5f] transition-all duration-500 ${isHovered ? 'opacity-100' : 'opacity-0'}`}>
+        className={`h-1 bg-gradient-to-r from-brand via-accent to-brand transition-all duration-500 ${isHovered ? 'opacity-100' : 'opacity-0'}`}>
       </div>
     </div>);
 

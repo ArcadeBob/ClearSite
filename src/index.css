@@ -3,14 +3,6 @@
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
 
-:root {
-  --color-primary: #1e3a5f;
-  --color-primary-dark: #162c47;
-  --color-accent: #2563eb;
-  --color-accent-light: #3b82f6;
-  --color-dark: #0f172a;
-}
-
 @layer base {
   body {
     @apply antialiased text-slate-900 bg-white;

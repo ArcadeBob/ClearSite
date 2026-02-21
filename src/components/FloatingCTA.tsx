@@ -43,13 +43,13 @@ export function FloatingCTA() {
         ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-full opacity-0 pointer-events-none'}
       `}>
 
-      <div className="bg-[#1e3a5f]/95 backdrop-blur-xl border-t border-white/10 shadow-2xl shadow-black/20">
+      <div className="bg-brand/95 backdrop-blur-xl border-t border-white/10 shadow-2xl shadow-black/20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between gap-4 py-4">
             {/* Text */}
             <div className="flex items-center gap-3 min-w-0">
-              <div className="hidden sm:flex h-10 w-10 rounded-full bg-[#2563eb]/20 flex-shrink-0 items-center justify-center">
-                <Download className="h-5 w-5 text-[#2563eb]" />
+              <div className="hidden sm:flex h-10 w-10 rounded-full bg-accent/20 flex-shrink-0 items-center justify-center">
+                <Download className="h-5 w-5 text-accent" />
               </div>
               <div className="min-w-0">
                 <p className="text-white font-semibold text-sm sm:text-base truncate">

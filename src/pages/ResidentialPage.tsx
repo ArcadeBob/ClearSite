@@ -14,7 +14,7 @@ export function ResidentialPage() {
   return (
     <div className="min-h-screen bg-white">
       {/* Header */}
-      <div className="bg-[#1e3a5f] text-white py-16">
+      <div className="bg-brand text-white py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h1 className="text-4xl font-bold mb-4">Residential Services</h1>
           <p className="text-xl text-slate-300 max-w-3xl">
@@ -64,7 +64,7 @@ export function ResidentialPage() {
                   <span className="block text-sm text-slate-500 mb-1 font-medium uppercase tracking-wide">
                     Shower Enclosures
                   </span>
-                  <span className="block text-2xl font-bold text-[#1e3a5f] mb-1">
+                  <span className="block text-2xl font-bold text-brand mb-1">
                     $1,500 – $3,500
                   </span>
                   <span className="text-xs text-slate-400">per unit</span>
@@ -73,7 +73,7 @@ export function ResidentialPage() {
                   <span className="block text-sm text-slate-500 mb-1 font-medium uppercase tracking-wide">
                     Custom Mirrors
                   </span>
-                  <span className="block text-2xl font-bold text-[#1e3a5f] mb-1">
+                  <span className="block text-2xl font-bold text-brand mb-1">
                     $15 – $25
                   </span>
                   <span className="text-xs text-slate-400">per sq ft</span>

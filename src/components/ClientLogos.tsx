@@ -40,7 +40,7 @@ export function ClientLogos() {
             key={`${client}-${index}`}
             className="flex items-center justify-center px-4 py-2">
 
-              <span className="text-slate-400 font-bold text-xl whitespace-nowrap tracking-wide hover:text-[#1e3a5f] transition-colors duration-300 cursor-default">
+              <span className="text-slate-400 font-bold text-xl whitespace-nowrap tracking-wide hover:text-brand transition-colors duration-300 cursor-default">
                 {client}
               </span>
             </div>

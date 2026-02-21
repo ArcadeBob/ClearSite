@@ -102,7 +102,7 @@ export function ProjectsPage() {
   filter === 'All' ? projects : projects.filter((p) => p.status === filter);
   return (
     <div className="min-h-screen bg-slate-50">
-      <div className="bg-[#1e3a5f] text-white py-16">
+      <div className="bg-brand text-white py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h1 className="text-4xl font-bold mb-4">Project Portfolio</h1>
           <p className="text-xl text-slate-300 max-w-3xl">
@@ -116,11 +116,11 @@ export function ProjectsPage() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         {/* Filters */}
         <div className="flex flex-wrap gap-3 mb-12">
-          {['All', 'Completed', 'Current', 'Future'].map((status) =>
+          {(['All', 'Completed', 'Current', 'Future'] as const).map((status) =>
           <Button
             key={status}
             variant={filter === status ? 'primary' : 'outline'}
-            onClick={() => setFilter(status as any)}
+            onClick={() => setFilter(status)}
             className={`rounded-full px-6 ${filter === status ? 'shadow-md' : 'bg-white'}`}>
 
               {status} Projects

@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import { Mail, Phone, MapPin, ShieldCheck } from 'lucide-react';
 export function Footer() {
   return (
-    <footer className="bg-[#1e3a5f] text-slate-300">
+    <footer className="bg-brand text-slate-300">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8 lg:gap-12">
           {/* Company Info */}
@@ -19,7 +19,7 @@ export function Footer() {
               Expert contract glazing on-time, on-budget. Serving Southern
               California and beyond with almost 30 years of experience.
             </p>
-            <div className="flex items-center gap-2 text-sm text-[#2563eb] font-medium bg-[#2563eb]/10 px-3 py-2 rounded-md w-fit">
+            <div className="flex items-center gap-2 text-sm text-accent font-medium bg-accent/10 px-3 py-2 rounded-md w-fit">
               <ShieldCheck className="h-4 w-4" />
               <span>C-17 License #965590</span>
             </div>
@@ -86,27 +86,27 @@ export function Footer() {
             </h3>
             <ul className="space-y-3 text-sm">
               <li className="flex items-center gap-2">
-                <span className="h-1 w-1 bg-[#2563eb] rounded-full"></span>
+                <span className="h-1 w-1 bg-accent rounded-full"></span>
                 Storefronts
               </li>
               <li className="flex items-center gap-2">
-                <span className="h-1 w-1 bg-[#2563eb] rounded-full"></span>
+                <span className="h-1 w-1 bg-accent rounded-full"></span>
                 Automatic Doors
               </li>
               <li className="flex items-center gap-2">
-                <span className="h-1 w-1 bg-[#2563eb] rounded-full"></span>
+                <span className="h-1 w-1 bg-accent rounded-full"></span>
                 Curtain Walls
               </li>
               <li className="flex items-center gap-2">
-                <span className="h-1 w-1 bg-[#2563eb] rounded-full"></span>
+                <span className="h-1 w-1 bg-accent rounded-full"></span>
                 Skylights
               </li>
               <li className="flex items-center gap-2">
-                <span className="h-1 w-1 bg-[#2563eb] rounded-full"></span>
+                <span className="h-1 w-1 bg-accent rounded-full"></span>
                 Glass Railings
               </li>
               <li className="flex items-center gap-2">
-                <span className="h-1 w-1 bg-[#2563eb] rounded-full"></span>
+                <span className="h-1 w-1 bg-accent rounded-full"></span>
                 Fire-Rated Glazing
               </li>
             </ul>
@@ -119,7 +119,7 @@ export function Footer() {
             </h3>
             <ul className="space-y-4 text-sm">
               <li className="flex items-start gap-3 group">
-                <MapPin className="h-5 w-5 text-[#2563eb] shrink-0 mt-0.5" />
+                <MapPin className="h-5 w-5 text-accent shrink-0 mt-0.5" />
                 <span className="group-hover:text-white transition-colors">
                   9627 Owensmouth Ave #3
                   <br />
@@ -127,7 +127,7 @@ export function Footer() {
                 </span>
               </li>
               <li className="flex items-center gap-3 group">
-                <Phone className="h-5 w-5 text-[#2563eb] shrink-0" />
+                <Phone className="h-5 w-5 text-accent shrink-0" />
                 <a
                   href="tel:8184924265"
                   className="hover:text-white transition-colors">
@@ -136,7 +136,7 @@ export function Footer() {
                 </a>
               </li>
               <li className="flex items-center gap-3 group">
-                <Mail className="h-5 w-5 text-[#2563eb] shrink-0" />
+                <Mail className="h-5 w-5 text-accent shrink-0" />
                 <a
                   href="mailto:email@cginstall.com"
                   className="hover:text-white transition-colors">

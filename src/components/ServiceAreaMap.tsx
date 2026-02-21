@@ -119,6 +119,7 @@ export function ServiceAreaMap() {
                 viewBox="0 0 400 400"
                 className="absolute inset-0 w-full h-full">
 
+                {/* SVG inline colors must stay as hex — keep in sync with tailwind.config.js brand/accent tokens */}
                 <defs>
                   <filter
                     id="glow"
@@ -227,7 +228,7 @@ export function ServiceAreaMap() {
                   transform: 'translateX(-50%)'
                 }}>
 
-                  <p className="text-sm font-bold text-[#1e3a5f] mb-1">
+                  <p className="text-sm font-bold text-brand mb-1">
                     {hoveredRegion}
                   </p>
                   <div className="flex items-center gap-4 text-xs text-slate-600">
@@ -257,7 +258,7 @@ export function ServiceAreaMap() {
                   <p className="text-xs font-semibold text-slate-500 uppercase">
                     Headquarters
                   </p>
-                  <p className="text-sm font-bold text-[#1e3a5f]">
+                  <p className="text-sm font-bold text-brand">
                     Chatsworth, CA
                   </p>
                 </div>

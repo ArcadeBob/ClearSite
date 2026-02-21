@@ -13,6 +13,7 @@ import { ClientLogos } from '../components/ClientLogos';
 import { PromiseSection } from '../components/PromiseSection';
 import { FloatingCTA } from '../components/FloatingCTA';
 import { TestimonialCarousel } from '../components/TestimonialCarousel';
+import { SectionHeader } from '../components/SectionHeader';
 import {
   Building2,
   Maximize,
@@ -147,7 +148,7 @@ export function HomePage() {
               className="w-full h-full object-cover" />
 
           </div>
-          <div className="absolute inset-0 bg-gradient-to-r from-[#1e3a5f]/95 via-[#1e3a5f]/80 to-[#1e3a5f]/40"></div>
+          <div className="absolute inset-0 bg-gradient-to-r from-brand/95 via-brand/80 to-brand/40"></div>
         </div>
 
         {/* Content */}
@@ -172,7 +173,7 @@ export function HomePage() {
               }}>
 
               The Glazing Sub That{' '}
-              <span className="text-[#2563eb]">Won't Hold Up</span> Your
+              <span className="text-accent">Won't Hold Up</span> Your
               Schedule
             </h1>
 
@@ -184,7 +185,7 @@ export function HomePage() {
               }}>
 
               On-Time. On-Budget.{' '}
-              <span className="text-[#2563eb]">Zero Punch List.</span>
+              <span className="text-accent">Zero Punch List.</span>
             </p>
 
             {/* Expanded Copy */}
@@ -246,7 +247,7 @@ export function HomePage() {
                 <Button
                   variant="outline"
                   size="lg"
-                  className="w-full sm:w-auto text-white border-white/30 hover:bg-white hover:text-[#1e3a5f]">
+                  className="w-full sm:w-auto text-white border-white/30 hover:bg-white hover:text-brand">
 
                   See Our Work
                 </Button>
@@ -262,7 +263,7 @@ export function HomePage() {
 
               {heroStats.map((stat) =>
               <div key={stat.label} className="text-center">
-                  <div className="flex items-center justify-center gap-1 text-[#2563eb] mb-1">
+                  <div className="flex items-center justify-center gap-1 text-accent mb-1">
                     {stat.icon}
                     <span className="text-xl font-bold text-white">
                       {stat.value}
@@ -288,7 +289,7 @@ export function HomePage() {
             Scroll
           </span>
           <div className="w-6 h-10 border-2 border-white/30 rounded-full flex justify-center pt-2">
-            <div className="w-1.5 h-3 bg-[#2563eb] rounded-full animate-bounce"></div>
+            <div className="w-1.5 h-3 bg-accent rounded-full animate-bounce"></div>
           </div>
         </div>
       </section>
@@ -339,7 +340,7 @@ export function HomePage() {
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
             <Link to="/about" className="group">
-              <div className="bg-[#1e3a5f] text-white rounded-full py-4 px-6 text-center font-medium hover:bg-[#162c47] transition-colors">
+              <div className="bg-brand text-white rounded-full py-4 px-6 text-center font-medium hover:bg-brand-dark transition-colors">
                 About CGI
               </div>
             </Link>
@@ -383,22 +384,12 @@ export function HomePage() {
       {/* Services Grid */}
       <section className="py-24 bg-slate-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <p className="text-sm font-semibold text-[#2563eb] uppercase tracking-wider mb-2">
-              What We Do
-            </p>
-            <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-4">
-              Full-Service Commercial Glazing
-            </h2>
-            <p className="text-lg text-slate-600 max-w-2xl mx-auto">
-              From design-assist to installation, we handle the complete glazing
-              scope.{' '}
-              <strong>
-                One subcontractor, one point of contact, zero coordination
-                headaches.
-              </strong>
-            </p>
-          </div>
+          <SectionHeader
+            subheading="What We Do"
+            title="Full-Service Commercial Glazing"
+            description={<>From design-assist to installation, we handle the complete glazing scope.{' '}<strong>One subcontractor, one point of contact, zero coordination headaches.</strong></>}
+            className="mb-16"
+          />
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {services.map((service) =>
             <ServiceCard key={service.title} {...service} />
@@ -418,7 +409,7 @@ export function HomePage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex flex-col sm:flex-row justify-between items-end mb-12 gap-4">
             <div>
-              <p className="text-sm font-semibold text-[#2563eb] uppercase tracking-wider mb-2">
+              <p className="text-sm font-semibold text-accent uppercase tracking-wider mb-2">
                 Proven Track Record
               </p>
               <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-4">
@@ -457,10 +448,10 @@ export function HomePage() {
       <ServiceAreaMap />
 
       {/* CTA Section - Strong Close */}
-      <section className="py-24 bg-[#1e3a5f] text-white text-center relative overflow-hidden">
+      <section className="py-24 bg-brand text-white text-center relative overflow-hidden">
         <div className="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')] opacity-5"></div>
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-          <p className="text-[#2563eb] font-semibold uppercase tracking-wider mb-4">
+          <p className="text-accent font-semibold uppercase tracking-wider mb-4">
             Ready to Work With a Glazing Sub You Can Trust?
           </p>
           <h2 className="text-3xl md:text-5xl font-bold mb-6">
@@ -500,7 +491,7 @@ export function HomePage() {
               <Button
                 size="lg"
                 variant="outline"
-                className="w-full sm:w-auto text-white border-white/30 hover:bg-white hover:text-[#1e3a5f]">
+                className="w-full sm:w-auto text-white border-white/30 hover:bg-white hover:text-brand">
 
                 Call (818) 492-4265
               </Button>

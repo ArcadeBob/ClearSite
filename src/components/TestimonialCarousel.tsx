@@ -1,5 +1,6 @@
 import React, { useEffect, useState, useRef } from 'react';
 import { Quote, User } from 'lucide-react';
+import { SectionHeader } from './SectionHeader';
 interface Testimonial {
   quote: string;
   name: string;
@@ -63,14 +64,11 @@ export function TestimonialCarousel() {
       onMouseLeave={() => setIsPaused(false)}>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-12">
-          <p className="text-sm font-semibold text-[#2563eb] uppercase tracking-wider mb-2">
-            What GCs Are Saying
-          </p>
-          <h2 className="text-3xl md:text-4xl font-bold text-slate-900">
-            Trusted by Top Project Managers
-          </h2>
-        </div>
+        <SectionHeader
+          subheading="What GCs Are Saying"
+          title="Trusted by Top Project Managers"
+          className="mb-12"
+        />
 
         <div className="relative max-w-3xl mx-auto">
           {/* Quote Icon Background */}
@@ -89,8 +87,8 @@ export function TestimonialCarousel() {
 
                 <div className="bg-white p-8 md:p-10 rounded-xl shadow-lg border border-slate-100 w-full">
                   <div className="flex justify-center mb-6">
-                    <div className="h-10 w-10 bg-[#2563eb]/10 rounded-full flex items-center justify-center">
-                      <Quote className="h-5 w-5 text-[#2563eb]" />
+                    <div className="h-10 w-10 bg-accent/10 rounded-full flex items-center justify-center">
+                      <Quote className="h-5 w-5 text-accent" />
                     </div>
                   </div>
 
@@ -107,7 +105,7 @@ export function TestimonialCarousel() {
                         {testimonial.name}
                       </div>
                       <div className="text-sm text-slate-500">
-                        <span className="text-[#2563eb] font-medium">
+                        <span className="text-accent font-medium">
                           {testimonial.company}
                         </span>
                         {' · '}
@@ -128,7 +126,7 @@ export function TestimonialCarousel() {
               onClick={() => setCurrentIndex(index)}
               className={`
                   h-2 rounded-full transition-all duration-300 
-                  ${index === currentIndex ? 'w-6 bg-[#2563eb]' : 'w-2 bg-slate-300 hover:bg-slate-400'}
+                  ${index === currentIndex ? 'w-6 bg-accent' : 'w-2 bg-slate-300 hover:bg-slate-400'}
                 `}
               aria-label={`Go to testimonial ${index + 1}`} />
 

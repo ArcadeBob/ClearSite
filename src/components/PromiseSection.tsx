@@ -22,12 +22,12 @@ export function PromiseSection() {
   }];
 
   return (
-    <section className="py-24 bg-[#1e3a5f] text-white relative overflow-hidden">
+    <section className="py-24 bg-brand text-white relative overflow-hidden">
       <div className="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')] opacity-5"></div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="text-center mb-12">
-          <p className="text-sm font-semibold text-[#2563eb] uppercase tracking-wider mb-2">
+          <p className="text-sm font-semibold text-accent uppercase tracking-wider mb-2">
             Our Promise
           </p>
           <h2 className="text-3xl md:text-4xl font-bold mb-4">
@@ -45,7 +45,7 @@ export function PromiseSection() {
             key={promise.title}
             className="bg-white/5 backdrop-blur-sm rounded-xl p-6 text-center border border-white/10">
 
-              <div className="inline-flex items-center justify-center h-12 w-12 rounded-lg bg-[#2563eb] text-white mb-4">
+              <div className="inline-flex items-center justify-center h-12 w-12 rounded-lg bg-accent text-white mb-4">
                 {promise.icon}
               </div>
               <h3 className="text-lg font-bold mb-2">{promise.title}</h3>
