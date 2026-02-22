@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://clearsite-beige.vercel.app/sitemap.xml
