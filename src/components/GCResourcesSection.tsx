@@ -17,6 +17,10 @@ import {
   ArrowRight,
   File } from
 'lucide-react';
+const DOWNLOAD_DELAY_MS = 1500;
+const DOWNLOAD_RESET_DELAY_MS = 3000;
+const DOWNLOAD_STAGGER_RANGE_MS = 1000;
+
 type DownloadStatus = 'idle' | 'downloading' | 'downloaded';
 interface DocumentCardProps {
   id: string;
@@ -93,6 +97,93 @@ function DocumentCard({
     </div>);
 
 }
+const quickFacts = [
+{
+  label: 'Bonding Capacity',
+  value: '$5M',
+  icon: <DollarSign className="h-5 w-5" />
+},
+{
+  label: 'Single Project Max',
+  value: '$2M+',
+  icon: <Building2 className="h-5 w-5" />
+},
+{
+  label: 'EMR Rating',
+  value: '0.87',
+  icon: <Shield className="h-5 w-5" />
+},
+{
+  label: 'OSHA Incidents',
+  value: '0',
+  icon: <CheckCircle className="h-5 w-5" />
+},
+{
+  label: 'Crew Size',
+  value: '24+',
+  icon: <Users className="h-5 w-5" />
+},
+{
+  label: 'Avg Response',
+  value: '<24hrs',
+  icon: <Clock className="h-5 w-5" />
+}];
+
+const documents = [
+{
+  id: 'coi',
+  title: 'Certificate of Insurance',
+  description:
+  'Current COI with $2M GL / $1M Auto / $1M Umbrella coverage limits.',
+  icon: <Shield className="h-6 w-6" />,
+  fileSize: '156 KB',
+  updatedDate: 'Jan 2026'
+},
+{
+  id: 'emr',
+  title: 'EMR & Safety Docs',
+  description:
+  '0.87 EMR rating verification letter, IIPP, and safety protocols.',
+  icon: <Award className="h-6 w-6" />,
+  fileSize: '89 KB',
+  updatedDate: 'Jan 2026'
+},
+{
+  id: 'profile',
+  title: 'Company Profile',
+  description:
+  'Full capabilities statement, company history, team, and equipment list.',
+  icon: <Building2 className="h-6 w-6" />,
+  fileSize: '2.1 MB',
+  updatedDate: 'Dec 2025'
+},
+{
+  id: 'references',
+  title: 'Project References',
+  description:
+  'List of recent completed projects with GC contact info for verification.',
+  icon: <FileText className="h-6 w-6" />,
+  fileSize: '124 KB',
+  updatedDate: 'Jan 2026'
+},
+{
+  id: 'w9',
+  title: 'W-9 Form',
+  description: 'Current signed W-9 tax documentation for vendor setup.',
+  icon: <FileSpreadsheet className="h-6 w-6" />,
+  fileSize: '45 KB',
+  updatedDate: '2025'
+},
+{
+  id: 'license',
+  title: 'License & Bonding',
+  description:
+  'C-17 License #965590 and $5M bonding capacity verification.',
+  icon: <ShieldCheck className="h-6 w-6" />,
+  fileSize: '78 KB',
+  updatedDate: 'Jan 2026'
+}];
+
 export function GCResourcesSection() {
   const [downloadStates, setDownloadStates] = useState<
     Record<string, DownloadStatus>>(
@@ -112,8 +203,8 @@ export function GCResourcesSection() {
           ...prev,
           [id]: 'idle'
         }));
-      }, 3000);
-    }, 1500);
+      }, DOWNLOAD_RESET_DELAY_MS);
+    }, DOWNLOAD_DELAY_MS);
   };
   const handleDownloadAll = () => {
     const allIds = documents.map((d) => d.id);
@@ -133,98 +224,12 @@ export function GCResourcesSection() {
               ...prev,
               [id]: 'idle'
             }));
-          }, 3000);
+          }, DOWNLOAD_RESET_DELAY_MS);
         },
-        1500 + Math.random() * 1000
+        DOWNLOAD_DELAY_MS + Math.random() * DOWNLOAD_STAGGER_RANGE_MS
       );
     });
   };
-  const quickFacts = [
-  {
-    label: 'Bonding Capacity',
-    value: '$5M',
-    icon: <DollarSign className="h-5 w-5" />
-  },
-  {
-    label: 'Single Project Max',
-    value: '$2M+',
-    icon: <Building2 className="h-5 w-5" />
-  },
-  {
-    label: 'EMR Rating',
-    value: '0.87',
-    icon: <Shield className="h-5 w-5" />
-  },
-  {
-    label: 'OSHA Incidents',
-    value: '0',
-    icon: <CheckCircle className="h-5 w-5" />
-  },
-  {
-    label: 'Crew Size',
-    value: '24+',
-    icon: <Users className="h-5 w-5" />
-  },
-  {
-    label: 'Avg Response',
-    value: '<24hrs',
-    icon: <Clock className="h-5 w-5" />
-  }];
-
-  const documents = [
-  {
-    id: 'coi',
-    title: 'Certificate of Insurance',
-    description:
-    'Current COI with $2M GL / $1M Auto / $1M Umbrella coverage limits.',
-    icon: <Shield className="h-6 w-6" />,
-    fileSize: '156 KB',
-    updatedDate: 'Jan 2026'
-  },
-  {
-    id: 'emr',
-    title: 'EMR & Safety Docs',
-    description:
-    '0.87 EMR rating verification letter, IIPP, and safety protocols.',
-    icon: <Award className="h-6 w-6" />,
-    fileSize: '89 KB',
-    updatedDate: 'Jan 2026'
-  },
-  {
-    id: 'profile',
-    title: 'Company Profile',
-    description:
-    'Full capabilities statement, company history, team, and equipment list.',
-    icon: <Building2 className="h-6 w-6" />,
-    fileSize: '2.1 MB',
-    updatedDate: 'Dec 2025'
-  },
-  {
-    id: 'references',
-    title: 'Project References',
-    description:
-    'List of recent completed projects with GC contact info for verification.',
-    icon: <FileText className="h-6 w-6" />,
-    fileSize: '124 KB',
-    updatedDate: 'Jan 2026'
-  },
-  {
-    id: 'w9',
-    title: 'W-9 Form',
-    description: 'Current signed W-9 tax documentation for vendor setup.',
-    icon: <FileSpreadsheet className="h-6 w-6" />,
-    fileSize: '45 KB',
-    updatedDate: '2025'
-  },
-  {
-    id: 'license',
-    title: 'License & Bonding',
-    description:
-    'C-17 License #965590 and $5M bonding capacity verification.',
-    icon: <ShieldCheck className="h-6 w-6" />,
-    fileSize: '78 KB',
-    updatedDate: 'Jan 2026'
-  }];
 
   return (
     <section className="py-24 bg-brand text-white relative overflow-hidden">

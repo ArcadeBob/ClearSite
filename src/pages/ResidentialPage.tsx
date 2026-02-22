@@ -2,15 +2,15 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { Button } from '../components/ui/Button';
 import { CheckCircle } from 'lucide-react';
-export function ResidentialPage() {
-  const features = [
-  'Custom frameless shower enclosures',
-  'High-end glass railings (interior & exterior)',
-  'Custom mirrors and vanity glass',
-  'Glass partitions and wine cellars',
-  'Skylights and roof glazing',
-  'Folding glass walls and sliders'];
+const features = [
+'Custom frameless shower enclosures',
+'High-end glass railings (interior & exterior)',
+'Custom mirrors and vanity glass',
+'Glass partitions and wine cellars',
+'Skylights and roof glazing',
+'Folding glass walls and sliders'];
 
+export function ResidentialPage() {
   return (
     <div className="min-h-screen bg-white">
       {/* Header */}

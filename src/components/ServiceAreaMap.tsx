@@ -1,5 +1,8 @@
 import React, { useEffect, useState, useRef } from 'react';
-import { MapPin, CheckCircle, Building2, Users, Briefcase } from 'lucide-react';
+import { MapPin, CheckCircle, Building2, Briefcase } from 'lucide-react';
+
+const INTERSECTION_THRESHOLD = 0.2;
+
 interface RegionData {
   name: string;
   projects: number;
@@ -7,6 +10,68 @@ interface RegionData {
   cx: number;
   cy: number;
 }
+
+const regions: RegionData[] = [
+{
+  name: 'Los Angeles County',
+  projects: 150,
+  value: '$25M+',
+  cx: 200,
+  cy: 280
+},
+{
+  name: 'Ventura County',
+  projects: 35,
+  value: '$8M+',
+  cx: 170,
+  cy: 240
+},
+{
+  name: 'Santa Barbara County',
+  projects: 20,
+  value: '$5M+',
+  cx: 150,
+  cy: 200
+},
+{
+  name: 'Bay Area',
+  projects: 45,
+  value: '$12M+',
+  cx: 180,
+  cy: 140
+},
+{
+  name: 'Orange County',
+  projects: 60,
+  value: '$15M+',
+  cx: 230,
+  cy: 300
+},
+{
+  name: 'San Diego County',
+  projects: 40,
+  value: '$10M+',
+  cx: 250,
+  cy: 340
+}];
+
+const secondaryStates = [
+{
+  name: 'Oregon',
+  abbr: 'OR',
+  projects: 8
+},
+{
+  name: 'Nevada',
+  abbr: 'NV',
+  projects: 12
+},
+{
+  name: 'Arizona',
+  abbr: 'AZ',
+  projects: 15
+}];
+
 export function ServiceAreaMap() {
   const [hoveredRegion, setHoveredRegion] = useState<string | null>(null);
   const [isVisible, setIsVisible] = useState(false);
@@ -20,7 +85,7 @@ export function ServiceAreaMap() {
         }
       },
       {
-        threshold: 0.2
+        threshold: INTERSECTION_THRESHOLD
       }
     );
     if (sectionRef.current) {
@@ -28,73 +93,6 @@ export function ServiceAreaMap() {
     }
     return () => observer.disconnect();
   }, []);
-  const regions: RegionData[] = [
-  {
-    name: 'Los Angeles County',
-    projects: 150,
-    value: '$25M+',
-    cx: 200,
-    cy: 280
-  },
-  {
-    name: 'Ventura County',
-    projects: 35,
-    value: '$8M+',
-    cx: 170,
-    cy: 240
-  },
-  {
-    name: 'Santa Barbara County',
-    projects: 20,
-    value: '$5M+',
-    cx: 150,
-    cy: 200
-  },
-  {
-    name: 'Bay Area',
-    projects: 45,
-    value: '$12M+',
-    cx: 180,
-    cy: 140
-  },
-  {
-    name: 'Orange County',
-    projects: 60,
-    value: '$15M+',
-    cx: 230,
-    cy: 300
-  },
-  {
-    name: 'San Diego County',
-    projects: 40,
-    value: '$10M+',
-    cx: 250,
-    cy: 340
-  }];
-
-  const secondaryStates = [
-  {
-    name: 'Oregon',
-    abbr: 'OR',
-    projects: 8
-  },
-  {
-    name: 'Nevada',
-    abbr: 'NV',
-    projects: 12
-  },
-  {
-    name: 'Arizona',
-    abbr: 'AZ',
-    projects: 15
-  }];
-
-  const getRegionByCoords = (
-  cx: number,
-  cy: number)
-  : RegionData | undefined => {
-    return regions.find((r) => r.cx === cx && r.cy === cy);
-  };
   return (
     <section ref={sectionRef} className="py-24 bg-white overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">

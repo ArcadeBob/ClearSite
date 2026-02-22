@@ -28,6 +28,102 @@ import {
   DollarSign,
   ClipboardCheck } from
 'lucide-react';
+
+const PARALLAX_FACTOR = 0.25;
+const HERO_BADGE_FADE_PX = 400;
+const HERO_TITLE_FADE_PX = 500;
+const HERO_TAGLINE_FADE_PX = 450;
+const HERO_BODY_FADE_PX = 420;
+
+const services = [
+{
+  title: 'Storefronts',
+  description:
+  'Custom aluminum storefronts and entrances for retail and office applications.',
+  icon: <LayoutGrid className="h-6 w-6" />
+},
+{
+  title: 'Automatic Doors',
+  description:
+  'Commercial automatic door systems for high-traffic entrances.',
+  icon: <DoorOpen className="h-6 w-6" />
+},
+{
+  title: 'Curtain Walls',
+  description:
+  'High-performance stick-built and unitized curtain wall systems for commercial buildings.',
+  icon: <Building2 className="h-6 w-6" />
+},
+{
+  title: 'Skylights',
+  description:
+  'Overhead glazing solutions that maximize natural light while maintaining efficiency.',
+  icon: <Sun className="h-6 w-6" />
+},
+{
+  title: 'Glass Railings',
+  description:
+  'Frameless and post-mounted glass railing systems for balconies and stairs.',
+  icon: <Maximize className="h-6 w-6" />
+},
+{
+  title: 'Fire-Rated Glazing',
+  description:
+  'Safety-compliant fire-rated windows and doors meeting all code requirements.',
+  icon: <Shield className="h-6 w-6" />
+}];
+
+const featuredProjects = [
+{
+  title: 'Burbank Empire Center',
+  location: 'Burbank, CA',
+  client: 'Major Retail Developer',
+  value: '$850K',
+  scope: 'Storefronts, Automatic Doors, Interior',
+  imageUrl:
+  'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80'
+},
+{
+  title: 'Stradella House',
+  location: 'Bel Air, CA',
+  client: 'Luxury Custom Builder',
+  value: '$1.2M',
+  scope: 'Custom Glass, Railings, Skylights',
+  imageUrl:
+  'https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80'
+},
+{
+  title: 'Multi-Site Retail Rollout',
+  location: 'Southern California',
+  client: 'National Fitness Chain',
+  value: '$1.5M+',
+  scope: 'Storefronts, Interior Glass (12 locations)',
+  imageUrl:
+  'https://images.unsplash.com/photo-1534438327276-14e5300c3a48?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80'
+}];
+
+const heroStats = [
+{
+  icon: <Clock className="h-5 w-5" />,
+  value: '30+',
+  label: 'Years'
+},
+{
+  icon: <DollarSign className="h-5 w-5" />,
+  value: '$5M',
+  label: 'Bonding'
+},
+{
+  icon: <Shield className="h-5 w-5" />,
+  value: '0.87',
+  label: 'EMR'
+},
+{
+  icon: <ClipboardCheck className="h-5 w-5" />,
+  value: '0',
+  label: 'Punch Items'
+}];
+
 export function HomePage() {
   const [scrollY, setScrollY] = useState(0);
   useEffect(() => {
@@ -39,94 +135,6 @@ export function HomePage() {
     });
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
-  const services = [
-  {
-    title: 'Storefronts',
-    description:
-    'Custom aluminum storefronts and entrances for retail and office applications.',
-    icon: <LayoutGrid className="h-6 w-6" />
-  },
-  {
-    title: 'Automatic Doors',
-    description:
-    'Commercial automatic door systems for high-traffic entrances.',
-    icon: <DoorOpen className="h-6 w-6" />
-  },
-  {
-    title: 'Curtain Walls',
-    description:
-    'High-performance stick-built and unitized curtain wall systems for commercial buildings.',
-    icon: <Building2 className="h-6 w-6" />
-  },
-  {
-    title: 'Skylights',
-    description:
-    'Overhead glazing solutions that maximize natural light while maintaining efficiency.',
-    icon: <Sun className="h-6 w-6" />
-  },
-  {
-    title: 'Glass Railings',
-    description:
-    'Frameless and post-mounted glass railing systems for balconies and stairs.',
-    icon: <Maximize className="h-6 w-6" />
-  },
-  {
-    title: 'Fire-Rated Glazing',
-    description:
-    'Safety-compliant fire-rated windows and doors meeting all code requirements.',
-    icon: <Shield className="h-6 w-6" />
-  }];
-
-  const featuredProjects = [
-  {
-    title: 'Burbank Empire Center',
-    location: 'Burbank, CA',
-    client: 'Major Retail Developer',
-    value: '$850K',
-    scope: 'Storefronts, Automatic Doors, Interior',
-    imageUrl:
-    'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80'
-  },
-  {
-    title: 'Stradella House',
-    location: 'Bel Air, CA',
-    client: 'Luxury Custom Builder',
-    value: '$1.2M',
-    scope: 'Custom Glass, Railings, Skylights',
-    imageUrl:
-    'https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80'
-  },
-  {
-    title: 'Multi-Site Retail Rollout',
-    location: 'Southern California',
-    client: 'National Fitness Chain',
-    value: '$1.5M+',
-    scope: 'Storefronts, Interior Glass (12 locations)',
-    imageUrl:
-    'https://images.unsplash.com/photo-1534438327276-14e5300c3a48?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80'
-  }];
-
-  const heroStats = [
-  {
-    icon: <Clock className="h-5 w-5" />,
-    value: '30+',
-    label: 'Years'
-  },
-  {
-    icon: <DollarSign className="h-5 w-5" />,
-    value: '$5M',
-    label: 'Bonding'
-  },
-  {
-    icon: <Shield className="h-5 w-5" />,
-    value: '0.87',
-    label: 'EMR'
-  },
-  {
-    icon: <ClipboardCheck className="h-5 w-5" />,
-    value: '0',
-    label: 'Punch Items'
-  }];
 
   return (
     <div className="flex flex-col min-h-screen">
@@ -137,7 +145,7 @@ export function HomePage() {
           <div
             className="absolute inset-0"
             style={{
-              transform: `translate3d(0, ${scrollY * 0.25}px, 0)`,
+              transform: `translate3d(0, ${scrollY * PARALLAX_FACTOR}px, 0)`,
               top: '-15%',
               bottom: '-15%'
             }}>
@@ -158,7 +166,7 @@ export function HomePage() {
             <div
               className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm text-white/90 px-4 py-2 rounded-full text-sm font-medium mb-6 border border-white/20"
               style={{
-                opacity: Math.max(0, 1 - scrollY / 400)
+                opacity: Math.max(0, 1 - scrollY / HERO_BADGE_FADE_PX)
               }}>
 
               <CheckCircle2 className="h-4 w-4 text-green-400" />
@@ -169,7 +177,7 @@ export function HomePage() {
             <h1
               className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight mb-6 leading-[1.1]"
               style={{
-                opacity: Math.max(0, 1 - scrollY / 500)
+                opacity: Math.max(0, 1 - scrollY / HERO_TITLE_FADE_PX)
               }}>
 
               The Glazing Sub That{' '}
@@ -181,7 +189,7 @@ export function HomePage() {
             <p
               className="text-xl md:text-2xl text-white/90 mb-4 leading-relaxed font-medium"
               style={{
-                opacity: Math.max(0, 1 - scrollY / 450)
+                opacity: Math.max(0, 1 - scrollY / HERO_TAGLINE_FADE_PX)
               }}>
 
               On-Time. On-Budget.{' '}
@@ -192,7 +200,7 @@ export function HomePage() {
             <p
               className="text-lg text-white/70 mb-6 leading-relaxed max-w-2xl"
               style={{
-                opacity: Math.max(0, 1 - scrollY / 420)
+                opacity: Math.max(0, 1 - scrollY / HERO_BODY_FADE_PX)
               }}>
 
               Stop babysitting your glazing contractor. With 30 years of
@@ -205,7 +213,7 @@ export function HomePage() {
             <div
               className="flex flex-wrap gap-x-6 gap-y-2 mb-8 text-sm text-white/80"
               style={{
-                opacity: Math.max(0, 1 - scrollY / 400)
+                opacity: Math.max(0, 1 - scrollY / HERO_BADGE_FADE_PX)
               }}>
 
               <span className="flex items-center gap-1.5">

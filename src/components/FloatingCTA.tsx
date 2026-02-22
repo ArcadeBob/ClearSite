@@ -2,13 +2,19 @@ import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Button } from './ui/Button';
 import { Download, X } from 'lucide-react';
+
+const SCROLL_SHOW_THRESHOLD = 500;
+const SCROLL_RESET_THRESHOLD = 100;
+
 export function FloatingCTA() {
   const [isVisible, setIsVisible] = useState(false);
   const [isDismissed, setIsDismissed] = useState(false);
   useEffect(() => {
     const handleScroll = () => {
-      const scrollThreshold = 500;
-      const shouldShow = window.scrollY > scrollThreshold;
+      if (window.scrollY < SCROLL_RESET_THRESHOLD && isDismissed) {
+        setIsDismissed(false);
+      }
+      const shouldShow = window.scrollY > SCROLL_SHOW_THRESHOLD;
       if (shouldShow && !isDismissed) {
         setIsVisible(true);
       } else {
@@ -24,17 +30,6 @@ export function FloatingCTA() {
     setIsDismissed(true);
     setIsVisible(false);
   };
-  useEffect(() => {
-    const handleScrollReset = () => {
-      if (window.scrollY < 100 && isDismissed) {
-        setIsDismissed(false);
-      }
-    };
-    window.addEventListener('scroll', handleScrollReset, {
-      passive: true
-    });
-    return () => window.removeEventListener('scroll', handleScrollReset);
-  }, [isDismissed]);
   return (
     <div
       className={`

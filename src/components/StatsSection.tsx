@@ -1,6 +1,8 @@
 import React, { useEffect, useState, useRef } from 'react';
 import { TrendingUp, Shield, DollarSign, Clock } from 'lucide-react';
 
+const INTERSECTION_THRESHOLD = 0.2;
+
 interface StatData {
   label: string;
   value: number;
@@ -11,10 +13,47 @@ interface StatData {
   subtext: string;
   progress: number;
 }
+
+const stats: StatData[] = [
+{
+  label: 'Years Experience',
+  value: 30,
+  suffix: '+',
+  icon: <Clock className="h-5 w-5" />,
+  subtext: 'Since 1990',
+  progress: 85
+},
+{
+  label: 'Bonding Capacity',
+  value: 5,
+  prefix: '$',
+  suffix: 'M',
+  icon: <DollarSign className="h-5 w-5" />,
+  subtext: 'Single & Aggregate',
+  progress: 100
+},
+{
+  label: 'EMR Safety Rating',
+  value: 0.87,
+  isDecimal: true,
+  icon: <Shield className="h-5 w-5" />,
+  subtext: 'Zero OSHA Incidents',
+  progress: 87
+},
+{
+  label: 'Project Capacity',
+  value: 2,
+  prefix: '$',
+  suffix: 'M+',
+  icon: <TrendingUp className="h-5 w-5" />,
+  subtext: 'Single Project',
+  progress: 67
+}];
+
 function useCountUp(
 end: number,
-duration: number = 2000,
-start: boolean = false)
+duration = 2000,
+start = false)
 {
   const [count, setCount] = useState(0);
   useEffect(() => {
@@ -45,7 +84,7 @@ export function StatsSection() {
         }
       },
       {
-        threshold: 0.2
+        threshold: INTERSECTION_THRESHOLD
       }
     );
     if (sectionRef.current) {
@@ -53,41 +92,6 @@ export function StatsSection() {
     }
     return () => observer.disconnect();
   }, []);
-  const stats = [
-  {
-    label: 'Years Experience',
-    value: 30,
-    suffix: '+',
-    icon: <Clock className="h-5 w-5" />,
-    subtext: 'Since 1990',
-    progress: 85
-  },
-  {
-    label: 'Bonding Capacity',
-    value: 5,
-    prefix: '$',
-    suffix: 'M',
-    icon: <DollarSign className="h-5 w-5" />,
-    subtext: 'Single & Aggregate',
-    progress: 100
-  },
-  {
-    label: 'EMR Safety Rating',
-    value: 0.87,
-    isDecimal: true,
-    icon: <Shield className="h-5 w-5" />,
-    subtext: 'Zero OSHA Incidents',
-    progress: 87
-  },
-  {
-    label: 'Project Capacity',
-    value: 2,
-    prefix: '$',
-    suffix: 'M+',
-    icon: <TrendingUp className="h-5 w-5" />,
-    subtext: 'Single Project',
-    progress: 67
-  }];
 
   return (
     <div

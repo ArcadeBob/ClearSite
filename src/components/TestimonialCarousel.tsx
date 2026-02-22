@@ -1,44 +1,49 @@
 import React, { useEffect, useState, useRef } from 'react';
 import { Quote, User } from 'lucide-react';
 import { SectionHeader } from './SectionHeader';
+
+const CAROUSEL_INTERVAL_MS = 5000;
+
 interface Testimonial {
   quote: string;
   name: string;
   company: string;
   role: string;
 }
+
+const testimonials: Testimonial[] = [
+{
+  quote:
+  "CGI delivered our 12-location rollout on schedule with zero punch items. That's unheard of in this industry.",
+  name: 'Mike Chen',
+  company: 'Balfour Beatty',
+  role: 'Senior PM'
+},
+{
+  quote:
+  'Their submittals are always clean and complete. Saves us weeks of back-and-forth.',
+  name: 'Sarah Martinez',
+  company: 'Turner Construction',
+  role: 'Project Engineer'
+},
+{
+  quote:
+  "Best glazing sub we've worked with in 20 years. They actually show up every day.",
+  name: 'Tom Rodriguez',
+  company: 'Swinerton',
+  role: 'Superintendent'
+},
+{
+  quote: 'The 24-hour RFI turnaround is real. Makes my job so much easier.',
+  name: 'Jennifer Park',
+  company: 'Clark Construction',
+  role: 'PM'
+}];
+
 export function TestimonialCarousel() {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isPaused, setIsPaused] = useState(false);
   const timeoutRef = useRef<NodeJS.Timeout | null>(null);
-  const testimonials: Testimonial[] = [
-  {
-    quote:
-    "CGI delivered our 12-location rollout on schedule with zero punch items. That's unheard of in this industry.",
-    name: 'Mike Chen',
-    company: 'Balfour Beatty',
-    role: 'Senior PM'
-  },
-  {
-    quote:
-    'Their submittals are always clean and complete. Saves us weeks of back-and-forth.',
-    name: 'Sarah Martinez',
-    company: 'Turner Construction',
-    role: 'Project Engineer'
-  },
-  {
-    quote:
-    "Best glazing sub we've worked with in 20 years. They actually show up every day.",
-    name: 'Tom Rodriguez',
-    company: 'Swinerton',
-    role: 'Superintendent'
-  },
-  {
-    quote: 'The 24-hour RFI turnaround is real. Makes my job so much easier.',
-    name: 'Jennifer Park',
-    company: 'Clark Construction',
-    role: 'PM'
-  }];
 
   const resetTimeout = () => {
     if (timeoutRef.current) {
@@ -52,11 +57,11 @@ export function TestimonialCarousel() {
       setCurrentIndex((prevIndex) =>
       prevIndex === testimonials.length - 1 ? 0 : prevIndex + 1
       );
-    }, 5000);
+    }, CAROUSEL_INTERVAL_MS);
     return () => {
       resetTimeout();
     };
-  }, [currentIndex, isPaused, testimonials.length]);
+  }, [currentIndex, isPaused]);
   return (
     <section
       className="py-24 bg-slate-50 overflow-hidden"

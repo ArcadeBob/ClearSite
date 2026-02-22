@@ -1,33 +1,33 @@
 import React from 'react';
 import { ShieldCheck, FileCheck, Award, Heart } from 'lucide-react';
 import { SectionHeader } from './SectionHeader';
-export function CertificationsBadges() {
-  const certifications = [
-  {
-    icon: <ShieldCheck className="h-6 w-6" />,
-    title: 'C-17 Licensed',
-    subtitle: 'License #965590',
-    description: 'California Glazing Contractor'
-  },
-  {
-    icon: <Award className="h-6 w-6" />,
-    title: 'SBE Certified',
-    subtitle: 'ID #2034373',
-    description: 'Small Business Enterprise'
-  },
-  {
-    icon: <FileCheck className="h-6 w-6" />,
-    title: 'DIR Registered',
-    subtitle: 'Prevailing Wage',
-    description: 'Public Works Qualified'
-  },
-  {
-    icon: <Heart className="h-6 w-6" />,
-    title: '0.87 EMR',
-    subtitle: 'Safety Rating',
-    description: 'Zero OSHA Incidents'
-  }];
+const certifications = [
+{
+  icon: <ShieldCheck className="h-6 w-6" />,
+  title: 'C-17 Licensed',
+  subtitle: 'License #965590',
+  description: 'California Glazing Contractor'
+},
+{
+  icon: <Award className="h-6 w-6" />,
+  title: 'SBE Certified',
+  subtitle: 'ID #2034373',
+  description: 'Small Business Enterprise'
+},
+{
+  icon: <FileCheck className="h-6 w-6" />,
+  title: 'DIR Registered',
+  subtitle: 'Prevailing Wage',
+  description: 'Public Works Qualified'
+},
+{
+  icon: <Heart className="h-6 w-6" />,
+  title: '0.87 EMR',
+  subtitle: 'Safety Rating',
+  description: 'Zero OSHA Incidents'
+}];
 
+export function CertificationsBadges() {
   return (
     <section className="py-20 bg-white border-y border-slate-100">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">

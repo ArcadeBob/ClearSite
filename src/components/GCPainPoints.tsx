@@ -10,57 +10,57 @@ import {
   AlertCircle,
   CheckCircle2 } from
 'lucide-react';
-export function GCPainPoints() {
-  const painPoints = [
-  {
-    icon: <UserCheck className="h-6 w-6" />,
-    problem: 'Tired of babysitting subs?',
-    solution: 'No Supervision Required',
-    description:
-    "A senior foreman is on-site every day. You won't have to check on us—we'll update you.",
-    metric: 'Foreman on every job'
-  },
-  {
-    icon: <CalendarCheck className="h-6 w-6" />,
-    problem: 'Worried about schedule delays?',
-    solution: "We Don't Hold Up Your Schedule",
-    description:
-    'Our fabrication process runs parallel with glass ordering—shaving weeks off lead times.',
-    metric: 'Weeks saved on lead time'
-  },
-  {
-    icon: <FileCheck className="h-6 w-6" />,
-    problem: 'Submittal nightmares?',
-    solution: 'Clean Submittals, First Time',
-    description:
-    "Complete, code-compliant submittals that don't bounce back. We know what engineers want.",
-    metric: '90%+ first-pass approval'
-  },
-  {
-    icon: <MessageSquare className="h-6 w-6" />,
-    problem: 'Chasing subs for answers?',
-    solution: 'RFI Response in 24 Hours',
-    description:
-    'We respond to RFIs same-day when possible, always within 24 hours. No chasing required.',
-    metric: '<24hr RFI turnaround'
-  },
-  {
-    icon: <ClipboardCheck className="h-6 w-6" />,
-    problem: 'Dreading the punch list?',
-    solution: 'Zero Punch-List Goal',
-    description:
-    'Our QA process catches issues before you do. We aim for zero punch items at turnover.',
-    metric: 'Near-zero punch lists'
-  },
-  {
-    icon: <Clock className="h-6 w-6" />,
-    problem: 'Need a bid yesterday?',
-    solution: 'Same-Day Quote Turnaround',
-    description:
-    'Send us plans by noon, get a budget number by end of day. Detailed proposals in 48-72 hours.',
-    metric: 'Same-day budgets'
-  }];
+const painPoints = [
+{
+  icon: <UserCheck className="h-6 w-6" />,
+  problem: 'Tired of babysitting subs?',
+  solution: 'No Supervision Required',
+  description:
+  "A senior foreman is on-site every day. You won't have to check on us—we'll update you.",
+  metric: 'Foreman on every job'
+},
+{
+  icon: <CalendarCheck className="h-6 w-6" />,
+  problem: 'Worried about schedule delays?',
+  solution: "We Don't Hold Up Your Schedule",
+  description:
+  'Our fabrication process runs parallel with glass ordering—shaving weeks off lead times.',
+  metric: 'Weeks saved on lead time'
+},
+{
+  icon: <FileCheck className="h-6 w-6" />,
+  problem: 'Submittal nightmares?',
+  solution: 'Clean Submittals, First Time',
+  description:
+  "Complete, code-compliant submittals that don't bounce back. We know what engineers want.",
+  metric: '90%+ first-pass approval'
+},
+{
+  icon: <MessageSquare className="h-6 w-6" />,
+  problem: 'Chasing subs for answers?',
+  solution: 'RFI Response in 24 Hours',
+  description:
+  'We respond to RFIs same-day when possible, always within 24 hours. No chasing required.',
+  metric: '<24hr RFI turnaround'
+},
+{
+  icon: <ClipboardCheck className="h-6 w-6" />,
+  problem: 'Dreading the punch list?',
+  solution: 'Zero Punch-List Goal',
+  description:
+  'Our QA process catches issues before you do. We aim for zero punch items at turnover.',
+  metric: 'Near-zero punch lists'
+},
+{
+  icon: <Clock className="h-6 w-6" />,
+  problem: 'Need a bid yesterday?',
+  solution: 'Same-Day Quote Turnaround',
+  description:
+  'Send us plans by noon, get a budget number by end of day. Detailed proposals in 48-72 hours.',
+  metric: 'Same-day budgets'
+}];
 
+export function GCPainPoints() {
   return (
     <section className="py-24 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">

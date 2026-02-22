@@ -8,6 +8,14 @@ import {
 'lucide-react';
 import { SectionHeader } from './SectionHeader';
 
+const LINE_PROGRESS_INCREMENT = 2;
+const LINE_ANIMATION_INTERVAL_MS = 30;
+const INTERSECTION_THRESHOLD = 0.2;
+const DESKTOP_STAGGER_MS = 200;
+const DESKTOP_STAGGER_BASE_MS = 300;
+const MOBILE_STAGGER_MS = 150;
+const MOBILE_STAGGER_BASE_MS = 200;
+
 function StepIcon({
   icon,
   index,
@@ -52,15 +60,15 @@ export function ProcessTimeline() {
           setIsVisible(true);
           let progress = 0;
           intervalRef.current = setInterval(() => {
-            progress += 2;
+            progress += LINE_PROGRESS_INCREMENT;
             setLineProgress(Math.min(progress, 100));
             if (progress >= 100) clearInterval(intervalRef.current);
-          }, 30);
+          }, LINE_ANIMATION_INTERVAL_MS);
           observer.disconnect();
         }
       },
       {
-        threshold: 0.2
+        threshold: INTERSECTION_THRESHOLD
       }
     );
     if (sectionRef.current) {
@@ -132,7 +140,7 @@ export function ProcessTimeline() {
                 key={step.title}
                 className={`relative flex flex-col items-center text-center transition-all duration-700 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-12'}`}
                 style={{
-                  transitionDelay: `${index * 200 + 300}ms`
+                  transitionDelay: `${index * DESKTOP_STAGGER_MS + DESKTOP_STAGGER_BASE_MS}ms`
                 }}>
 
                   {/* Step Number & Icon */}
@@ -141,7 +149,7 @@ export function ProcessTimeline() {
                       icon={step.icon}
                       index={index}
                       isActive={isVisible && lineProgress > index * 25}
-                      numberDelay={`${index * 200 + 500}ms`}
+                      numberDelay={`${index * DESKTOP_STAGGER_MS + DESKTOP_STAGGER_BASE_MS + 200}ms`}
                       size="lg"
                     />
                   </div>
@@ -156,7 +164,7 @@ export function ProcessTimeline() {
                   <span
                   className={`text-xs font-semibold text-accent bg-blue-50 px-3 py-1 rounded-full transition-all duration-500 ${isVisible ? 'opacity-100 scale-100' : 'opacity-0 scale-90'}`}
                   style={{
-                    transitionDelay: `${index * 200 + 600}ms`
+                    transitionDelay: `${index * DESKTOP_STAGGER_MS + DESKTOP_STAGGER_BASE_MS + 300}ms`
                   }}>
 
                     {step.duration}
@@ -186,7 +194,7 @@ export function ProcessTimeline() {
                 key={step.title}
                 className={`relative flex gap-6 transition-all duration-700 ${isVisible ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-8'}`}
                 style={{
-                  transitionDelay: `${index * 150 + 200}ms`
+                  transitionDelay: `${index * MOBILE_STAGGER_MS + MOBILE_STAGGER_BASE_MS}ms`
                 }}>
 
                   {/* Icon */}
@@ -195,7 +203,7 @@ export function ProcessTimeline() {
                       icon={step.icon}
                       index={index}
                       isActive={isVisible && lineProgress > index * 20}
-                      numberDelay={`${index * 150 + 400}ms`}
+                      numberDelay={`${index * MOBILE_STAGGER_MS + MOBILE_STAGGER_BASE_MS + 200}ms`}
                       size="sm"
                     />
                   </div>
