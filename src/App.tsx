@@ -10,6 +10,7 @@ import { ProjectsPage } from './pages/ProjectsPage';
 import { ResidentialPage } from './pages/ResidentialPage';
 import { TestimonialsPage } from './pages/TestimonialsPage';
 import { ContactPage } from './pages/ContactPage';
+import { CaseStudyPage } from './pages/CaseStudyPage';
 import { NotFoundPage } from './pages/NotFoundPage';
 export function App() {
   return (
@@ -23,6 +24,7 @@ export function App() {
               <Route path="/" element={<HomePage />} />
               <Route path="/about" element={<AboutPage />} />
               <Route path="/projects" element={<ProjectsPage />} />
+              <Route path="/projects/:slug" element={<CaseStudyPage />} />
               <Route path="/residential" element={<ResidentialPage />} />
               <Route path="/testimonials" element={<TestimonialsPage />} />
               <Route path="/contact" element={<ContactPage />} />

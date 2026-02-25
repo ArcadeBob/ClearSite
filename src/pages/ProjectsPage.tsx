@@ -1,7 +1,13 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import { ProjectCard } from '../components/ProjectCard';
 import { Button } from '../components/ui/Button';
-import { FolderOpen } from 'lucide-react';
+import { FolderOpen, ArrowRight } from 'lucide-react';
+
+const caseStudySlugs: Record<string, string> = {
+  'Cabrillo Business Park': 'cabrillo-business-park',
+};
+
 const projects = [
 {
   title: 'Citrus Commons',
@@ -133,7 +139,17 @@ export function ProjectsPage() {
         {filteredProjects.length > 0 ?
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {filteredProjects.map((project) =>
-          <ProjectCard key={project.title} {...project} />
+          <div key={project.title} className="flex flex-col">
+              <ProjectCard {...project} />
+              {caseStudySlugs[project.title] && (
+                <Link
+                  to={`/projects/${caseStudySlugs[project.title]}`}
+                  className="mt-3 inline-flex items-center gap-1.5 text-sm font-medium text-accent hover:text-accent-dark transition-colors"
+                >
+                  View Case Study <ArrowRight className="h-3.5 w-3.5" />
+                </Link>
+              )}
+            </div>
           )}
           </div> :
 
