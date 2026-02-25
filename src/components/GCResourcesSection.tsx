@@ -11,7 +11,6 @@ import {
   Users,
   Clock,
   CheckCircle,
-  FileSpreadsheet,
   ShieldCheck,
   Loader2,
   ArrowRight,
@@ -134,7 +133,7 @@ const documents = [
   id: 'coi',
   title: 'Certificate of Insurance',
   description:
-  'Current COI with $2M GL / $1M Auto / $1M Umbrella coverage limits.',
+  'Current Certificate of Insurance available upon request.',
   icon: <Shield className="h-6 w-6" />,
   fileSize: '156 KB',
   updatedDate: 'Jan 2026'
@@ -143,7 +142,7 @@ const documents = [
   id: 'emr',
   title: 'EMR & Safety Docs',
   description:
-  '0.87 EMR rating verification letter, IIPP, and safety protocols.',
+  '0.87 EMR rating verification letter and safety protocols.',
   icon: <Award className="h-6 w-6" />,
   fileSize: '89 KB',
   updatedDate: 'Jan 2026'
@@ -161,18 +160,10 @@ const documents = [
   id: 'references',
   title: 'Project References',
   description:
-  'List of recent completed projects with GC contact info for verification.',
+  'List of recent completed projects with scope and value details.',
   icon: <FileText className="h-6 w-6" />,
   fileSize: '124 KB',
   updatedDate: 'Jan 2026'
-},
-{
-  id: 'w9',
-  title: 'W-9 Form',
-  description: 'Current signed W-9 tax documentation for vendor setup.',
-  icon: <FileSpreadsheet className="h-6 w-6" />,
-  fileSize: '45 KB',
-  updatedDate: '2025'
 },
 {
   id: 'license',
