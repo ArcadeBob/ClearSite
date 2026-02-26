@@ -2,7 +2,6 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { Button } from './ui/Button';
 import {
-  FileText,
   Shield,
   Award,
   Building2,
@@ -44,27 +43,6 @@ const infoCards: InfoCardData[] = [
       'Full safety protocols & training',
       'EMR well below industry avg',
     ],
-  },
-  {
-    title: 'Company Profile',
-    icon: <Building2 className="h-6 w-6" />,
-    highlight: '35+ Yrs',
-    details: [
-      '24+ crew members',
-      'Modern equipment fleet',
-      'Full-service commercial glazing',
-    ],
-  },
-  {
-    title: 'Project References',
-    icon: <FileText className="h-6 w-6" />,
-    highlight: '$2M+',
-    details: [
-      'Recent projects with scope/value details',
-      'GC references available',
-      '$50K\u2013$2M+ range',
-    ],
-    ctaText: 'Request References',
   },
   {
     title: 'License & Bonding',
