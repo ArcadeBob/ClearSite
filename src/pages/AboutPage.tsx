@@ -106,7 +106,7 @@ export function AboutPage() {
             About Clean Glass Installation
           </h1>
           <p className="text-xl text-slate-300 max-w-3xl">
-            Expert contract glazing on-time, on-budget. With almost 30 years of
+            Expert contract glazing on-time, on-budget. With over 35 years of
             experience, we help contractors get the job done right the first
             time.
           </p>
@@ -263,7 +263,7 @@ export function AboutPage() {
             {[
               {
                 title: 'Vast Experience',
-                desc: 'Almost 30 years working on all types of jobs in any environment.',
+                desc: 'Over 35 years working on all types of jobs in any environment.',
               },
               {
                 title: 'Expert Workmanship',

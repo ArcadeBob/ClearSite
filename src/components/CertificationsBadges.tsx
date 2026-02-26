@@ -1,12 +1,17 @@
 import React from 'react';
-import { ShieldCheck, FileCheck, Award, Heart } from 'lucide-react';
+import { ShieldCheck, FileCheck, Award, Heart, ExternalLink } from 'lucide-react';
 import { SectionHeader } from './SectionHeader';
+
+const CSLB_LOOKUP_URL = 'https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/CheckLicense.aspx';
+
 const certifications = [
 {
   icon: <ShieldCheck className="h-6 w-6" />,
   title: 'C-17 Licensed',
   subtitle: 'License #965590',
-  description: 'California Glazing Contractor'
+  description: 'California Glazing Contractor',
+  verifyUrl: CSLB_LOOKUP_URL,
+  verifyLabel: 'Verify on CSLB',
 },
 {
   icon: <Award className="h-6 w-6" />,
@@ -52,6 +57,16 @@ export function CertificationsBadges() {
                   {cert.subtitle}
                 </p>
                 <p className="text-xs text-slate-500">{cert.description}</p>
+                {cert.verifyUrl && (
+                  <a
+                    href={cert.verifyUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-1 text-xs text-accent hover:text-accent-dark font-medium mt-2 transition-colors"
+                  >
+                    {cert.verifyLabel} <ExternalLink className="h-3 w-3" />
+                  </a>
+                )}
               </div>
             </div>
           )}

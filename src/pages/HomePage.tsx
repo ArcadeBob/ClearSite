@@ -105,7 +105,7 @@ const featuredProjects = [
 const heroStats = [
 {
   icon: <Clock className="h-5 w-5" />,
-  value: '30+',
+  value: '35+',
   label: 'Years'
 },
 {
@@ -203,7 +203,7 @@ export function HomePage() {
                 opacity: Math.max(0, 1 - scrollY / HERO_BODY_FADE_PX)
               }}>
 
-              Stop babysitting your glazing contractor. With 30 years of
+              Stop babysitting your glazing contractor. With 35+ years of
               commercial experience, $5M bonding capacity, and a 0.87 EMR, we
               show up every day, hit every deadline, and leave you with a clean
               turnover—not a punch list.

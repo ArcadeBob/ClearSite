@@ -12,7 +12,10 @@ import {
   FileCheck,
   Heart,
   HelpCircle,
+  ExternalLink,
 } from 'lucide-react';
+
+const CSLB_LOOKUP_URL = 'https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/CheckLicense.aspx';
 
 const trustBadges = [
   {
@@ -155,7 +158,17 @@ export function ContactPage() {
               <div className="space-y-4 text-slate-600">
                 <div className="flex items-center gap-3">
                   <ShieldCheck className="h-5 w-5 text-amber-500 shrink-0" />
-                  <span>License C-17 #965590</span>
+                  <div>
+                    <span>License C-17 #965590</span>
+                    <a
+                      href={CSLB_LOOKUP_URL}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex items-center gap-1 text-xs text-accent hover:text-accent-dark font-medium mt-0.5 transition-colors"
+                    >
+                      Verify on CSLB <ExternalLink className="h-3 w-3" />
+                    </a>
+                  </div>
                 </div>
                 <div className="flex items-center gap-3">
                   <Clock className="h-5 w-5 text-amber-500 shrink-0" />

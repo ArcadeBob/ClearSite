@@ -17,7 +17,7 @@ export function Footer() {
             </div>
             <p className="text-sm text-slate-400 mb-6 leading-relaxed">
               Expert contract glazing on-time, on-budget. Serving Southern
-              California and beyond with almost 30 years of experience.
+              California and beyond with over 35 years of experience.
             </p>
             <div className="flex items-center gap-2 text-sm text-accent font-medium bg-accent/10 px-3 py-2 rounded-md w-fit">
               <ShieldCheck className="h-4 w-4" />

@@ -17,11 +17,11 @@ interface StatData {
 const stats: StatData[] = [
 {
   label: 'Years Experience',
-  value: 30,
+  value: 35,
   suffix: '+',
   icon: <Clock className="h-5 w-5" />,
   subtext: 'Since 1990',
-  progress: 85
+  progress: 95
 },
 {
   label: 'Bonding Capacity',

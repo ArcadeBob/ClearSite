@@ -68,7 +68,7 @@ export function GCPainPoints() {
         <SectionHeader
           subheading="Built for GCs"
           title="We Know What Keeps PMs Up at Night"
-          description="After 30 years working with GCs, we've built our entire operation around solving the problems that matter most to project managers."
+          description="After 35+ years working with GCs, we've built our entire operation around solving the problems that matter most to project managers."
           className="mb-16"
         />
 

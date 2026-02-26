@@ -48,7 +48,7 @@ const infoCards: InfoCardData[] = [
   {
     title: 'Company Profile',
     icon: <Building2 className="h-6 w-6" />,
-    highlight: '15+ Yrs',
+    highlight: '35+ Yrs',
     details: [
       '24+ crew members',
       'Modern equipment fleet',
