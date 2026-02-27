@@ -16,9 +16,9 @@ export function PromiseSection() {
   },
   {
     icon: <FileCheck className="h-6 w-6" />,
-    title: 'No Punch-List',
+    title: 'Minimal Punch List',
     description:
-    'Our goal is zero punch-list items at completion—and we deliver.'
+    'Our goal is to minimize punch-list items at completion through rigorous quality control.'
   }];
 
   return (

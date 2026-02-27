@@ -54,7 +54,7 @@ const faqs = [
   {
     question: 'What size projects do you handle?',
     answer:
-      'We handle commercial glazing projects ranging from $50,000 to over $2 million. With $5M bonding capacity, we can take on the largest scopes. We also do select high-end residential projects.',
+      'We handle commercial glazing projects ranging from $10,000 to over $2 million. With $1M single-project bonding capacity, we can take on major commercial scopes. We also do select high-end residential projects.',
   },
   {
     question: 'Do you do prevailing wage work?',
@@ -142,10 +142,10 @@ export function ContactPage() {
                 <div className="flex items-center gap-3">
                   <Mail className="h-5 w-5 text-amber-500 shrink-0" />
                   <a
-                    href="mailto:email@cginstall.com"
+                    href="mailto:bids@cginstall.com"
                     className="hover:text-brand font-medium transition-colors"
                   >
-                    email@cginstall.com
+                    bids@cginstall.com
                   </a>
                 </div>
               </div>

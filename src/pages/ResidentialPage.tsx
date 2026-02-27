@@ -9,7 +9,6 @@ import {
   Cog,
   Wrench,
   Quote,
-  DollarSign,
 } from 'lucide-react';
 
 const features = [
@@ -21,42 +20,15 @@ const features = [
   'Folding glass walls and sliders',
 ];
 
-const residentialProjects = [
+const residentialHighlights = [
   {
-    title: 'Bel Air Custom Residence',
-    category: 'Railings & Enclosures',
+    title: 'Marina Drive',
+    location: 'Santa Barbara, CA',
+    category: 'Custom High-End Home',
     description:
-      'Glass railings throughout a 12,000 sq ft estate plus a temperature-controlled wine cellar enclosure with custom UV-filtered glass.',
-    value: '$85,000',
+      'Exterior custom curtain walls and oversized doors, custom sliders, interior partitions, glass railing, and custom glass steam and shower enclosures for a luxury coastal residence.',
     imageUrl:
-      'https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
-  },
-  {
-    title: 'Malibu Beach House',
-    category: 'Walls & Skylights',
-    description:
-      'NanaWall folding glass wall system opening to ocean views, plus three custom skylights flooding the great room with natural light.',
-    value: '$120,000',
-    imageUrl:
-      'https://images.unsplash.com/photo-1512917774080-9991f1c4c750?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
-  },
-  {
-    title: 'Encino Estate',
-    category: 'Shower & Mirrors',
-    description:
-      'Five frameless shower enclosures and custom mirrors for a complete master suite and guest bathroom renovation.',
-    value: '$35,000',
-    imageUrl:
-      'https://images.unsplash.com/photo-1584622650111-993a426fbf0a?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
-  },
-  {
-    title: 'Pacific Palisades Home',
-    category: 'Partitions & Railings',
-    description:
-      'Interior glass partitions for a home office and den, plus a frameless glass staircase railing spanning three floors.',
-    value: '$65,000',
-    imageUrl:
-      'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
+      'https://images.unsplash.com/photo-1503387762-592deb58ef4e?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
   },
 ];
 
@@ -202,43 +174,42 @@ export function ResidentialPage() {
         </div>
       </div>
 
-      {/* Residential Project Gallery */}
+      {/* Featured Residential Project */}
       <section className="py-20 bg-slate-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <SectionHeader
-            subheading="Our Work"
-            title="Residential Project Gallery"
-            description="A selection of custom residential glass installations across the Los Angeles area."
+            subheading="Featured Project"
+            title="Residential Work"
+            description="We bring commercial-grade precision to select high-end residential projects across Southern California."
             subheadingColor="text-amber-600"
             className="mb-12"
           />
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            {residentialProjects.map((project) => (
+          <div className="max-w-4xl mx-auto">
+            {residentialHighlights.map((project) => (
               <div
                 key={project.title}
                 className="bg-white rounded-xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-lg transition-shadow duration-300"
               >
-                <div className="h-56 overflow-hidden">
+                <div className="h-64 overflow-hidden">
                   <img
                     src={project.imageUrl}
                     alt={project.title}
                     className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
                   />
                 </div>
-                <div className="p-6">
-                  <div className="flex items-center justify-between mb-3">
+                <div className="p-8">
+                  <div className="flex items-center gap-3 mb-3">
                     <span className="text-xs font-bold uppercase tracking-wider text-amber-600 bg-amber-50 px-3 py-1 rounded-full">
                       {project.category}
                     </span>
-                    <span className="flex items-center gap-1 text-sm font-bold text-brand">
-                      <DollarSign className="h-3.5 w-3.5" />
-                      {project.value}
+                    <span className="text-sm text-slate-500">
+                      {project.location}
                     </span>
                   </div>
-                  <h3 className="text-xl font-bold text-slate-900 mb-2">
+                  <h3 className="text-2xl font-bold text-slate-900 mb-3">
                     {project.title}
                   </h3>
-                  <p className="text-slate-600 text-sm leading-relaxed">
+                  <p className="text-slate-600 leading-relaxed">
                     {project.description}
                   </p>
                 </div>

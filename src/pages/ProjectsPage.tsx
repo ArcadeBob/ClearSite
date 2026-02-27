@@ -98,6 +98,86 @@ const projects = [
   status: 'Completed' as const,
   imageUrl:
   'https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80'
+},
+{
+  title: '4060 Ince',
+  location: 'Culver City, CA',
+  client: 'Fulcrum Construction',
+  value: '$357,000',
+  scope: 'Interior Storefront & Doors, Glass Partitions',
+  status: 'Completed' as const,
+  imageUrl:
+  'https://images.unsplash.com/photo-1497366216548-37526070297c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80'
+},
+{
+  title: 'W 43rd Street',
+  location: 'Los Angeles, CA',
+  client: 'Westside Contractors',
+  value: '$183,000',
+  scope: 'Storefront & Doors, Fire-Rated Windows & Doors',
+  status: 'Completed' as const,
+  imageUrl:
+  'https://images.unsplash.com/photo-1460317442991-0ec209397118?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80'
+},
+{
+  title: 'Central Terrace Apartments',
+  location: 'Oxnard, CA',
+  client: 'Cannon Constructors South',
+  value: '$136,000',
+  scope: 'Exterior Storefront & Doors',
+  status: 'Completed' as const,
+  imageUrl:
+  'https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80'
+},
+{
+  title: "Foster's Freeze Salinas",
+  location: 'Salinas, CA',
+  client: 'R.C. Pacific Construction',
+  value: '$111,000',
+  scope: 'Curtain Wall, Storefront Doors, Drive Thru Windows',
+  status: 'Completed' as const,
+  imageUrl:
+  'https://images.unsplash.com/photo-1555396273-367ea4eb4db5?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80'
+},
+{
+  title: '4750 Santa Monica',
+  location: 'Los Angeles, CA',
+  client: 'Westside Contractors',
+  value: '$303,000',
+  scope: 'Storefront & Doors, Fire-Rated, Glass Railing',
+  status: 'Current' as const,
+  imageUrl:
+  'https://images.unsplash.com/photo-1486325212027-8081e485255e?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80'
+},
+{
+  title: 'Jordan Downs S4',
+  location: 'Los Angeles, CA',
+  client: 'Walton Construction',
+  value: '$296,000',
+  scope: 'Exterior Storefront & Doors',
+  status: 'Current' as const,
+  imageUrl:
+  'https://images.unsplash.com/photo-1469022563428-aa04fef9f5a2?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80'
+},
+{
+  title: 'Wilshire Lofts',
+  location: 'Los Angeles, CA',
+  client: 'Forza Construction',
+  value: '$899,000',
+  scope: 'Custom Curtain Walls & Doors, Storefront Windows',
+  status: 'Future' as const,
+  imageUrl:
+  'https://images.unsplash.com/photo-1464938050520-ef2270bb8ce8?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80'
+},
+{
+  title: '1st Street North',
+  location: 'Los Angeles, CA',
+  client: 'Walton Construction',
+  value: '$1,453,800',
+  scope: 'Curtain Wall, Sliders, Glass Canopy, Storefront',
+  status: 'Future' as const,
+  imageUrl:
+  'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80'
 }];
 
 export function ProjectsPage() {

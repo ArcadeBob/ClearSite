@@ -17,7 +17,7 @@ export function Footer() {
             </div>
             <p className="text-sm text-slate-400 mb-6 leading-relaxed">
               Expert contract glazing on-time, on-budget. Serving Southern
-              California and beyond with over 35 years of experience.
+              California and beyond with over 13 years of experience.
             </p>
             <div className="flex items-center gap-2 text-sm text-accent font-medium bg-accent/10 px-3 py-2 rounded-md w-fit">
               <ShieldCheck className="h-4 w-4" />
@@ -62,14 +62,6 @@ export function Footer() {
               </li>
               <li>
                 <Link
-                  to="/testimonials"
-                  className="hover:text-white transition-colors">
-
-                  Testimonials
-                </Link>
-              </li>
-              <li>
-                <Link
                   to="/contact"
                   className="hover:text-white transition-colors">
 
@@ -91,11 +83,11 @@ export function Footer() {
               </li>
               <li className="flex items-center gap-2">
                 <span className="h-1 w-1 bg-accent rounded-full"></span>
-                Automatic Doors
+                Curtain Walls
               </li>
               <li className="flex items-center gap-2">
                 <span className="h-1 w-1 bg-accent rounded-full"></span>
-                Curtain Walls
+                Window Walls
               </li>
               <li className="flex items-center gap-2">
                 <span className="h-1 w-1 bg-accent rounded-full"></span>
@@ -108,6 +100,14 @@ export function Footer() {
               <li className="flex items-center gap-2">
                 <span className="h-1 w-1 bg-accent rounded-full"></span>
                 Fire-Rated Glazing
+              </li>
+              <li className="flex items-center gap-2">
+                <span className="h-1 w-1 bg-accent rounded-full"></span>
+                Shower Enclosures
+              </li>
+              <li className="flex items-center gap-2">
+                <span className="h-1 w-1 bg-accent rounded-full"></span>
+                Mirrors
               </li>
             </ul>
           </div>
@@ -138,10 +138,10 @@ export function Footer() {
               <li className="flex items-center gap-3 group">
                 <Mail className="h-5 w-5 text-accent shrink-0" />
                 <a
-                  href="mailto:email@cginstall.com"
+                  href="mailto:bids@cginstall.com"
                   className="hover:text-white transition-colors">
 
-                  email@cginstall.com
+                  bids@cginstall.com
                 </a>
               </li>
             </ul>

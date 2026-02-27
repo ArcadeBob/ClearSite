@@ -7,7 +7,6 @@ import {
   Building2,
   DollarSign,
   Users,
-  Clock,
   CheckCircle,
   ShieldCheck,
   ArrowRight,
@@ -47,10 +46,10 @@ const infoCards: InfoCardData[] = [
   {
     title: 'License & Bonding',
     icon: <ShieldCheck className="h-6 w-6" />,
-    highlight: '$5M Bond',
+    highlight: '$1M Bond',
     details: [
       'C-17 License #965590',
-      '$5M bonding active & verified',
+      '$1M bonding active & verified',
       'DIR registered, prevailing wage certified',
     ],
   },
@@ -98,7 +97,7 @@ function InfoCard({ title, icon, highlight, details, ctaText }: InfoCardData) {
 const quickFacts = [
 {
   label: 'Bonding Capacity',
-  value: '$5M',
+  value: '$1M',
   icon: <DollarSign className="h-5 w-5" />
 },
 {
@@ -121,11 +120,7 @@ const quickFacts = [
   value: '24+',
   icon: <Users className="h-5 w-5" />
 },
-{
-  label: 'Avg Response',
-  value: '<24hrs',
-  icon: <Clock className="h-5 w-5" />
-}];
+];
 
 export function GCResourcesSection() {
   return (
@@ -149,7 +144,7 @@ export function GCResourcesSection() {
         </div>
 
         {/* Quick Facts Grid */}
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4 mb-12">
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 mb-12">
           {quickFacts.map((fact) =>
           <div
             key={fact.label}

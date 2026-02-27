@@ -83,32 +83,37 @@ export function ProcessTimeline() {
   {
     icon: <FileText className="h-5 w-5" />,
     title: 'Bid Request',
-    description: 'Submit plans & specs for same-day quote turnaround',
-    duration: 'Day 1'
+    description: 'Submit plans & specs for same-day budget turnaround'
   },
   {
     icon: <MapPin className="h-5 w-5" />,
     title: 'Site Visit',
-    description: 'On-site assessment and field measurements',
-    duration: 'Days 2-3'
+    description: 'On-site assessment and field measurements'
   },
   {
     icon: <ClipboardList className="h-5 w-5" />,
     title: 'Detailed Proposal',
-    description: 'Comprehensive scope, schedule, and pricing',
-    duration: 'Days 4-5'
+    description: 'Comprehensive scope, schedule, and pricing'
+  },
+  {
+    icon: <FileText className="h-5 w-5" />,
+    title: 'Submittals',
+    description: 'Shop drawings, product data, and engineering for approval'
+  },
+  {
+    icon: <Wrench className="h-5 w-5" />,
+    title: 'Fabrication',
+    description: 'Material ordering and custom fabrication to spec'
   },
   {
     icon: <Wrench className="h-5 w-5" />,
     title: 'Installation',
-    description: 'Professional execution with daily progress updates',
-    duration: 'Per Schedule'
+    description: 'Professional execution with daily progress updates'
   },
   {
     icon: <CheckCircle className="h-5 w-5" />,
     title: 'Closeout',
-    description: 'Final inspection, punch list, and warranty docs',
-    duration: 'Completion'
+    description: 'Final inspection, punch list, and warranty docs'
   }];
 
   return (
@@ -134,7 +139,7 @@ export function ProcessTimeline() {
               </div>
             </div>
 
-            <div className="grid grid-cols-5 gap-4">
+            <div className="grid grid-cols-7 gap-4">
               {steps.map((step, index) =>
               <div
                 key={step.title}
@@ -158,17 +163,9 @@ export function ProcessTimeline() {
                   <h3 className="text-lg font-bold text-slate-900 mb-2">
                     {step.title}
                   </h3>
-                  <p className="text-sm text-slate-600 mb-2 leading-relaxed">
+                  <p className="text-sm text-slate-600 leading-relaxed">
                     {step.description}
                   </p>
-                  <span
-                  className={`text-xs font-semibold text-accent bg-blue-50 px-3 py-1 rounded-full transition-all duration-500 ${isVisible ? 'opacity-100 scale-100' : 'opacity-0 scale-90'}`}
-                  style={{
-                    transitionDelay: `${index * DESKTOP_STAGGER_MS + DESKTOP_STAGGER_BASE_MS + 300}ms`
-                  }}>
-
-                    {step.duration}
-                  </span>
                 </div>
               )}
             </div>
@@ -214,9 +211,6 @@ export function ProcessTimeline() {
                       <h3 className="text-lg font-bold text-slate-900">
                         {step.title}
                       </h3>
-                      <span className="text-xs font-semibold text-accent bg-blue-50 px-2 py-0.5 rounded-full">
-                        {step.duration}
-                      </span>
                     </div>
                     <p className="text-sm text-slate-600">{step.description}</p>
                   </div>

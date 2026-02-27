@@ -43,10 +43,10 @@ const services = [
   icon: <LayoutGrid className="h-6 w-6" />
 },
 {
-  title: 'Automatic Doors',
+  title: 'Window Walls',
   description:
-  'Commercial automatic door systems for high-traffic entrances.',
-  icon: <DoorOpen className="h-6 w-6" />
+  'Floor-to-ceiling window wall systems that maximize views and natural light.',
+  icon: <Maximize className="h-6 w-6" />
 },
 {
   title: 'Curtain Walls',
@@ -71,33 +71,45 @@ const services = [
   description:
   'Safety-compliant fire-rated windows and doors meeting all code requirements.',
   icon: <Shield className="h-6 w-6" />
+},
+{
+  title: 'Shower Enclosures',
+  description:
+  'Custom frameless and semi-frameless shower enclosures for commercial and residential projects.',
+  icon: <DoorOpen className="h-6 w-6" />
+},
+{
+  title: 'Mirrors',
+  description:
+  'Custom-cut mirrors for commercial, retail, and residential applications.',
+  icon: <Maximize className="h-6 w-6" />
 }];
 
 const featuredProjects = [
 {
-  title: 'Burbank Empire Center',
-  location: 'Burbank, CA',
-  client: 'Major Retail Developer',
-  value: '$850K',
-  scope: 'Storefronts, Automatic Doors, Interior',
+  title: 'Cabrillo Business Park',
+  location: 'Goleta, CA',
+  client: 'Gluck Building Company',
+  value: '$1.27M',
+  scope: 'Exterior Curtain Walls & Doors, Interior Storefront & Doors (4 Buildings)',
   imageUrl:
   'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80'
 },
 {
-  title: 'Stradella House',
-  location: 'Bel Air, CA',
-  client: 'Luxury Custom Builder',
-  value: '$1.2M',
-  scope: 'Custom Glass, Railings, Skylights',
+  title: 'Cloud Nine Hangar & Offices',
+  location: 'Camarillo, CA',
+  client: 'T.Viole Construction',
+  value: '$1.13M',
+  scope: 'Curtain Walls, Polycarbonate Windows, Storefront, Glass Partitions & Sliders',
   imageUrl:
   'https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80'
 },
 {
-  title: 'Multi-Site Retail Rollout',
-  location: 'Southern California',
-  client: 'National Fitness Chain',
-  value: '$1.5M+',
-  scope: 'Storefronts, Interior Glass (12 locations)',
+  title: 'Citrus Commons',
+  location: 'Sherman Oaks, CA',
+  client: 'IMT Residential',
+  value: '$1.89M',
+  scope: 'Exterior Storefront, Aluminum Sliders, ACM Panels, Interior Partitions & Doors',
   imageUrl:
   'https://images.unsplash.com/photo-1534438327276-14e5300c3a48?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80'
 }];
@@ -105,12 +117,12 @@ const featuredProjects = [
 const heroStats = [
 {
   icon: <Clock className="h-5 w-5" />,
-  value: '35+',
+  value: '13+',
   label: 'Years'
 },
 {
   icon: <DollarSign className="h-5 w-5" />,
-  value: '$5M',
+  value: '$1M',
   label: 'Bonding'
 },
 {
@@ -119,9 +131,14 @@ const heroStats = [
   label: 'EMR'
 },
 {
+  icon: <Building2 className="h-5 w-5" />,
+  value: '200+',
+  label: 'Projects'
+},
+{
   icon: <ClipboardCheck className="h-5 w-5" />,
-  value: '0',
-  label: 'Punch Items'
+  value: '90%',
+  label: 'Repeat'
 }];
 
 export function HomePage() {
@@ -170,7 +187,7 @@ export function HomePage() {
               }}>
 
               <CheckCircle2 className="h-4 w-4 text-green-400" />
-              Trusted by California's Top GCs Since 1990
+              Trusted by California's Top GCs Since 2012
             </div>
 
             {/* Main Headline */}
@@ -203,8 +220,8 @@ export function HomePage() {
                 opacity: Math.max(0, 1 - scrollY / HERO_BODY_FADE_PX)
               }}>
 
-              Stop babysitting your glazing contractor. With 35+ years of
-              commercial experience, $5M bonding capacity, and a 0.87 EMR, we
+              Stop babysitting your glazing contractor. With 13+ years of
+              commercial experience, $1M bonding capacity, and a 0.87 EMR, we
               show up every day, hit every deadline, and leave you with a clean
               turnover—not a punch list.
             </p>
@@ -218,7 +235,7 @@ export function HomePage() {
 
               <span className="flex items-center gap-1.5">
                 <CheckCircle2 className="h-4 w-4 text-green-400" />
-                Projects $50K – $2M+
+                Projects $10K – $2M+
               </span>
               <span className="flex items-center gap-1.5">
                 <CheckCircle2 className="h-4 w-4 text-green-400" />
@@ -230,7 +247,19 @@ export function HomePage() {
               </span>
               <span className="flex items-center gap-1.5">
                 <CheckCircle2 className="h-4 w-4 text-green-400" />
-                Same-Day Quotes
+                Same-Day Budgets
+              </span>
+              <span className="flex items-center gap-1.5">
+                <CheckCircle2 className="h-4 w-4 text-green-400" />
+                CSLB C-17 &amp; A #965590
+              </span>
+              <span className="flex items-center gap-1.5">
+                <CheckCircle2 className="h-4 w-4 text-green-400" />
+                Open Shop
+              </span>
+              <span className="flex items-center gap-1.5">
+                <CheckCircle2 className="h-4 w-4 text-green-400" />
+                New Construction &amp; TI
               </span>
             </div>
 
@@ -264,7 +293,7 @@ export function HomePage() {
 
             {/* Hero Stats Bar */}
             <div
-              className="grid grid-cols-4 gap-4 max-w-lg"
+              className="grid grid-cols-5 gap-4 max-w-xl"
               style={{
                 opacity: Math.max(0, 1 - scrollY / 350)
               }}>
@@ -333,9 +362,9 @@ export function HomePage() {
                 <ClipboardCheck className="h-6 w-6 text-purple-600" />
               </div>
               <div>
-                <p className="font-bold text-slate-900">Zero Punch List</p>
+                <p className="font-bold text-slate-900">Clean Turnovers</p>
                 <p className="text-sm text-slate-500">
-                  Clean turnover is our standard
+                  Minimal punch lists are our standard
                 </p>
               </div>
             </div>
@@ -386,8 +415,7 @@ export function HomePage() {
       {/* GC Pain Points */}
       <GCPainPoints />
 
-      {/* Testimonial Carousel */}
-      <TestimonialCarousel />
+      {/* Testimonial Carousel - removed until real testimonials are collected */}
 
       {/* Services Grid */}
       <section className="py-24 bg-slate-50">
@@ -395,10 +423,10 @@ export function HomePage() {
           <SectionHeader
             subheading="What We Do"
             title="Full-Service Commercial Glazing"
-            description={<>From design-assist to installation, we handle the complete glazing scope.{' '}<strong>One subcontractor, one point of contact, zero coordination headaches.</strong></>}
+            description={<>From fabrication to installation, we handle the complete glazing scope.{' '}<strong>One subcontractor, one point of contact, zero coordination headaches.</strong></>}
             className="mb-16"
           />
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {services.map((service) =>
             <ServiceCard key={service.title} {...service} />
             )}
@@ -424,8 +452,8 @@ export function HomePage() {
                 Projects Delivered On Schedule
               </h2>
               <p className="text-lg text-slate-600">
-                Multi-million dollar portfolios completed with minimal punch
-                lists.
+                Commercial glazing projects delivered on schedule with clean
+                turnovers.
                 <strong> Ask our GC references.</strong>
               </p>
             </div>
@@ -471,7 +499,7 @@ export function HomePage() {
           </p>
           <div className="flex flex-wrap justify-center gap-4 text-sm text-slate-400 mb-10">
             <span className="flex items-center gap-2 bg-white/10 px-3 py-1.5 rounded-full">
-              <CheckCircle2 className="h-4 w-4 text-green-400" /> $5M Bonding
+              <CheckCircle2 className="h-4 w-4 text-green-400" /> $1M Bonding
             </span>
             <span className="flex items-center gap-2 bg-white/10 px-3 py-1.5 rounded-full">
               <CheckCircle2 className="h-4 w-4 text-green-400" /> 0.87 EMR

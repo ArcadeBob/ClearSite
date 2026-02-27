@@ -18,9 +18,9 @@ import {
 const team = [
   {
     name: 'Daniel Kauffman',
-    role: 'Owner & Master Glazier',
+    role: 'CEO/Owner/Master Glazier',
     description:
-      'Installing glass since 1990. Master status achieved. Daniel founded CGI on the principle that "clean" means more than dust-free — it means precision, efficiency, and zero punch items on every project.',
+      'A career glazier with decades of hands-on experience. Daniel founded CGI on the principle that "clean" means more than dust-free — it means precision, efficiency, and minimal punch list on every project.',
   },
   {
     name: 'Yolanda Lara',
@@ -59,28 +59,16 @@ const values = [
     icon: <Handshake className="h-6 w-6" />,
     title: 'Our Promise',
     description:
-      'We promise to have a committed crew with one or more assigned foremen on your projects that will be there every day until completion. We promise to be transparent with scheduling and share honest updates—and to have no punch-list at the end!',
+      'We promise to have a committed crew with one or more assigned foremen on your projects that will be there every day until completion. We promise to be transparent with scheduling and share honest updates—and to deliver a minimal punch list at turnover.',
   },
 ];
 
 const milestones = [
   {
-    year: '1990',
+    year: '2012',
     title: 'Founded',
     description:
-      'Daniel Kauffman founds Clean Glass Installation in the San Fernando Valley, starting as a one-man crew.',
-  },
-  {
-    year: '2005',
-    title: 'First $1M Project',
-    description:
-      'CGI completes its first million-dollar commercial glazing project, marking the move into large-scale work.',
-  },
-  {
-    year: '2015',
-    title: 'Expanded to Bay Area',
-    description:
-      'Operations expand beyond Southern California to serve projects in the San Francisco Bay Area.',
+      'Daniel Kauffman founds Clean Glass Installation in Chatsworth, CA, building on decades of personal glazing experience.',
   },
   {
     year: '2020',
@@ -90,9 +78,15 @@ const milestones = [
   },
   {
     year: '2024',
-    title: '$5M Bonding Capacity',
+    title: '200+ Projects',
     description:
-      'Bonding capacity reaches $5M, enabling CGI to take on the largest commercial glazing scopes in the market.',
+      'Surpasses 200 completed commercial and residential projects across California, with a 90% repeat client rate.',
+  },
+  {
+    year: '2025',
+    title: '$1M Bonding',
+    description:
+      'Single-project bonding capacity enables CGI to take on the largest commercial glazing scopes in the market.',
   },
 ];
 
@@ -106,7 +100,7 @@ export function AboutPage() {
             About Clean Glass Installation
           </h1>
           <p className="text-xl text-slate-300 max-w-3xl">
-            Expert contract glazing on-time, on-budget. With over 35 years of
+            Expert contract glazing on-time, on-budget. With over 13 years of
             experience, we help contractors get the job done right the first
             time.
           </p>
@@ -168,7 +162,7 @@ export function AboutPage() {
           <SectionHeader
             subheading="Our Journey"
             title="Company Milestones"
-            description="From a one-man crew to a $5M bonding capacity — three decades of growth built on clean work."
+            description="From a one-man crew to a $1M bonding capacity — over a decade of growth built on clean work."
             subheadingColor="text-amber-600"
             className="mb-12"
           />
@@ -178,7 +172,7 @@ export function AboutPage() {
             <div className="relative">
               {/* Timeline line */}
               <div className="absolute top-6 left-0 right-0 h-0.5 bg-slate-200"></div>
-              <div className="grid grid-cols-5 gap-4">
+              <div className="grid grid-cols-4 gap-4">
                 {milestones.map((milestone) => (
                   <div key={milestone.year} className="relative text-center">
                     <div className="inline-flex items-center justify-center h-12 w-12 rounded-full bg-brand text-white font-bold text-sm mb-4 relative z-10 border-4 border-slate-50">
@@ -263,7 +257,7 @@ export function AboutPage() {
             {[
               {
                 title: 'Vast Experience',
-                desc: 'Over 35 years working on all types of jobs in any environment.',
+                desc: 'Over 13 years working on all types of jobs in any environment.',
               },
               {
                 title: 'Expert Workmanship',
@@ -279,7 +273,7 @@ export function AboutPage() {
               },
               {
                 title: 'All-in-One Service',
-                desc: 'Design, engineering, and installation—one source for everything.',
+                desc: 'Fabrication and installation—one source for everything.',
               },
               {
                 title: 'Performance History',

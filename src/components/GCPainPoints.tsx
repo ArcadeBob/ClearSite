@@ -33,7 +33,7 @@ const painPoints = [
   solution: 'Clean Submittals, First Time',
   description:
   "Complete, code-compliant submittals that don't bounce back. We know what engineers want.",
-  metric: '90%+ first-pass approval'
+  metric: 'Fewer revision cycles'
 },
 {
   icon: <MessageSquare className="h-6 w-6" />,
@@ -54,7 +54,7 @@ const painPoints = [
 {
   icon: <Clock className="h-6 w-6" />,
   problem: 'Need a bid yesterday?',
-  solution: 'Same-Day Quote Turnaround',
+  solution: 'Same-Day Budget Turnaround',
   description:
   'Send us plans by noon, get a budget number by end of day. Detailed proposals in 48-72 hours.',
   metric: 'Same-day budgets'
@@ -68,7 +68,7 @@ export function GCPainPoints() {
         <SectionHeader
           subheading="Built for GCs"
           title="We Know What Keeps PMs Up at Night"
-          description="After 35+ years working with GCs, we've built our entire operation around solving the problems that matter most to project managers."
+          description="After 13+ years working with GCs, we've built our entire operation around solving the problems that matter most to project managers."
           className="mb-16"
         />
 
@@ -115,7 +115,7 @@ export function GCPainPoints() {
               on your project."
             </p>
             <p className="text-accent font-semibold">
-              — Daniel Kauffman, Master Glazier & Owner
+              — Daniel Kauffman, CEO/Owner/Master Glazier
             </p>
           </div>
         </div>

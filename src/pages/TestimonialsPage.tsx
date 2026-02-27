@@ -82,8 +82,8 @@ export function TestimonialsPage() {
           <h1 className="text-4xl font-bold mb-4">Client Testimonials</h1>
           <p className="text-xl text-slate-300 max-w-3xl">
             Our promise: A committed crew every day until completion,
-            transparent scheduling, honest updates, and no punch-list at the
-            end.
+            transparent scheduling, honest updates, and a minimal punch list
+            at turnover.
           </p>
         </div>
       </div>

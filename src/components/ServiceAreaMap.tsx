@@ -14,62 +14,69 @@ interface RegionData {
 const regions: RegionData[] = [
 {
   name: 'Los Angeles County',
-  projects: 150,
-  value: '$25M+',
+  projects: 0,
+  value: '',
   cx: 200,
   cy: 280
 },
 {
   name: 'Ventura County',
-  projects: 35,
-  value: '$8M+',
+  projects: 0,
+  value: '',
   cx: 170,
   cy: 240
 },
 {
   name: 'Santa Barbara County',
-  projects: 20,
-  value: '$5M+',
+  projects: 0,
+  value: '',
   cx: 150,
   cy: 200
 },
 {
-  name: 'Bay Area',
-  projects: 45,
-  value: '$12M+',
-  cx: 180,
-  cy: 140
-},
-{
   name: 'Orange County',
-  projects: 60,
-  value: '$15M+',
+  projects: 0,
+  value: '',
   cx: 230,
   cy: 300
 },
 {
   name: 'San Diego County',
-  projects: 40,
-  value: '$10M+',
+  projects: 0,
+  value: '',
   cx: 250,
   cy: 340
+},
+{
+  name: 'Central Coast',
+  projects: 0,
+  value: '',
+  cx: 155,
+  cy: 170
+},
+{
+  name: 'Bay Area',
+  projects: 0,
+  value: '',
+  cx: 180,
+  cy: 140
 }];
 
 const secondaryStates = [
 {
   name: 'Oregon',
   abbr: 'OR',
-  projects: 8
+  projects: 0
 },
 {
   name: 'Nevada',
   abbr: 'NV',
-  projects: 12
+  projects: 0
 },
 {
   name: 'Arizona',
   abbr: 'AZ',
-  projects: 15
+  projects: 0
 }];
 
 export function ServiceAreaMap() {
@@ -226,22 +233,9 @@ export function ServiceAreaMap() {
                   transform: 'translateX(-50%)'
                 }}>
 
-                  <p className="text-sm font-bold text-brand mb-1">
+                  <p className="text-sm font-bold text-brand">
                     {hoveredRegion}
                   </p>
-                  <div className="flex items-center gap-4 text-xs text-slate-600">
-                    <span className="flex items-center gap-1">
-                      <Briefcase className="h-3 w-3 text-amber-500" />
-                      {
-                    regions.find((r) => r.name === hoveredRegion)?.projects
-                    }{' '}
-                      projects
-                    </span>
-                    <span className="flex items-center gap-1">
-                      <Building2 className="h-3 w-3 text-green-500" />
-                      {regions.find((r) => r.name === hoveredRegion)?.value}
-                    </span>
-                  </div>
                 </div>
               }
 
@@ -272,7 +266,7 @@ export function ServiceAreaMap() {
                     transitionDelay: `${index * 100 + 1000}ms`
                   }}>
 
-                    {state.abbr} • {state.projects} projects
+                    {state.abbr}
                   </div>
                 )}
               </div>
@@ -294,8 +288,8 @@ export function ServiceAreaMap() {
             </h2>
             <p className="text-lg text-slate-600 mb-8 leading-relaxed">
               Based in Chatsworth, we serve projects throughout California with
-              extended coverage into Oregon, Nevada, and Arizona for larger
-              commercial projects.
+              a focus on Southern California. Extended coverage available in
+              Oregon, Nevada, and Arizona.
             </p>
 
             <div className="mb-8">
@@ -339,14 +333,11 @@ export function ServiceAreaMap() {
                   className="inline-flex items-center gap-2 bg-white px-4 py-2 rounded-lg border border-slate-200 text-sm font-medium text-slate-700 hover:border-amber-300 hover:bg-amber-50 transition-all duration-300 cursor-default">
 
                     {state.name}
-                    <span className="text-xs text-amber-600 font-bold">
-                      {state.projects}
-                    </span>
                   </span>
                 )}
               </div>
               <p className="text-xs text-slate-500 mt-3">
-                Available for projects $100K+ in secondary markets
+                Available for commercial projects in secondary markets
               </p>
             </div>
           </div>

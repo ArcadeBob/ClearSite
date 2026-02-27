@@ -17,19 +17,19 @@ interface StatData {
 const stats: StatData[] = [
 {
   label: 'Years Experience',
-  value: 35,
+  value: 13,
   suffix: '+',
   icon: <Clock className="h-5 w-5" />,
-  subtext: 'Since 1990',
+  subtext: 'Since 2012',
   progress: 95
 },
 {
   label: 'Bonding Capacity',
-  value: 5,
+  value: 1,
   prefix: '$',
   suffix: 'M',
   icon: <DollarSign className="h-5 w-5" />,
-  subtext: 'Single & Aggregate',
+  subtext: 'Single Project',
   progress: 100
 },
 {

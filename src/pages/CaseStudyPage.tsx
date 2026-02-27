@@ -16,7 +16,6 @@ import {
   Download,
   CheckCircle2,
   Target,
-  TrendingUp,
   Users,
   Award,
   Calendar,
@@ -64,93 +63,6 @@ interface CaseStudy {
 }
 
 const caseStudies: CaseStudy[] = [
-  {
-    slug: 'multi-site-retail-rollout',
-    title: 'Multi-Site Retail Rollout',
-    subtitle: '12 locations delivered on schedule with zero punch items',
-    heroImage:
-      'https://images.unsplash.com/photo-1534438327276-14e5300c3a48?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80',
-    location: 'Southern California',
-    client: 'National Fitness Chain',
-    gc: 'Balfour Beatty',
-    value: '$1.5M+',
-    scope: 'Storefronts, Interior Glass (12 locations)',
-    duration: '14 months',
-    status: 'Completed',
-    overview:
-      'When a national fitness chain needed to open 12 new locations across Southern California on an aggressive timeline, they required a glazing subcontractor who could deliver consistent quality at scale. Each location demanded custom storefront systems, interior glass partitions for aerobics rooms, and automatic entrance doors — all meeting strict brand standards.\n\nCGI was brought on as the sole glazing sub across all 12 sites, working under Balfour Beatty\'s general contracting umbrella. The project required coordinating deliveries and crews across locations spanning from the San Fernando Valley to Orange County, with multiple sites under construction simultaneously.\n\nThe result was a textbook example of what scaled glazing execution looks like when done right — every location opened on schedule, and the GC reported zero punch items across the entire portfolio.',
-    challenge:
-      'The primary challenge was maintaining consistent quality and scheduling across 12 simultaneous job sites spread across a wide geographic area. Each location had slightly different dimensions and site conditions, but the brand required identical visual outcomes. Material lead times had to be staggered to prevent warehouse bottlenecks, and crews needed to rotate efficiently between sites without leaving any location idle.',
-    solution:
-      'CGI assigned a dedicated project manager to the rollout who developed a master schedule coordinating all 12 sites. We pre-fabricated frames in our shop to minimize on-site cutting and waste, and created standardized installation packages for each location type. Our field operations manager personally inspected each site at the 50% and 90% completion marks to ensure brand consistency. We also maintained a small inventory buffer of critical components to handle any site-specific surprises without delaying the schedule.',
-    results: [
-      {
-        label: 'Locations Delivered',
-        value: '12',
-        icon: <Building2 className="h-6 w-6" />,
-      },
-      {
-        label: 'Punch Items',
-        value: '0',
-        icon: <Target className="h-6 w-6" />,
-      },
-      {
-        label: 'On-Time Rate',
-        value: '100%',
-        icon: <Clock className="h-6 w-6" />,
-      },
-      {
-        label: 'Total Value',
-        value: '$1.5M+',
-        icon: <TrendingUp className="h-6 w-6" />,
-      },
-    ],
-    phases: [
-      {
-        title: 'Planning & Coordination',
-        description:
-          'Master schedule development, material takeoffs for all 12 sites, and staggered procurement to manage lead times.',
-        duration: '6 weeks',
-      },
-      {
-        title: 'Shop Fabrication',
-        description:
-          'Pre-fabricated storefront frames and interior partition systems in our Chatsworth shop for consistent quality and faster on-site installation.',
-        duration: '8 weeks (rolling)',
-      },
-      {
-        title: 'Installation Wave 1',
-        description:
-          'First 4 locations installed simultaneously with rotating crews. Established workflow templates for remaining sites.',
-        duration: '4 weeks',
-      },
-      {
-        title: 'Installation Waves 2 & 3',
-        description:
-          'Remaining 8 locations completed in two waves, applying lessons learned from Wave 1 for even faster execution.',
-        duration: '8 weeks',
-      },
-      {
-        title: 'Final Inspections & Turnover',
-        description:
-          'Quality walkthrough at every location, hardware adjustments, and clean turnover with zero punch items.',
-        duration: '2 weeks',
-      },
-    ],
-    testimonial: {
-      quote:
-        "CGI delivered our 12-location rollout on schedule with zero punch items. That's unheard of in this industry.",
-      name: 'Mike Chen',
-      company: 'Balfour Beatty',
-      role: 'Senior PM',
-    },
-    galleryImages: [
-      'https://images.unsplash.com/photo-1534438327276-14e5300c3a48?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
-      'https://images.unsplash.com/photo-1593079831268-3381b0db4a77?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
-      'https://images.unsplash.com/photo-1540497077202-7c8a3999166f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
-      'https://images.unsplash.com/photo-1571902943202-507ec2618e8f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
-    ],
-  },
   {
     slug: 'cabrillo-business-park',
     title: 'Cabrillo Business Park',
@@ -603,7 +515,7 @@ export function CaseStudyPage() {
           </p>
           <div className="flex flex-wrap justify-center gap-4 text-sm text-slate-400 mb-10">
             <span className="flex items-center gap-2 bg-white/10 px-3 py-1.5 rounded-full">
-              <CheckCircle2 className="h-4 w-4 text-green-400" /> $5M Bonding
+              <CheckCircle2 className="h-4 w-4 text-green-400" /> $1M Bonding
             </span>
             <span className="flex items-center gap-2 bg-white/10 px-3 py-1.5 rounded-full">
               <CheckCircle2 className="h-4 w-4 text-green-400" /> 0.87 EMR

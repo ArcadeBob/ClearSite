@@ -19,8 +19,8 @@ export function Navbar() {
     href: '/projects'
   },
   {
-    name: 'Testimonials',
-    href: '/testimonials'
+    name: 'Residential',
+    href: '/residential'
   },
   {
     name: 'Contact',

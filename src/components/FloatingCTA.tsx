@@ -51,7 +51,7 @@ export function FloatingCTA() {
                   Ready to prequalify?
                 </p>
                 <p className="text-slate-400 text-xs sm:text-sm hidden sm:block">
-                  Get COI, EMR, and references instantly
+                  Get COI, EMR, and references within 24 hours
                 </p>
               </div>
             </div>
