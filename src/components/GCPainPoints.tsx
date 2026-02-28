@@ -56,7 +56,7 @@ const painPoints = [
   problem: 'Need a bid yesterday?',
   solution: 'Same-Day Budget Turnaround',
   description:
-  'Send us plans by noon, get a budget number by end of day. Detailed proposals in 48-72 hours.',
+  'Send us plans by noon, get a budget number by end of day. Detailed proposals in 3-5 business days.',
   metric: 'Same-day budgets'
 }];
 

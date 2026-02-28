@@ -11,7 +11,6 @@ import {
   Award,
   CheckCircle,
   ArrowRight,
-  Quote,
   Calendar,
 } from 'lucide-react';
 
@@ -38,7 +37,7 @@ const team = [
     name: 'Robert Elmquist',
     role: 'Operations Manager',
     description:
-      'IT systems and network operations. Robert manages CGI\'s technology infrastructure, project tracking systems, and digital communications that keep the office and field teams connected in real time.',
+      'Robert manages CGI\'s day-to-day business operations, including project tracking, vendor coordination, and office administration — keeping the office and field teams running smoothly.',
   },
 ];
 
@@ -77,7 +76,7 @@ const milestones = [
       'Awarded Small Business Enterprise certification, opening doors to public works and institutional projects.',
   },
   {
-    year: '2024',
+    year: '2021',
     title: '200+ Projects',
     description:
       'Surpasses 200 completed commercial and residential projects across California, with a 90% repeat client rate.',
@@ -348,25 +347,6 @@ export function AboutPage() {
                 Work With Us <ArrowRight className="h-4 w-4" />
               </Button>
             </Link>
-          </div>
-        </div>
-      </section>
-
-      {/* Testimonial Quote */}
-      <section className="py-20 bg-slate-50">
-        <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="bg-white p-8 md:p-10 rounded-xl shadow-lg border border-slate-100 text-center">
-            <Quote className="h-10 w-10 text-amber-500 mx-auto mb-6" />
-            <blockquote className="text-xl md:text-2xl font-medium text-slate-800 mb-6 leading-relaxed italic">
-              &ldquo;I would like to recommend a company that I have worked with
-              extensively in the past. Clean Glass Installations. They have
-              always done a great job for me and are always reliable and
-              professional.&rdquo;
-            </blockquote>
-            <div className="pt-6 border-t border-slate-100">
-              <p className="font-bold text-slate-900">Johnstone Moyer Inc.</p>
-              <p className="text-sm text-slate-500">General Contractor</p>
-            </div>
           </div>
         </div>
       </section>

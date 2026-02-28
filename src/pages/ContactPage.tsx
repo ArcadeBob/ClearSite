@@ -44,12 +44,12 @@ const faqs = [
   {
     question: "What's your typical response time?",
     answer:
-      'We respond to all inquiries within 24 hours. For prequalification packet requests, we typically deliver the complete package the same business day. Bid requests receive detailed proposals within 48-72 hours depending on project complexity.',
+      'We respond to all inquiries within 24 hours. For prequalification packet requests, we typically deliver the complete package the same business day. Bid requests receive detailed proposals within 3-5 business days depending on project complexity.',
   },
   {
     question: 'What areas do you serve?',
     answer:
-      'Our primary service area covers all of Southern California, including Los Angeles, Ventura, Santa Barbara, Orange, San Bernardino, and Riverside counties. We also take on projects in the San Francisco Bay Area and have completed work statewide.',
+      'Our primary service area covers all of Southern California, including Los Angeles, Ventura, Santa Barbara, Orange, San Bernardino, and Riverside counties. We also take on projects in Central and Northern California and have completed work statewide.',
   },
   {
     question: 'What size projects do you handle?',
@@ -59,12 +59,12 @@ const faqs = [
   {
     question: 'Do you do prevailing wage work?',
     answer:
-      'Yes. CGI is DIR registered and fully set up for prevailing wage projects. We have extensive experience with public works, LAUSD, and other institutional projects requiring certified payroll.',
+      'Yes. CGI is DIR registered and fully set up for prevailing wage projects. We have extensive experience with PLA, Davis-Bacon, and state prevailing wage requirements, including public works, LAUSD, and other institutional projects requiring certified payroll.',
   },
   {
     question: 'How do I get a bid?',
     answer:
-      'Fill out the form on this page or call us directly at (818) 492-4265. Send us your plans and specifications and we\'ll provide a detailed bid within 48-72 hours. For faster turnaround, include the project timeline and any relevant addenda.',
+      'Fill out the form on this page or call us directly at (818) 492-4265. Send us your plans and specifications and we\'ll provide a detailed bid within 3-5 business days. For faster turnaround, include the project timeline and any relevant addenda.',
   },
 ];
 

@@ -8,7 +8,6 @@ import {
   Ruler,
   Cog,
   Wrench,
-  Quote,
 } from 'lucide-react';
 
 const features = [
@@ -59,51 +58,6 @@ const processSteps = [
   },
 ];
 
-const residentialTestimonials = [
-  {
-    text: 'They were really nice, accommodating and easy to work with. Highly recommend!',
-    author: 'J.K.',
-    location: 'Los Angeles, CA',
-  },
-  {
-    text: 'Company did a perfect job. Thank you very much.',
-    author: 'V.S.',
-    location: 'West Hills, CA',
-  },
-];
-
-const pricingCategories = [
-  {
-    name: 'Shower Enclosures',
-    price: '$1,500 – $3,500',
-    unit: 'per unit',
-  },
-  {
-    name: 'Custom Mirrors',
-    price: '$15 – $25',
-    unit: 'per sq ft',
-  },
-  {
-    name: 'Glass Railings',
-    price: '$150 – $300',
-    unit: 'per linear ft',
-  },
-  {
-    name: 'Glass Partitions',
-    price: '$75 – $150',
-    unit: 'per sq ft',
-  },
-  {
-    name: 'Skylights',
-    price: '$2,500 – $8,000',
-    unit: 'per unit',
-  },
-  {
-    name: 'Folding Glass Walls',
-    price: '$800 – $1,200',
-    unit: 'per linear ft',
-  },
-];
 
 export function ResidentialPage() {
   return (
@@ -113,9 +67,8 @@ export function ResidentialPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h1 className="text-4xl font-bold mb-4">Residential Services</h1>
           <p className="text-xl text-slate-300 max-w-3xl">
-            While 90% of our work is commercial, we bring the same level of
-            precision and professionalism to high-end custom residential
-            projects.
+            We bring the same level of precision and professionalism from our
+            commercial work to high-end custom residential projects.
           </p>
         </div>
       </div>
@@ -131,7 +84,7 @@ export function ResidentialPage() {
             <p className="text-slate-600 mb-8 leading-relaxed text-lg">
               We partner with custom home builders and homeowners to deliver
               stunning glass installations that define modern luxury living. Our
-              team handles everything from design consultation to precise
+              team handles everything from initial consultation to precise
               installation.
             </p>
 
@@ -247,72 +200,6 @@ export function ResidentialPage() {
               </div>
             ))}
           </div>
-        </div>
-      </section>
-
-      {/* Testimonials */}
-      <section className="py-20 bg-slate-50">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <SectionHeader
-            subheading="Happy Homeowners"
-            title="What Our Clients Say"
-            subheadingColor="text-amber-600"
-            className="mb-12"
-          />
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-            {residentialTestimonials.map((testimonial) => (
-              <div
-                key={testimonial.author}
-                className="bg-white p-8 rounded-xl shadow-sm border border-slate-100"
-              >
-                <Quote className="h-8 w-8 text-amber-500 mb-4" />
-                <p className="text-slate-700 text-lg leading-relaxed mb-6 italic">
-                  &ldquo;{testimonial.text}&rdquo;
-                </p>
-                <div className="pt-4 border-t border-slate-100">
-                  <p className="font-bold text-slate-900">
-                    {testimonial.author}
-                  </p>
-                  <p className="text-sm text-slate-500">
-                    {testimonial.location}
-                  </p>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Pricing */}
-      <section className="py-20 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <SectionHeader
-            subheading="Investment Guide"
-            title="Pricing Estimates"
-            description="Transparent pricing to help you plan your project. Final pricing requires detailed measurements and specification review."
-            subheadingColor="text-amber-600"
-            className="mb-12"
-          />
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 max-w-5xl mx-auto">
-            {pricingCategories.map((category) => (
-              <div
-                key={category.name}
-                className="border border-slate-200 p-5 rounded-lg bg-white shadow-sm hover:border-amber-200 transition-colors"
-              >
-                <span className="block text-sm text-slate-500 mb-1 font-medium uppercase tracking-wide">
-                  {category.name}
-                </span>
-                <span className="block text-2xl font-bold text-brand mb-1">
-                  {category.price}
-                </span>
-                <span className="text-xs text-slate-400">{category.unit}</span>
-              </div>
-            ))}
-          </div>
-          <p className="text-xs text-slate-500 italic text-center mt-6">
-            *Prices are estimates only. Final pricing requires detailed
-            measurements and specification review.
-          </p>
         </div>
       </section>
 
