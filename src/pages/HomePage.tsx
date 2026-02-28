@@ -114,32 +114,6 @@ const featuredProjects = [
   'https://images.unsplash.com/photo-1534438327276-14e5300c3a48?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80'
 }];
 
-const heroStats = [
-{
-  icon: <Clock className="h-5 w-5" />,
-  value: '13+',
-  label: 'Years'
-},
-{
-  icon: <DollarSign className="h-5 w-5" />,
-  value: '$1M',
-  label: 'Bonding'
-},
-{
-  icon: <Shield className="h-5 w-5" />,
-  value: '0.87',
-  label: 'EMR'
-},
-{
-  icon: <Building2 className="h-5 w-5" />,
-  value: '200+',
-  label: 'Projects'
-},
-{
-  icon: <ClipboardCheck className="h-5 w-5" />,
-  value: '90%',
-  label: 'Repeat'
-}];
 
 export function HomePage() {
   const [scrollY, setScrollY] = useState(0);
@@ -192,16 +166,13 @@ export function HomePage() {
 
             {/* Main Headline */}
             <h1
-              className="text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-tight mb-6 leading-[1.1] drop-shadow-[0_2px_4px_rgba(0,0,0,0.4)]"
+              className="text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-tight mb-8 leading-[1.1] drop-shadow-[0_2px_4px_rgba(0,0,0,0.4)]"
               style={{
                 opacity: Math.max(0, 1 - scrollY / HERO_TITLE_FADE_PX)
               }}>
 
               The Glazing Sub That{' '}
-              <span className="relative text-white">
-                <span className="relative z-10">Won't Hold Up</span>
-                <span className="absolute inset-0 bg-accent/90 -skew-x-2 rounded" aria-hidden="true"></span>
-              </span>{' '}Your
+              <span className="text-white drop-shadow-[0_0_12px_rgba(255,255,255,0.5)]">Won't Hold Up</span> Your
               Schedule
             </h1>
 
@@ -213,12 +184,12 @@ export function HomePage() {
               }}>
 
               On-Time. On-Budget.{' '}
-              <span className="text-sky-300">Minimal Punch List.</span>
+              <span className="text-white underline decoration-accent decoration-2 underline-offset-4">Minimal Punch List.</span>
             </p>
 
             {/* Expanded Copy */}
             <p
-              className="text-lg text-white/80 mb-6 leading-relaxed max-w-2xl"
+              className="text-lg text-white/90 mb-5 leading-relaxed max-w-2xl drop-shadow-[0_1px_2px_rgba(0,0,0,0.2)]"
               style={{
                 opacity: Math.max(0, 1 - scrollY / HERO_BODY_FADE_PX)
               }}>
@@ -231,7 +202,7 @@ export function HomePage() {
 
             {/* Key Differentiators */}
             <div
-              className="flex flex-wrap gap-x-6 gap-y-2 mb-8 text-sm text-white/80"
+              className="grid grid-cols-2 md:flex md:flex-wrap gap-x-6 gap-y-3 mb-8 text-sm md:text-base text-white/90"
               style={{
                 opacity: Math.max(0, 1 - scrollY / HERO_BADGE_FADE_PX)
               }}>
@@ -246,29 +217,17 @@ export function HomePage() {
               </span>
               <span className="flex items-center gap-1.5">
                 <CheckCircle2 className="h-4 w-4 text-green-400" />
-                DIR Registered
-              </span>
-              <span className="flex items-center gap-1.5">
-                <CheckCircle2 className="h-4 w-4 text-green-400" />
                 Same-Day Budgets
-              </span>
-              <span className="flex items-center gap-1.5">
-                <CheckCircle2 className="h-4 w-4 text-green-400" />
-                CSLB C-17 &amp; A #965590
               </span>
               <span className="flex items-center gap-1.5">
                 <CheckCircle2 className="h-4 w-4 text-green-400" />
                 Open Shop
               </span>
-              <span className="flex items-center gap-1.5">
-                <CheckCircle2 className="h-4 w-4 text-green-400" />
-                New Construction &amp; TI
-              </span>
             </div>
 
             {/* CTAs */}
             <div
-              className="flex flex-col sm:flex-row gap-4 mb-10"
+              className="flex flex-col sm:flex-row gap-4"
               style={{
                 opacity: Math.max(0, 1 - scrollY / 380)
               }}>
@@ -279,59 +238,24 @@ export function HomePage() {
                   variant="secondary"
                   className="w-full sm:w-auto gap-2 shadow-lg">
 
-                  <Download className="h-5 w-5" />
-                  Get Prequal Package
+                  <ArrowRight className="h-5 w-5" />
+                  Request Prequal Package
                 </Button>
               </Link>
               <Link to="/projects">
                 <Button
                   variant="outline"
                   size="lg"
-                  className="w-full sm:w-auto text-white border-white/30 hover:bg-white hover:text-brand">
+                  className="w-full sm:w-auto text-white border-white/50 bg-white/5 hover:bg-white hover:text-brand">
 
                   See Our Work
                 </Button>
               </Link>
             </div>
 
-            {/* Hero Stats Bar */}
-            <div
-              className="grid grid-cols-5 gap-4 max-w-xl"
-              style={{
-                opacity: Math.max(0, 1 - scrollY / 350)
-              }}>
-
-              {heroStats.map((stat) =>
-              <div key={stat.label} className="text-center">
-                  <div className="flex items-center justify-center gap-1 text-accent mb-1">
-                    {stat.icon}
-                    <span className="text-xl font-bold text-white">
-                      {stat.value}
-                    </span>
-                  </div>
-                  <span className="text-xs text-white/60 uppercase tracking-wide">
-                    {stat.label}
-                  </span>
-                </div>
-              )}
-            </div>
           </div>
         </div>
 
-        {/* Scroll Indicator */}
-        <div
-          className="absolute bottom-8 left-1/2 -translate-x-1/2 z-10 flex flex-col items-center gap-2 transition-opacity duration-300"
-          style={{
-            opacity: Math.max(0, 1 - scrollY / 200)
-          }}>
-
-          <span className="text-xs text-white/50 uppercase tracking-widest">
-            Scroll
-          </span>
-          <div className="w-6 h-10 border-2 border-white/30 rounded-full flex justify-center pt-2">
-            <div className="w-1.5 h-3 bg-accent rounded-full animate-bounce"></div>
-          </div>
-        </div>
       </section>
 
       {/* Value Proposition Banner */}
