@@ -173,7 +173,7 @@ export function HomePage() {
               className="w-full h-full object-cover" />
 
           </div>
-          <div className="absolute inset-0 bg-gradient-to-r from-brand/95 via-brand/80 to-brand/40"></div>
+          <div className="absolute inset-0 bg-gradient-to-r from-brand/95 via-brand/85 to-brand/60"></div>
         </div>
 
         {/* Content */}
@@ -181,7 +181,7 @@ export function HomePage() {
           <div className="max-w-3xl text-white">
             {/* Trust Badge */}
             <div
-              className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm text-white/90 px-4 py-2 rounded-full text-sm font-medium mb-6 border border-white/20"
+              className="inline-flex items-center gap-2 bg-white/15 backdrop-blur-sm text-white px-4 py-2 rounded-full text-sm font-medium mb-6 border border-white/25"
               style={{
                 opacity: Math.max(0, 1 - scrollY / HERO_BADGE_FADE_PX)
               }}>
@@ -192,30 +192,33 @@ export function HomePage() {
 
             {/* Main Headline */}
             <h1
-              className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight mb-6 leading-[1.1]"
+              className="text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-tight mb-6 leading-[1.1] drop-shadow-[0_2px_4px_rgba(0,0,0,0.4)]"
               style={{
                 opacity: Math.max(0, 1 - scrollY / HERO_TITLE_FADE_PX)
               }}>
 
               The Glazing Sub That{' '}
-              <span className="text-accent">Won't Hold Up</span> Your
+              <span className="relative text-white">
+                <span className="relative z-10">Won't Hold Up</span>
+                <span className="absolute inset-0 bg-accent/90 -skew-x-2 rounded" aria-hidden="true"></span>
+              </span>{' '}Your
               Schedule
             </h1>
 
             {/* Value Proposition */}
             <p
-              className="text-xl md:text-2xl text-white/90 mb-4 leading-relaxed font-medium"
+              className="text-xl md:text-2xl text-white mb-4 leading-relaxed font-semibold drop-shadow-[0_1px_2px_rgba(0,0,0,0.3)]"
               style={{
                 opacity: Math.max(0, 1 - scrollY / HERO_TAGLINE_FADE_PX)
               }}>
 
               On-Time. On-Budget.{' '}
-              <span className="text-accent">Zero Punch List.</span>
+              <span className="text-sky-300">Minimal Punch List.</span>
             </p>
 
             {/* Expanded Copy */}
             <p
-              className="text-lg text-white/70 mb-6 leading-relaxed max-w-2xl"
+              className="text-lg text-white/80 mb-6 leading-relaxed max-w-2xl"
               style={{
                 opacity: Math.max(0, 1 - scrollY / HERO_BODY_FADE_PX)
               }}>
