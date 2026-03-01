@@ -21,13 +21,14 @@ No test framework is configured.
 
 **Entry point:** `src/index.tsx` renders `<App />` into `#root` using the React 18 `createRoot` API.
 
-**Routing:** `src/App.tsx` wraps all routes in `BrowserRouter` with a shared `Navbar` + `Footer` layout. Routes:
+**Routing:** `src/App.tsx` wraps all routes in `BrowserRouter` with a shared `Navbar` + `Footer` layout. An `ErrorBoundary` wraps the entire app, and `ScrollToHash` handles anchor-link scrolling. Routes:
 - `/` — HomePage (main landing page, heavily sectioned)
 - `/about` — AboutPage
 - `/projects` — ProjectsPage
+- `/projects/:slug` — CaseStudyPage (individual project detail pages)
 - `/residential` — ResidentialPage
-- `/testimonials` — TestimonialsPage
 - `/contact` — ContactPage
+- `*` — NotFoundPage (404 catch-all)
 
 **Component organization:**
 - `src/pages/` — Full page components, one per route. Pages compose section components and contain inline data (services list, team members, project details, etc.).
@@ -56,14 +57,12 @@ No test framework is configured.
 - FloatingCTA is a scroll-triggered sticky bottom bar that appears after 500px scroll depth
 - Data (services, projects, team members, testimonials) is hardcoded inline within page components — there is no data layer or API integration
 
-## Coding Standards Applied
+## Content Rules
 
-The following cleanup was completed (all steps verified with `npm run build`):
-
-1. **React 18 createRoot** — `src/index.tsx` migrated from legacy `render()` to `createRoot`
-2. **Tailwind theme colors** — All 122 arbitrary hex values replaced with `brand`/`brand-dark`/`accent`/`accent-dark` tokens across 23 files
-3. **TypeScript strictness** — `stat: any` in `StatsSection.tsx` replaced with `StatData` interface; `as any` in `ProjectsPage.tsx` eliminated via `as const`
-4. **Memory leak fix** — `ProcessTimeline.tsx` `setInterval` now stored in `useRef` and cleaned up on unmount
-5. **SectionHeader extraction** — Centered header pattern (11 occurrences) deduplicated into `SectionHeader` component; applied to 5 light-background instances
-6. **StepIcon deduplication** — Desktop/mobile icon rendering in `ProcessTimeline.tsx` consolidated into shared `StepIcon` sub-component
-7. **Dead code removal** — Unused `@emotion/react` dependency removed; dead CSS custom properties in `src/index.css` removed; `package.json` scripts simplified (`npx vite` to `vite`)
+- **No fake testimonials** — Never add fabricated quotes or testimonial content. The TestimonialsPage was intentionally removed.
+- **No public pricing** on the residential page
+- **Stock images** — Unsplash images are placeholders until owner provides real photos
+- Use "same-day budgets" (not "quotes") for commercial; "quote" is fine for residential CTAs
+- Use "minimal punch list" (not "zero")
+- Bid turnaround is "3-5 business days" (not "48-72 hours")
+- Do not put GC contact info (emails/phones) from project references on the public site
