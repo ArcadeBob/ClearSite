@@ -11,8 +11,8 @@
 
 ### Portfolio
 
-- [ ] **PORT-01**: All projects with "Current" status changed to "Completed" status
-- [ ] **PORT-02**: All projects with "Future" status changed to "Current" status
+- [x] **PORT-01**: All projects with "Current" status changed to "Completed" status
+- [x] **PORT-02**: All projects with "Future" status changed to "Current" status
 
 ### About Page
 
@@ -38,8 +38,8 @@ Which phases cover which requirements. Updated during roadmap creation.
 
 | Requirement | Phase | Status |
 |-------------|-------|--------|
-| PORT-01 | Phase 1 | Pending |
-| PORT-02 | Phase 1 | Pending |
+| PORT-01 | Phase 1 | Complete |
+| PORT-02 | Phase 1 | Complete |
 | CONT-01 | Phase 2 | Pending |
 | ABUT-01 | Phase 2 | Pending |
 

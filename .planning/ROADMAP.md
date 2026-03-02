@@ -12,7 +12,7 @@ Two focused phases to deliver visual consistency and accurate portfolio data. Ph
 
 Decimal phases appear between their surrounding integers in numeric order.
 
-- [ ] **Phase 1: Portfolio Status** - Move current projects to completed, future projects to current
+- [x] **Phase 1: Portfolio Status** - Move current projects to completed, future projects to current (completed 2026-03-02)
 - [ ] **Phase 2: Visual Polish** - Restyle contact page hero and replace About page stock image
 
 ## Phase Details
@@ -25,7 +25,7 @@ Decimal phases appear between their surrounding integers in numeric order.
   1. No project on the Projects page shows "Current" status that was previously labeled "Current" — all such projects now display "Completed"
   2. No project on the Projects page shows "Future" status — all such projects now display "Current"
   3. The status filter tabs on the Projects page correctly surface projects under their new labels
-**Plans:** 1 plan
+**Plans:** 1/1 plans complete
 
 Plans:
 - [ ] 01-01-PLAN.md — Update all project status strings (Current->Completed, Future->Current) in ProjectsPage.tsx
@@ -51,5 +51,5 @@ Phases execute in numeric order: 1 → 2
 
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
-| 1. Portfolio Status | 0/1 | Not started | - |
+| 1. Portfolio Status | 1/1 | Complete   | 2026-03-02 |
 | 2. Visual Polish | 0/2 | Not started | - |
