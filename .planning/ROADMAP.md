@@ -25,10 +25,10 @@ Decimal phases appear between their surrounding integers in numeric order.
   1. No project on the Projects page shows "Current" status that was previously labeled "Current" — all such projects now display "Completed"
   2. No project on the Projects page shows "Future" status — all such projects now display "Current"
   3. The status filter tabs on the Projects page correctly surface projects under their new labels
-**Plans**: TBD
+**Plans:** 1 plan
 
 Plans:
-- [ ] 01-01: Update project status strings in ProjectsPage.tsx
+- [ ] 01-01-PLAN.md — Update all project status strings (Current->Completed, Future->Current) in ProjectsPage.tsx
 
 ### Phase 2: Visual Polish
 **Goal**: Contact page hero matches the visual style of About and Projects pages, and About page shows a domain-appropriate crew/glazing image
