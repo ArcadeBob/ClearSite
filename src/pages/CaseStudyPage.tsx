@@ -68,8 +68,7 @@ const caseStudies: CaseStudy[] = [
     title: 'Cabrillo Business Park',
     subtitle:
       'Large-scale curtain wall and storefront installation for a premier business campus',
-    heroImage:
-      'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80',
+    heroImage: '/images/projects/cabrillo-business-park.jpg',
     location: 'Goleta, CA',
     client: 'Cabrillo Business Park LLC',
     gc: 'Gluck Building Company',
@@ -138,10 +137,10 @@ const caseStudies: CaseStudy[] = [
       },
     ],
     galleryImages: [
-      'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
-      'https://images.unsplash.com/photo-1497366811353-6870744d04b2?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
-      'https://images.unsplash.com/photo-1497366216548-37526070297c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
-      'https://images.unsplash.com/photo-1464938050520-ef2270bb8ce8?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
+      '/images/projects/cabrillo-business-park.jpg',
+      '/images/projects/cabrillo-business-park-1.jpg',
+      '/images/projects/cabrillo-business-park-2.jpg',
+      '/images/projects/cabrillo-business-park-3.jpg',
     ],
   },
 ];
@@ -154,8 +153,7 @@ const relatedProjects = [
     value: '$1,889,200',
     scope: 'Storefront, Auto Doors, ACM, Partitions',
     status: 'Current' as const,
-    imageUrl:
-      'https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
+    imageUrl: '/images/projects/Citrus-Commons.jpg',
   },
   {
     title: 'Cloud Nine Hangar',
@@ -164,8 +162,7 @@ const relatedProjects = [
     value: '$1,125,000',
     scope: 'Curtain Walls, Polycarbonate, Partitions',
     status: 'Completed' as const,
-    imageUrl:
-      'https://images.unsplash.com/photo-1565008447742-97f6f38c985c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
+    imageUrl: '/images/projects/cloud-nine-hangar.jpg',
   },
   {
     title: 'Marina Drive',
@@ -174,8 +171,7 @@ const relatedProjects = [
     value: '$658,800',
     scope: 'Curtain Walls, Sliders, Partitions, Railings',
     status: 'Completed' as const,
-    imageUrl:
-      'https://images.unsplash.com/photo-1503387762-592deb58ef4e?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
+    imageUrl: '/images/projects/marina-drive.jpg',
   },
 ];
 

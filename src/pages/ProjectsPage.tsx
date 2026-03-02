@@ -16,8 +16,7 @@ const projects = [
   value: '$1,889,200',
   scope: 'Storefront, Auto Doors, ACM, Partitions',
   status: 'Current' as const,
-  imageUrl:
-  'https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80'
+  imageUrl: '/images/projects/Citrus-Commons.jpg'
 },
 {
   title: '9900 Venice',
@@ -26,8 +25,7 @@ const projects = [
   value: '$363,300',
   scope: 'Exterior Storefront & Doors, Mirrors',
   status: 'Current' as const,
-  imageUrl:
-  'https://images.unsplash.com/photo-1486325212027-8081e485255e?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80'
+  imageUrl: '/images/projects/9900-venice.jpg'
 },
 {
   title: 'Via Avanti',
@@ -36,8 +34,7 @@ const projects = [
   value: '$1,889,200',
   scope: 'Storefront, Auto Doors, ACM, Interior',
   status: 'Future' as const,
-  imageUrl:
-  'https://images.unsplash.com/photo-1464938050520-ef2270bb8ce8?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80'
+  imageUrl: '/images/projects/via-avanti.jpg'
 },
 {
   title: 'Cabrillo Business Park',
@@ -46,8 +43,7 @@ const projects = [
   value: '$1,269,400',
   scope: 'Curtain Walls, Doors, Interior Storefront',
   status: 'Completed' as const,
-  imageUrl:
-  'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80'
+  imageUrl: '/images/projects/cabrillo-business-park.jpg'
 },
 {
   title: 'Cloud Nine Hangar',
@@ -56,8 +52,7 @@ const projects = [
   value: '$1,125,000',
   scope: 'Curtain Walls, Polycarbonate, Partitions',
   status: 'Completed' as const,
-  imageUrl:
-  'https://images.unsplash.com/photo-1565008447742-97f6f38c985c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80'
+  imageUrl: '/images/projects/cloud-nine-hangar.jpg'
 },
 {
   title: 'Marina Drive',
@@ -66,8 +61,7 @@ const projects = [
   value: '$658,800',
   scope: 'Curtain Walls, Sliders, Partitions, Railings',
   status: 'Completed' as const,
-  imageUrl:
-  'https://images.unsplash.com/photo-1503387762-592deb58ef4e?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80'
+  imageUrl: '/images/projects/marina-drive.jpg'
 },
 {
   title: 'The 505',
@@ -76,8 +70,7 @@ const projects = [
   value: '$486,000',
   scope: 'Curtain Walls, Doors, Interior Storefront',
   status: 'Completed' as const,
-  imageUrl:
-  'https://images.unsplash.com/photo-1497366811353-6870744d04b2?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80'
+  imageUrl: '/images/projects/the-505.jpg'
 },
 {
   title: 'West Athens Safe Landing',
@@ -86,8 +79,7 @@ const projects = [
   value: '$368,400',
   scope: 'Exterior Storefront & Doors',
   status: 'Completed' as const,
-  imageUrl:
-  'https://images.unsplash.com/photo-1469022563428-aa04fef9f5a2?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80'
+  imageUrl: '/images/projects/west-athens-safe-landing.jpg'
 },
 {
   title: 'Bridge to Home',
@@ -96,8 +88,7 @@ const projects = [
   value: '$335,200',
   scope: 'Storefront, Fire-Rated, Partitions, Mirrors',
   status: 'Completed' as const,
-  imageUrl:
-  'https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80'
+  imageUrl: '/images/projects/bridge-to-home.jpg'
 },
 {
   title: '4060 Ince',
@@ -106,8 +97,7 @@ const projects = [
   value: '$357,000',
   scope: 'Interior Storefront & Doors, Glass Partitions',
   status: 'Completed' as const,
-  imageUrl:
-  'https://images.unsplash.com/photo-1497366216548-37526070297c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80'
+  imageUrl: '/images/projects/4060-ince.jpg'
 },
 {
   title: 'W 43rd Street',
@@ -116,8 +106,7 @@ const projects = [
   value: '$183,000',
   scope: 'Storefront & Doors, Fire-Rated Windows & Doors',
   status: 'Completed' as const,
-  imageUrl:
-  'https://images.unsplash.com/photo-1460317442991-0ec209397118?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80'
+  imageUrl: '/images/projects/w-43rd-street.jpg'
 },
 {
   title: 'Central Terrace Apartments',
@@ -126,8 +115,7 @@ const projects = [
   value: '$136,000',
   scope: 'Exterior Storefront & Doors',
   status: 'Completed' as const,
-  imageUrl:
-  'https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80'
+  imageUrl: '/images/projects/central-terrace-apartments.jpg'
 },
 {
   title: "Foster's Freeze Salinas",
@@ -136,8 +124,7 @@ const projects = [
   value: '$111,000',
   scope: 'Curtain Wall, Storefront Doors, Drive Thru Windows',
   status: 'Completed' as const,
-  imageUrl:
-  'https://images.unsplash.com/photo-1555396273-367ea4eb4db5?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80'
+  imageUrl: '/images/projects/fosters-freeze-salinas.jpg'
 },
 {
   title: '4750 Santa Monica',
@@ -146,8 +133,7 @@ const projects = [
   value: '$303,000',
   scope: 'Storefront & Doors, Fire-Rated, Glass Railing',
   status: 'Current' as const,
-  imageUrl:
-  'https://images.unsplash.com/photo-1486325212027-8081e485255e?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80'
+  imageUrl: '/images/projects/4750-santa-monica.jpg'
 },
 {
   title: 'Jordan Downs S4',
@@ -156,8 +142,7 @@ const projects = [
   value: '$296,000',
   scope: 'Exterior Storefront & Doors',
   status: 'Current' as const,
-  imageUrl:
-  'https://images.unsplash.com/photo-1469022563428-aa04fef9f5a2?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80'
+  imageUrl: '/images/projects/jordan-downs-s4.jpg'
 },
 {
   title: 'Wilshire Lofts',
@@ -166,8 +151,7 @@ const projects = [
   value: '$899,000',
   scope: 'Custom Curtain Walls & Doors, Storefront Windows',
   status: 'Future' as const,
-  imageUrl:
-  'https://images.unsplash.com/photo-1464938050520-ef2270bb8ce8?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80'
+  imageUrl: '/images/projects/wilshire-lofts.jpg'
 },
 {
   title: '1st Street North',
@@ -176,8 +160,7 @@ const projects = [
   value: '$1,453,800',
   scope: 'Curtain Wall, Sliders, Glass Canopy, Storefront',
   status: 'Future' as const,
-  imageUrl:
-  'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80'
+  imageUrl: '/images/projects/1st-street-north.jpg'
 }];
 
 export function ProjectsPage() {
