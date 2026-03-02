@@ -15,7 +15,7 @@ const projects = [
   client: 'IMT Residential',
   value: '$1,889,200',
   scope: 'Storefront, Auto Doors, ACM, Partitions',
-  status: 'Current' as const,
+  status: 'Completed' as const,
   imageUrl: '/images/projects/Citrus-Commons.jpg'
 },
 {
@@ -24,7 +24,7 @@ const projects = [
   client: 'Fassberg Construction',
   value: '$363,300',
   scope: 'Exterior Storefront & Doors, Mirrors',
-  status: 'Current' as const,
+  status: 'Completed' as const,
   imageUrl: '/images/projects/9900-venice.jpg'
 },
 {
@@ -33,7 +33,7 @@ const projects = [
   client: 'IMT Residential',
   value: '$1,889,200',
   scope: 'Storefront, Auto Doors, ACM, Interior',
-  status: 'Future' as const,
+  status: 'Current' as const,
   imageUrl: '/images/projects/via-avanti.jpg'
 },
 {
@@ -132,7 +132,7 @@ const projects = [
   client: 'Westside Contractors',
   value: '$303,000',
   scope: 'Storefront & Doors, Fire-Rated, Glass Railing',
-  status: 'Current' as const,
+  status: 'Completed' as const,
   imageUrl: '/images/projects/4750-santa-monica.jpg'
 },
 {
@@ -141,7 +141,7 @@ const projects = [
   client: 'Walton Construction',
   value: '$296,000',
   scope: 'Exterior Storefront & Doors',
-  status: 'Current' as const,
+  status: 'Completed' as const,
   imageUrl: '/images/projects/jordan-downs-s4.jpg'
 },
 {
@@ -150,7 +150,7 @@ const projects = [
   client: 'Forza Construction',
   value: '$899,000',
   scope: 'Custom Curtain Walls & Doors, Storefront Windows',
-  status: 'Future' as const,
+  status: 'Current' as const,
   imageUrl: '/images/projects/wilshire-lofts.jpg'
 },
 {
@@ -159,7 +159,7 @@ const projects = [
   client: 'Walton Construction',
   value: '$1,453,800',
   scope: 'Curtain Wall, Sliders, Glass Canopy, Storefront',
-  status: 'Future' as const,
+  status: 'Current' as const,
   imageUrl: '/images/projects/1st-street-north.jpg'
 }];
 
