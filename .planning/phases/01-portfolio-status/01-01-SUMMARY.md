@@ -57,7 +57,7 @@ Each task was committed atomically:
 1. **Task 1: Update project status strings in ProjectsPage.tsx** - `cdf509d` (feat)
 2. **Task 2: Verify build succeeds and status counts are correct** - verification only, no new files
 
-**Plan metadata:** (docs commit pending)
+**Plan metadata:** `3801bb9` (docs: complete portfolio-status plan)
 
 ## Files Created/Modified
 
@@ -82,6 +82,13 @@ None - no external service configuration required.
 ## Next Phase Readiness
 
 Phase 1 is complete. No remaining plans in this phase. Phase 2 (if any) can proceed immediately — the Projects page now shows accurate status labels for all 17 projects.
+
+## Self-Check: PASSED
+
+- `src/pages/ProjectsPage.tsx` — FOUND
+- `.planning/phases/01-portfolio-status/01-01-SUMMARY.md` — FOUND
+- Commit `cdf509d` — FOUND
+- Commit `3801bb9` — FOUND
 
 ---
 *Phase: 01-portfolio-status*
