@@ -16,7 +16,7 @@
 
 ### About Page
 
-- [ ] **ABUT-01**: About page brand story image replaced with a team/crew Unsplash photo relevant to commercial glazing
+- [x] **ABUT-01**: About page brand story image replaced with a team/crew Unsplash photo relevant to commercial glazing
 
 ## v2 Requirements
 
@@ -41,7 +41,7 @@ Which phases cover which requirements. Updated during roadmap creation.
 | PORT-01 | Phase 1 | Complete |
 | PORT-02 | Phase 1 | Complete |
 | CONT-01 | Phase 2 | Complete |
-| ABUT-01 | Phase 2 | Pending |
+| ABUT-01 | Phase 2 | Complete |
 
 **Coverage:**
 - v1 requirements: 4 total
