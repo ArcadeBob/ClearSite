@@ -38,11 +38,11 @@ Plans:
   1. The Contact page hero section visually matches the hero pattern on the About and Projects pages (same padding, layout, and decorative treatment)
   2. The About page brand story section displays a glazing/construction crew Unsplash photo instead of the current generic stock image
   3. The replaced About image fits within the existing image container without layout shifts or broken aspect ratios
-**Plans**: TBD
+**Plans:** 2 plans
 
 Plans:
-- [ ] 02-01: Restyle ContactPage hero to match About/Projects hero pattern
-- [ ] 02-02: Replace About page stock image with commercial glazing crew photo
+- [ ] 02-01-PLAN.md — Restyle ContactPage hero to match About/Projects hero pattern (CONT-01)
+- [ ] 02-02-PLAN.md — Replace About page stock image with commercial glazing crew photo (ABUT-01)
 
 ## Progress
 
