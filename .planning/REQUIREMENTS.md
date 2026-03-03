@@ -7,7 +7,7 @@
 
 ### Contact Page
 
-- [ ] **CONT-01**: Contact page header section restyled to visually match the hero pattern used on About and Projects pages
+- [x] **CONT-01**: Contact page header section restyled to visually match the hero pattern used on About and Projects pages
 
 ### Portfolio
 
@@ -40,7 +40,7 @@ Which phases cover which requirements. Updated during roadmap creation.
 |-------------|-------|--------|
 | PORT-01 | Phase 1 | Complete |
 | PORT-02 | Phase 1 | Complete |
-| CONT-01 | Phase 2 | Pending |
+| CONT-01 | Phase 2 | Complete |
 | ABUT-01 | Phase 2 | Pending |
 
 **Coverage:**
