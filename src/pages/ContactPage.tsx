@@ -73,13 +73,13 @@ export function ContactPage() {
     <div className="min-h-screen bg-slate-50">
       <div className="bg-brand text-white py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <SectionHeader
-            subheading="For General Contractors"
-            title="Request Prequalification Packet"
-            description="Get everything you need to add CGI to your bid list — COI, EMR, references, and project history — delivered within 24 hours."
-            subheadingColor="text-amber-300"
-            className="text-left"
-          />
+          <h1 className="text-4xl font-bold mb-4">
+            Request Prequalification Packet
+          </h1>
+          <p className="text-xl text-slate-300 max-w-3xl">
+            Get everything you need to add CGI to your bid list — COI, EMR,
+            references, and project history — delivered within 24 hours.
+          </p>
         </div>
       </div>
 
