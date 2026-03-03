@@ -1,12 +1,12 @@
-# ClearSite Content & Style Update
+# ClearSite — Clean Glass Installation Marketing Site
 
 ## What This Is
 
-A focused update to the ClearSite marketing website for Clean Glass Installation (CGI). Three changes: restyle the contact page header to match other page heroes, update project portfolio statuses (current → completed, future → current), and replace the About page stock image with a team/crew photo that fits a commercial glazing company.
+The marketing website for Clean Glass Installation (CGI), a commercial glazing subcontractor in Chatsworth, CA. Targets general contractors with project portfolio, service details, and prequalification flow. Built with React 18 + TypeScript + Vite + Tailwind CSS.
 
 ## Core Value
 
-Visual consistency across all pages and accurate, up-to-date project portfolio data.
+Professional credibility for a commercial glazing subcontractor — accurate project data, consistent visual presentation, and clear CTAs for general contractors.
 
 ## Requirements
 
@@ -15,42 +15,46 @@ Visual consistency across all pages and accurate, up-to-date project portfolio d
 - ✓ Multi-page marketing site with React Router — existing
 - ✓ Consistent brand colors (navy/accent) across pages — existing
 - ✓ Project portfolio with status filtering (Completed/Current/Future) — existing
-- ✓ Contact page with SectionHeader and form — existing
+- ✓ Contact page with form and hero section — existing
 - ✓ About page with brand story section and image — existing
+- ✓ Contact page hero restyled to match About/Projects hero pattern — v1.0
+- ✓ All current projects moved to completed status — v1.0
+- ✓ All future projects moved to current status — v1.0
+- ✓ About page image replaced with commercial glazing crew photo — v1.0
 
 ### Active
 
-- [ ] Contact page header restyled to match About/Projects page hero pattern
-- [ ] All current projects moved to completed status
-- [ ] All future projects moved to current status
-- [ ] About page image replaced with team/crew photo relevant to commercial glazing
+(None — planning next milestone)
 
 ### Out of Scope
 
-- Content/copy changes to contact header — style only
+- Content/copy changes to contact header — style only needed
 - Project description or detail changes — status labels only
-- Any new pages or routes
-- Backend integration or data layer changes
+- Backend integration or data layer changes — site remains static/hardcoded
+- Real team photos — owner hasn't provided them yet, Unsplash placeholders work well
 
 ## Context
 
-- Contact page currently uses `SectionHeader` on a `bg-brand` background — structurally similar to other pages but the visual treatment may differ in padding, layout, or decoration compared to About and Projects heroes
-- Projects page data is hardcoded inline with a `status` field ('Current' | 'Future' | 'Completed')
-- About page uses an Unsplash stock photo (photo-1581094794329-c8112a89af12) — needs replacement with a more domain-appropriate team/crew image
-- All pages share `max-w-7xl mx-auto px-4 sm:px-6 lg:px-8` container pattern
+Shipped v1.0 with 4,841 LOC TypeScript.
+Tech stack: React 18, TypeScript, Vite, Tailwind CSS 3, react-router-dom v6.
+All three top-level pages (About, Projects, Contact) now share identical hero pattern.
+Portfolio shows 14 Completed, 3 Current, 0 Future projects.
+All images remain Unsplash placeholders until owner provides real photos.
 
 ## Constraints
 
-- **No real photos available**: Owner hasn't provided team photos yet — use a better-fitting Unsplash stock photo of glazing/construction crew
-- **No content changes**: Contact header copy stays the same, only visual style changes
-- **Data inline**: Project statuses are hardcoded in `ProjectsPage.tsx` — change status strings directly
+- **No real photos available**: Owner hasn't provided team photos — using Unsplash stock
+- **Data inline**: All project/service data hardcoded in page components — no API layer
+- **No test framework**: No unit/integration tests configured
 
 ## Key Decisions
 
 | Decision | Rationale | Outcome |
 |----------|-----------|---------|
-| Use Unsplash crew photo | No real team photos available yet | — Pending |
-| Match hero to About/Projects style | User wants visual consistency | — Pending |
+| Use Unsplash crew photo for About page | No real team photos available yet | ✓ Good — photo-1565008447742 fits commercial glazing context |
+| Match Contact hero to About/Projects style | User wants visual consistency | ✓ Good — all 3 pages now share identical hero pattern |
+| Keep 'Future' filter tab with 0 projects | Graceful empty state, removing tab out of scope | ✓ Good — shows "No projects found" cleanly |
+| Raw h1+p markup instead of SectionHeader for Contact hero | SectionHeader rendered invisible h2 on dark background | ✓ Good — resolved visual bug while matching other heroes |
 
 ---
-*Last updated: 2026-03-02 after initialization*
+*Last updated: 2026-03-03 after v1.0 milestone*
