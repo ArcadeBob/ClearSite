@@ -18,7 +18,9 @@
       "Bash(tail:*)",
       "Bash(cd /c/Users/relmq/projects/ClearSite && npx vercel --prod 2>&1)",
       "Bash(cd /c/Users/relmq/projects/ClearSite && npm run lint 2>&1)",
-      "Bash(start:*)"
+      "Bash(start:*)",
+      "Bash(git push:*)",
+      "Bash(rm:*)"
     ]
   }
 }
