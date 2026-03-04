@@ -1,7 +1,6 @@
-import React, { useEffect, useState, useRef } from 'react';
-import { MapPin, CheckCircle, Building2, Briefcase } from 'lucide-react';
-
-const INTERSECTION_THRESHOLD = 0.2;
+import React, { useState } from 'react';
+import { MapPin, CheckCircle } from 'lucide-react';
+import { useOnceInView } from '../hooks/useOnceInView';
 
 interface RegionData {
   name: string;
@@ -79,27 +78,9 @@ const secondaryStates = [
   projects: 0
 }];
 
-export function ServiceAreaMap() {
+export function ServiceAreaMap(): React.JSX.Element {
   const [hoveredRegion, setHoveredRegion] = useState<string | null>(null);
-  const [isVisible, setIsVisible] = useState(false);
-  const sectionRef = useRef<HTMLDivElement>(null);
-  useEffect(() => {
-    const observer = new IntersectionObserver(
-      ([entry]) => {
-        if (entry.isIntersecting) {
-          setIsVisible(true);
-          observer.disconnect();
-        }
-      },
-      {
-        threshold: INTERSECTION_THRESHOLD
-      }
-    );
-    if (sectionRef.current) {
-      observer.observe(sectionRef.current);
-    }
-    return () => observer.disconnect();
-  }, []);
+  const [sectionRef, isVisible] = useOnceInView();
   return (
     <section ref={sectionRef} className="py-24 bg-white overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">

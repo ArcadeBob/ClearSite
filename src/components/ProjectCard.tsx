@@ -13,7 +13,6 @@ interface ProjectCardProps {
   value: string;
   scope: string;
   imageUrl?: string;
-  status?: 'Completed' | 'Current' | 'Future';
 }
 export function ProjectCard({
   title,
@@ -22,14 +21,8 @@ export function ProjectCard({
   value,
   scope,
   imageUrl = 'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
-  status = 'Completed'
-}: ProjectCardProps) {
+}: ProjectCardProps): React.JSX.Element {
   const [isHovered, setIsHovered] = useState(false);
-  const statusColors = {
-    Completed: 'bg-green-500 text-white',
-    Current: 'bg-accent text-white',
-    Future: 'bg-brand text-white'
-  };
   return (
     <div
       className="group h-full flex flex-col bg-white rounded-xl border border-slate-200 shadow-sm overflow-hidden transition-all duration-500 hover:shadow-2xl hover:-translate-y-2"
@@ -74,11 +67,9 @@ export function ProjectCard({
         <div
           className={`absolute top-4 right-4 transition-all duration-300 ${isHovered ? 'translate-x-0 opacity-100' : 'translate-x-2 opacity-90'}`}>
 
-          <span
-            className={`px-3 py-1.5 rounded-full text-xs font-bold flex items-center gap-1.5 shadow-lg ${statusColors[status]}`}>
-
-            {status === 'Completed' && <CheckCircle className="h-3 w-3" />}
-            {status}
+          <span className="px-3 py-1.5 rounded-full text-xs font-bold flex items-center gap-1.5 shadow-lg bg-green-500 text-white">
+            <CheckCircle className="h-3 w-3" />
+            Completed
           </span>
         </div>
 

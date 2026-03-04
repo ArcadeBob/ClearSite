@@ -5,11 +5,7 @@ import { TextArea } from './ui/TextArea';
 import { Select } from './ui/Select';
 import { Send, CheckCircle, Upload, X, FileText } from 'lucide-react';
 
-const FORMSPREE_URL = 'https://formspree.io/f/mreayoqq';
-
-const MAX_FILE_SIZE_MB = 10;
-const MAX_FILE_SIZE_BYTES = MAX_FILE_SIZE_MB * 1024 * 1024;
-const ACCEPTED_FILE_TYPES = '.pdf,.dwg,.dxf,.zip,.png,.jpg,.jpeg';
+const MAX_FILE_SIZE = 10 * 1024 * 1024; // 10 MB
 
 const projectTypeOptions = [
   { value: 'new-construction', label: 'New Construction' },
@@ -28,7 +24,7 @@ const scopeValueOptions = [
   { value: 'unsure', label: 'Not sure yet' },
 ];
 
-export function ContactForm() {
+export function ContactForm(): React.JSX.Element {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isSuccess, setIsSuccess] = useState(false);
   const [error, setError] = useState<string | null>(null);
@@ -43,8 +39,8 @@ export function ContactForm() {
       setFileName(null);
       return;
     }
-    if (file.size > MAX_FILE_SIZE_BYTES) {
-      setFileError(`File must be under ${MAX_FILE_SIZE_MB}MB. Your file is ${(file.size / 1024 / 1024).toFixed(1)}MB.`);
+    if (file.size > MAX_FILE_SIZE) {
+      setFileError(`File must be under 10MB. Your file is ${(file.size / 1024 / 1024).toFixed(1)}MB.`);
       e.target.value = '';
       setFileName(null);
       return;
@@ -65,7 +61,7 @@ export function ContactForm() {
     setIsSubmitting(true);
     setError(null);
     try {
-      const response = await fetch(FORMSPREE_URL, {
+      const response = await fetch('https://formspree.io/f/mreayoqq', {
         method: 'POST',
         body: new FormData(e.currentTarget),
         headers: { Accept: 'application/json' },
@@ -174,7 +170,7 @@ export function ContactForm() {
                     <span className="font-medium text-accent">Click to upload</span>
                     <span className="text-slate-500"> or drag and drop</span>
                     <p className="text-xs text-slate-400 mt-0.5">
-                      PDF, DWG, DXF, ZIP, PNG, JPG (max {MAX_FILE_SIZE_MB}MB)
+                      PDF, DWG, DXF, ZIP, PNG, JPG (max 10MB)
                     </p>
                   </div>
                 </label>
@@ -197,7 +193,7 @@ export function ContactForm() {
                 id="file-upload"
                 name="plans"
                 type="file"
-                accept={ACCEPTED_FILE_TYPES}
+                accept=".pdf,.dwg,.dxf,.zip,.png,.jpg,.jpeg"
                 onChange={handleFileChange}
                 className="sr-only"
               />

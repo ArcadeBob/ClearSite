@@ -1,18 +1,14 @@
 import React, { useState } from 'react';
-import { ArrowRight } from 'lucide-react';
-import { Link } from 'react-router-dom';
 interface ServiceCardProps {
   title: string;
   description: string;
   icon: React.ReactNode;
-  link?: string;
 }
 export function ServiceCard({
   title,
   description,
   icon,
-  link
-}: ServiceCardProps) {
+}: ServiceCardProps): React.JSX.Element {
   const [isHovered, setIsHovered] = useState(false);
   return (
     <div
@@ -47,24 +43,12 @@ export function ServiceCard({
             {description}
           </p>
 
-          {link ?
-          <Link
-            to={link}
-            className={`inline-flex items-center font-semibold transition-all duration-300 ${isHovered ? 'text-accent translate-x-1' : 'text-brand'}`}>
-
-              Learn more
-              <ArrowRight
-              className={`ml-1 h-4 w-4 transition-transform duration-300 ${isHovered ? 'translate-x-1' : ''}`} />
-
-            </Link> :
-
           <div
             className={`inline-flex items-center text-sm font-medium transition-all duration-300 ${isHovered ? 'text-accent opacity-100' : 'text-slate-400 opacity-0'}`}>
 
               <span className="h-1.5 w-1.5 rounded-full bg-accent mr-2"></span>
               Available
             </div>
-          }
         </div>
       </div>
 

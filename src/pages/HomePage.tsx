@@ -12,7 +12,6 @@ import { ServiceAreaMap } from '../components/ServiceAreaMap';
 import { ClientLogos } from '../components/ClientLogos';
 import { PromiseSection } from '../components/PromiseSection';
 import { FloatingCTA } from '../components/FloatingCTA';
-import { TestimonialCarousel } from '../components/TestimonialCarousel';
 import { SectionHeader } from '../components/SectionHeader';
 import {
   Building2,
@@ -115,7 +114,7 @@ const featuredProjects = [
 }];
 
 
-export function HomePage() {
+export function HomePage(): React.JSX.Element {
   const [scrollY, setScrollY] = useState(0);
   useEffect(() => {
     const handleScroll = () => {
@@ -341,8 +340,6 @@ export function HomePage() {
 
       {/* GC Pain Points */}
       <GCPainPoints />
-
-      {/* Testimonial Carousel - removed until real testimonials are collected */}
 
       {/* Services Grid */}
       <section className="py-24 bg-slate-50">

@@ -1,14 +1,13 @@
-import React, { useEffect, useState, useRef } from 'react';
+import React, { useEffect, useState } from 'react';
 import { TrendingUp, Shield, DollarSign, Clock } from 'lucide-react';
-
-const INTERSECTION_THRESHOLD = 0.2;
+import { useOnceInView } from '../hooks/useOnceInView';
 
 interface StatData {
   label: string;
-  value: number;
-  prefix?: string;
-  suffix?: string;
-  isDecimal?: boolean;
+  /** The integer target for the count-up animation (e.g. 87 for "0.87") */
+  animateTo: number;
+  /** How to format the final animated number for display */
+  format: (n: number) => string;
   icon: React.ReactNode;
   subtext: string;
   progress: number;
@@ -17,44 +16,42 @@ interface StatData {
 const stats: StatData[] = [
 {
   label: 'Years Experience',
-  value: 13,
-  suffix: '+',
+  animateTo: 13,
+  format: (n) => `${n}+`,
   icon: <Clock className="h-5 w-5" />,
   subtext: 'Since 2012',
   progress: 95
 },
 {
   label: 'Bonding Capacity',
-  value: 1,
-  prefix: '$',
-  suffix: 'M',
+  animateTo: 1,
+  format: (n) => `$${n}M`,
   icon: <DollarSign className="h-5 w-5" />,
   subtext: 'Single Project',
   progress: 100
 },
 {
   label: 'EMR Safety Rating',
-  value: 0.87,
-  isDecimal: true,
+  animateTo: 87,
+  format: (n) => (n / 100).toFixed(2),
   icon: <Shield className="h-5 w-5" />,
   subtext: 'Zero OSHA Incidents',
   progress: 87
 },
 {
   label: 'Project Capacity',
-  value: 2,
-  prefix: '$',
-  suffix: 'M+',
+  animateTo: 2,
+  format: (n) => `$${n}M+`,
   icon: <TrendingUp className="h-5 w-5" />,
   subtext: 'Single Project',
   progress: 67
 }];
 
 function useCountUp(
-end: number,
-duration = 2000,
-start = false)
-{
+  end: number,
+  duration = 2000,
+  start = false,
+): number {
   const [count, setCount] = useState(0);
   useEffect(() => {
     if (!start) return;
@@ -72,26 +69,8 @@ start = false)
   }, [end, duration, start]);
   return count;
 }
-export function StatsSection() {
-  const [isVisible, setIsVisible] = useState(false);
-  const sectionRef = useRef<HTMLDivElement>(null);
-  useEffect(() => {
-    const observer = new IntersectionObserver(
-      ([entry]) => {
-        if (entry.isIntersecting) {
-          setIsVisible(true);
-          observer.disconnect();
-        }
-      },
-      {
-        threshold: INTERSECTION_THRESHOLD
-      }
-    );
-    if (sectionRef.current) {
-      observer.observe(sectionRef.current);
-    }
-    return () => observer.disconnect();
-  }, []);
+export function StatsSection(): React.JSX.Element {
+  const [sectionRef, isVisible] = useOnceInView();
 
   return (
     <div
@@ -116,18 +95,13 @@ export function StatsSection() {
 function StatItem({
   stat,
   isVisible,
-  delay
-
-
-
-
-}: {stat: StatData;isVisible: boolean;delay: number;}) {
-  const count = useCountUp(
-    stat.isDecimal ? stat.value * 100 : stat.value,
-    2000,
-    isVisible
-  );
-  const displayValue = stat.isDecimal ? (count / 100).toFixed(2) : count;
+  delay,
+}: {
+  stat: StatData;
+  isVisible: boolean;
+  delay: number;
+}): React.JSX.Element {
+  const count = useCountUp(stat.animateTo, 2000, isVisible);
   return (
     <div
       className={`text-center group transition-all duration-700 transform ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-8 opacity-0'}`}
@@ -147,9 +121,7 @@ function StatItem({
       </div>
 
       <div className="text-3xl md:text-5xl font-extrabold text-white mb-2 tracking-tight tabular-nums">
-        {stat.prefix}
-        {displayValue}
-        {stat.suffix}
+        {stat.format(count)}
       </div>
 
       <div className="text-sm text-slate-300 font-medium uppercase tracking-wide mb-3">

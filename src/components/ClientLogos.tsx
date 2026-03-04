@@ -1,6 +1,6 @@
-import React from 'react';
-export function ClientLogos() {
-  const clients = [
+import React, { useState } from 'react';
+
+const clients = [
   { name: '7-Eleven', logo: 'https://logo.clearbit.com/7-eleven.com' },
   { name: 'LAUSD', logo: 'https://logo.clearbit.com/lausd.net' },
   { name: 'Planet Fitness', logo: 'https://logo.clearbit.com/planetfitness.com' },
@@ -10,7 +10,11 @@ export function ClientLogos() {
   { name: 'Taco Bell', logo: 'https://logo.clearbit.com/tacobell.com' },
   { name: 'TJ Maxx', logo: 'https://logo.clearbit.com/tjmaxx.tjx.com' },
   { name: 'Starbucks', logo: 'https://logo.clearbit.com/starbucks.com' },
-  { name: 'Family Dollar', logo: 'https://logo.clearbit.com/familydollar.com' }];
+  { name: 'Family Dollar', logo: 'https://logo.clearbit.com/familydollar.com' },
+];
+
+export function ClientLogos(): React.JSX.Element {
+  const [failedLogos, setFailedLogos] = useState<Set<string>>(new Set());
 
   // Double the array for seamless infinite scroll
   const doubledClients = [...clients, ...clients];
@@ -40,22 +44,18 @@ export function ClientLogos() {
             key={`${client.name}-${index}`}
             className="flex items-center justify-center px-4 py-2">
 
-              <img
-                src={client.logo}
-                alt={client.name}
-                className="h-10 w-auto object-contain grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition-all duration-300"
-                onError={(e) => {
-                  // Fallback to text if logo fails to load
-                  const target = e.currentTarget;
-                  const parent = target.parentElement;
-                  if (parent) {
-                    const span = document.createElement('span');
-                    span.className = 'text-slate-400 font-bold text-xl whitespace-nowrap tracking-wide hover:text-brand transition-colors duration-300 cursor-default';
-                    span.textContent = client.name;
-                    parent.replaceChild(span, target);
-                  }
-                }}
-              />
+              {failedLogos.has(client.name) ? (
+                <span className="text-slate-400 font-bold text-xl whitespace-nowrap tracking-wide hover:text-brand transition-colors duration-300 cursor-default">
+                  {client.name}
+                </span>
+              ) : (
+                <img
+                  src={client.logo}
+                  alt={client.name}
+                  className="h-10 w-auto object-contain grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition-all duration-300"
+                  onError={() => setFailedLogos(prev => new Set(prev).add(client.name))}
+                />
+              )}
             </div>
           )}
         </div>

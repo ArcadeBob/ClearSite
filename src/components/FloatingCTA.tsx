@@ -6,20 +6,17 @@ import { Download, X } from 'lucide-react';
 const SCROLL_SHOW_THRESHOLD = 500;
 const SCROLL_RESET_THRESHOLD = 100;
 
-export function FloatingCTA() {
+export function FloatingCTA(): React.JSX.Element {
   const [isVisible, setIsVisible] = useState(false);
   const [isDismissed, setIsDismissed] = useState(false);
   useEffect(() => {
     const handleScroll = () => {
+      // Reset dismissal only near the top, but don't re-show on the same event
       if (window.scrollY < SCROLL_RESET_THRESHOLD && isDismissed) {
         setIsDismissed(false);
+        return;
       }
-      const shouldShow = window.scrollY > SCROLL_SHOW_THRESHOLD;
-      if (shouldShow && !isDismissed) {
-        setIsVisible(true);
-      } else {
-        setIsVisible(false);
-      }
+      setIsVisible(window.scrollY > SCROLL_SHOW_THRESHOLD && !isDismissed);
     };
     window.addEventListener('scroll', handleScroll, {
       passive: true

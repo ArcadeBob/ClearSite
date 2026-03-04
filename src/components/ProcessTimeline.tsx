@@ -1,16 +1,8 @@
 import React, { useEffect, useState, useRef } from 'react';
-import {
-  FileText,
-  MapPin,
-  ClipboardList,
-  Wrench,
-  CheckCircle } from
-'lucide-react';
+import { FileText, MapPin, ClipboardList, Wrench, CheckCircle } from 'lucide-react';
 import { SectionHeader } from './SectionHeader';
+import { useOnceInView } from '../hooks/useOnceInView';
 
-const LINE_PROGRESS_INCREMENT = 2;
-const LINE_ANIMATION_INTERVAL_MS = 30;
-const INTERSECTION_THRESHOLD = 0.2;
 const DESKTOP_STAGGER_MS = 200;
 const DESKTOP_STAGGER_BASE_MS = 300;
 const MOBILE_STAGGER_MS = 150;
@@ -48,73 +40,59 @@ function StepIcon({
   );
 }
 
-export function ProcessTimeline() {
-  const [isVisible, setIsVisible] = useState(false);
-  const [lineProgress, setLineProgress] = useState(0);
-  const sectionRef = useRef<HTMLDivElement>(null);
-  const intervalRef = useRef<ReturnType<typeof setInterval>>();
-  useEffect(() => {
-    const observer = new IntersectionObserver(
-      ([entry]) => {
-        if (entry.isIntersecting) {
-          setIsVisible(true);
-          let progress = 0;
-          intervalRef.current = setInterval(() => {
-            progress += LINE_PROGRESS_INCREMENT;
-            setLineProgress(Math.min(progress, 100));
-            if (progress >= 100) clearInterval(intervalRef.current);
-          }, LINE_ANIMATION_INTERVAL_MS);
-          observer.disconnect();
-        }
-      },
-      {
-        threshold: INTERSECTION_THRESHOLD
-      }
-    );
-    if (sectionRef.current) {
-      observer.observe(sectionRef.current);
-    }
-    return () => {
-      observer.disconnect();
-      clearInterval(intervalRef.current);
-    };
-  }, []);
-  const steps = [
+const steps = [
   {
     icon: <FileText className="h-5 w-5" />,
     title: 'Bid Request',
-    description: 'Submit plans & specs for same-day budget turnaround'
+    description: 'Submit plans & specs for same-day budget turnaround',
   },
   {
     icon: <MapPin className="h-5 w-5" />,
     title: 'Site Visit',
-    description: 'On-site assessment and field measurements'
+    description: 'On-site assessment and field measurements',
   },
   {
     icon: <ClipboardList className="h-5 w-5" />,
     title: 'Detailed Proposal',
-    description: 'Comprehensive scope, schedule, and pricing'
+    description: 'Comprehensive scope, schedule, and pricing',
   },
   {
     icon: <FileText className="h-5 w-5" />,
     title: 'Submittals',
-    description: 'Shop drawings, product data, and engineering for approval'
+    description: 'Shop drawings, product data, and engineering for approval',
   },
   {
     icon: <Wrench className="h-5 w-5" />,
     title: 'Fabrication',
-    description: 'Material ordering and custom fabrication to spec'
+    description: 'Material ordering and custom fabrication to spec',
   },
   {
     icon: <Wrench className="h-5 w-5" />,
     title: 'Installation',
-    description: 'Professional execution with daily progress updates'
+    description: 'Professional execution with daily progress updates',
   },
   {
     icon: <CheckCircle className="h-5 w-5" />,
     title: 'Closeout',
-    description: 'Final inspection, punch list, and warranty docs'
-  }];
+    description: 'Final inspection, punch list, and warranty docs',
+  },
+];
+
+export function ProcessTimeline(): React.JSX.Element {
+  const [sectionRef, isVisible] = useOnceInView();
+  const [lineProgress, setLineProgress] = useState(0);
+  const intervalRef = useRef<ReturnType<typeof setInterval>>();
+
+  useEffect(() => {
+    if (!isVisible) return;
+    let progress = 0;
+    intervalRef.current = setInterval(() => {
+      progress += 2;
+      setLineProgress(Math.min(progress, 100));
+      if (progress >= 100) clearInterval(intervalRef.current);
+    }, 30);
+    return () => clearInterval(intervalRef.current);
+  }, [isVisible]);
 
   return (
     <section ref={sectionRef} className="py-24 bg-slate-50 overflow-hidden">
