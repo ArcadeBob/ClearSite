@@ -213,7 +213,7 @@ export function ResidentialPage() {
             From a single shower enclosure to a whole-home glass package, we
             bring commercial-grade precision to every residential project.
           </p>
-          <Link to="/contact">
+          <Link to="/contact?type=residential">
             <Button
               size="lg"
               variant="secondary"
