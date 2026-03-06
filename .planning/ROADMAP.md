@@ -36,10 +36,10 @@
   2. A GC can read a safety narrative on the About page covering training practices, IIPP program reference, and incident prevention protocols
   3. Credential data (EMR, OSHA, bonding, CSLB, DIR) is sourced from a single constants file — no hardcoded string literals duplicated across components
   4. Safety section content is visibly flagged for owner review (bracketed placeholders or dev-only indicator) before the section is considered final
-**Plans**: TBD
+**Plans**: 1 plan
 
 Plans:
-- [ ] 03-01: Extract credential constants and build SafetySection component
+- [ ] 03-01-PLAN.md — Extract credential constants and build SafetySection component
 
 ### Phase 4: Prevailing Wage & Service Depth
 **Goal**: GCs and estimators can see CGI's named prevailing wage experience and assess technical bid eligibility from expanded service capability detail
