@@ -14,6 +14,7 @@ import {
   Calendar,
 } from 'lucide-react';
 import { CSLB_LICENSE_NUMBER } from '../data/credentials';
+import { SafetySection } from '../components/SafetySection';
 
 const team = [
   {
@@ -222,6 +223,9 @@ export function AboutPage() {
           </div>
         </div>
       </section>
+
+      {/* Safety Program */}
+      <SafetySection />
 
       {/* Mission, Goal, Promise */}
       <section id="vision" className="py-20 bg-white">
