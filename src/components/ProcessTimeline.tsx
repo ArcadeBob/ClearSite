@@ -131,7 +131,7 @@ export function ProcessTimeline(): React.JSX.Element {
                     <StepIcon
                       icon={step.icon}
                       index={index}
-                      isActive={isVisible && lineProgress > index * 25}
+                      isActive={isVisible && lineProgress > (index * 100) / steps.length}
                       numberDelay={`${index * DESKTOP_STAGGER_MS + DESKTOP_STAGGER_BASE_MS + 200}ms`}
                       size="lg"
                     />
@@ -177,7 +177,7 @@ export function ProcessTimeline(): React.JSX.Element {
                     <StepIcon
                       icon={step.icon}
                       index={index}
-                      isActive={isVisible && lineProgress > index * 20}
+                      isActive={isVisible && lineProgress > (index * 100) / steps.length}
                       numberDelay={`${index * MOBILE_STAGGER_MS + MOBILE_STAGGER_BASE_MS + 200}ms`}
                       size="sm"
                     />
