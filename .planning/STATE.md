@@ -3,14 +3,14 @@ gsd_state_version: 1.0
 milestone: v1.1
 milestone_name: Credibility & Conversion
 status: planning
-stopped_at: Completed 04-01-PLAN.md
-last_updated: "2026-03-06T05:58:42.184Z"
+stopped_at: Completed 04-02-PLAN.md
+last_updated: "2026-03-06T05:59:19.125Z"
 last_activity: 2026-03-05 — Roadmap created, 11/11 v1.1 requirements mapped
 progress:
   total_phases: 3
-  completed_phases: 1
+  completed_phases: 2
   total_plans: 3
-  completed_plans: 2
+  completed_plans: 3
   percent: 0
 ---
 
@@ -48,6 +48,7 @@ Progress: [░░░░░░░░░░] 0%
 *Updated after each plan completion*
 | Phase 03-safety-credentials-foundation P01 | 18 | 2 tasks | 10 files |
 | Phase 04-prevailing-wage-service-depth P01 | 88 | 2 tasks | 4 files |
+| Phase 04-prevailing-wage-service-depth P02 | 3 | 2 tasks | 2 files |
 
 ## Accumulated Context
 
@@ -65,6 +66,9 @@ Recent decisions affecting v1.1 work:
 - [Phase 03-01]: SafetySection placed only in AboutPage (not global layout) to avoid z-index collision with FloatingCTA at z-40
 - [Phase 04-01]: PrevailingWageBanner accepts optional className prop to allow bg-slate-50 on HomePage and bg-white on AboutPage without conditional logic
 - [Phase 04-01]: Prevailing wage FAQ removed from ContactPage since PrevailingWageBanner provides deeper coverage in higher-traffic locations
+- [Phase 04-02]: Bullets rendered always-expanded (not accordion) -- GCs need to scan all capabilities at a glance
+- [Phase 04-02]: Single amber review banner above services grid (not per-card) -- cleaner visual, one clear review flag
+- [Phase 04-02]: bullets prop is optional (bullets?: string[]) -- existing callers without bullets still work unchanged
 
 ### Pending Todos
 
@@ -77,6 +81,6 @@ None.
 
 ## Session Continuity
 
-Last session: 2026-03-06T05:58:42.182Z
-Stopped at: Completed 04-01-PLAN.md
+Last session: 2026-03-06T05:59:19.123Z
+Stopped at: Completed 04-02-PLAN.md
 Resume file: None

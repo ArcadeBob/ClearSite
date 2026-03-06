@@ -22,7 +22,7 @@
 #### Phase Checklist
 
 - [x] **Phase 3: Safety Credentials Foundation** - Consolidate credential data and add safety program section to About page (completed 2026-03-06)
-- [ ] **Phase 4: Prevailing Wage & Service Depth** - Add prevailing wage banner sitewide and expand service card technical detail
+- [x] **Phase 4: Prevailing Wage & Service Depth** - Add prevailing wage banner sitewide and expand service card technical detail (completed 2026-03-06)
 - [ ] **Phase 5: CTA Simplification** - Unify all CTAs to two clear commercial/residential paths with form auto-tagging
 
 ## Phase Details
@@ -78,5 +78,5 @@ Plans:
 | 1. Portfolio Status | v1.0 | 1/1 | Complete | 2026-03-02 |
 | 2. Visual Polish | v1.0 | 2/2 | Complete | 2026-03-03 |
 | 3. Safety Credentials Foundation | v1.1 | 1/1 | Complete | 2026-03-06 |
-| 4. Prevailing Wage & Service Depth | v1.1 | 0/2 | Not started | - |
+| 4. Prevailing Wage & Service Depth | 2/2 | Complete   | 2026-03-06 | - |
 | 5. CTA Simplification | v1.1 | 0/2 | Not started | - |

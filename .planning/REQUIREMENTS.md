@@ -24,8 +24,8 @@ Requirements for Credibility & Conversion milestone. Each maps to roadmap phases
 
 ### Service Depth
 
-- [ ] **SERV-01**: Each service card displays technical capability bullets (system types, typical applications) as expandable or inline detail
-- [ ] **SERV-02**: Service capability content is mock/placeholder for owner review and validation
+- [x] **SERV-01**: Each service card displays technical capability bullets (system types, typical applications) as expandable or inline detail
+- [x] **SERV-02**: Service capability content is mock/placeholder for owner review and validation
 
 ### CTA Simplification
 
@@ -70,8 +70,8 @@ Which phases cover which requirements. Updated during roadmap creation.
 | SAFE-03 | Phase 3 | Complete |
 | WAGE-01 | Phase 4 | Complete |
 | WAGE-02 | Phase 4 | Complete |
-| SERV-01 | Phase 4 | Pending |
-| SERV-02 | Phase 4 | Pending |
+| SERV-01 | Phase 4 | Complete |
+| SERV-02 | Phase 4 | Complete |
 | CTA-01 | Phase 5 | Pending |
 | CTA-02 | Phase 5 | Pending |
 | CTA-03 | Phase 5 | Pending |
