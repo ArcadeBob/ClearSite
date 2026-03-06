@@ -8,6 +8,16 @@ The marketing website for Clean Glass Installation (CGI), a commercial glazing s
 
 Professional credibility for a commercial glazing subcontractor — accurate project data, consistent visual presentation, and clear CTAs for general contractors.
 
+## Current Milestone: v1.1 Credibility & Conversion
+
+**Goal:** Strengthen CGI's credibility for commercial GCs by surfacing safety credentials, prevailing wage experience, and technical service depth — while simplifying the conversion path.
+
+**Target features:**
+- About page safety program expansion (EMR, OSHA, training practices)
+- Prevailing wage / public works badge + banner sitewide
+- Expanded service sections with technical capability details
+- CTA simplification to two clear commercial/residential paths
+
 ## Requirements
 
 ### Validated
@@ -24,7 +34,10 @@ Professional credibility for a commercial glazing subcontractor — accurate pro
 
 ### Active
 
-(None — planning next milestone)
+- [ ] About page expanded with safety program details, training practices, and incident prevention protocols (mock content for owner review)
+- [ ] Prevailing wage / public works badge + banner visible sitewide (homepage + About) — PLA, Davis-Bacon, LAUSD, state prevailing wage
+- [ ] Service sections expanded with technical capability details (storefronts, curtain walls, skylights, etc.)
+- [ ] CTA simplified to two clear paths: "Request Prequal Package" (commercial) and "Request a Quote" (residential) — same form, auto-tagged
 
 ### Out of Scope
 
@@ -57,4 +70,4 @@ All images remain Unsplash placeholders until owner provides real photos.
 | Raw h1+p markup instead of SectionHeader for Contact hero | SectionHeader rendered invisible h2 on dark background | ✓ Good — resolved visual bug while matching other heroes |
 
 ---
-*Last updated: 2026-03-03 after v1.0 milestone*
+*Last updated: 2026-03-05 after v1.1 milestone start*
