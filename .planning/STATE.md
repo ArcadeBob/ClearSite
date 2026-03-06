@@ -3,14 +3,14 @@ gsd_state_version: 1.0
 milestone: v1.1
 milestone_name: Credibility & Conversion
 status: planning
-stopped_at: Phase 3 context gathered
-last_updated: "2026-03-06T05:04:00.347Z"
+stopped_at: Completed 03-01-PLAN.md
+last_updated: "2026-03-06T05:34:42.546Z"
 last_activity: 2026-03-05 — Roadmap created, 11/11 v1.1 requirements mapped
 progress:
   total_phases: 3
-  completed_phases: 0
-  total_plans: 0
-  completed_plans: 0
+  completed_phases: 1
+  total_plans: 1
+  completed_plans: 1
   percent: 0
 ---
 
@@ -46,6 +46,7 @@ Progress: [░░░░░░░░░░] 0%
 | v1.0 phases 1-2 | 3 | — | — |
 
 *Updated after each plan completion*
+| Phase 03-safety-credentials-foundation P01 | 18 | 2 tasks | 10 files |
 
 ## Accumulated Context
 
@@ -58,6 +59,9 @@ Recent decisions affecting v1.1 work:
 - PrevailingWageBanner must NOT go in App.tsx — inline section only on HomePage and AboutPage (avoids z-index collision with existing FloatingCTA at z-40)
 - Mock safety content requires owner sign-off before phase closes — safety claims are material representations in GC prequalification
 - Phase 5 has external verification dependency: Formspree inbox must confirm commercial/residential submissions appear with distinct labels
+- [Phase 03-01]: Credential constants module: all static credential values live in src/data/credentials.ts, named UPPER_SNAKE_CASE with as const
+- [Phase 03-01]: SafetySection uses static numbers only (no animation hooks) -- locked decision, section is informational not promotional
+- [Phase 03-01]: SafetySection placed only in AboutPage (not global layout) to avoid z-index collision with FloatingCTA at z-40
 
 ### Pending Todos
 
@@ -70,6 +74,6 @@ None.
 
 ## Session Continuity
 
-Last session: 2026-03-06T05:04:00.345Z
-Stopped at: Phase 3 context gathered
-Resume file: .planning/phases/03-safety-credentials-foundation/03-CONTEXT.md
+Last session: 2026-03-06T05:34:42.544Z
+Stopped at: Completed 03-01-PLAN.md
+Resume file: None

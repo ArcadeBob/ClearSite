@@ -9,13 +9,13 @@ Requirements for Credibility & Conversion milestone. Each maps to roadmap phases
 
 ### Credentials Data
 
-- [ ] **CRED-01**: Credential data (EMR, OSHA, bonding, CSLB, DIR, certifications) consolidated into a shared constants file — single source of truth across all pages
+- [x] **CRED-01**: Credential data (EMR, OSHA, bonding, CSLB, DIR, certifications) consolidated into a shared constants file — single source of truth across all pages
 
 ### Safety Program
 
-- [ ] **SAFE-01**: About page displays safety program section with EMR rate, OSHA incident record, and certification details
-- [ ] **SAFE-02**: About page displays safety management narrative covering training practices, incident prevention protocols, and IIPP program (mock content for owner review)
-- [ ] **SAFE-03**: Safety section content flagged for owner review before considered final
+- [x] **SAFE-01**: About page displays safety program section with EMR rate, OSHA incident record, and certification details
+- [x] **SAFE-02**: About page displays safety management narrative covering training practices, incident prevention protocols, and IIPP program (mock content for owner review)
+- [x] **SAFE-03**: Safety section content flagged for owner review before considered final
 
 ### Prevailing Wage
 
@@ -64,10 +64,10 @@ Which phases cover which requirements. Updated during roadmap creation.
 
 | Requirement | Phase | Status |
 |-------------|-------|--------|
-| CRED-01 | Phase 3 | Pending |
-| SAFE-01 | Phase 3 | Pending |
-| SAFE-02 | Phase 3 | Pending |
-| SAFE-03 | Phase 3 | Pending |
+| CRED-01 | Phase 3 | Complete |
+| SAFE-01 | Phase 3 | Complete |
+| SAFE-02 | Phase 3 | Complete |
+| SAFE-03 | Phase 3 | Complete |
 | WAGE-01 | Phase 4 | Pending |
 | WAGE-02 | Phase 4 | Pending |
 | SERV-01 | Phase 4 | Pending |
