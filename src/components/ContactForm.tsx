@@ -7,6 +7,10 @@ import { Send, CheckCircle, Upload, X, FileText } from 'lucide-react';
 
 const MAX_FILE_SIZE = 10 * 1024 * 1024; // 10 MB
 
+interface ContactFormProps {
+  inquiryType?: 'commercial' | 'residential';
+}
+
 const projectTypeOptions = [
   { value: 'new-construction', label: 'New Construction' },
   { value: 'tenant-improvement', label: 'Tenant Improvement' },
@@ -24,7 +28,7 @@ const scopeValueOptions = [
   { value: 'unsure', label: 'Not sure yet' },
 ];
 
-export function ContactForm(): React.JSX.Element {
+export function ContactForm({ inquiryType = 'commercial' }: ContactFormProps): React.JSX.Element {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isSuccess, setIsSuccess] = useState(false);
   const [error, setError] = useState<string | null>(null);
@@ -101,6 +105,14 @@ export function ContactForm(): React.JSX.Element {
   return (
     <form onSubmit={handleSubmit} className="space-y-6">
       <input type="text" name="_gotcha" style={{ display: 'none' }} tabIndex={-1} autoComplete="off" />
+      <input type="hidden" name="inquiryType" value={inquiryType} />
+      <input
+        type="hidden"
+        name="_subject"
+        value={inquiryType === 'commercial'
+          ? 'New Commercial Inquiry - CGI Website'
+          : 'New Residential Quote Request - CGI Website'}
+      />
 
       {/* Contact Info */}
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
