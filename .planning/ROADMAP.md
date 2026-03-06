@@ -53,8 +53,8 @@ Plans:
 **Plans**: 2 plans
 
 Plans:
-- [ ] 04-01-PLAN.md — Build PrevailingWageBanner component, wire into HomePage and AboutPage, remove Contact FAQ entry
-- [ ] 04-02-PLAN.md — Extend ServiceCard with technical capability bullets and amber review banner
+- [x] 04-01-PLAN.md — Build PrevailingWageBanner component, wire into HomePage and AboutPage, remove Contact FAQ entry
+- [x] 04-02-PLAN.md — Extend ServiceCard with technical capability bullets and amber review banner
 
 ### Phase 5: CTA Simplification
 **Goal**: Every visitor — commercial GC or residential homeowner — sees a CTA that matches their context and arrives at a contact form pre-tagged to their path
@@ -65,11 +65,11 @@ Plans:
   2. Every residential CTA across all pages reads "Request a Quote" and links to the contact form with a residential type parameter
   3. The contact form auto-detects the type URL parameter and pre-selects the correct commercial or residential path on arrival
   4. A Formspree inbox test confirms that commercial and residential submissions appear with distinct labels (end-to-end verification, not just UI verification)
-**Plans**: TBD
+**Plans**: 2 plans
 
 Plans:
-- [ ] 05-01: Update ContactForm and ContactPage with inquiryType prop and useSearchParams
-- [ ] 05-02: CTA link sweep across all pages and FloatingCTA — update to ?type= parameters
+- [ ] 05-01-PLAN.md — Add inquiryType prop to ContactForm and useSearchParams to ContactPage for URL parameter awareness
+- [ ] 05-02-PLAN.md — CTA link sweep across all pages and FloatingCTA to append ?type= parameters and fix button text
 
 ## Progress
 
@@ -78,5 +78,5 @@ Plans:
 | 1. Portfolio Status | v1.0 | 1/1 | Complete | 2026-03-02 |
 | 2. Visual Polish | v1.0 | 2/2 | Complete | 2026-03-03 |
 | 3. Safety Credentials Foundation | v1.1 | 1/1 | Complete | 2026-03-06 |
-| 4. Prevailing Wage & Service Depth | 2/2 | Complete   | 2026-03-06 | - |
+| 4. Prevailing Wage & Service Depth | v1.1 | 2/2 | Complete | 2026-03-06 |
 | 5. CTA Simplification | v1.1 | 0/2 | Not started | - |
