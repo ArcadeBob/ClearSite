@@ -1,4 +1,5 @@
 import React from 'react';
+import { useSearchParams } from 'react-router-dom';
 import { ContactForm } from '../components/ContactForm';
 import { SectionHeader } from '../components/SectionHeader';
 import {
@@ -71,16 +72,35 @@ const faqs = [
 ];
 
 export function ContactPage() {
+  const [searchParams] = useSearchParams();
+  const inquiryType: 'commercial' | 'residential' =
+    searchParams.get('type') === 'residential' ? 'residential' : 'commercial';
+
+  const pageTitle = inquiryType === 'residential'
+    ? 'Request a Quote'
+    : 'Request Prequalification Packet';
+
+  const pageSubtitle = inquiryType === 'residential'
+    ? "Tell us about your project and we'll get back to you within one business day."
+    : "Get everything you need to add CGI to your bid list \u2014 COI, EMR, references, and project history \u2014 delivered within 24 hours.";
+
+  const formHeading = inquiryType === 'residential'
+    ? 'Tell Us About Your Project'
+    : 'Request Your Prequalification Packet';
+
+  const formSubtitle = inquiryType === 'residential'
+    ? "Share your project details and we'll provide a detailed quote."
+    : "Tell us about your project and we'll send your complete prequal package within 24 hours.";
+
   return (
     <div className="min-h-screen bg-slate-50">
       <div className="bg-brand text-white py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h1 className="text-4xl font-bold mb-4">
-            Request Prequalification Packet
+            {pageTitle}
           </h1>
           <p className="text-xl text-slate-300 max-w-3xl">
-            Get everything you need to add CGI to your bid list — COI, EMR,
-            references, and project history — delivered within 24 hours.
+            {pageSubtitle}
           </p>
         </div>
       </div>
@@ -229,13 +249,12 @@ export function ContactPage() {
           <div className="lg:col-span-2">
             <div className="bg-white p-8 md:p-10 rounded-xl shadow-md border border-slate-200">
               <h2 className="text-2xl font-bold text-slate-900 mb-2">
-                Request Your Prequalification Packet
+                {formHeading}
               </h2>
               <p className="text-slate-500 mb-8">
-                Tell us about your project and we'll send your complete prequal
-                package within 24 hours.
+                {formSubtitle}
               </p>
-              <ContactForm />
+              <ContactForm inquiryType={inquiryType} />
             </div>
           </div>
         </div>
