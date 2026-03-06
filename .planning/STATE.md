@@ -1,16 +1,16 @@
 ---
 gsd_state_version: 1.0
-milestone: v1.1
-milestone_name: Credibility & Conversion
-status: planning
-stopped_at: Completed 05-02-PLAN.md
-last_updated: "2026-03-06T14:13:26.623Z"
-last_activity: 2026-03-05 — Roadmap created, 11/11 v1.1 requirements mapped
+milestone: null
+milestone_name: null
+status: between_milestones
+stopped_at: v1.1 milestone completed
+last_updated: "2026-03-06"
+last_activity: 2026-03-06 — v1.1 Credibility & Conversion shipped
 progress:
-  total_phases: 3
-  completed_phases: 3
-  total_plans: 5
-  completed_plans: 5
+  total_phases: 0
+  completed_phases: 0
+  total_plans: 0
+  completed_plans: 0
   percent: 0
 ---
 
@@ -18,64 +18,39 @@ progress:
 
 ## Project Reference
 
-See: .planning/PROJECT.md (updated 2026-03-05)
+See: .planning/PROJECT.md (updated 2026-03-06)
 
 **Core value:** Professional credibility for a commercial glazing subcontractor — accurate project data, consistent visual presentation, and clear CTAs for general contractors.
-**Current focus:** Phase 3 — Safety Credentials Foundation
+**Current focus:** Planning next milestone
 
 ## Current Position
 
-Phase: 3 of 5 (Safety Credentials Foundation)
-Plan: — (not yet planned)
-Status: Ready to plan
-Last activity: 2026-03-05 — Roadmap created, 11/11 v1.1 requirements mapped
-
-Progress: [░░░░░░░░░░] 0%
+Phase: — (between milestones)
+Plan: —
+Status: v1.1 shipped, ready for next milestone
+Last activity: 2026-03-06 — v1.1 Credibility & Conversion shipped
 
 ## Performance Metrics
 
 **Velocity:**
-- Total plans completed: 3 (v1.0)
-- Average duration: —
-- Total execution time: —
+- Total plans completed: 8 (v1.0: 3, v1.1: 5)
+- v1.1 execution time: ~24 min across 5 plans
 
-**By Phase:**
+**By Phase (v1.1):**
 
-| Phase | Plans | Total | Avg/Plan |
-|-------|-------|-------|----------|
-| v1.0 phases 1-2 | 3 | — | — |
-
-*Updated after each plan completion*
-| Phase 03-safety-credentials-foundation P01 | 18 | 2 tasks | 10 files |
-| Phase 04-prevailing-wage-service-depth P01 | 88 | 2 tasks | 4 files |
-| Phase 04-prevailing-wage-service-depth P02 | 3 | 2 tasks | 2 files |
-| Phase 05-cta-simplification P01 | 2 | 2 tasks | 2 files |
-| Phase 05-cta-simplification P02 | 1 | 2 tasks | 6 files |
+| Phase | Duration | Tasks | Files |
+|-------|----------|-------|-------|
+| 03 Safety Credentials Foundation P01 | 18 min | 2 | 10 |
+| 04 Prevailing Wage & Service Depth P01 | 88 sec | 2 | 4 |
+| 04 Prevailing Wage & Service Depth P02 | 3 min | 2 | 2 |
+| 05 CTA Simplification P01 | 2 min | 2 | 2 |
+| 05 CTA Simplification P02 | 1 min | 2 | 6 |
 
 ## Accumulated Context
 
 ### Decisions
 
-Captured in PROJECT.md Key Decisions table.
-Recent decisions affecting v1.1 work:
-
-- Credential data must be extracted to `src/data/credentials.ts` before writing any new safety section markup (prevents 8th duplication point)
-- PrevailingWageBanner must NOT go in App.tsx — inline section only on HomePage and AboutPage (avoids z-index collision with existing FloatingCTA at z-40)
-- Mock safety content requires owner sign-off before phase closes — safety claims are material representations in GC prequalification
-- Phase 5 has external verification dependency: Formspree inbox must confirm commercial/residential submissions appear with distinct labels
-- [Phase 03-01]: Credential constants module: all static credential values live in src/data/credentials.ts, named UPPER_SNAKE_CASE with as const
-- [Phase 03-01]: SafetySection uses static numbers only (no animation hooks) -- locked decision, section is informational not promotional
-- [Phase 03-01]: SafetySection placed only in AboutPage (not global layout) to avoid z-index collision with FloatingCTA at z-40
-- [Phase 04-01]: PrevailingWageBanner accepts optional className prop to allow bg-slate-50 on HomePage and bg-white on AboutPage without conditional logic
-- [Phase 04-01]: Prevailing wage FAQ removed from ContactPage since PrevailingWageBanner provides deeper coverage in higher-traffic locations
-- [Phase 04-02]: Bullets rendered always-expanded (not accordion) -- GCs need to scan all capabilities at a glance
-- [Phase 04-02]: Single amber review banner above services grid (not per-card) -- cleaner visual, one clear review flag
-- [Phase 04-02]: bullets prop is optional (bullets?: string[]) -- existing callers without bullets still work unchanged
-- [Phase 05-01]: inquiryType prop is optional with default 'commercial' — existing callers without the prop still work unchanged
-- [Phase 05-01]: useSearchParams lives in ContactPage only (not ContactForm) — ContactForm remains presentational, per anti-pattern guidance
-- [Phase 05-01]: Any ?type= value not exactly 'residential' defaults to 'commercial', including null/missing/arbitrary values
-- [Phase 05-02]: NotFoundPage plain /contact link is navigation context, not a CTA — left unchanged
-- [Phase 05-02]: FloatingCTA Download icon replaced with ArrowRight to match non-download intent of Request action
+See PROJECT.md Key Decisions table for full history.
 
 ### Pending Todos
 
@@ -83,11 +58,12 @@ None.
 
 ### Blockers/Concerns
 
-- Phase 3: Owner review process for safety copy not yet defined (email? staged deployment?). Plan for a review iteration and do not close Phase 3 without sign-off.
-- Phase 5: Formspree `_subject` field configuration unknown from codebase — check during Phase 5 planning whether current config surfaces inquiryType in email subject lines.
+- Owner review of safety content (5 markers in SafetySection.tsx) — not a code blocker, business process
+- Owner review of 24 service capability bullets — not a code blocker, business process
+- Formspree E2E inbox test — external verification, not blocking next milestone
 
 ## Session Continuity
 
-Last session: 2026-03-06T14:10:18.397Z
-Stopped at: Completed 05-02-PLAN.md
+Last session: 2026-03-06
+Stopped at: v1.1 milestone completed
 Resume file: None
