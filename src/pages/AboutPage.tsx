@@ -13,7 +13,7 @@ import {
   ArrowRight,
   Calendar,
 } from 'lucide-react';
-import { CSLB_LICENSE_NUMBER } from '../data/credentials';
+import { CSLB_LICENSE_NUMBER, BONDING_CAPACITY_DISPLAY } from '../data/credentials';
 import { SafetySection } from '../components/SafetySection';
 import { PrevailingWageBanner } from '../components/PrevailingWageBanner';
 
@@ -87,7 +87,7 @@ const milestones = [
   },
   {
     year: '2025',
-    title: '$1M Bonding',
+    title: `${BONDING_CAPACITY_DISPLAY} Bonding`,
     description:
       'Single-project bonding capacity enables CGI to take on the largest commercial glazing scopes in the market.',
   },
@@ -165,7 +165,7 @@ export function AboutPage() {
           <SectionHeader
             subheading="Our Journey"
             title="Company Milestones"
-            description="From a one-man crew to a $1M bonding capacity — over a decade of growth built on clean work."
+            description={`From a one-man crew to a ${BONDING_CAPACITY_DISPLAY} bonding capacity — over a decade of growth built on clean work.`}
             subheadingColor="text-amber-600"
             className="mb-12"
           />

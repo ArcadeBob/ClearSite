@@ -23,6 +23,7 @@ import {
   SBE_CERT_NUMBER,
   EMR_DISPLAY,
   DIR_STATUS,
+  BONDING_CAPACITY_DISPLAY,
 } from '../data/credentials';
 
 const trustBadges = [
@@ -62,7 +63,7 @@ const faqs = [
   {
     question: 'What size projects do you handle?',
     answer:
-      'We handle commercial glazing projects ranging from $10,000 to over $2 million. With $1M single-project bonding capacity, we can take on major commercial scopes. We also do select high-end residential projects.',
+      `We handle commercial glazing projects ranging from $10,000 to over $2 million. With ${BONDING_CAPACITY_DISPLAY} single-project bonding capacity, we can take on major commercial scopes. We also do select high-end residential projects.`,
   },
   {
     question: 'How do I get a bid?',

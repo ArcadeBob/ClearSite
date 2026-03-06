@@ -15,6 +15,12 @@ import { FloatingCTA } from '../components/FloatingCTA';
 import { SectionHeader } from '../components/SectionHeader';
 import { PrevailingWageBanner } from '../components/PrevailingWageBanner';
 import {
+  BONDING_CAPACITY_DISPLAY,
+  EMR_DISPLAY,
+  DIR_STATUS,
+  PREVAILING_WAGE_STATUS,
+} from '../data/credentials';
+import {
   Building2,
   Maximize,
   Sun,
@@ -237,7 +243,7 @@ export function HomePage(): React.JSX.Element {
               }}>
 
               Stop babysitting your glazing contractor. With 13+ years of
-              commercial experience, $1M bonding capacity, and a 0.87 EMR, we
+              commercial experience, {BONDING_CAPACITY_DISPLAY} bonding capacity, and a {EMR_DISPLAY} EMR, we
               show up every day, hit every deadline, and leave you with a clean
               turnover—not a punch list.
             </p>
@@ -255,7 +261,7 @@ export function HomePage(): React.JSX.Element {
               </span>
               <span className="flex items-center gap-1.5">
                 <CheckCircle2 className="h-4 w-4 text-green-400" />
-                Prevailing Wage Certified
+                {PREVAILING_WAGE_STATUS}
               </span>
               <span className="flex items-center gap-1.5">
                 <CheckCircle2 className="h-4 w-4 text-green-400" />
@@ -396,6 +402,7 @@ export function HomePage(): React.JSX.Element {
             description={<>From fabrication to installation, we handle the complete glazing scope.{' '}<strong>One subcontractor, one point of contact, zero coordination headaches.</strong></>}
             className="mb-16"
           />
+          {import.meta.env.DEV && (
           <div className="mb-8 flex items-start gap-3 rounded-lg border border-amber-300 bg-amber-50 px-4 py-3 text-sm text-amber-800">
             <AlertTriangle className="h-5 w-5 shrink-0 mt-0.5 text-amber-600" />
             <p>
@@ -403,6 +410,7 @@ export function HomePage(): React.JSX.Element {
               Technical bullets are placeholder content until CGI confirms system types and applications.
             </p>
           </div>
+          )}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {services.map((service) =>
             <ServiceCard key={service.title} {...service} />
@@ -476,17 +484,16 @@ export function HomePage(): React.JSX.Element {
           </p>
           <div className="flex flex-wrap justify-center gap-4 text-sm text-slate-400 mb-10">
             <span className="flex items-center gap-2 bg-white/10 px-3 py-1.5 rounded-full">
-              <CheckCircle2 className="h-4 w-4 text-green-400" /> $1M Bonding
+              <CheckCircle2 className="h-4 w-4 text-green-400" /> {BONDING_CAPACITY_DISPLAY} Bonding
             </span>
             <span className="flex items-center gap-2 bg-white/10 px-3 py-1.5 rounded-full">
-              <CheckCircle2 className="h-4 w-4 text-green-400" /> 0.87 EMR
+              <CheckCircle2 className="h-4 w-4 text-green-400" /> {EMR_DISPLAY} EMR
             </span>
             <span className="flex items-center gap-2 bg-white/10 px-3 py-1.5 rounded-full">
-              <CheckCircle2 className="h-4 w-4 text-green-400" /> DIR Registered
+              <CheckCircle2 className="h-4 w-4 text-green-400" /> {DIR_STATUS}
             </span>
             <span className="flex items-center gap-2 bg-white/10 px-3 py-1.5 rounded-full">
-              <CheckCircle2 className="h-4 w-4 text-green-400" /> Prevailing
-              Wage
+              <CheckCircle2 className="h-4 w-4 text-green-400" /> {PREVAILING_WAGE_STATUS}
             </span>
           </div>
           <div className="flex flex-col sm:flex-row justify-center gap-4">

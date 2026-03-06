@@ -36,6 +36,7 @@ export function SafetySection() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
         {/* Amber review banner -- remove when owner approves content */}
+        {import.meta.env.DEV && (
         <div className="mb-8 flex items-start gap-3 rounded-lg border border-amber-300 bg-amber-50 px-4 py-3 text-sm text-amber-800">
           <AlertTriangle className="h-5 w-5 shrink-0 mt-0.5 text-amber-600" />
           <p>
@@ -44,6 +45,7 @@ export function SafetySection() {
             markers in this section for items requiring owner confirmation.
           </p>
         </div>
+        )}
 
         {/* Section header */}
         <SectionHeader

@@ -37,7 +37,7 @@ const stats: StatData[] = [
   format: (n) => (n / 100).toFixed(2),
   icon: <Shield className="h-5 w-5" />,
   subtext: OSHA_RECORD_DISPLAY,
-  progress: 87
+  progress: EMR_ANIMATE_INTEGER
 },
 {
   label: 'Project Capacity',
