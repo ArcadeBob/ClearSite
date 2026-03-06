@@ -522,7 +522,7 @@ export function CaseStudyPage() {
             </span>
           </div>
           <div className="flex flex-col sm:flex-row justify-center gap-4">
-            <Link to="/contact">
+            <Link to="/contact?type=commercial">
               <Button
                 size="lg"
                 variant="secondary"

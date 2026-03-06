@@ -352,7 +352,7 @@ export function AboutPage() {
               well staffed to ensure the most complex projects are completed on
               time with exacting quality standards.
             </p>
-            <Link to="/contact">
+            <Link to="/contact?type=commercial">
               <Button className="gap-2">
                 Work With Us <ArrowRight className="h-4 w-4" />
               </Button>
@@ -373,13 +373,13 @@ export function AboutPage() {
             won't have to babysit our team—giving you more time for the many
             other tasks on your project.
           </p>
-          <Link to="/contact">
+          <Link to="/contact?type=commercial">
             <Button
               size="lg"
               variant="secondary"
               className="shadow-lg shadow-amber-500/20"
             >
-              Get a Free Consultation
+              Request Prequal Package
             </Button>
           </Link>
         </div>

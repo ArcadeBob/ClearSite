@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Button } from './ui/Button';
-import { Download, X } from 'lucide-react';
+import { ArrowRight, X } from 'lucide-react';
 
 const SCROLL_SHOW_THRESHOLD = 500;
 const SCROLL_RESET_THRESHOLD = 100;
@@ -41,7 +41,7 @@ export function FloatingCTA(): React.JSX.Element {
             {/* Text */}
             <div className="flex items-center gap-3 min-w-0">
               <div className="hidden sm:flex h-10 w-10 rounded-full bg-accent/20 flex-shrink-0 items-center justify-center">
-                <Download className="h-5 w-5 text-accent" />
+                <ArrowRight className="h-5 w-5 text-accent" />
               </div>
               <div className="min-w-0">
                 <p className="text-white font-semibold text-sm sm:text-base truncate">
@@ -55,17 +55,17 @@ export function FloatingCTA(): React.JSX.Element {
 
             {/* Actions */}
             <div className="flex items-center gap-3 flex-shrink-0">
-              <Link to="/contact">
+              <Link to="/contact?type=commercial">
                 <Button
                   variant="secondary"
                   size="sm"
                   className="gap-2 whitespace-nowrap">
 
-                  <Download className="h-4 w-4" />
+                  <ArrowRight className="h-4 w-4" />
                   <span className="hidden sm:inline">
-                    Download Prequal Package
+                    Request Prequal Package
                   </span>
-                  <span className="sm:hidden">Get Package</span>
+                  <span className="sm:hidden">Get Prequal</span>
                 </Button>
               </Link>
 

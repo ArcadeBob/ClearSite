@@ -88,7 +88,7 @@ function InfoCard({ title, icon, highlight, details, ctaText }: InfoCardData) {
       {ctaText && (
         <div className="mt-5 pt-4 border-t border-white/10">
           <Link
-            to="/contact"
+            to="/contact?type=commercial"
             className="text-sm font-semibold text-accent hover:text-white transition-colors inline-flex items-center gap-1.5"
           >
             {ctaText} <ArrowRight className="h-3.5 w-3.5" />
@@ -192,7 +192,7 @@ export function GCResourcesSection() {
             </div>
           </div>
 
-          <Link to="/contact">
+          <Link to="/contact?type=commercial">
             <Button
               variant="outline"
               className="border-white/20 text-white hover:bg-white hover:text-brand gap-2 whitespace-nowrap">
