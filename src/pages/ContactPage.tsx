@@ -14,28 +14,35 @@ import {
   HelpCircle,
   ExternalLink,
 } from 'lucide-react';
-
-const CSLB_LOOKUP_URL = 'https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/CheckLicense.aspx';
+import {
+  CSLB_LICENSE_CLASS,
+  CSLB_LICENSE_NUMBER,
+  CSLB_LOOKUP_URL,
+  CSLB_LICENSE_DISPLAY,
+  SBE_CERT_NUMBER,
+  EMR_DISPLAY,
+  DIR_STATUS,
+} from '../data/credentials';
 
 const trustBadges = [
   {
     icon: <ShieldCheck className="h-5 w-5" />,
-    title: 'C-17 Licensed',
-    subtitle: '#965590',
+    title: `${CSLB_LICENSE_CLASS} Licensed`,
+    subtitle: `#${CSLB_LICENSE_NUMBER}`,
   },
   {
     icon: <Award className="h-5 w-5" />,
     title: 'SBE Certified',
-    subtitle: '#2034373',
+    subtitle: `#${SBE_CERT_NUMBER}`,
   },
   {
     icon: <FileCheck className="h-5 w-5" />,
-    title: 'DIR Registered',
+    title: DIR_STATUS,
     subtitle: 'Prevailing Wage',
   },
   {
     icon: <Heart className="h-5 w-5" />,
-    title: '0.87 EMR',
+    title: `${EMR_DISPLAY} EMR`,
     subtitle: 'Safety Rating',
   },
 ];
@@ -159,7 +166,7 @@ export function ContactPage() {
                 <div className="flex items-center gap-3">
                   <ShieldCheck className="h-5 w-5 text-amber-500 shrink-0" />
                   <div>
-                    <span>License C-17 #965590</span>
+                    <span>{CSLB_LICENSE_DISPLAY}</span>
                     <a
                       href={CSLB_LOOKUP_URL}
                       target="_blank"

@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { TrendingUp, Shield, DollarSign, Clock } from 'lucide-react';
 import { useOnceInView } from '../hooks/useOnceInView';
+import { EMR_ANIMATE_INTEGER, OSHA_RECORD_DISPLAY } from '../data/credentials';
 
 interface StatData {
   label: string;
@@ -32,10 +33,10 @@ const stats: StatData[] = [
 },
 {
   label: 'EMR Safety Rating',
-  animateTo: 87,
+  animateTo: EMR_ANIMATE_INTEGER,
   format: (n) => (n / 100).toFixed(2),
   icon: <Shield className="h-5 w-5" />,
-  subtext: 'Zero OSHA Incidents',
+  subtext: OSHA_RECORD_DISPLAY,
   progress: 87
 },
 {

@@ -187,6 +187,7 @@ export function HomePage(): React.JSX.Element {
             </p>
 
             {/* Expanded Copy */}
+            {/* Credential values: see src/data/credentials.ts */}
             <p
               className="text-lg text-white/90 mb-5 leading-relaxed max-w-2xl drop-shadow-[0_1px_2px_rgba(0,0,0,0.2)]"
               style={{

@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Mail, Phone, MapPin, ShieldCheck } from 'lucide-react';
+import { CSLB_LICENSE_DISPLAY, DIR_STATUS } from '../data/credentials';
 export function Footer() {
   return (
     <footer className="bg-brand text-slate-300">
@@ -21,7 +22,7 @@ export function Footer() {
             </p>
             <div className="flex items-center gap-2 text-sm text-accent font-medium bg-accent/10 px-3 py-2 rounded-md w-fit">
               <ShieldCheck className="h-4 w-4" />
-              <span>C-17 License #965590</span>
+              <span>{CSLB_LICENSE_DISPLAY}</span>
             </div>
           </div>
 
@@ -158,7 +159,7 @@ export function Footer() {
               SBE Certified
             </span>
             <span className="hover:text-slate-300 cursor-default transition-colors">
-              DIR Registered
+              {DIR_STATUS}
             </span>
             <span className="hover:text-slate-300 cursor-default transition-colors">
               Fully Insured

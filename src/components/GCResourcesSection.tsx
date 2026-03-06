@@ -12,6 +12,11 @@ import {
   ArrowRight,
   File } from
 'lucide-react';
+import {
+  EMR_DISPLAY,
+  BONDING_CAPACITY_DISPLAY,
+  CSLB_LICENSE_DISPLAY,
+} from '../data/credentials';
 
 interface InfoCardData {
   title: string;
@@ -36,7 +41,7 @@ const infoCards: InfoCardData[] = [
   {
     title: 'Safety Record',
     icon: <Award className="h-6 w-6" />,
-    highlight: '0.87 EMR',
+    highlight: `${EMR_DISPLAY} EMR`,
     details: [
       'Zero OSHA recordable incidents',
       'Full safety protocols & training',
@@ -46,10 +51,10 @@ const infoCards: InfoCardData[] = [
   {
     title: 'License & Bonding',
     icon: <ShieldCheck className="h-6 w-6" />,
-    highlight: '$1M Bond',
+    highlight: `${BONDING_CAPACITY_DISPLAY} Bond`,
     details: [
-      'C-17 License #965590',
-      '$1M bonding active & verified',
+      CSLB_LICENSE_DISPLAY,
+      `${BONDING_CAPACITY_DISPLAY} bonding active & verified`,
       'DIR registered, prevailing wage certified',
     ],
   },
@@ -97,7 +102,7 @@ function InfoCard({ title, icon, highlight, details, ctaText }: InfoCardData) {
 const quickFacts = [
 {
   label: 'Bonding Capacity',
-  value: '$1M',
+  value: BONDING_CAPACITY_DISPLAY,
   icon: <DollarSign className="h-5 w-5" />
 },
 {
@@ -107,7 +112,7 @@ const quickFacts = [
 },
 {
   label: 'EMR Rating',
-  value: '0.87',
+  value: EMR_DISPLAY,
   icon: <Shield className="h-5 w-5" />
 },
 {

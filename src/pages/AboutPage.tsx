@@ -13,6 +13,7 @@ import {
   ArrowRight,
   Calendar,
 } from 'lucide-react';
+import { CSLB_LICENSE_NUMBER } from '../data/credentials';
 
 const team = [
   {
@@ -62,6 +63,7 @@ const values = [
   },
 ];
 
+// Credential values: see src/data/credentials.ts
 const milestones = [
   {
     year: '2012',
@@ -288,7 +290,7 @@ export function AboutPage() {
               },
               {
                 title: 'Fully Licensed',
-                desc: 'Covered for any job site event. License #965590.',
+                desc: `Covered for any job site event. License #${CSLB_LICENSE_NUMBER}.`,
               },
             ].map((item) => (
               <div

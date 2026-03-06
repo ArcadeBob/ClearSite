@@ -3,6 +3,7 @@ import { useParams, Link } from 'react-router-dom';
 import { SectionHeader } from '../components/SectionHeader';
 import { ProjectCard } from '../components/ProjectCard';
 import { Button } from '../components/ui/Button';
+import { BONDING_CAPACITY_DISPLAY, EMR_DISPLAY, DIR_STATUS } from '../data/credentials';
 import {
   MapPin,
   Building2,
@@ -511,13 +512,13 @@ export function CaseStudyPage() {
           </p>
           <div className="flex flex-wrap justify-center gap-4 text-sm text-slate-400 mb-10">
             <span className="flex items-center gap-2 bg-white/10 px-3 py-1.5 rounded-full">
-              <CheckCircle2 className="h-4 w-4 text-green-400" /> $1M Bonding
+              <CheckCircle2 className="h-4 w-4 text-green-400" /> {BONDING_CAPACITY_DISPLAY} Bonding
             </span>
             <span className="flex items-center gap-2 bg-white/10 px-3 py-1.5 rounded-full">
-              <CheckCircle2 className="h-4 w-4 text-green-400" /> 0.87 EMR
+              <CheckCircle2 className="h-4 w-4 text-green-400" /> {EMR_DISPLAY} EMR
             </span>
             <span className="flex items-center gap-2 bg-white/10 px-3 py-1.5 rounded-full">
-              <CheckCircle2 className="h-4 w-4 text-green-400" /> DIR Registered
+              <CheckCircle2 className="h-4 w-4 text-green-400" /> {DIR_STATUS}
             </span>
           </div>
           <div className="flex flex-col sm:flex-row justify-center gap-4">

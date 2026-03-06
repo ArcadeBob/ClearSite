@@ -1,14 +1,21 @@
 import React from 'react';
 import { ShieldCheck, FileCheck, Award, Heart, ExternalLink } from 'lucide-react';
 import { SectionHeader } from './SectionHeader';
-
-const CSLB_LOOKUP_URL = 'https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/CheckLicense.aspx';
+import {
+  CSLB_LICENSE_CLASS,
+  CSLB_LICENSE_NUMBER,
+  CSLB_LOOKUP_URL,
+  SBE_CERT_NUMBER,
+  EMR_DISPLAY,
+  OSHA_RECORD_DISPLAY,
+  DIR_STATUS,
+} from '../data/credentials';
 
 const certifications = [
 {
   icon: <ShieldCheck className="h-6 w-6" />,
-  title: 'C-17 Licensed',
-  subtitle: 'License #965590',
+  title: `${CSLB_LICENSE_CLASS} Licensed`,
+  subtitle: `License #${CSLB_LICENSE_NUMBER}`,
   description: 'California Glazing Contractor',
   verifyUrl: CSLB_LOOKUP_URL,
   verifyLabel: 'Verify on CSLB',
@@ -16,20 +23,20 @@ const certifications = [
 {
   icon: <Award className="h-6 w-6" />,
   title: 'SBE Certified',
-  subtitle: 'ID #2034373',
+  subtitle: `ID #${SBE_CERT_NUMBER}`,
   description: 'Small Business Enterprise'
 },
 {
   icon: <FileCheck className="h-6 w-6" />,
-  title: 'DIR Registered',
+  title: DIR_STATUS,
   subtitle: 'Prevailing Wage',
   description: 'Public Works Qualified'
 },
 {
   icon: <Heart className="h-6 w-6" />,
-  title: '0.87 EMR',
+  title: `${EMR_DISPLAY} EMR`,
   subtitle: 'Safety Rating',
-  description: 'Zero OSHA Incidents'
+  description: OSHA_RECORD_DISPLAY
 }];
 
 export function CertificationsBadges() {
