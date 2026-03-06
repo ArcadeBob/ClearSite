@@ -15,6 +15,7 @@ import {
 } from 'lucide-react';
 import { CSLB_LICENSE_NUMBER } from '../data/credentials';
 import { SafetySection } from '../components/SafetySection';
+import { PrevailingWageBanner } from '../components/PrevailingWageBanner';
 
 const team = [
   {
@@ -226,6 +227,9 @@ export function AboutPage() {
 
       {/* Safety Program */}
       <SafetySection />
+
+      {/* Prevailing Wage Experience */}
+      <PrevailingWageBanner className="bg-white" />
 
       {/* Mission, Goal, Promise */}
       <section id="vision" className="py-20 bg-white">

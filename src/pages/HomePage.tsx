@@ -13,6 +13,7 @@ import { ClientLogos } from '../components/ClientLogos';
 import { PromiseSection } from '../components/PromiseSection';
 import { FloatingCTA } from '../components/FloatingCTA';
 import { SectionHeader } from '../components/SectionHeader';
+import { PrevailingWageBanner } from '../components/PrevailingWageBanner';
 import {
   Building2,
   Maximize,
@@ -338,6 +339,9 @@ export function HomePage(): React.JSX.Element {
 
       {/* Certifications & Badges */}
       <CertificationsBadges />
+
+      {/* Prevailing Wage Experience */}
+      <PrevailingWageBanner className="bg-slate-50" />
 
       {/* GC Pain Points */}
       <GCPainPoints />
