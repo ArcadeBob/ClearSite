@@ -23,7 +23,7 @@
 
 - [x] **Phase 3: Safety Credentials Foundation** - Consolidate credential data and add safety program section to About page (completed 2026-03-06)
 - [x] **Phase 4: Prevailing Wage & Service Depth** - Add prevailing wage banner sitewide and expand service card technical detail (completed 2026-03-06)
-- [ ] **Phase 5: CTA Simplification** - Unify all CTAs to two clear commercial/residential paths with form auto-tagging
+- [x] **Phase 5: CTA Simplification** - Unify all CTAs to two clear commercial/residential paths with form auto-tagging (completed 2026-03-06)
 
 ## Phase Details
 
@@ -79,4 +79,4 @@ Plans:
 | 2. Visual Polish | v1.0 | 2/2 | Complete | 2026-03-03 |
 | 3. Safety Credentials Foundation | v1.1 | 1/1 | Complete | 2026-03-06 |
 | 4. Prevailing Wage & Service Depth | v1.1 | 2/2 | Complete | 2026-03-06 |
-| 5. CTA Simplification | 1/2 | In Progress|  | - |
+| 5. CTA Simplification | 2/2 | Complete   | 2026-03-06 | - |
