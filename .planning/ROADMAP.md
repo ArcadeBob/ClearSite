@@ -79,4 +79,4 @@ Plans:
 | 2. Visual Polish | v1.0 | 2/2 | Complete | 2026-03-03 |
 | 3. Safety Credentials Foundation | v1.1 | 1/1 | Complete | 2026-03-06 |
 | 4. Prevailing Wage & Service Depth | v1.1 | 2/2 | Complete | 2026-03-06 |
-| 5. CTA Simplification | v1.1 | 0/2 | Not started | - |
+| 5. CTA Simplification | 1/2 | In Progress|  | - |

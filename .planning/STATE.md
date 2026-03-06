@@ -3,14 +3,14 @@ gsd_state_version: 1.0
 milestone: v1.1
 milestone_name: Credibility & Conversion
 status: planning
-stopped_at: Completed 04-02-PLAN.md
-last_updated: "2026-03-06T06:02:44.320Z"
+stopped_at: Completed 05-01-PLAN.md
+last_updated: "2026-03-06T14:06:40.423Z"
 last_activity: 2026-03-05 — Roadmap created, 11/11 v1.1 requirements mapped
 progress:
   total_phases: 3
   completed_phases: 2
-  total_plans: 3
-  completed_plans: 3
+  total_plans: 5
+  completed_plans: 4
   percent: 0
 ---
 
@@ -49,6 +49,7 @@ Progress: [░░░░░░░░░░] 0%
 | Phase 03-safety-credentials-foundation P01 | 18 | 2 tasks | 10 files |
 | Phase 04-prevailing-wage-service-depth P01 | 88 | 2 tasks | 4 files |
 | Phase 04-prevailing-wage-service-depth P02 | 3 | 2 tasks | 2 files |
+| Phase 05-cta-simplification P01 | 2 | 2 tasks | 2 files |
 
 ## Accumulated Context
 
@@ -69,6 +70,9 @@ Recent decisions affecting v1.1 work:
 - [Phase 04-02]: Bullets rendered always-expanded (not accordion) -- GCs need to scan all capabilities at a glance
 - [Phase 04-02]: Single amber review banner above services grid (not per-card) -- cleaner visual, one clear review flag
 - [Phase 04-02]: bullets prop is optional (bullets?: string[]) -- existing callers without bullets still work unchanged
+- [Phase 05-01]: inquiryType prop is optional with default 'commercial' — existing callers without the prop still work unchanged
+- [Phase 05-01]: useSearchParams lives in ContactPage only (not ContactForm) — ContactForm remains presentational, per anti-pattern guidance
+- [Phase 05-01]: Any ?type= value not exactly 'residential' defaults to 'commercial', including null/missing/arbitrary values
 
 ### Pending Todos
 
@@ -81,6 +85,6 @@ None.
 
 ## Session Continuity
 
-Last session: 2026-03-06T05:59:19.123Z
-Stopped at: Completed 04-02-PLAN.md
+Last session: 2026-03-06T14:06:40.421Z
+Stopped at: Completed 05-01-PLAN.md
 Resume file: None

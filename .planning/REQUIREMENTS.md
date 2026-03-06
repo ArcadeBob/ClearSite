@@ -31,7 +31,7 @@ Requirements for Credibility & Conversion milestone. Each maps to roadmap phases
 
 - [ ] **CTA-01**: All commercial CTAs read "Request Prequal Package" and link to contact form with commercial auto-tag
 - [ ] **CTA-02**: All residential CTAs read "Request a Quote" and link to contact form with residential auto-tag
-- [ ] **CTA-03**: Contact form auto-detects intent from URL parameter and pre-selects commercial or residential path
+- [x] **CTA-03**: Contact form auto-detects intent from URL parameter and pre-selects commercial or residential path
 
 ## v2 Requirements
 
@@ -74,7 +74,7 @@ Which phases cover which requirements. Updated during roadmap creation.
 | SERV-02 | Phase 4 | Complete |
 | CTA-01 | Phase 5 | Pending |
 | CTA-02 | Phase 5 | Pending |
-| CTA-03 | Phase 5 | Pending |
+| CTA-03 | Phase 5 | Complete |
 
 **Coverage:**
 - v1.1 requirements: 11 total
