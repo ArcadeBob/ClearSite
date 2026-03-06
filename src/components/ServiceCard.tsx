@@ -3,11 +3,13 @@ interface ServiceCardProps {
   title: string;
   description: string;
   icon: React.ReactNode;
+  bullets?: string[];  // Technical capability bullets -- optional for backward compat
 }
 export function ServiceCard({
   title,
   description,
   icon,
+  bullets,
 }: ServiceCardProps): React.JSX.Element {
   const [isHovered, setIsHovered] = useState(false);
   return (
@@ -42,6 +44,17 @@ export function ServiceCard({
           <p className="text-slate-600 mb-4 flex-1 leading-relaxed">
             {description}
           </p>
+
+          {bullets && bullets.length > 0 && (
+            <ul className="mt-3 space-y-1.5 border-t border-slate-100 pt-3">
+              {bullets.map((bullet) => (
+                <li key={bullet} className="flex items-start gap-1.5 text-xs text-slate-500 leading-relaxed">
+                  <span className="mt-1.5 h-1.5 w-1.5 rounded-full bg-accent/60 flex-shrink-0" />
+                  {bullet}
+                </li>
+              ))}
+            </ul>
+          )}
 
           <div
             className={`inline-flex items-center text-sm font-medium transition-all duration-300 ${isHovered ? 'text-accent opacity-100' : 'text-slate-400 opacity-0'}`}>
