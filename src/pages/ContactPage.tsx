@@ -64,11 +64,6 @@ const faqs = [
       'We handle commercial glazing projects ranging from $10,000 to over $2 million. With $1M single-project bonding capacity, we can take on major commercial scopes. We also do select high-end residential projects.',
   },
   {
-    question: 'Do you do prevailing wage work?',
-    answer:
-      'Yes. CGI is DIR registered and fully set up for prevailing wage projects. We have extensive experience with PLA, Davis-Bacon, and state prevailing wage requirements, including public works, LAUSD, and other institutional projects requiring certified payroll.',
-  },
-  {
     question: 'How do I get a bid?',
     answer:
       'Fill out the form on this page or call us directly at (818) 492-4265. Send us your plans and specifications and we\'ll provide a detailed bid within 3-5 business days. For faster turnaround, include the project timeline and any relevant addenda.',
