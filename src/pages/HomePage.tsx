@@ -26,7 +26,8 @@ import {
   CheckCircle2,
   Clock,
   DollarSign,
-  ClipboardCheck } from
+  ClipboardCheck,
+  AlertTriangle } from
 'lucide-react';
 
 const PARALLAX_FACTOR = 0.25;
@@ -40,49 +41,89 @@ const services = [
   title: 'Storefronts',
   description:
   'Custom aluminum storefronts and entrances for retail and office applications.',
-  icon: <LayoutGrid className="h-6 w-6" />
+  icon: <LayoutGrid className="h-6 w-6" />,
+  bullets: [
+    'Thermally broken aluminum framing systems',
+    'Narrow-stile, wide-stile, and heavy glass entry configurations',
+    'ADA-compliant entrance assemblies and hardware',
+  ]
 },
 {
   title: 'Window Walls',
   description:
   'Floor-to-ceiling window wall systems that maximize views and natural light.',
-  icon: <Maximize className="h-6 w-6" />
+  icon: <Maximize className="h-6 w-6" />,
+  bullets: [
+    'Aluminum stick-built window wall systems',
+    'Floor-to-ceiling glazed openings',
+    'Integrated operable vent units',
+  ]
 },
 {
   title: 'Curtain Walls',
   description:
   'High-performance stick-built and unitized curtain wall systems for commercial buildings.',
-  icon: <Building2 className="h-6 w-6" />
+  icon: <Building2 className="h-6 w-6" />,
+  bullets: [
+    'Stick-built and unitized curtain wall systems',
+    'Pressure-equalized rainscreen performance',
+    'High-rise and mid-rise commercial applications',
+  ]
 },
 {
   title: 'Skylights',
   description:
   'Overhead glazing solutions that maximize natural light while maintaining efficiency.',
-  icon: <Sun className="h-6 w-6" />
+  icon: <Sun className="h-6 w-6" />,
+  bullets: [
+    'Structural overhead glazing',
+    'Thermally broken curb-mounted systems',
+    'Daylighting and energy performance compliance',
+  ]
 },
 {
   title: 'Glass Railings',
   description:
   'Frameless and post-mounted glass railing systems for balconies and stairs.',
-  icon: <Maximize className="h-6 w-6" />
+  icon: <Maximize className="h-6 w-6" />,
+  bullets: [
+    'Frameless standoff-mounted systems',
+    'Post-and-channel base shoe configurations',
+    'IBC-compliant guard assemblies',
+  ]
 },
 {
   title: 'Fire-Rated Glazing',
   description:
   'Safety-compliant fire-rated windows and doors meeting all code requirements.',
-  icon: <Shield className="h-6 w-6" />
+  icon: <Shield className="h-6 w-6" />,
+  bullets: [
+    '20-, 45-, 60-, and 90-minute fire-rated assemblies',
+    'Wired, ceramic, and intumescent glazing products',
+    'UL-listed frame and glass combinations',
+  ]
 },
 {
   title: 'Shower Enclosures',
   description:
   'Custom frameless and semi-frameless shower enclosures for commercial and residential projects.',
-  icon: <DoorOpen className="h-6 w-6" />
+  icon: <DoorOpen className="h-6 w-6" />,
+  bullets: [
+    'Frameless and semi-frameless heavy glass systems',
+    'Custom radius and angle configurations',
+    'Commercial hospitality and fitness facility applications',
+  ]
 },
 {
   title: 'Mirrors',
   description:
   'Custom-cut mirrors for commercial, retail, and residential applications.',
-  icon: <Maximize className="h-6 w-6" />
+  icon: <Maximize className="h-6 w-6" />,
+  bullets: [
+    'Custom-cut float glass mirrors',
+    'Commercial gym, retail, and hospitality applications',
+    'Adhesive and clip-mounted installation options',
+  ]
 }];
 
 const featuredProjects = [
@@ -355,6 +396,13 @@ export function HomePage(): React.JSX.Element {
             description={<>From fabrication to installation, we handle the complete glazing scope.{' '}<strong>One subcontractor, one point of contact, zero coordination headaches.</strong></>}
             className="mb-16"
           />
+          <div className="mb-8 flex items-start gap-3 rounded-lg border border-amber-300 bg-amber-50 px-4 py-3 text-sm text-amber-800">
+            <AlertTriangle className="h-5 w-5 shrink-0 mt-0.5 text-amber-600" />
+            <p>
+              <strong>Draft service capability detail</strong> -- pending owner review and validation.
+              Technical bullets are placeholder content until CGI confirms system types and applications.
+            </p>
+          </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {services.map((service) =>
             <ServiceCard key={service.title} {...service} />
