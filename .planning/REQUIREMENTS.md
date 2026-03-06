@@ -19,8 +19,8 @@ Requirements for Credibility & Conversion milestone. Each maps to roadmap phases
 
 ### Prevailing Wage
 
-- [ ] **WAGE-01**: Prevailing wage badge/banner component visible on HomePage and AboutPage naming PLA, Davis-Bacon, LAUSD, and State Prevailing Wage experience
-- [ ] **WAGE-02**: Prevailing wage content removed from Contact page FAQ (moved to dedicated component)
+- [x] **WAGE-01**: Prevailing wage badge/banner component visible on HomePage and AboutPage naming PLA, Davis-Bacon, LAUSD, and State Prevailing Wage experience
+- [x] **WAGE-02**: Prevailing wage content removed from Contact page FAQ (moved to dedicated component)
 
 ### Service Depth
 
@@ -68,8 +68,8 @@ Which phases cover which requirements. Updated during roadmap creation.
 | SAFE-01 | Phase 3 | Complete |
 | SAFE-02 | Phase 3 | Complete |
 | SAFE-03 | Phase 3 | Complete |
-| WAGE-01 | Phase 4 | Pending |
-| WAGE-02 | Phase 4 | Pending |
+| WAGE-01 | Phase 4 | Complete |
+| WAGE-02 | Phase 4 | Complete |
 | SERV-01 | Phase 4 | Pending |
 | SERV-02 | Phase 4 | Pending |
 | CTA-01 | Phase 5 | Pending |

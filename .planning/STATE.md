@@ -3,14 +3,14 @@ gsd_state_version: 1.0
 milestone: v1.1
 milestone_name: Credibility & Conversion
 status: planning
-stopped_at: Completed 03-01-PLAN.md
-last_updated: "2026-03-06T05:38:00.112Z"
+stopped_at: Completed 04-01-PLAN.md
+last_updated: "2026-03-06T05:58:42.184Z"
 last_activity: 2026-03-05 — Roadmap created, 11/11 v1.1 requirements mapped
 progress:
   total_phases: 3
   completed_phases: 1
-  total_plans: 1
-  completed_plans: 1
+  total_plans: 3
+  completed_plans: 2
   percent: 0
 ---
 
@@ -47,6 +47,7 @@ Progress: [░░░░░░░░░░] 0%
 
 *Updated after each plan completion*
 | Phase 03-safety-credentials-foundation P01 | 18 | 2 tasks | 10 files |
+| Phase 04-prevailing-wage-service-depth P01 | 88 | 2 tasks | 4 files |
 
 ## Accumulated Context
 
@@ -62,6 +63,8 @@ Recent decisions affecting v1.1 work:
 - [Phase 03-01]: Credential constants module: all static credential values live in src/data/credentials.ts, named UPPER_SNAKE_CASE with as const
 - [Phase 03-01]: SafetySection uses static numbers only (no animation hooks) -- locked decision, section is informational not promotional
 - [Phase 03-01]: SafetySection placed only in AboutPage (not global layout) to avoid z-index collision with FloatingCTA at z-40
+- [Phase 04-01]: PrevailingWageBanner accepts optional className prop to allow bg-slate-50 on HomePage and bg-white on AboutPage without conditional logic
+- [Phase 04-01]: Prevailing wage FAQ removed from ContactPage since PrevailingWageBanner provides deeper coverage in higher-traffic locations
 
 ### Pending Todos
 
@@ -74,6 +77,6 @@ None.
 
 ## Session Continuity
 
-Last session: 2026-03-06T05:34:42.544Z
-Stopped at: Completed 03-01-PLAN.md
+Last session: 2026-03-06T05:58:42.182Z
+Stopped at: Completed 04-01-PLAN.md
 Resume file: None
