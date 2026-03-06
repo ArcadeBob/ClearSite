@@ -39,7 +39,7 @@
 **Plans**: 1 plan
 
 Plans:
-- [ ] 03-01-PLAN.md — Extract credential constants and build SafetySection component
+- [x] 03-01-PLAN.md — Extract credential constants and build SafetySection component
 
 ### Phase 4: Prevailing Wage & Service Depth
 **Goal**: GCs and estimators can see CGI's named prevailing wage experience and assess technical bid eligibility from expanded service capability detail
@@ -50,11 +50,11 @@ Plans:
   2. The Contact page FAQ no longer contains prevailing wage content (it has moved to the dedicated banner component)
   3. Each service card displays technical capability bullets (system types, typical applications) either inline or as expandable detail
   4. Service capability bullets are visibly marked as mock/placeholder content pending owner review and validation
-**Plans**: TBD
+**Plans**: 2 plans
 
 Plans:
-- [ ] 04-01: Build PrevailingWageBanner component and place on HomePage and AboutPage
-- [ ] 04-02: Expand ServiceCard with technical capability detail bullets
+- [ ] 04-01-PLAN.md — Build PrevailingWageBanner component, wire into HomePage and AboutPage, remove Contact FAQ entry
+- [ ] 04-02-PLAN.md — Extend ServiceCard with technical capability bullets and amber review banner
 
 ### Phase 5: CTA Simplification
 **Goal**: Every visitor — commercial GC or residential homeowner — sees a CTA that matches their context and arrives at a contact form pre-tagged to their path
@@ -77,6 +77,6 @@ Plans:
 |-------|-----------|----------------|--------|-----------|
 | 1. Portfolio Status | v1.0 | 1/1 | Complete | 2026-03-02 |
 | 2. Visual Polish | v1.0 | 2/2 | Complete | 2026-03-03 |
-| 3. Safety Credentials Foundation | 1/1 | Complete   | 2026-03-06 | - |
+| 3. Safety Credentials Foundation | v1.1 | 1/1 | Complete | 2026-03-06 |
 | 4. Prevailing Wage & Service Depth | v1.1 | 0/2 | Not started | - |
 | 5. CTA Simplification | v1.1 | 0/2 | Not started | - |
