@@ -64,23 +64,23 @@ Which phases cover which requirements. Updated during roadmap creation.
 
 | Requirement | Phase | Status |
 |-------------|-------|--------|
-| CRED-01 | — | Pending |
-| SAFE-01 | — | Pending |
-| SAFE-02 | — | Pending |
-| SAFE-03 | — | Pending |
-| WAGE-01 | — | Pending |
-| WAGE-02 | — | Pending |
-| SERV-01 | — | Pending |
-| SERV-02 | — | Pending |
-| CTA-01 | — | Pending |
-| CTA-02 | — | Pending |
-| CTA-03 | — | Pending |
+| CRED-01 | Phase 3 | Pending |
+| SAFE-01 | Phase 3 | Pending |
+| SAFE-02 | Phase 3 | Pending |
+| SAFE-03 | Phase 3 | Pending |
+| WAGE-01 | Phase 4 | Pending |
+| WAGE-02 | Phase 4 | Pending |
+| SERV-01 | Phase 4 | Pending |
+| SERV-02 | Phase 4 | Pending |
+| CTA-01 | Phase 5 | Pending |
+| CTA-02 | Phase 5 | Pending |
+| CTA-03 | Phase 5 | Pending |
 
 **Coverage:**
 - v1.1 requirements: 11 total
-- Mapped to phases: 0
-- Unmapped: 11 ⚠️
+- Mapped to phases: 11
+- Unmapped: 0 ✓
 
 ---
 *Requirements defined: 2026-03-05*
-*Last updated: 2026-03-05 after initial definition*
+*Last updated: 2026-03-05 — traceability filled after roadmap creation*
