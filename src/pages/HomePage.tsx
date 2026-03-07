@@ -139,8 +139,7 @@ const featuredProjects = [
   client: 'Gluck Building Company',
   value: '$1.27M',
   scope: 'Exterior Curtain Walls & Doors, Interior Storefront & Doors (4 Buildings)',
-  imageUrl:
-  'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80'
+  imageUrl: '/images/projects/cabrillo-business-park.jpg'
 },
 {
   title: 'Cloud Nine Hangar & Offices',
@@ -148,8 +147,7 @@ const featuredProjects = [
   client: 'T.Viole Construction',
   value: '$1.13M',
   scope: 'Curtain Walls, Polycarbonate Windows, Storefront, Glass Partitions & Sliders',
-  imageUrl:
-  'https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80'
+  imageUrl: '/images/projects/cloud-nine-hangar.jpg'
 },
 {
   title: 'Citrus Commons',
@@ -157,8 +155,7 @@ const featuredProjects = [
   client: 'IMT Residential',
   value: '$1.89M',
   scope: 'Exterior Storefront, Aluminum Sliders, ACM Panels, Interior Partitions & Doors',
-  imageUrl:
-  'https://images.unsplash.com/photo-1534438327276-14e5300c3a48?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80'
+  imageUrl: '/images/projects/Citrus-Commons.jpg'
 }];
 
 
