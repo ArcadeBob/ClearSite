@@ -37,7 +37,7 @@ export function ServiceCard({
           </div>
 
           <h3
-            className={`text-xl font-bold mb-3 transition-colors duration-300 ${isHovered ? 'text-brand' : 'text-slate-900'}`}>
+            className={`font-heading uppercase tracking-wide text-xl font-bold mb-3 transition-colors duration-300 ${isHovered ? 'text-brand' : 'text-brand'}`}>
 
             {title}
           </h3>

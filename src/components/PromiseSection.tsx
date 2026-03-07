@@ -30,7 +30,7 @@ export function PromiseSection() {
           <p className="text-sm font-semibold text-accent uppercase tracking-wider mb-2">
             Our Promise
           </p>
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">
+          <h2 className="font-heading uppercase tracking-wide text-3xl md:text-4xl font-bold text-white mb-4">
             You'll Never Wonder If We're Showing Up
           </h2>
           <p className="text-lg text-slate-300 max-w-2xl mx-auto">
@@ -48,7 +48,7 @@ export function PromiseSection() {
               <div className="inline-flex items-center justify-center h-12 w-12 rounded-lg bg-accent text-white mb-4">
                 {promise.icon}
               </div>
-              <h3 className="text-lg font-bold mb-2">{promise.title}</h3>
+              <h3 className="font-heading uppercase tracking-wide text-lg font-bold text-white mb-2">{promise.title}</h3>
               <p className="text-slate-300 text-sm">{promise.description}</p>
             </div>
           )}

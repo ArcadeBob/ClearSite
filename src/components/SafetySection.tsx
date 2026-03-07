@@ -62,7 +62,7 @@ export function SafetySection() {
               <div className="inline-flex items-center justify-center h-12 w-12 rounded-full bg-brand/10 mx-auto mb-4">
                 {stat.icon}
               </div>
-              <div className="text-3xl font-bold text-slate-900 mb-1">
+              <div className="font-heading text-3xl font-bold text-slate-900 mb-1">
                 {stat.value}
               </div>
               <div className="text-sm text-slate-500 mb-2">

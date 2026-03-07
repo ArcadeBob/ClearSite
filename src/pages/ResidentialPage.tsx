@@ -64,7 +64,7 @@ export function ResidentialPage() {
       {/* Header */}
       <div className="bg-brand text-white py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h1 className="text-4xl font-bold mb-4">Residential Services</h1>
+          <h1 className="font-heading uppercase tracking-wide text-4xl font-bold text-white mb-4">Residential Services</h1>
           <p className="text-xl text-slate-300 max-w-3xl">
             We bring the same level of precision and professionalism from our
             commercial work to high-end custom residential projects.
@@ -77,7 +77,7 @@ export function ResidentialPage() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
           {/* Content */}
           <div>
-            <h2 className="text-3xl font-bold text-slate-900 mb-6">
+            <h2 className="font-heading uppercase tracking-wide text-3xl font-bold text-brand mb-6">
               Custom Glass Solutions for Luxury Homes
             </h2>
             <p className="text-slate-600 mb-8 leading-relaxed text-lg">
@@ -88,7 +88,7 @@ export function ResidentialPage() {
             </p>
 
             <div className="bg-slate-50 p-8 rounded-xl mb-8 border border-slate-100">
-              <h3 className="text-xl font-bold text-slate-900 mb-6">
+              <h3 className="font-heading uppercase tracking-wide text-xl font-bold text-brand mb-6">
                 Our Residential Capabilities
               </h3>
               <ul className="space-y-4">
@@ -159,7 +159,7 @@ export function ResidentialPage() {
                       {project.location}
                     </span>
                   </div>
-                  <h3 className="text-2xl font-bold text-slate-900 mb-3">
+                  <h3 className="font-heading uppercase tracking-wide text-2xl font-bold text-brand mb-3">
                     {project.title}
                   </h3>
                   <p className="text-slate-600 leading-relaxed">
@@ -192,7 +192,7 @@ export function ResidentialPage() {
                     {index + 1}
                   </span>
                 </div>
-                <h3 className="text-lg font-bold text-slate-900 mb-2">
+                <h3 className="font-heading uppercase tracking-wide text-lg font-bold text-brand mb-2">
                   {step.title}
                 </h3>
                 <p className="text-sm text-slate-600 leading-relaxed">
@@ -207,7 +207,7 @@ export function ResidentialPage() {
       {/* CTA */}
       <section className="py-20 bg-brand text-white text-center">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-3xl md:text-4xl font-bold mb-6">
+          <h2 className="font-heading uppercase tracking-wide text-3xl md:text-4xl font-bold text-white mb-6">
             Ready to Transform Your Home?
           </h2>
           <p className="text-xl text-slate-300 mb-10 max-w-2xl mx-auto">

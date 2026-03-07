@@ -184,7 +184,7 @@ export function CaseStudyPage() {
     return (
       <div className="min-h-screen bg-slate-50 flex items-center justify-center">
         <div className="text-center">
-          <h1 className="text-4xl font-bold text-slate-900 mb-4">
+          <h1 className="font-heading uppercase tracking-wide text-4xl font-bold text-brand mb-4">
             Case Study Not Found
           </h1>
           <p className="text-slate-600 mb-8">
@@ -233,7 +233,7 @@ export function CaseStudyPage() {
               {caseStudy.location}
             </span>
           </div>
-          <h1 className="text-4xl md:text-5xl font-bold text-white mb-3">
+          <h1 className="font-heading uppercase tracking-wide text-4xl md:text-5xl font-bold text-white mb-3">
             {caseStudy.title}
           </h1>
           <p className="text-xl text-white/80 max-w-3xl">{caseStudy.subtitle}</p>
@@ -248,7 +248,7 @@ export function CaseStudyPage() {
               <div className="flex items-center justify-center gap-2 text-accent mb-1">
                 <DollarSign className="h-5 w-5" />
               </div>
-              <p className="text-2xl font-bold text-slate-900">
+              <p className="font-heading text-2xl font-bold text-slate-900">
                 {caseStudy.value}
               </p>
               <p className="text-xs text-slate-500 uppercase tracking-wide">
@@ -259,7 +259,7 @@ export function CaseStudyPage() {
               <div className="flex items-center justify-center gap-2 text-accent mb-1">
                 <Clock className="h-5 w-5" />
               </div>
-              <p className="text-2xl font-bold text-slate-900">
+              <p className="font-heading text-2xl font-bold text-slate-900">
                 {caseStudy.duration}
               </p>
               <p className="text-xs text-slate-500 uppercase tracking-wide">
@@ -329,7 +329,7 @@ export function CaseStudyPage() {
                 <div className="h-12 w-12 bg-red-50 rounded-lg flex items-center justify-center">
                   <Target className="h-6 w-6 text-red-500" />
                 </div>
-                <h3 className="text-2xl font-bold text-slate-900">
+                <h3 className="font-heading uppercase tracking-wide text-2xl font-bold text-brand">
                   The Challenge
                 </h3>
               </div>
@@ -342,7 +342,7 @@ export function CaseStudyPage() {
                 <div className="h-12 w-12 bg-green-50 rounded-lg flex items-center justify-center">
                   <Wrench className="h-6 w-6 text-green-500" />
                 </div>
-                <h3 className="text-2xl font-bold text-slate-900">
+                <h3 className="font-heading uppercase tracking-wide text-2xl font-bold text-brand">
                   Our Solution
                 </h3>
               </div>
@@ -378,7 +378,7 @@ export function CaseStudyPage() {
                 {/* Content */}
                 <div className="pb-10">
                   <div className="flex flex-wrap items-center gap-3 mb-2">
-                    <h4 className="text-lg font-bold text-slate-900">
+                    <h4 className="font-heading uppercase tracking-wide text-lg font-bold text-brand">
                       {phase.title}
                     </h4>
                     <span className="text-xs font-medium text-accent bg-accent/10 px-2 py-1 rounded-full flex items-center gap-1">
@@ -412,7 +412,7 @@ export function CaseStudyPage() {
                 <div className="inline-flex items-center justify-center h-14 w-14 rounded-full bg-brand text-white mb-4">
                   {result.icon}
                 </div>
-                <p className="text-3xl font-bold text-slate-900 mb-1">
+                <p className="font-heading text-3xl font-bold text-slate-900 mb-1">
                   {result.value}
                 </p>
                 <p className="text-sm text-slate-500">{result.label}</p>
@@ -507,7 +507,7 @@ export function CaseStudyPage() {
           <p className="text-accent font-semibold uppercase tracking-wider mb-4">
             Ready to Work With a Glazing Sub You Can Trust?
           </p>
-          <h2 className="text-3xl md:text-5xl font-bold mb-6">
+          <h2 className="font-heading uppercase tracking-wide text-3xl md:text-5xl font-bold text-white mb-6">
             Add CGI to Your Bid List Today
           </h2>
           <p className="text-xl text-slate-300 mb-6 max-w-2xl mx-auto">

@@ -97,7 +97,7 @@ export function ContactPage() {
     <div className="min-h-screen bg-slate-50">
       <div className="bg-brand text-white py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h1 className="text-4xl font-bold mb-4">
+          <h1 className="font-heading uppercase tracking-wide text-4xl font-bold text-white mb-4">
             {pageTitle}
           </h1>
           <p className="text-xl text-slate-300 max-w-3xl">
@@ -135,7 +135,7 @@ export function ContactPage() {
           {/* Contact Info */}
           <div className="lg:col-span-1 space-y-6">
             <div className="bg-white p-6 rounded-xl shadow-sm border border-slate-200">
-              <h3 className="text-lg font-bold text-slate-900 mb-4 border-b border-slate-100 pb-2">
+              <h3 className="font-heading uppercase tracking-wide text-lg font-bold text-brand mb-4 border-b border-slate-100 pb-2">
                 Office Location
               </h3>
               <div className="flex items-start gap-3 text-slate-600">
@@ -149,7 +149,7 @@ export function ContactPage() {
             </div>
 
             <div className="bg-white p-6 rounded-xl shadow-sm border border-slate-200">
-              <h3 className="text-lg font-bold text-slate-900 mb-4 border-b border-slate-100 pb-2">
+              <h3 className="font-heading uppercase tracking-wide text-lg font-bold text-brand mb-4 border-b border-slate-100 pb-2">
                 Contact Details
               </h3>
               <div className="space-y-4 text-slate-600">
@@ -175,7 +175,7 @@ export function ContactPage() {
             </div>
 
             <div className="bg-white p-6 rounded-xl shadow-sm border border-slate-200">
-              <h3 className="text-lg font-bold text-slate-900 mb-4 border-b border-slate-100 pb-2">
+              <h3 className="font-heading uppercase tracking-wide text-lg font-bold text-brand mb-4 border-b border-slate-100 pb-2">
                 Business Info
               </h3>
               <div className="space-y-4 text-slate-600">
@@ -202,7 +202,7 @@ export function ContactPage() {
 
             {/* What's Included */}
             <div className="bg-amber-50 p-6 rounded-xl border border-amber-100">
-              <h3 className="text-lg font-bold text-slate-900 mb-4 flex items-center gap-2">
+              <h3 className="font-heading uppercase tracking-wide text-lg font-bold text-brand mb-4 flex items-center gap-2">
                 <Download className="h-5 w-5 text-amber-600" />
                 What's in the Prequal Packet
               </h3>
@@ -249,7 +249,7 @@ export function ContactPage() {
           {/* Form */}
           <div className="lg:col-span-2">
             <div className="bg-white p-8 md:p-10 rounded-xl shadow-md border border-slate-200">
-              <h2 className="text-2xl font-bold text-slate-900 mb-2">
+              <h2 className="font-heading uppercase tracking-wide text-2xl font-bold text-brand mb-2">
                 {formHeading}
               </h2>
               <p className="text-slate-500 mb-8">
@@ -276,7 +276,7 @@ export function ContactPage() {
                 key={faq.question}
                 className="bg-slate-50 rounded-xl p-6 border border-slate-100"
               >
-                <h3 className="flex items-start gap-3 text-lg font-bold text-slate-900 mb-3">
+                <h3 className="font-heading uppercase tracking-wide flex items-start gap-3 text-lg font-bold text-brand mb-3">
                   <HelpCircle className="h-5 w-5 text-accent mt-0.5 flex-shrink-0" />
                   {faq.question}
                 </h3>

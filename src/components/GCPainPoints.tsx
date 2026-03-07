@@ -90,7 +90,7 @@ export function GCPainPoints() {
                 </div>
 
                 {/* Solution */}
-                <h3 className="text-lg font-bold text-slate-900 mb-2">
+                <h3 className="font-heading uppercase tracking-wide text-lg font-bold text-brand mb-2">
                   {item.solution}
                 </h3>
                 <p className="text-slate-600 mb-4 text-sm leading-relaxed">

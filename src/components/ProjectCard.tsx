@@ -85,7 +85,7 @@ export function ProjectCard({
       {/* Content */}
       <div className="p-6 flex-1 flex flex-col">
         <h3
-          className={`text-xl font-bold mb-1 transition-colors duration-300 ${isHovered ? 'text-brand' : 'text-slate-900'}`}>
+          className={`font-heading uppercase tracking-wide text-xl font-bold mb-1 transition-colors duration-300 ${isHovered ? 'text-brand' : 'text-brand'}`}>
 
           {title}
         </h3>

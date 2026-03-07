@@ -29,7 +29,7 @@ export class ErrorBoundary extends React.Component<
         <div className="min-h-screen flex items-center justify-center bg-white px-4">
           <div className="text-center max-w-md">
             <AlertTriangle className="h-16 w-16 text-amber-500 mx-auto mb-6" />
-            <h1 className="text-2xl font-bold text-slate-900 mb-4">
+            <h1 className="font-heading uppercase tracking-wide text-2xl font-bold text-brand mb-4">
               Something went wrong
             </h1>
             <p className="text-slate-600 mb-8">

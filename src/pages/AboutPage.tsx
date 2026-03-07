@@ -102,7 +102,7 @@ export function AboutPage() {
       {/* Header */}
       <div className="bg-brand text-white py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h1 className="text-4xl font-bold mb-4">
+          <h1 className="font-heading uppercase tracking-wide text-4xl font-bold text-white mb-4">
             About Clean Glass Installation
           </h1>
           <p className="text-xl text-slate-300 max-w-3xl">
@@ -189,7 +189,7 @@ export function AboutPage() {
                     <p className="text-lg font-bold text-accent mb-1">
                       {milestone.year}
                     </p>
-                    <h4 className="font-bold text-slate-900 mb-2">
+                    <h4 className="font-heading uppercase tracking-wide font-bold text-brand mb-2">
                       {milestone.title}
                     </h4>
                     <p className="text-sm text-slate-600">
@@ -217,7 +217,7 @@ export function AboutPage() {
                   <p className="text-sm font-bold text-accent">
                     {milestone.year}
                   </p>
-                  <h4 className="font-bold text-slate-900 mb-1">
+                  <h4 className="font-heading uppercase tracking-wide font-bold text-brand mb-1">
                     {milestone.title}
                   </h4>
                   <p className="text-sm text-slate-600">
@@ -245,7 +245,7 @@ export function AboutPage() {
                 <div className="h-14 w-14 bg-brand rounded-xl flex items-center justify-center text-white mb-6">
                   {value.icon}
                 </div>
-                <h3 className="text-xl font-bold text-slate-900 mb-4">
+                <h3 className="font-heading uppercase tracking-wide text-xl font-bold text-brand mb-4">
                   {value.title}
                 </h3>
                 <p className="text-slate-600 leading-relaxed">
@@ -313,7 +313,7 @@ export function AboutPage() {
               >
                 <CheckCircle className="h-6 w-6 text-green-500 flex-shrink-0 mt-0.5" />
                 <div>
-                  <h4 className="font-bold text-slate-900 mb-1">
+                  <h4 className="font-heading uppercase tracking-wide font-bold text-brand mb-1">
                     {item.title}
                   </h4>
                   <p className="text-sm text-slate-600">{item.desc}</p>
@@ -344,7 +344,7 @@ export function AboutPage() {
                   alt={member.name}
                   className="h-20 w-20 rounded-full mx-auto mb-4 object-cover"
                 />
-                <h3 className="text-lg font-bold text-slate-900 mb-1">
+                <h3 className="font-heading uppercase tracking-wide text-lg font-bold text-brand mb-1">
                   {member.name}
                 </h3>
                 <p className="text-sm font-medium text-amber-600 mb-2">
@@ -374,7 +374,7 @@ export function AboutPage() {
       <section className="py-20 bg-brand text-white text-center">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <Award className="h-16 w-16 text-amber-500 mx-auto mb-6" />
-          <h2 className="text-3xl md:text-4xl font-bold mb-6">
+          <h2 className="font-heading uppercase tracking-wide text-3xl md:text-4xl font-bold text-white mb-6">
             Let Our Experience Make Your Job Easier
           </h2>
           <p className="text-xl text-slate-300 mb-10 max-w-2xl mx-auto">

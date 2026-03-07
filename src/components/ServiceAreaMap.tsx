@@ -234,7 +234,7 @@ export function ServiceAreaMap(): React.JSX.Element {
             <p className="text-sm font-semibold text-amber-600 uppercase tracking-wider mb-2">
               Coverage Area
             </p>
-            <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-6">
+            <h2 className="font-heading uppercase tracking-wide text-3xl md:text-4xl font-bold text-brand mb-6">
               Serving California & Beyond
             </h2>
             <p className="text-lg text-slate-600 mb-8 leading-relaxed">
@@ -243,7 +243,7 @@ export function ServiceAreaMap(): React.JSX.Element {
             </p>
 
             <div className="mb-8">
-              <h3 className="text-lg font-bold text-slate-900 mb-4 flex items-center gap-2">
+              <h3 className="font-heading uppercase tracking-wide text-lg font-bold text-brand mb-4 flex items-center gap-2">
                 <MapPin className="h-5 w-5 text-amber-500" />
                 Primary Service Regions
               </h3>

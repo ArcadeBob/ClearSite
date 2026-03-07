@@ -174,7 +174,7 @@ export function ProjectsPage() {
     <div className="min-h-screen bg-slate-50">
       <div className="bg-brand text-white py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h1 className="text-4xl font-bold mb-4">Project Portfolio</h1>
+          <h1 className="font-heading uppercase tracking-wide text-4xl font-bold text-white mb-4">Project Portfolio</h1>
           <p className="text-xl text-slate-300 max-w-3xl">
             A selection of our commercial glazing projects across California.
             From large-scale curtain walls to specialized interior
@@ -220,7 +220,7 @@ export function ProjectsPage() {
             <div className="inline-flex items-center justify-center h-16 w-16 rounded-full bg-slate-100 mb-4">
               <FolderOpen className="h-8 w-8 text-slate-400" />
             </div>
-            <h3 className="text-lg font-medium text-slate-900">
+            <h3 className="font-heading uppercase tracking-wide text-lg font-medium text-brand">
               No projects found
             </h3>
             <p className="text-slate-500 mt-1">

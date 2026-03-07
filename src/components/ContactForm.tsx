@@ -88,7 +88,7 @@ export function ContactForm({ inquiryType = 'commercial' }: ContactFormProps): R
         <div className="inline-flex items-center justify-center h-16 w-16 rounded-full bg-green-100 mb-4">
           <CheckCircle className="h-8 w-8 text-green-600" />
         </div>
-        <h3 className="text-xl font-bold text-green-800 mb-2">
+        <h3 className="font-heading uppercase tracking-wide text-xl font-bold text-green-800 mb-2">
           Message Sent Successfully
         </h3>
         <p className="text-green-700 mb-6">

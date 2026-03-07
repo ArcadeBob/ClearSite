@@ -210,7 +210,7 @@ export function HomePage(): React.JSX.Element {
 
             {/* Main Headline */}
             <h1
-              className="text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-tight mb-8 leading-[1.1] drop-shadow-[0_2px_4px_rgba(0,0,0,0.4)]"
+              className="font-heading uppercase tracking-wide text-4xl md:text-5xl lg:text-6xl font-extrabold mb-8 leading-[1.1] drop-shadow-[0_2px_4px_rgba(0,0,0,0.4)]"
               style={{
                 opacity: Math.max(0, 1 - scrollY / HERO_TITLE_FADE_PX)
               }}>
@@ -431,7 +431,7 @@ export function HomePage(): React.JSX.Element {
               <p className="text-sm font-semibold text-accent uppercase tracking-wider mb-2">
                 Proven Track Record
               </p>
-              <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-4">
+              <h2 className="font-heading uppercase tracking-wide text-3xl md:text-4xl font-bold text-brand mb-4">
                 Projects Delivered On Schedule
               </h2>
               <p className="text-lg text-slate-600">
@@ -473,7 +473,7 @@ export function HomePage(): React.JSX.Element {
           <p className="text-accent font-semibold uppercase tracking-wider mb-4">
             Ready to Work With a Glazing Sub You Can Trust?
           </p>
-          <h2 className="text-3xl md:text-5xl font-bold mb-6">
+          <h2 className="font-heading uppercase tracking-wide text-3xl md:text-5xl font-bold text-white mb-6">
             Add CGI to Your Bid List Today
           </h2>
           <p className="text-xl text-slate-300 mb-6 max-w-2xl mx-auto">

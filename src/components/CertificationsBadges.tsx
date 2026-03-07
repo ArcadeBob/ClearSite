@@ -58,7 +58,7 @@ export function CertificationsBadges() {
                 <div className="inline-flex items-center justify-center h-14 w-14 rounded-full bg-brand text-white mb-4 group-hover:bg-accent transition-colors">
                   {cert.icon}
                 </div>
-                <h3 className="text-lg font-bold text-slate-900 mb-1">
+                <h3 className="font-heading uppercase tracking-wide text-lg font-bold text-brand mb-1">
                   {cert.title}
                 </h3>
                 <p className="text-sm font-semibold text-accent mb-2">

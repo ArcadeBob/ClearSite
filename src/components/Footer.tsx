@@ -28,7 +28,7 @@ export function Footer() {
 
           {/* Quick Links */}
           <div>
-            <h3 className="text-white font-semibold mb-6 text-lg">
+            <h3 className="font-heading uppercase tracking-wide text-white font-semibold mb-6 text-lg">
               Quick Links
             </h3>
             <ul className="space-y-3 text-sm">
@@ -74,7 +74,7 @@ export function Footer() {
 
           {/* Services */}
           <div>
-            <h3 className="text-white font-semibold mb-6 text-lg">
+            <h3 className="font-heading uppercase tracking-wide text-white font-semibold mb-6 text-lg">
               Our Services
             </h3>
             <ul className="space-y-3 text-sm">
@@ -115,7 +115,7 @@ export function Footer() {
 
           {/* Contact */}
           <div>
-            <h3 className="text-white font-semibold mb-6 text-lg">
+            <h3 className="font-heading uppercase tracking-wide text-white font-semibold mb-6 text-lg">
               Contact Us
             </h3>
             <ul className="space-y-4 text-sm">
