@@ -27,7 +27,7 @@
 
 ### v1.2 GC Appeal & Design Polish
 
-- [ ] **Phase 6: Typography & Layout Foundation** - Industrial heading font and varied section header layouts site-wide
+- [x] **Phase 6: Typography & Layout Foundation** - Industrial heading font and varied section header layouts site-wide (completed 2026-03-07)
 - [ ] **Phase 7: Service & Copy Refinement** - GC-benefit copy, distinct service icons, and brand-consistent hover states
 - [ ] **Phase 8: Client Presentation & UX** - Distinctive client logo treatment and route-aware FloatingCTA
 
@@ -41,7 +41,7 @@
   1. Headings across all pages render in a bold/condensed industrial font distinct from body text
   2. Section headers on HomePage use at least 3 different visual layouts (left-aligned, full-width, overlapping) instead of uniform centered pattern
   3. The site no longer looks like every section was stamped from the same SectionHeader template
-**Plans:** 2 plans
+**Plans:** 2/2 plans complete
 
 Plans:
 - [ ] 06-01-PLAN.md — Add Bebas Neue font infrastructure and refactor SectionHeader into three-variant component
@@ -85,6 +85,6 @@ Plans:
 | 3. Safety Credentials Foundation | v1.1 | 1/1 | Complete | 2026-03-06 |
 | 4. Prevailing Wage & Service Depth | v1.1 | 2/2 | Complete | 2026-03-06 |
 | 5. CTA Simplification | v1.1 | 2/2 | Complete | 2026-03-06 |
-| 6. Typography & Layout Foundation | v1.2 | 0/2 | Not started | - |
+| 6. Typography & Layout Foundation | 2/2 | Complete   | 2026-03-07 | - |
 | 7. Service & Copy Refinement | v1.2 | 0/? | Not started | - |
 | 8. Client Presentation & UX | v1.2 | 0/? | Not started | - |
