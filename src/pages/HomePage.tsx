@@ -211,19 +211,19 @@ export function HomePage(): React.JSX.Element {
 
             {/* Main Headline */}
             <h1
-              className="font-heading uppercase tracking-wide text-4xl md:text-5xl lg:text-6xl font-extrabold mb-8 leading-[1.1] drop-shadow-[0_2px_4px_rgba(0,0,0,0.4)]"
+              className="font-heading uppercase tracking-wide text-4xl md:text-5xl lg:text-6xl font-extrabold mb-8 leading-[1.1]"
               style={{
                 opacity: Math.max(0, 1 - scrollY / HERO_TITLE_FADE_PX)
               }}>
 
               The Glazing Sub That{' '}
-              <span className="text-white drop-shadow-[0_0_12px_rgba(255,255,255,0.5)]">Won't Hold Up</span> Your
+              <span className="text-white">Won't Hold Up</span> Your
               Schedule
             </h1>
 
             {/* Value Proposition */}
             <p
-              className="text-xl md:text-2xl text-white mb-4 leading-relaxed font-semibold drop-shadow-[0_1px_2px_rgba(0,0,0,0.3)]"
+              className="text-xl md:text-2xl text-white mb-4 leading-relaxed font-semibold"
               style={{
                 opacity: Math.max(0, 1 - scrollY / HERO_TAGLINE_FADE_PX)
               }}>
@@ -235,7 +235,7 @@ export function HomePage(): React.JSX.Element {
             {/* Expanded Copy */}
             {/* Credential values: see src/data/credentials.ts */}
             <p
-              className="text-lg text-white/90 mb-5 leading-relaxed max-w-2xl drop-shadow-[0_1px_2px_rgba(0,0,0,0.2)]"
+              className="text-lg text-white/90 mb-5 leading-relaxed max-w-2xl"
               style={{
                 opacity: Math.max(0, 1 - scrollY / HERO_BODY_FADE_PX)
               }}>

@@ -43,7 +43,7 @@ export function PromiseSection() {
           {promises.map((promise) =>
           <div
             key={promise.title}
-            className="bg-white/5 backdrop-blur-sm rounded-xl p-6 text-center border border-white/10">
+            className="bg-white/5 rounded-xl p-6 text-center border border-white/10">
 
               <div className="inline-flex items-center justify-center h-12 w-12 rounded-lg bg-accent text-white mb-4">
                 {promise.icon}

@@ -62,7 +62,7 @@ const infoCards: InfoCardData[] = [
 
 function InfoCard({ title, icon, highlight, details, ctaText }: InfoCardData) {
   return (
-    <div className="bg-white/5 backdrop-blur-sm rounded-xl p-6 border border-white/10 hover:border-accent/50 hover:bg-white/[0.07] transition-all group flex flex-col h-full">
+    <div className="bg-white/5 rounded-xl p-6 border border-white/10 hover:border-accent/50 hover:bg-white/[0.07] transition-all group flex flex-col h-full">
       <div className="flex items-start justify-between mb-4">
         <div className="h-12 w-12 rounded-lg bg-brand flex items-center justify-center text-accent group-hover:bg-accent group-hover:text-white transition-colors">
           {icon}
@@ -153,7 +153,7 @@ export function GCResourcesSection() {
           {quickFacts.map((fact) =>
           <div
             key={fact.label}
-            className="bg-white/5 backdrop-blur-sm rounded-xl p-4 text-center border border-white/10 hover:border-accent/50 transition-colors group">
+            className="bg-white/5 rounded-xl p-4 text-center border border-white/10 hover:border-accent/50 transition-colors group">
 
               <div className="inline-flex items-center justify-center h-10 w-10 rounded-lg bg-accent/20 text-accent mb-3 group-hover:scale-110 transition-transform">
                 {fact.icon}
