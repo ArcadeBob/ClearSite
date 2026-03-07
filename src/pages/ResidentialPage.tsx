@@ -26,8 +26,7 @@ const residentialHighlights = [
     category: 'Custom High-End Home',
     description:
       'Exterior custom curtain walls and oversized doors, custom sliders, interior partitions, glass railing, and custom glass steam and shower enclosures for a luxury coastal residence.',
-    imageUrl:
-      'https://images.unsplash.com/photo-1503387762-592deb58ef4e?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
+    imageUrl: '/images/projects/marina-drive.jpg',
   },
 ];
 
