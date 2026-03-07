@@ -41,10 +41,11 @@
   1. Headings across all pages render in a bold/condensed industrial font distinct from body text
   2. Section headers on HomePage use at least 3 different visual layouts (left-aligned, full-width, overlapping) instead of uniform centered pattern
   3. The site no longer looks like every section was stamped from the same SectionHeader template
-**Plans**: TBD
+**Plans:** 2 plans
 
 Plans:
-- [ ] 06-01: TBD
+- [ ] 06-01-PLAN.md — Add Bebas Neue font infrastructure and refactor SectionHeader into three-variant component
+- [ ] 06-02-PLAN.md — Apply font and header variants site-wide across all pages and components
 
 ### Phase 7: Service & Copy Refinement
 **Goal**: Service content speaks to GCs about project outcomes (schedule, coordination, callbacks) rather than glazing specs
@@ -84,6 +85,6 @@ Plans:
 | 3. Safety Credentials Foundation | v1.1 | 1/1 | Complete | 2026-03-06 |
 | 4. Prevailing Wage & Service Depth | v1.1 | 2/2 | Complete | 2026-03-06 |
 | 5. CTA Simplification | v1.1 | 2/2 | Complete | 2026-03-06 |
-| 6. Typography & Layout Foundation | v1.2 | 0/? | Not started | - |
+| 6. Typography & Layout Foundation | v1.2 | 0/2 | Not started | - |
 | 7. Service & Copy Refinement | v1.2 | 0/? | Not started | - |
 | 8. Client Presentation & UX | v1.2 | 0/? | Not started | - |
