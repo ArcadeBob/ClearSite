@@ -15,7 +15,7 @@ Requirements for GC Appeal & Design Polish milestone.
 ### Design & Layout
 
 - [ ] **DSGN-01**: Section headers use varied visual layouts (left-aligned, full-width banners, overlapping) instead of uniform centered SectionHeader pattern
-- [ ] **DSGN-02**: Industrial/bold heading font (Oswald, Barlow Condensed, or similar) applied to headings site-wide
+- [x] **DSGN-02**: Industrial/bold heading font (Oswald, Barlow Condensed, or similar) applied to headings site-wide
 - [ ] **DSGN-03**: ServiceCard hover gradient uses brand/accent colors instead of generic `from-blue-50`
 - [ ] **DSGN-04**: Each of the 8 services uses a distinct lucide-react icon (no duplicates)
 - [ ] **DSGN-05**: Client logos displayed with distinctive treatment replacing standard infinite-scroll marquee
@@ -48,7 +48,7 @@ Deferred to future release.
 | COPY-01 | Phase 7 | Pending |
 | COPY-02 | Phase 7 | Pending |
 | DSGN-01 | Phase 6 | Pending |
-| DSGN-02 | Phase 6 | Pending |
+| DSGN-02 | Phase 6 | Complete |
 | DSGN-03 | Phase 7 | Pending |
 | DSGN-04 | Phase 7 | Pending |
 | DSGN-05 | Phase 8 | Pending |
