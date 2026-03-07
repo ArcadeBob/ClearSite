@@ -8,64 +8,39 @@ const clients: { name: string; logo: string; invert?: boolean }[] = [
   { name: 'RC Pacific Construction', logo: '/images/clients/rc-pacific-construction.svg' },
   { name: 'Westside Contractors', logo: '/images/clients/westside-contractors.svg' },
   { name: 'Gluck Building Company', logo: '/images/clients/gluck-building.gif' },
-  { name: 'T. Violé Construction', logo: '/images/clients/tviole-span-construction.jpg' },
+  { name: 'T. Viole Construction', logo: '/images/clients/tviole-span-construction.jpg' },
   { name: 'Intertex Companies', logo: '/images/clients/intertex-companies.png' },
   { name: 'Walton Construction', logo: '/images/clients/walton-construction.webp', invert: true },
 ];
 
 export function ClientLogos(): React.JSX.Element {
-  // Double the array for seamless infinite scroll
-  const doubledClients = [...clients, ...clients];
   return (
-    <section className="py-12 bg-white border-y border-slate-100 overflow-hidden">
-      <div className="text-center mb-8">
-        <p className="text-sm font-semibold text-slate-500 uppercase tracking-wider">
-          Trusted by Leading Contractors and Developers
-        </p>
-      </div>
+    <section className="py-12 bg-slate-50">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="text-center mb-10">
+          <p className="text-sm font-semibold text-accent uppercase tracking-wider">
+            Trusted By
+          </p>
+        </div>
 
-      {/* Marquee Container */}
-      <div className="relative group">
-        {/* Gradient Masks */}
-        <div className="absolute left-0 top-0 bottom-0 w-24 bg-gradient-to-r from-white to-transparent z-10 pointer-events-none"></div>
-        <div className="absolute right-0 top-0 bottom-0 w-24 bg-gradient-to-l from-white to-transparent z-10 pointer-events-none"></div>
-
-        {/* Scrolling Track */}
-        <div
-          className="flex gap-16 items-center animate-marquee group-hover:[animation-play-state:paused]"
-          style={{
-            width: 'max-content'
-          }}>
-
-          {doubledClients.map((client, index) =>
-          <div
-            key={`${client.name}-${index}`}
-            className="flex items-center justify-center px-4 py-2">
-
+        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-6">
+          {clients.map((client) => (
+            <div
+              key={client.name}
+              className="flex flex-col items-center justify-center border border-slate-200 rounded-lg p-6 bg-white hover:shadow-md transition-all duration-300 group"
+            >
               <img
                 src={client.logo}
                 alt={client.name}
-                className={`h-12 w-auto max-w-[180px] object-contain opacity-70 hover:opacity-100 transition-all duration-300${client.invert ? ' invert' : ''}`}
+                className={`h-12 w-auto max-w-[160px] object-contain grayscale opacity-60 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-300${client.invert ? ' invert' : ''}`}
               />
+              <span className="text-xs text-slate-400 mt-2 text-center">
+                {client.name}
+              </span>
             </div>
-          )}
+          ))}
         </div>
       </div>
-
-      {/* CSS Animation */}
-      <style>{`
-        @keyframes marquee {
-          0% {
-            transform: translateX(0);
-          }
-          100% {
-            transform: translateX(-50%);
-          }
-        }
-        .animate-marquee {
-          animation: marquee 30s linear infinite;
-        }
-      `}</style>
-    </section>);
-
+    </section>
+  );
 }
