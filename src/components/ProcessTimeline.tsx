@@ -1,5 +1,5 @@
 import React, { useEffect, useState, useRef } from 'react';
-import { FileText, MapPin, ClipboardList, Wrench, CheckCircle } from 'lucide-react';
+import { FileText, MapPin, CalendarCheck, FileCheck, Factory, Wrench, CheckCircle } from 'lucide-react';
 import { SectionHeader } from './SectionHeader';
 import { useOnceInView } from '../hooks/useOnceInView';
 
@@ -43,38 +43,38 @@ function StepIcon({
 const steps = [
   {
     icon: <FileText className="h-5 w-5" />,
-    title: 'Bid Request',
-    description: 'Submit plans & specs for same-day budget turnaround',
+    title: 'Budget Request',
+    description: 'Send us your plans and specs — get a same-day budget you can plug into your estimate',
   },
   {
     icon: <MapPin className="h-5 w-5" />,
-    title: 'Site Visit',
-    description: 'On-site assessment and field measurements',
+    title: 'Site Assessment',
+    description: 'We field-verify conditions early so there are no surprises or change orders down the road',
   },
   {
-    icon: <ClipboardList className="h-5 w-5" />,
-    title: 'Detailed Proposal',
-    description: 'Comprehensive scope, schedule, and pricing',
+    icon: <CalendarCheck className="h-5 w-5" />,
+    title: 'Scope & Schedule',
+    description: 'Clear scope aligned to your master schedule — you know exactly what we are delivering and when',
   },
   {
-    icon: <FileText className="h-5 w-5" />,
-    title: 'Submittals',
-    description: 'Shop drawings, product data, and engineering for approval',
+    icon: <FileCheck className="h-5 w-5" />,
+    title: 'Submittals & Approvals',
+    description: 'Shop drawings submitted on your timeline with architect coordination handled for you',
   },
   {
-    icon: <Wrench className="h-5 w-5" />,
+    icon: <Factory className="h-5 w-5" />,
     title: 'Fabrication',
-    description: 'Material ordering and custom fabrication to spec',
+    description: 'Proactive lead time tracking with regular updates so you can plan around delivery dates',
   },
   {
     icon: <Wrench className="h-5 w-5" />,
     title: 'Installation',
-    description: 'Professional execution with daily progress updates',
+    description: 'Daily progress updates, coordination with other trades, and a clean jobsite every day',
   },
   {
     icon: <CheckCircle className="h-5 w-5" />,
-    title: 'Closeout',
-    description: 'Final inspection, punch list, and warranty docs',
+    title: 'Closeout & Warranty',
+    description: 'Minimal punch list, as-built documentation, and a complete warranty package for turnover',
   },
 ];
 
