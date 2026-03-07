@@ -46,10 +46,10 @@ const painPoints = [
 {
   icon: <ClipboardCheck className="h-6 w-6" />,
   problem: 'Dreading the punch list?',
-  solution: 'Zero Punch-List Goal',
+  solution: 'Minimal Punch-List Goal',
   description:
-  'Our QA process catches issues before you do. We aim for zero punch items at turnover.',
-  metric: 'Near-zero punch lists'
+  'Our QA process catches issues before you do. We aim for minimal punch items at turnover.',
+  metric: 'Minimal punch lists'
 },
 {
   icon: <Clock className="h-6 w-6" />,

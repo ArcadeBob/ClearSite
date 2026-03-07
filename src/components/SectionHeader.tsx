@@ -48,23 +48,18 @@ export function SectionHeader({
 
   if (variant === 'overlapping') {
     return (
-      <div className={`relative ${className}`}>
-        <h2
-          className="font-heading text-5xl md:text-7xl text-brand/10 uppercase tracking-wide absolute -top-8 left-0 select-none pointer-events-none"
-          aria-hidden="true"
-        >
+      <div className={`border-l-4 border-accent pl-6 ${className}`}>
+        <p className={`text-sm font-semibold ${subheadingColor} uppercase tracking-wider mb-2`}>
+          {subheading}
+        </p>
+        <h2 className={`font-heading text-brand uppercase tracking-wide ${sizeClasses}`}>
           {title}
         </h2>
-        <div className="relative pt-6">
-          <h2 className={`font-heading text-brand uppercase tracking-wide ${sizeClasses}`}>
-            {title}
-          </h2>
-          {description && (
-            <p className="text-lg text-slate-600 max-w-2xl mt-4">
-              {description}
-            </p>
-          )}
-        </div>
+        {description && (
+          <p className="text-lg text-slate-600 max-w-2xl mt-4">
+            {description}
+          </p>
+        )}
       </div>
     );
   }
