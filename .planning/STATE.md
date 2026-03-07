@@ -5,7 +5,7 @@ milestone_name: GC Appeal & Design Polish
 status: archived
 stopped_at: Milestone v1.2 archived
 last_updated: "2026-03-07"
-last_activity: 2026-03-07 - Completed quick task 1: Remove blurry drop-shadow glow from card header text site-wide
+last_activity: 2026-03-07 - Completed quick task 2: Site review fixes (punch-list wording, draft banners, em-dashes, ghost text, privacy text)
 progress:
   total_phases: 3
   completed_phases: 3
@@ -65,8 +65,9 @@ None.
 | # | Description | Date | Commit | Directory |
 |---|-------------|------|--------|-----------|
 | 1 | Remove blurry drop-shadow glow from card header text site-wide | 2026-03-07 | df3530b | [1-remove-blurry-drop-shadow-glow-from-card](./quick/1-remove-blurry-drop-shadow-glow-from-card/) |
+| 2 | Site review fixes: punch-list wording, draft banners, em-dashes, ghost text, privacy text | 2026-03-07 | d7ff5db | [2-site-review-fixes-zero-punch-list-wordin](./quick/2-site-review-fixes-zero-punch-list-wordin/) |
 
 ## Session Continuity
 
 Last session: 2026-03-07
-Stopped at: Milestone v1.2 archived
+Stopped at: Completed quick task 2: Site review fixes
