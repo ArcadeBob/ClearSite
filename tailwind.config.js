@@ -5,6 +5,9 @@ export default {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        heading: ['"Bebas Neue"', 'sans-serif'],
+      },
       colors: {
         brand: {
           DEFAULT: '#1e3a5f',
