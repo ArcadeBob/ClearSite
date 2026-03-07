@@ -1,28 +1,26 @@
-import React, { useState } from 'react';
+import React from 'react';
 
 const clients = [
-  { name: '7-Eleven', logo: 'https://logo.clearbit.com/7-eleven.com' },
-  { name: 'LAUSD', logo: 'https://logo.clearbit.com/lausd.net' },
-  { name: 'Planet Fitness', logo: 'https://logo.clearbit.com/planetfitness.com' },
-  { name: 'Buffalo Wild Wings', logo: 'https://logo.clearbit.com/buffalowildwings.com' },
-  { name: 'Del Taco', logo: 'https://logo.clearbit.com/deltaco.com' },
-  { name: 'Ross', logo: 'https://logo.clearbit.com/rossstores.com' },
-  { name: 'Taco Bell', logo: 'https://logo.clearbit.com/tacobell.com' },
-  { name: 'TJ Maxx', logo: 'https://logo.clearbit.com/tjmaxx.tjx.com' },
-  { name: 'Starbucks', logo: 'https://logo.clearbit.com/starbucks.com' },
-  { name: 'Family Dollar', logo: 'https://logo.clearbit.com/familydollar.com' },
+  { name: 'A&R Construction', logo: '/images/clients/a-and-r-construction.avif' },
+  { name: 'Forza Construction', logo: '/images/clients/forza-construction.avif' },
+  { name: 'Canfield Development', logo: '/images/clients/canfield-development.svg' },
+  { name: 'IMT Residential', logo: '/images/clients/imt-residential.svg' },
+  { name: 'RC Pacific Construction', logo: '/images/clients/rc-pacific-construction.svg' },
+  { name: 'Westside Contractors', logo: '/images/clients/westside-contractors.svg' },
+  { name: 'Gluck Building Company', logo: '/images/clients/gluck-building.gif' },
+  { name: 'T. Violé Construction', logo: '/images/clients/tviole-span-construction.jpg' },
+  { name: 'Intertex Companies', logo: '/images/clients/intertex-companies.png' },
+  { name: 'Walton Construction', logo: '/images/clients/walton-construction.webp', invert: true },
 ];
 
 export function ClientLogos(): React.JSX.Element {
-  const [failedLogos, setFailedLogos] = useState<Set<string>>(new Set());
-
   // Double the array for seamless infinite scroll
   const doubledClients = [...clients, ...clients];
   return (
     <section className="py-12 bg-white border-y border-slate-100 overflow-hidden">
       <div className="text-center mb-8">
         <p className="text-sm font-semibold text-slate-500 uppercase tracking-wider">
-          Trusted by Leading Brands
+          Trusted by Leading Contractors and Developers
         </p>
       </div>
 
@@ -44,18 +42,13 @@ export function ClientLogos(): React.JSX.Element {
             key={`${client.name}-${index}`}
             className="flex items-center justify-center px-4 py-2">
 
-              {failedLogos.has(client.name) ? (
-                <span className="text-slate-400 font-bold text-xl whitespace-nowrap tracking-wide hover:text-brand transition-colors duration-300 cursor-default">
-                  {client.name}
-                </span>
-              ) : (
-                <img
-                  src={client.logo}
-                  alt={client.name}
-                  className="h-10 w-auto object-contain grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition-all duration-300"
-                  onError={() => setFailedLogos(prev => new Set(prev).add(client.name))}
-                />
-              )}
+              <img
+                src={client.logo}
+                alt={client.name}
+                className={`h-12 w-auto max-w-[180px] object-contain opacity-70 hover:opacity-100 transition-all duration-300${
+                  'invert' in client && client.invert ? ' invert' : ''
+                }`}
+              />
             </div>
           )}
         </div>
