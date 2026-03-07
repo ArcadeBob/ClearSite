@@ -9,15 +9,15 @@ Requirements for GC Appeal & Design Polish milestone.
 
 ### Copy & Messaging
 
-- [ ] **COPY-01**: Service descriptions rewritten with GC-benefit language (schedule impact, coordination ease, minimal callbacks) replacing technical spec bullets
-- [ ] **COPY-02**: Process Timeline steps renamed with GC-specific terminology (e.g. "Plan Review & Budget" not "Bid Request")
+- [x] **COPY-01**: Service descriptions rewritten with GC-benefit language (schedule impact, coordination ease, minimal callbacks) replacing technical spec bullets
+- [x] **COPY-02**: Process Timeline steps renamed with GC-specific terminology (e.g. "Plan Review & Budget" not "Bid Request")
 
 ### Design & Layout
 
 - [x] **DSGN-01**: Section headers use varied visual layouts (left-aligned, full-width banners, overlapping) instead of uniform centered SectionHeader pattern
 - [x] **DSGN-02**: Industrial/bold heading font (Oswald, Barlow Condensed, or similar) applied to headings site-wide
-- [ ] **DSGN-03**: ServiceCard hover gradient uses brand/accent colors instead of generic `from-blue-50`
-- [ ] **DSGN-04**: Each of the 8 services uses a distinct lucide-react icon (no duplicates)
+- [x] **DSGN-03**: ServiceCard hover gradient uses brand/accent colors instead of generic `from-blue-50`
+- [x] **DSGN-04**: Each of the 8 services uses a distinct lucide-react icon (no duplicates)
 - [ ] **DSGN-05**: Client logos displayed with distinctive treatment replacing standard infinite-scroll marquee
 
 ### UX
@@ -45,12 +45,12 @@ Deferred to future release.
 
 | Requirement | Phase | Status |
 |-------------|-------|--------|
-| COPY-01 | Phase 7 | Pending |
-| COPY-02 | Phase 7 | Pending |
+| COPY-01 | Phase 7 | Complete |
+| COPY-02 | Phase 7 | Complete |
 | DSGN-01 | Phase 6 | Complete |
 | DSGN-02 | Phase 6 | Complete |
-| DSGN-03 | Phase 7 | Pending |
-| DSGN-04 | Phase 7 | Pending |
+| DSGN-03 | Phase 7 | Complete |
+| DSGN-04 | Phase 7 | Complete |
 | DSGN-05 | Phase 8 | Pending |
 | UX-01 | Phase 8 | Pending |
 
