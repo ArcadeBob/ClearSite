@@ -119,6 +119,7 @@ export function AboutPage() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <div>
               <SectionHeader
+                variant="left-bar"
                 subheading="Our Brand"
                 title={'"Clean" Is More Than Just Dust-Free'}
                 subheadingColor="text-amber-600"
@@ -166,6 +167,7 @@ export function AboutPage() {
       <section className="py-20 bg-slate-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <SectionHeader
+            variant="banner"
             subheading="Our Journey"
             title="Company Milestones"
             description={`From a one-man crew to a ${BONDING_CAPACITY_DISPLAY} bonding capacity — over a decade of growth built on clean work.`}
@@ -259,6 +261,7 @@ export function AboutPage() {
       <section id="why-choose" className="py-20 bg-slate-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <SectionHeader
+            variant="left-bar"
             subheading="The CGI Difference"
             title="Why Choose CGI"
             description="We know you have a choice. But when you understand the tremendous advantages CGI brings, there really is no other choice."
@@ -325,6 +328,7 @@ export function AboutPage() {
       <section id="team" className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <SectionHeader
+            variant="overlapping"
             subheading="Our Team"
             title="Meet the Leadership"
             description="Extremely talented people who understand our brand and practice clean, thoughtful craftsmanship."

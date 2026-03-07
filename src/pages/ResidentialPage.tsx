@@ -130,6 +130,7 @@ export function ResidentialPage() {
       <section className="py-20 bg-slate-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <SectionHeader
+            variant="left-bar"
             subheading="Featured Project"
             title="Residential Work"
             description="We bring commercial-grade precision to select high-end residential projects across Southern California."
@@ -175,6 +176,7 @@ export function ResidentialPage() {
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <SectionHeader
+            variant="banner"
             subheading="How It Works"
             title="Our Residential Process"
             description="From first consultation to final installation, we make the process simple and stress-free."

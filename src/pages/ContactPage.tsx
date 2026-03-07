@@ -265,6 +265,7 @@ export function ContactPage() {
       <section className="py-16 bg-white border-t border-slate-200">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <SectionHeader
+            variant="banner"
             subheading="Common Questions"
             title="Frequently Asked Questions"
             className="mb-12"

@@ -49,6 +49,7 @@ export function SafetySection() {
 
         {/* Section header */}
         <SectionHeader
+          variant="left-bar"
           subheading="Safety Program"
           title="A Safety Culture Built Into Every Project"
           className="mb-12"

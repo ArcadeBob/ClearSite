@@ -39,6 +39,7 @@ export function PrevailingWageBanner({ className = '' }: PrevailingWageBannerPro
     <section id="prevailing-wage" className={`py-20 ${className}`}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <SectionHeader
+          variant="banner"
           subheading="Prevailing Wage Experience"
           title="Certified for Public Works Projects"
           description="CGI is DIR registered and prevailing wage certified — ready for PLA, Davis-Bacon, state prevailing wage, and institutional scopes from day one."

@@ -66,6 +66,7 @@ export function GCPainPoints() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <SectionHeader
+          variant="overlapping"
           subheading="Built for GCs"
           title="We Know What Keeps PMs Up at Night"
           description="After 13+ years working with GCs, we've built our entire operation around solving the problems that matter most to project managers."

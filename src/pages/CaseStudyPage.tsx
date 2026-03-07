@@ -305,6 +305,7 @@ export function CaseStudyPage() {
       <section className="py-20 bg-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <SectionHeader
+            variant="left-bar"
             subheading="Project Overview"
             title="The Full Story"
             className="mb-12"
@@ -357,6 +358,7 @@ export function CaseStudyPage() {
       <section className="py-20 bg-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <SectionHeader
+            variant="banner"
             subheading="Project Timeline"
             title="How We Delivered"
             className="mb-12"
@@ -396,6 +398,7 @@ export function CaseStudyPage() {
       <section className="py-20 bg-slate-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <SectionHeader
+            variant="overlapping"
             subheading="Outcomes"
             title="Results That Speak"
             className="mb-12"
@@ -423,6 +426,7 @@ export function CaseStudyPage() {
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <SectionHeader
+            variant="left-bar"
             subheading="Project Gallery"
             title="See the Work"
             className="mb-12"
@@ -483,6 +487,7 @@ export function CaseStudyPage() {
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <SectionHeader
+            variant="banner"
             subheading="More Work"
             title="Related Projects"
             className="mb-12"

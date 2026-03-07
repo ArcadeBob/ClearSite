@@ -394,6 +394,7 @@ export function HomePage(): React.JSX.Element {
       <section className="py-24 bg-slate-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <SectionHeader
+            variant="left-bar"
             subheading="What We Do"
             title="Full-Service Commercial Glazing"
             description={<>From fabrication to installation, we handle the complete glazing scope.{' '}<strong>One subcontractor, one point of contact, zero coordination headaches.</strong></>}

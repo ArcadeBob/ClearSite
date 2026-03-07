@@ -44,6 +44,7 @@ export function CertificationsBadges() {
     <section className="py-20 bg-white border-y border-slate-100">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <SectionHeader
+          variant="banner"
           subheading="Trusted & Verified"
           title="Our Credentials"
           titleSize="sm"

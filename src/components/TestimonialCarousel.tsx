@@ -70,6 +70,7 @@ export function TestimonialCarousel() {
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <SectionHeader
+          variant="left-bar"
           subheading="What GCs Are Saying"
           title="Trusted by Top Project Managers"
           className="mb-12"
