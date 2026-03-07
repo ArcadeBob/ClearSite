@@ -14,14 +14,14 @@ export function ServiceCard({
   const [isHovered, setIsHovered] = useState(false);
   return (
     <div
-      className="group h-full flex flex-col bg-white rounded-xl border border-slate-200 shadow-sm overflow-hidden transition-all duration-500 hover:shadow-xl hover:-translate-y-1 hover:border-accent/30"
+      className="group h-full flex flex-col bg-white rounded-xl border border-slate-200 shadow-sm overflow-hidden transition-all duration-500 hover:shadow-xl hover:-translate-y-1 hover:border-brand/30"
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}>
 
       <div className="p-6 flex-1 flex flex-col relative">
         {/* Background Gradient on Hover */}
         <div
-          className={`absolute inset-0 bg-gradient-to-br from-blue-50 to-transparent transition-opacity duration-500 ${isHovered ? 'opacity-100' : 'opacity-0'}`}>
+          className={`absolute inset-0 bg-gradient-to-br from-brand/5 to-transparent transition-opacity duration-500 ${isHovered ? 'opacity-100' : 'opacity-0'}`}>
         </div>
 
         <div className="relative z-10">

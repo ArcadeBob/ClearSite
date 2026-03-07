@@ -22,11 +22,13 @@ import {
 } from '../data/credentials';
 import {
   Building2,
-  Maximize,
   Sun,
   Shield,
-  LayoutGrid,
   DoorOpen,
+  PanelTop,
+  Fence,
+  Bath,
+  RectangleHorizontal,
   ArrowRight,
   Download,
   CheckCircle2,
@@ -46,89 +48,89 @@ const services = [
 {
   title: 'Storefronts',
   description:
-  'Custom aluminum storefronts and entrances for retail and office applications.',
-  icon: <LayoutGrid className="h-6 w-6" />,
+  'Keep your project moving with storefront systems that install on your timeline, not ours. One crew handles framing, glazing, and hardware so you have a single point of coordination.',
+  icon: <DoorOpen className="h-6 w-6" />,
   bullets: [
-    'Thermally broken aluminum framing systems',
-    'Narrow-stile, wide-stile, and heavy glass entry configurations',
-    'ADA-compliant entrance assemblies and hardware',
+    'Same-day budgets on plan review',
+    'Coordinates with framing and waterproofing trades',
+    'First-pass inspections with minimal punch list items',
   ]
 },
 {
   title: 'Window Walls',
   description:
-  'Floor-to-ceiling window wall systems that maximize views and natural light.',
-  icon: <Maximize className="h-6 w-6" />,
+  'No schedule gaps between framing and glazing — we field-verify conditions early and show up ready. Our crews have installed window walls on projects from $50K to $2M+.',
+  icon: <PanelTop className="h-6 w-6" />,
   bullets: [
-    'Aluminum stick-built window wall systems',
-    'Floor-to-ceiling glazed openings',
-    'Integrated operable vent units',
+    'Field verification before fabrication to prevent change orders',
+    'Daily progress updates during installation',
+    'Clean jobsite turnover with as-built documentation',
   ]
 },
 {
   title: 'Curtain Walls',
   description:
-  'High-performance stick-built and unitized curtain wall systems for commercial buildings.',
+  'Your most complex glazing scope handled by one experienced sub. We manage the full curtain wall process from submittals through closeout so nothing falls through the cracks.',
   icon: <Building2 className="h-6 w-6" />,
   bullets: [
-    'Stick-built and unitized curtain wall systems',
-    'Pressure-equalized rainscreen performance',
-    'High-rise and mid-rise commercial applications',
+    'Proactive lead time tracking with regular status updates',
+    'Coordinates with structural, mechanical, and waterproofing trades',
+    'Complete submittal packages on your schedule',
   ]
 },
 {
   title: 'Skylights',
   description:
-  'Overhead glazing solutions that maximize natural light while maintaining efficiency.',
+  'Overhead glazing that passes inspection the first time. We coordinate with roofing and waterproofing trades upfront so your skylight scope stays on schedule.',
   icon: <Sun className="h-6 w-6" />,
   bullets: [
-    'Structural overhead glazing',
-    'Thermally broken curb-mounted systems',
-    'Daylighting and energy performance compliance',
+    'Pre-installation coordination with roofing contractors',
+    'Engineered submittals for architect approval',
+    'Warranty documentation included at closeout',
   ]
 },
 {
   title: 'Glass Railings',
   description:
-  'Frameless and post-mounted glass railing systems for balconies and stairs.',
-  icon: <Maximize className="h-6 w-6" />,
+  'Railing systems installed to code with no callbacks. We field-measure early and coordinate with your concrete and steel trades to keep the critical path clear.',
+  icon: <Fence className="h-6 w-6" />,
   bullets: [
-    'Frameless standoff-mounted systems',
-    'Post-and-channel base shoe configurations',
-    'IBC-compliant guard assemblies',
+    'Early field measurements to prevent rework',
+    'Coordinates with concrete and steel sub schedules',
+    'Code-compliant installations with minimal punch list',
   ]
 },
 {
   title: 'Fire-Rated Glazing',
   description:
-  'Safety-compliant fire-rated windows and doors meeting all code requirements.',
+  'Pass your fire-rated inspections on the first walk-through. We handle the engineering, product selection, and documentation so you never chase missing paperwork.',
   icon: <Shield className="h-6 w-6" />,
   bullets: [
-    '20-, 45-, 60-, and 90-minute fire-rated assemblies',
-    'Wired, ceramic, and intumescent glazing products',
-    'UL-listed frame and glass combinations',
+    'Complete inspection-ready documentation package',
+    'Architect coordination on product approvals',
+    'First-pass inspection track record',
   ]
 },
 {
   title: 'Shower Enclosures',
   description:
-  'Custom frameless and semi-frameless shower enclosures for commercial and residential projects.',
-  icon: <DoorOpen className="h-6 w-6" />,
+  'Custom shower glass that fits the first time — no return trips. We template after tile is set and deliver finished enclosures that are ready for final walkthrough.',
+  icon: <Bath className="h-6 w-6" />,
   bullets: [
-    'Frameless and semi-frameless heavy glass systems',
-    'Custom radius and angle configurations',
-    'Commercial hospitality and fitness facility applications',
+    'Template-after-tile process eliminates remakes',
+    'Hospitality and multi-unit rollout experience',
+    'Minimal punch list items on final walkthrough',
   ]
 },
 {
   title: 'Mirrors',
   description:
-  'Custom-cut mirrors for commercial, retail, and residential applications.',
-  icon: <Maximize className="h-6 w-6" />,
+  'Simple scope, zero hassle. We measure, fabricate, and install mirrors on your timeline with no loose ends at turnover.',
+  icon: <RectangleHorizontal className="h-6 w-6" />,
   bullets: [
-    'Custom-cut float glass mirrors',
-    'Commercial gym, retail, and hospitality applications',
-    'Adhesive and clip-mounted installation options',
+    'Fast turnaround for tenant improvement schedules',
+    'Single-visit installation for most scopes',
+    'Clean turnover with no callbacks',
   ]
 }];
 
