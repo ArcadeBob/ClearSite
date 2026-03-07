@@ -61,22 +61,6 @@ const regions: RegionData[] = [
   cy: 140
 }];
 
-const secondaryStates = [
-{
-  name: 'Oregon',
-  abbr: 'OR',
-  projects: 0
-},
-{
-  name: 'Nevada',
-  abbr: 'NV',
-  projects: 0
-},
-{
-  name: 'Arizona',
-  abbr: 'AZ',
-  projects: 0
-}];
 
 export function ServiceAreaMap(): React.JSX.Element {
   const [hoveredRegion, setHoveredRegion] = useState<string | null>(null);
@@ -237,20 +221,6 @@ export function ServiceAreaMap(): React.JSX.Element {
                 </div>
               </div>
 
-              {/* Secondary States Labels */}
-              <div className="absolute top-8 right-4 flex flex-col gap-2">
-                {secondaryStates.map((state, index) =>
-                <div
-                  key={state.abbr}
-                  className={`bg-slate-100 rounded-full px-3 py-1.5 text-xs font-medium text-slate-600 border border-slate-200 hover:bg-amber-50 hover:border-amber-200 hover:text-amber-700 transition-all duration-300 cursor-default ${isVisible ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-4'}`}
-                  style={{
-                    transitionDelay: `${index * 100 + 1000}ms`
-                  }}>
-
-                    {state.abbr}
-                  </div>
-                )}
-              </div>
             </div>
           </div>
 
@@ -269,8 +239,7 @@ export function ServiceAreaMap(): React.JSX.Element {
             </h2>
             <p className="text-lg text-slate-600 mb-8 leading-relaxed">
               Based in Chatsworth, we serve projects throughout California with
-              a focus on Southern California. Extended coverage available in
-              Oregon, Nevada, and Arizona.
+              a focus on Southern California.
             </p>
 
             <div className="mb-8">
@@ -298,29 +267,6 @@ export function ServiceAreaMap(): React.JSX.Element {
               </div>
             </div>
 
-            <div
-              className={`bg-slate-50 rounded-xl p-6 border border-slate-100 transition-all duration-700 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}
-              style={{
-                transitionDelay: '700ms'
-              }}>
-
-              <h3 className="text-sm font-bold text-slate-900 mb-3 uppercase tracking-wide">
-                Extended Coverage
-              </h3>
-              <div className="flex flex-wrap gap-3">
-                {secondaryStates.map((state) =>
-                <span
-                  key={state.abbr}
-                  className="inline-flex items-center gap-2 bg-white px-4 py-2 rounded-lg border border-slate-200 text-sm font-medium text-slate-700 hover:border-amber-300 hover:bg-amber-50 transition-all duration-300 cursor-default">
-
-                    {state.name}
-                  </span>
-                )}
-              </div>
-              <p className="text-xs text-slate-500 mt-3">
-                Available for commercial projects in secondary markets
-              </p>
-            </div>
           </div>
         </div>
       </div>
