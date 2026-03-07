@@ -35,7 +35,15 @@ Professional credibility for a commercial glazing subcontractor — accurate pro
 
 ### Active
 
-(None — planning next milestone)
+#### v1.2 GC Appeal & Design Polish
+- [ ] **COPY-01**: Service descriptions rewritten with GC-benefit language (schedule, coordination, callbacks) instead of spec language
+- [ ] **COPY-02**: Process Timeline steps renamed with GC-specific terminology
+- [ ] **DSGN-01**: Section headers use varied layouts (left-aligned, full-width, overlapping) instead of uniform centered pattern
+- [ ] **DSGN-02**: Industrial/bold heading font (e.g. Oswald, Barlow Condensed) replaces generic sans-serif
+- [ ] **DSGN-03**: ServiceCard hover uses brand colors instead of generic Tailwind blue
+- [ ] **DSGN-04**: Each service uses a distinct icon (no reuse of Maximize)
+- [ ] **DSGN-05**: Client logos displayed with distinctive treatment (not standard infinite marquee)
+- [ ] **UX-01**: FloatingCTA shows "Request a Quote" on residential page, "Request Prequal Package" elsewhere
 
 ### Out of Scope
 
@@ -82,5 +90,18 @@ No test framework configured. No backend/API layer.
 | useSearchParams in ContactPage only | ContactForm stays presentational | ✓ Good |
 | Non-residential defaults to commercial | Safe fallback for any ?type= value | ✓ Good |
 
+## Current Milestone: v1.2 GC Appeal & Design Polish
+
+**Goal:** Make the site visually distinctive and speak directly to GCs through benefit-driven copy, varied layouts, industrial typography, and route-aware UX.
+
+**Target features:**
+- Service descriptions rewritten for GC benefits (not specs)
+- Process Timeline with GC-specific language
+- Section header visual variety (break template feel)
+- Industrial/bold heading font
+- Brand-consistent hover states and distinct service icons
+- Distinctive client logo treatment
+- Route-aware FloatingCTA (residential vs commercial)
+
 ---
-*Last updated: 2026-03-06 after v1.1 milestone*
+*Last updated: 2026-03-07 after v1.2 milestone start*
