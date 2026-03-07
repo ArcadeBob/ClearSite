@@ -56,10 +56,10 @@ Plans:
   2. Process Timeline steps use GC-project terminology (e.g. "Plan Review & Budget" not "Bid Request")
   3. Each service card displays a unique lucide-react icon — no two services share an icon
   4. ServiceCard hover effect uses brand navy/accent colors instead of generic Tailwind blue
-**Plans**: TBD
+**Plans:** 1 plan
 
 Plans:
-- [ ] 07-01: TBD
+- [ ] 07-01-PLAN.md — Rewrite service copy with GC-benefit language, assign unique icons, fix hover colors, and update Process Timeline terminology
 
 ### Phase 8: Client Presentation & UX
 **Goal**: Client credibility display and CTA behavior adapt to context, completing the polished GC-focused experience
@@ -76,7 +76,7 @@ Plans:
 
 ## Progress
 
-**Execution Order:** 6 → 7 → 8
+**Execution Order:** 6 -> 7 -> 8
 
 | Phase | Milestone | Plans Complete | Status | Completed |
 |-------|-----------|----------------|--------|-----------|
@@ -85,6 +85,6 @@ Plans:
 | 3. Safety Credentials Foundation | v1.1 | 1/1 | Complete | 2026-03-06 |
 | 4. Prevailing Wage & Service Depth | v1.1 | 2/2 | Complete | 2026-03-06 |
 | 5. CTA Simplification | v1.1 | 2/2 | Complete | 2026-03-06 |
-| 6. Typography & Layout Foundation | 2/2 | Complete   | 2026-03-07 | - |
-| 7. Service & Copy Refinement | v1.2 | 0/? | Not started | - |
+| 6. Typography & Layout Foundation | v1.2 | 2/2 | Complete | 2026-03-07 |
+| 7. Service & Copy Refinement | v1.2 | 0/1 | Not started | - |
 | 8. Client Presentation & UX | v1.2 | 0/? | Not started | - |
