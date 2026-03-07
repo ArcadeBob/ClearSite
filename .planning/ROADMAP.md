@@ -69,10 +69,10 @@ Plans:
   1. Client logos display with a distinctive visual treatment that is not an infinite-scroll marquee
   2. FloatingCTA on `/residential` shows "Request a Quote" linking to `/contact?type=residential`
   3. FloatingCTA on all other pages shows "Request Prequal Package" linking to `/contact?type=commercial`
-**Plans**: TBD
+**Plans:** 1 plan
 
 Plans:
-- [ ] 08-01: TBD
+- [ ] 08-01-PLAN.md — Redesign client logos as static grid with grayscale hover, make FloatingCTA route-aware and global
 
 ## Progress
 
@@ -87,4 +87,4 @@ Plans:
 | 5. CTA Simplification | v1.1 | 2/2 | Complete | 2026-03-06 |
 | 6. Typography & Layout Foundation | v1.2 | 2/2 | Complete | 2026-03-07 |
 | 7. Service & Copy Refinement | v1.2 | 0/1 | Not started | - |
-| 8. Client Presentation & UX | v1.2 | 0/? | Not started | - |
+| 8. Client Presentation & UX | v1.2 | 0/1 | Not started | - |
