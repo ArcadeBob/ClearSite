@@ -29,7 +29,7 @@
 
 - [x] **Phase 6: Typography & Layout Foundation** - Industrial heading font and varied section header layouts site-wide (completed 2026-03-07)
 - [ ] **Phase 7: Service & Copy Refinement** - GC-benefit copy, distinct service icons, and brand-consistent hover states
-- [ ] **Phase 8: Client Presentation & UX** - Distinctive client logo treatment and route-aware FloatingCTA
+- [x] **Phase 8: Client Presentation & UX** - Distinctive client logo treatment and route-aware FloatingCTA (completed 2026-03-07)
 
 ## Phase Details
 
@@ -69,7 +69,7 @@ Plans:
   1. Client logos display with a distinctive visual treatment that is not an infinite-scroll marquee
   2. FloatingCTA on `/residential` shows "Request a Quote" linking to `/contact?type=residential`
   3. FloatingCTA on all other pages shows "Request Prequal Package" linking to `/contact?type=commercial`
-**Plans:** 1 plan
+**Plans:** 1/1 plans complete
 
 Plans:
 - [ ] 08-01-PLAN.md — Redesign client logos as static grid with grayscale hover, make FloatingCTA route-aware and global
@@ -87,4 +87,4 @@ Plans:
 | 5. CTA Simplification | v1.1 | 2/2 | Complete | 2026-03-06 |
 | 6. Typography & Layout Foundation | v1.2 | 2/2 | Complete | 2026-03-07 |
 | 7. Service & Copy Refinement | v1.2 | 0/1 | Not started | - |
-| 8. Client Presentation & UX | v1.2 | 0/1 | Not started | - |
+| 8. Client Presentation & UX | 1/1 | Complete   | 2026-03-07 | - |

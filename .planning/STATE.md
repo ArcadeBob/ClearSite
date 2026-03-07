@@ -4,13 +4,13 @@ milestone: v1.2
 milestone_name: GC Appeal & Design Polish
 status: completed
 stopped_at: Phase 8 context gathered
-last_updated: "2026-03-07T21:56:31.900Z"
+last_updated: "2026-03-07T22:22:01.238Z"
 last_activity: 2026-03-07 — Completed 07-01 service copy refinement
 progress:
   total_phases: 3
-  completed_phases: 2
-  total_plans: 3
-  completed_plans: 3
+  completed_phases: 3
+  total_plans: 4
+  completed_plans: 4
   percent: 100
 ---
 
@@ -21,21 +21,21 @@ progress:
 See: .planning/PROJECT.md (updated 2026-03-07)
 
 **Core value:** Professional credibility for a commercial glazing subcontractor — accurate project data, consistent visual presentation, and clear CTAs for general contractors.
-**Current focus:** v1.2 GC Appeal & Design Polish — Phase 7 plan 01 complete
+**Current focus:** v1.2 GC Appeal & Design Polish — Phase 8 plan 01 complete
 
 ## Current Position
 
-Phase: 7 of 8 (Service Copy Refinement)
+Phase: 8 of 8 (Client Presentation & UX)
 Plan: 1 of 1 complete
-Status: Phase 7 plan 01 complete
-Last activity: 2026-03-07 — Completed 07-01 service copy refinement
+Status: Phase 8 plan 01 complete
+Last activity: 2026-03-07 — Completed 08-01 client presentation and UX
 
 Progress: [██████████] 100%
 
 ## Performance Metrics
 
 **Velocity:**
-- Total plans completed: 11 (v1.0: 3, v1.1: 5, v1.2: 3)
+- Total plans completed: 12 (v1.0: 3, v1.1: 5, v1.2: 4)
 - v1.1 execution time: ~24 min across 5 plans
 
 **By Phase (v1.1):**
@@ -50,6 +50,7 @@ Progress: [██████████] 100%
 | Phase 06 P01 | 1min | 2 tasks | 3 files |
 | Phase 06 P02 | 3min | 3 tasks | 21 files |
 | Phase 07 P01 | 2min | 2 tasks | 3 files |
+| Phase 08 P01 | 1min | 2 tasks | 4 files |
 
 ## Accumulated Context
 
@@ -59,6 +60,7 @@ See PROJECT.md Key Decisions table for full history.
 - [Phase 06]: Heading color changed from text-slate-900 to text-brand navy; SectionHeader defaults to left-bar variant
 - [Phase 06-02]: Variant assignments optimized for visual rhythm; stat numbers keep contextual colors; footer headings keep text-white
 - [Phase 07-01]: Service hover uses brand/5 gradient; border-brand/30 on hover; final timeline step named "Closeout & Warranty"
+- [Phase 08-01]: ClientLogos uses CSS grid (2/3/5 cols) with grayscale hover; FloatingCTA placed after Footer in App.tsx DOM
 
 ### Pending Todos
 
@@ -72,6 +74,6 @@ None.
 
 ## Session Continuity
 
-Last session: 2026-03-07T21:56:31.898Z
-Stopped at: Phase 8 context gathered
-Resume file: .planning/phases/08-client-presentation-ux/08-CONTEXT.md
+Last session: 2026-03-07T22:21:25Z
+Stopped at: Completed 08-01-PLAN.md
+Resume file: .planning/phases/08-client-presentation-ux/08-01-SUMMARY.md

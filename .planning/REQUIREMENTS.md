@@ -18,11 +18,11 @@ Requirements for GC Appeal & Design Polish milestone.
 - [x] **DSGN-02**: Industrial/bold heading font (Oswald, Barlow Condensed, or similar) applied to headings site-wide
 - [x] **DSGN-03**: ServiceCard hover gradient uses brand/accent colors instead of generic `from-blue-50`
 - [x] **DSGN-04**: Each of the 8 services uses a distinct lucide-react icon (no duplicates)
-- [ ] **DSGN-05**: Client logos displayed with distinctive treatment replacing standard infinite-scroll marquee
+- [x] **DSGN-05**: Client logos displayed with distinctive treatment replacing standard infinite-scroll marquee
 
 ### UX
 
-- [ ] **UX-01**: FloatingCTA displays "Request a Quote" with residential link on `/residential`, "Request Prequal Package" elsewhere
+- [x] **UX-01**: FloatingCTA displays "Request a Quote" with residential link on `/residential`, "Request Prequal Package" elsewhere
 
 ## v2 Requirements
 
@@ -51,8 +51,8 @@ Deferred to future release.
 | DSGN-02 | Phase 6 | Complete |
 | DSGN-03 | Phase 7 | Complete |
 | DSGN-04 | Phase 7 | Complete |
-| DSGN-05 | Phase 8 | Pending |
-| UX-01 | Phase 8 | Pending |
+| DSGN-05 | Phase 8 | Complete |
+| UX-01 | Phase 8 | Complete |
 
 **Coverage:**
 - v1.2 requirements: 8 total
