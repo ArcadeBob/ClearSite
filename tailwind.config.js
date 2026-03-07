@@ -11,8 +11,8 @@ export default {
           dark: '#162c47',
         },
         accent: {
-          DEFAULT: '#2563eb',
-          dark: '#1d4ed8',
+          DEFAULT: '#f97316',
+          dark: '#ea580c',
         },
       },
     },

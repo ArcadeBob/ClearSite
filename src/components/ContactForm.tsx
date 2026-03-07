@@ -175,7 +175,7 @@ export function ContactForm({ inquiryType = 'commercial' }: ContactFormProps): R
               {!fileName ? (
                 <label
                   htmlFor="file-upload"
-                  className="flex items-center justify-center gap-3 w-full h-24 rounded-md border-2 border-dashed border-slate-300 bg-slate-50 cursor-pointer hover:border-accent hover:bg-blue-50/50 transition-colors"
+                  className="flex items-center justify-center gap-3 w-full h-24 rounded-md border-2 border-dashed border-slate-300 bg-slate-50 cursor-pointer hover:border-accent hover:bg-orange-50/50 transition-colors"
                 >
                   <Upload className="h-5 w-5 text-slate-400" />
                   <div className="text-sm">

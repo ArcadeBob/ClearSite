@@ -319,8 +319,8 @@ export function HomePage(): React.JSX.Element {
               </div>
             </div>
             <div className="flex items-center gap-4 justify-center border-y md:border-y-0 md:border-x border-slate-100 py-6 md:py-0 md:px-8">
-              <div className="h-12 w-12 rounded-lg bg-blue-50 flex items-center justify-center flex-shrink-0">
-                <DollarSign className="h-6 w-6 text-blue-600" />
+              <div className="h-12 w-12 rounded-lg bg-orange-50 flex items-center justify-center flex-shrink-0">
+                <DollarSign className="h-6 w-6 text-accent" />
               </div>
               <div>
                 <p className="font-bold text-slate-900">On-Budget Execution</p>

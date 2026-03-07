@@ -98,7 +98,7 @@ export function ProjectCard({
 
         <div className="space-y-3 mt-auto">
           <div
-            className={`flex justify-between text-sm border-b pb-2 transition-colors duration-300 ${isHovered ? 'border-blue-200' : 'border-slate-100'}`}>
+            className={`flex justify-between text-sm border-b pb-2 transition-colors duration-300 ${isHovered ? 'border-orange-200' : 'border-slate-100'}`}>
 
             <span className="text-slate-500">Client</span>
             <span className="font-medium text-slate-900 text-right">
@@ -106,7 +106,7 @@ export function ProjectCard({
             </span>
           </div>
           <div
-            className={`flex justify-between text-sm border-b pb-2 transition-colors duration-300 ${isHovered ? 'border-blue-200' : 'border-slate-100'}`}>
+            className={`flex justify-between text-sm border-b pb-2 transition-colors duration-300 ${isHovered ? 'border-orange-200' : 'border-slate-100'}`}>
 
             <span className="text-slate-500 flex items-center">
               <DollarSign className="h-3.5 w-3.5 mr-1" /> Value

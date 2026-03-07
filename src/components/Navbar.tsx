@@ -35,7 +35,7 @@ export function Navbar() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-wrap justify-center sm:justify-between items-center gap-2 sm:gap-4">
           <a
             href="tel:8184924265"
-            className="flex items-center gap-2 hover:text-blue-300 transition-colors">
+            className="flex items-center gap-2 hover:text-orange-300 transition-colors">
 
             <Phone className="h-4 w-4" />
             818-492-4265
@@ -99,7 +99,7 @@ export function Navbar() {
             <Link
               key={item.name}
               to={item.href}
-              className={`block px-3 py-2 rounded-md text-base font-medium ${isActive(item.href) ? 'text-accent bg-blue-50' : 'text-slate-600 hover:bg-slate-50 hover:text-accent'}`}
+              className={`block px-3 py-2 rounded-md text-base font-medium ${isActive(item.href) ? 'text-accent bg-orange-50' : 'text-slate-600 hover:bg-slate-50 hover:text-accent'}`}
               onClick={() => setIsOpen(false)}>
 
                   {item.name}
