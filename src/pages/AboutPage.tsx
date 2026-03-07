@@ -7,7 +7,6 @@ import {
   Target,
   Sparkles,
   Handshake,
-  Users,
   Award,
   CheckCircle,
   ArrowRight,
@@ -21,24 +20,28 @@ const team = [
   {
     name: 'Daniel Kauffman',
     role: 'CEO/Owner/Master Glazier',
+    photo: '/images/team/daniel-kauffman.png',
     description:
       'A career glazier with decades of hands-on experience. Daniel founded CGI on the principle that "clean" means more than dust-free — it means precision, efficiency, and minimal punch list on every project.',
   },
   {
     name: 'Yolanda Lara',
     role: 'Senior Project Manager',
+    photo: '/images/team/yolanda-lara.png',
     description:
       '30+ years of industry experience. Yolanda manages multi-site rollouts and complex commercial scopes, coordinating everything from submittals to final inspections with meticulous attention to schedule.',
   },
   {
     name: 'Josue Gonzalez',
     role: 'Field Operations Manager',
+    photo: '/images/team/josue-gonzalez.png',
     description:
       '28 years in commercial glazing. Josue oversees all field crews and quality control, ensuring every installation meets CGI standards from first anchor to final sealant bead.',
   },
   {
     name: 'Robert Elmquist',
     role: 'Operations Manager',
+    photo: '/images/team/robert-elmquist.png',
     description:
       'Robert manages CGI\'s day-to-day business operations, including project tracking, vendor coordination, and office administration — keeping the office and field teams running smoothly.',
   },
@@ -332,9 +335,11 @@ export function AboutPage() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {team.map((member) => (
               <Card key={member.name} className="p-6 text-center" hover>
-                <div className="h-20 w-20 bg-slate-200 rounded-full mx-auto mb-4 flex items-center justify-center">
-                  <Users className="h-10 w-10 text-slate-400" />
-                </div>
+                <img
+                  src={member.photo}
+                  alt={member.name}
+                  className="h-20 w-20 rounded-full mx-auto mb-4 object-cover"
+                />
                 <h3 className="text-lg font-bold text-slate-900 mb-1">
                   {member.name}
                 </h3>
