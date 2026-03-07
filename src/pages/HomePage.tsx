@@ -33,8 +33,7 @@ import {
   CheckCircle2,
   Clock,
   DollarSign,
-  ClipboardCheck,
-  AlertTriangle } from
+  ClipboardCheck } from
 'lucide-react';
 
 const PARALLAX_FACTOR = 0.25;
@@ -401,15 +400,6 @@ export function HomePage(): React.JSX.Element {
             description={<>From fabrication to installation, we handle the complete glazing scope.{' '}<strong>One subcontractor, one point of contact, zero coordination headaches.</strong></>}
             className="mb-16"
           />
-          {import.meta.env.DEV && (
-          <div className="mb-8 flex items-start gap-3 rounded-lg border border-amber-300 bg-amber-50 px-4 py-3 text-sm text-amber-800">
-            <AlertTriangle className="h-5 w-5 shrink-0 mt-0.5 text-amber-600" />
-            <p>
-              <strong>Draft service capability detail</strong> -- pending owner review and validation.
-              Technical bullets are placeholder content until CGI confirms system types and applications.
-            </p>
-          </div>
-          )}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {services.map((service) =>
             <ServiceCard key={service.title} {...service} />

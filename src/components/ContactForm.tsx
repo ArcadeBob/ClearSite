@@ -237,7 +237,7 @@ export function ContactForm({ inquiryType = 'commercial' }: ContactFormProps): R
       </Button>
 
       <p className="text-xs text-slate-500 text-center mt-4">
-        By submitting this form, you agree to our privacy policy. We typically
+        By submitting this form, you consent to CGI contacting you about your inquiry. We typically
         respond within one business day.
       </p>
     </form>
