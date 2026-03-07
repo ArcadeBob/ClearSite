@@ -1,6 +1,6 @@
 import React from 'react';
 
-const clients = [
+const clients: { name: string; logo: string; invert?: boolean }[] = [
   { name: 'A&R Construction', logo: '/images/clients/a-and-r-construction.avif' },
   { name: 'Forza Construction', logo: '/images/clients/forza-construction.avif' },
   { name: 'Canfield Development', logo: '/images/clients/canfield-development.svg' },
@@ -45,9 +45,7 @@ export function ClientLogos(): React.JSX.Element {
               <img
                 src={client.logo}
                 alt={client.name}
-                className={`h-12 w-auto max-w-[180px] object-contain opacity-70 hover:opacity-100 transition-all duration-300${
-                  'invert' in client && client.invert ? ' invert' : ''
-                }`}
+                className={`h-12 w-auto max-w-[180px] object-contain opacity-70 hover:opacity-100 transition-all duration-300${client.invert ? ' invert' : ''}`}
               />
             </div>
           )}
