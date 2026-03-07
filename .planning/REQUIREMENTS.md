@@ -45,20 +45,20 @@ Deferred to future release.
 
 | Requirement | Phase | Status |
 |-------------|-------|--------|
-| COPY-01 | — | Pending |
-| COPY-02 | — | Pending |
-| DSGN-01 | — | Pending |
-| DSGN-02 | — | Pending |
-| DSGN-03 | — | Pending |
-| DSGN-04 | — | Pending |
-| DSGN-05 | — | Pending |
-| UX-01 | — | Pending |
+| COPY-01 | Phase 7 | Pending |
+| COPY-02 | Phase 7 | Pending |
+| DSGN-01 | Phase 6 | Pending |
+| DSGN-02 | Phase 6 | Pending |
+| DSGN-03 | Phase 7 | Pending |
+| DSGN-04 | Phase 7 | Pending |
+| DSGN-05 | Phase 8 | Pending |
+| UX-01 | Phase 8 | Pending |
 
 **Coverage:**
 - v1.2 requirements: 8 total
-- Mapped to phases: 0
-- Unmapped: 8
+- Mapped to phases: 8
+- Unmapped: 0
 
 ---
 *Requirements defined: 2026-03-07*
-*Last updated: 2026-03-07 after initial definition*
+*Last updated: 2026-03-07 after roadmap creation*

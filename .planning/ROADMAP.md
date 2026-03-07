@@ -4,6 +4,7 @@
 
 - ✅ **v1.0 Content & Style Update** — Phases 1-2 (shipped 2026-03-03)
 - ✅ **v1.1 Credibility & Conversion** — Phases 3-5 (shipped 2026-03-06)
+- 🚧 **v1.2 GC Appeal & Design Polish** — Phases 6-8 (in progress)
 
 ## Phases
 
@@ -24,7 +25,57 @@
 
 </details>
 
+### v1.2 GC Appeal & Design Polish
+
+- [ ] **Phase 6: Typography & Layout Foundation** - Industrial heading font and varied section header layouts site-wide
+- [ ] **Phase 7: Service & Copy Refinement** - GC-benefit copy, distinct service icons, and brand-consistent hover states
+- [ ] **Phase 8: Client Presentation & UX** - Distinctive client logo treatment and route-aware FloatingCTA
+
+## Phase Details
+
+### Phase 6: Typography & Layout Foundation
+**Goal**: The site's visual language feels industrial and intentional, breaking the template-generated sameness
+**Depends on**: Nothing (first phase of v1.2)
+**Requirements**: DSGN-01, DSGN-02
+**Success Criteria** (what must be TRUE):
+  1. Headings across all pages render in a bold/condensed industrial font distinct from body text
+  2. Section headers on HomePage use at least 3 different visual layouts (left-aligned, full-width, overlapping) instead of uniform centered pattern
+  3. The site no longer looks like every section was stamped from the same SectionHeader template
+**Plans**: TBD
+
+Plans:
+- [ ] 06-01: TBD
+
+### Phase 7: Service & Copy Refinement
+**Goal**: Service content speaks to GCs about project outcomes (schedule, coordination, callbacks) rather than glazing specs
+**Depends on**: Phase 6 (header layouts may affect service section structure)
+**Requirements**: COPY-01, COPY-02, DSGN-03, DSGN-04
+**Success Criteria** (what must be TRUE):
+  1. Each of the 8 service descriptions leads with GC benefits (schedule impact, coordination ease, minimal callbacks) not technical specifications
+  2. Process Timeline steps use GC-project terminology (e.g. "Plan Review & Budget" not "Bid Request")
+  3. Each service card displays a unique lucide-react icon — no two services share an icon
+  4. ServiceCard hover effect uses brand navy/accent colors instead of generic Tailwind blue
+**Plans**: TBD
+
+Plans:
+- [ ] 07-01: TBD
+
+### Phase 8: Client Presentation & UX
+**Goal**: Client credibility display and CTA behavior adapt to context, completing the polished GC-focused experience
+**Depends on**: Phase 7 (service content complete before final UX pass)
+**Requirements**: DSGN-05, UX-01
+**Success Criteria** (what must be TRUE):
+  1. Client logos display with a distinctive visual treatment that is not an infinite-scroll marquee
+  2. FloatingCTA on `/residential` shows "Request a Quote" linking to `/contact?type=residential`
+  3. FloatingCTA on all other pages shows "Request Prequal Package" linking to `/contact?type=commercial`
+**Plans**: TBD
+
+Plans:
+- [ ] 08-01: TBD
+
 ## Progress
+
+**Execution Order:** 6 → 7 → 8
 
 | Phase | Milestone | Plans Complete | Status | Completed |
 |-------|-----------|----------------|--------|-----------|
@@ -33,3 +84,6 @@
 | 3. Safety Credentials Foundation | v1.1 | 1/1 | Complete | 2026-03-06 |
 | 4. Prevailing Wage & Service Depth | v1.1 | 2/2 | Complete | 2026-03-06 |
 | 5. CTA Simplification | v1.1 | 2/2 | Complete | 2026-03-06 |
+| 6. Typography & Layout Foundation | v1.2 | 0/? | Not started | - |
+| 7. Service & Copy Refinement | v1.2 | 0/? | Not started | - |
+| 8. Client Presentation & UX | v1.2 | 0/? | Not started | - |
