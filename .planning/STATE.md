@@ -5,7 +5,7 @@ milestone_name: GC Appeal & Design Polish
 status: archived
 stopped_at: Milestone v1.2 archived
 last_updated: "2026-03-07"
-last_activity: 2026-03-07 — Milestone v1.2 archived and tagged
+last_activity: 2026-03-07 - Completed quick task 1: Remove blurry drop-shadow glow from card header text site-wide
 progress:
   total_phases: 3
   completed_phases: 3
@@ -59,6 +59,12 @@ None.
 - Owner review of safety content (5 markers in SafetySection.tsx) — not a code blocker, business process
 - Owner review of 24 service capability bullets — not a code blocker, business process
 - Formspree E2E inbox test — external verification, not blocking next milestone
+
+### Quick Tasks Completed
+
+| # | Description | Date | Commit | Directory |
+|---|-------------|------|--------|-----------|
+| 1 | Remove blurry drop-shadow glow from card header text site-wide | 2026-03-07 | df3530b | [1-remove-blurry-drop-shadow-glow-from-card](./quick/1-remove-blurry-drop-shadow-glow-from-card/) |
 
 ## Session Continuity
 
