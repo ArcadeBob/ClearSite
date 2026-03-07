@@ -40,10 +40,9 @@ created: 2026-03-07
 |---------|------|------|-------------|-----------|-------------------|-------------|--------|
 | 06-01-01 | 01 | 1 | DSGN-02 | automated | `npm run build` | N/A | pending |
 | 06-01-02 | 01 | 1 | DSGN-02 | automated | `npm run build` | N/A | pending |
-| 06-02-01 | 02 | 1 | DSGN-01 | automated | `npm run build` | N/A | pending |
-| 06-02-02 | 02 | 1 | DSGN-01 | manual-only | Visual inspection | N/A | pending |
-| 06-03-01 | 03 | 2 | DSGN-02 | automated | `npm run build` | N/A | pending |
-| 06-03-02 | 03 | 2 | DSGN-01, DSGN-02 | manual-only | Visual review all 6 routes | N/A | pending |
+| 06-02-01 | 02 | 2 | DSGN-01 | automated | `npm run build` | N/A | pending |
+| 06-02-02 | 02 | 2 | DSGN-02 | automated | `npm run build` | N/A | pending |
+| 06-02-03 | 02 | 2 | DSGN-01, DSGN-02 | manual-only | Visual inspection | N/A | pending |
 
 *Status: pending / green / red / flaky*
 
