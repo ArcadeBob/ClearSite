@@ -1,5 +1,26 @@
 # Milestones
 
+## v1.2 GC Appeal & Design Polish (Shipped: 2026-03-07)
+
+**Phases completed:** 3 phases, 4 plans, 8 tasks
+**Timeline:** 1 day (2026-03-07)
+**Git range:** `eec47ca` feat(06-01) → `b9705e6` feat(08-01)
+**LOC:** +1,653 / -223 across 44 files
+
+**Key accomplishments:**
+- Bebas Neue industrial heading font applied to every heading across 21 files via font-heading Tailwind utility
+- SectionHeader refactored into 3 layout variants (left-bar, banner, overlapping) with visual rhythm optimization across 19 consumers
+- All 8 service descriptions rewritten from technical specs to GC-benefit language (schedule, coordination, callbacks)
+- Process Timeline rewritten with GC-project terminology across 7 steps
+- Unique lucide-react icons assigned to all 8 services, ServiceCard hover gradient updated to brand colors
+- Client logos replaced from infinite-scroll marquee to static CSS grid with grayscale-to-color hover
+- FloatingCTA made route-aware and global: "Request a Quote" on /residential, "Request Prequal Package" elsewhere
+
+**Tech debt carried forward:**
+- None accumulated during v1.2
+
+---
+
 ## v1.1 Credibility & Conversion (Shipped: 2026-03-06)
 
 **Phases completed:** 3 phases, 5 plans, 10 tasks

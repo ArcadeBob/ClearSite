@@ -2,7 +2,7 @@
 
 ## What This Is
 
-The marketing website for Clean Glass Installation (CGI), a commercial glazing subcontractor in Chatsworth, CA. Targets general contractors with project portfolio, safety credentials, prevailing wage experience, service depth, and prequalification flow. Built with React 18 + TypeScript + Vite + Tailwind CSS.
+The marketing website for Clean Glass Installation (CGI), a commercial glazing subcontractor in Chatsworth, CA. Targets general contractors with project portfolio, safety credentials, prevailing wage experience, service depth, industrial typography, benefit-driven service copy, and prequalification flow. Built with React 18 + TypeScript + Vite + Tailwind CSS.
 
 ## Core Value
 
@@ -32,18 +32,18 @@ Professional credibility for a commercial glazing subcontractor — accurate pro
 - ✓ Commercial CTAs → "Request Prequal Package" with auto-tag (CTA-01) — v1.1
 - ✓ Residential CTAs → "Request a Quote" with auto-tag (CTA-02) — v1.1
 - ✓ Contact form auto-detects URL parameter (CTA-03) — v1.1
+- ✓ Section headers use varied layouts (left-bar, banner, overlapping) (DSGN-01) — v1.2
+- ✓ Industrial heading font (Bebas Neue) applied site-wide (DSGN-02) — v1.2
+- ✓ ServiceCard hover uses brand colors (DSGN-03) — v1.2
+- ✓ Each service has distinct lucide-react icon (DSGN-04) — v1.2
+- ✓ Client logos with distinctive static grid treatment (DSGN-05) — v1.2
+- ✓ Service descriptions rewritten with GC-benefit language (COPY-01) — v1.2
+- ✓ Process Timeline with GC-specific terminology (COPY-02) — v1.2
+- ✓ Route-aware FloatingCTA: residential vs commercial (UX-01) — v1.2
 
 ### Active
 
-#### v1.2 GC Appeal & Design Polish
-- [ ] **COPY-01**: Service descriptions rewritten with GC-benefit language (schedule, coordination, callbacks) instead of spec language
-- [ ] **COPY-02**: Process Timeline steps renamed with GC-specific terminology
-- [ ] **DSGN-01**: Section headers use varied layouts (left-aligned, full-width, overlapping) instead of uniform centered pattern
-- [ ] **DSGN-02**: Industrial/bold heading font (e.g. Oswald, Barlow Condensed) replaces generic sans-serif
-- [ ] **DSGN-03**: ServiceCard hover uses brand colors instead of generic Tailwind blue
-- [ ] **DSGN-04**: Each service uses a distinct icon (no reuse of Maximize)
-- [ ] **DSGN-05**: Client logos displayed with distinctive treatment (not standard infinite marquee)
-- [ ] **UX-01**: FloatingCTA shows "Request a Quote" on residential page, "Request Prequal Package" elsewhere
+(None — start next milestone to define)
 
 ### Out of Scope
 
@@ -54,15 +54,20 @@ Professional credibility for a commercial glazing subcontractor — accurate pro
 - Separate forms per audience — same form with auto-tagging is sufficient
 - Animated safety stat counters — trivializes serious data
 - OSHA 300 log display — legal exposure, not industry standard
-- Individual service pages — deferred to v2 (SERV-03, SERV-04)
-- Safety page with downloadable manual — deferred to v2 (SAFE-04)
+- Individual service pages — deferred to v2 (DSGN-06)
+- Real jobsite photography — deferred to v2 (DSGN-07)
+- Additional case study pages — deferred to v2 (DSGN-08)
+- Safety page with downloadable manual — deferred to v2
 
 ## Context
 
-Shipped v1.1 with 5,079 LOC TypeScript.
-Tech stack: React 18, TypeScript, Vite, Tailwind CSS 3, react-router-dom v6.
+Shipped v1.2 with 5,094 LOC TypeScript.
+Tech stack: React 18, TypeScript, Vite, Tailwind CSS 3, react-router-dom v6, Bebas Neue (Google Fonts).
 All credential data flows from `src/data/credentials.ts` (17 named constants, 8 consumers).
-Safety and service content marked with amber draft banners pending owner review.
+SectionHeader supports 3 layout variants (left-bar, banner, overlapping) across 19 consumers.
+Service copy uses GC-benefit pattern: sentence 1 = GC benefit, sentence 2 = CGI differentiator.
+FloatingCTA renders globally from App.tsx with route-aware residential/commercial behavior.
+Safety and service content marked with draft banners pending owner review.
 All CTAs route through `?type=commercial` or `?type=residential` URL parameters.
 No test framework configured. No backend/API layer.
 
@@ -89,19 +94,13 @@ No test framework configured. No backend/API layer.
 | Optional props for backward compatibility | bullets?, inquiryType?, className? | ✓ Good — zero breaking changes |
 | useSearchParams in ContactPage only | ContactForm stays presentational | ✓ Good |
 | Non-residential defaults to commercial | Safe fallback for any ?type= value | ✓ Good |
-
-## Current Milestone: v1.2 GC Appeal & Design Polish
-
-**Goal:** Make the site visually distinctive and speak directly to GCs through benefit-driven copy, varied layouts, industrial typography, and route-aware UX.
-
-**Target features:**
-- Service descriptions rewritten for GC benefits (not specs)
-- Process Timeline with GC-specific language
-- Section header visual variety (break template feel)
-- Industrial/bold heading font
-- Brand-consistent hover states and distinct service icons
-- Distinctive client logo treatment
-- Route-aware FloatingCTA (residential vs commercial)
+| Heading color text-brand instead of text-slate-900 | Consistent navy branding across all headings | ✓ Good |
+| SectionHeader defaults to left-bar variant | Visual differentiation from original centered template | ✓ Good |
+| Variant rhythm: no adjacent sections share variant | Prevents visual monotony across pages | ✓ Good |
+| ServiceCard hover brand/5 gradient + brand/30 border | Brand-consistent hover replacing generic blue-50 | ✓ Good |
+| CSS grid (2/3/5 cols) for client logos | Cleaner responsive layout than flexbox | ✓ Good |
+| FloatingCTA in App.tsx after Footer | Global visibility, fixed positioning means no layout impact | ✓ Good |
+| Closeout & Warranty as final timeline step | Covers both punchlist turnover and warranty documentation | ✓ Good |
 
 ---
-*Last updated: 2026-03-07 after v1.2 milestone start*
+*Last updated: 2026-03-07 after v1.2 milestone*

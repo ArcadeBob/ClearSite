@@ -2,6 +2,48 @@
 
 *A living document updated after each milestone. Lessons feed forward into future planning.*
 
+## Milestone: v1.2 — GC Appeal & Design Polish
+
+**Shipped:** 2026-03-07
+**Phases:** 3 | **Plans:** 4 | **Sessions:** ~3
+
+### What Was Built
+- Industrial typography system: Bebas Neue font + font-heading utility applied across 21 files and 19 SectionHeader consumers
+- Three-variant SectionHeader (left-bar, banner, overlapping) breaking template-generated visual sameness
+- GC-benefit service copy for all 8 services with unique icons and brand-consistent hover states
+- Process Timeline rewritten with GC-project terminology (7 steps)
+- Client logos replaced from infinite marquee to static CSS grid with grayscale-to-color hover
+- Route-aware FloatingCTA: "Request a Quote" on /residential, "Request Prequal Package" globally
+
+### What Worked
+- Phase 6 font infrastructure (Plan 01) immediately consumed by Plan 02 — clean dependency chain
+- All 4 plans executed with zero deviations from plan — research + planning accuracy was excellent
+- Visual rhythm pattern (no adjacent sections share SectionHeader variant) created immediately noticeable improvement
+- Fastest milestone yet: ~7 min total execution across 4 plans
+
+### What Was Inefficient
+- ROADMAP.md showed Phase 7 as "0/1 Not started" even though it was complete — state tracking inconsistency
+- One-liner fields missing from SUMMARY frontmatter (all returned null) — should populate during summary creation
+
+### Patterns Established
+- SectionHeader variant assignment: choose based on section context, ensure visual rhythm (no adjacent duplicates)
+- Service copy pattern: Sentence 1 = GC benefit, Sentence 2 = CGI differentiator, 3 GC-outcome bullets
+- Route-aware components: useLocation().pathname for conditional rendering by route
+- Font heading convention: `font-heading uppercase tracking-wide text-brand` on light, `text-white` on dark backgrounds
+
+### Key Lessons
+1. Typography changes are high-impact, low-effort — single font addition transformed entire site feel
+2. Variant-based component architecture (SectionHeader) scales well across many consumers
+3. Route-aware behavior should live in the component, not be managed by parent pages
+4. Copy rewriting from specs to benefits is a high-value activity for B2B sites
+
+### Cost Observations
+- Model mix: balanced profile (sonnet for agents, opus for orchestration)
+- Sessions: ~3
+- Notable: Total execution ~7 min across 4 plans — fastest milestone. Planning/docs overhead still dominant
+
+---
+
 ## Milestone: v1.1 — Credibility & Conversion
 
 **Shipped:** 2026-03-06
@@ -89,6 +131,7 @@
 |-----------|----------|--------|------------|
 | v1.0 | ~3 | 2 | First milestone — established baseline |
 | v1.1 | ~5 | 3 | Optional prop pattern emerged; credential extraction as prerequisite pattern |
+| v1.2 | ~3 | 3 | Variant-based architecture; route-aware components; fastest execution yet |
 
 ### Cumulative Quality
 
@@ -96,9 +139,12 @@
 |-----------|-------|----------|----------------|
 | v1.0 | 0 | N/A | 0 (clean build) |
 | v1.1 | 0 | N/A | 0 (clean build + lint) |
+| v1.2 | 0 | N/A | 0 (clean build + lint) |
 
 ### Top Lessons (Verified Across Milestones)
 
 1. Coarse granularity + YOLO mode is effective for this project's scale — ceremony stays proportional
 2. Extract shared data/patterns before building consumers — prevents duplication across phases
 3. Optional props with defaults enable incremental feature additions without breaking changes
+4. Variant-based component architecture scales well — SectionHeader serves 19 consumers with 3 variants
+5. Plans that execute with zero deviations correlate with thorough research phases
