@@ -11,7 +11,6 @@ import { ProjectCard } from '../components/ProjectCard';
 import { ServiceAreaMap } from '../components/ServiceAreaMap';
 import { ClientLogos } from '../components/ClientLogos';
 import { PromiseSection } from '../components/PromiseSection';
-import { FloatingCTA } from '../components/FloatingCTA';
 import { SectionHeader } from '../components/SectionHeader';
 import { PrevailingWageBanner } from '../components/PrevailingWageBanner';
 import {
@@ -520,8 +519,6 @@ export function HomePage(): React.JSX.Element {
         </div>
       </section>
 
-      {/* Floating CTA Bar */}
-      <FloatingCTA />
     </div>);
 
 }

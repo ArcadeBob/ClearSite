@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import { Button } from './ui/Button';
 import { ArrowRight, X } from 'lucide-react';
 
@@ -9,6 +9,9 @@ const SCROLL_RESET_THRESHOLD = 100;
 export function FloatingCTA(): React.JSX.Element {
   const [isVisible, setIsVisible] = useState(false);
   const [isDismissed, setIsDismissed] = useState(false);
+  const { pathname } = useLocation();
+  const isResidential = pathname === '/residential';
+
   useEffect(() => {
     const handleScroll = () => {
       // Reset dismissal only near the top, but don't re-show on the same event
@@ -27,6 +30,15 @@ export function FloatingCTA(): React.JSX.Element {
     setIsDismissed(true);
     setIsVisible(false);
   };
+
+  const headline = isResidential ? 'Ready for your project?' : 'Ready to prequalify?';
+  const subtext = isResidential
+    ? 'Showers, mirrors, railings & more'
+    : 'Get COI, EMR, and references within 24 hours';
+  const buttonText = isResidential ? 'Request a Quote' : 'Request Prequal Package';
+  const buttonTextMobile = isResidential ? 'Get Quote' : 'Get Prequal';
+  const linkTo = isResidential ? '/contact?type=residential' : '/contact?type=commercial';
+
   return (
     <div
       className={`
@@ -45,17 +57,17 @@ export function FloatingCTA(): React.JSX.Element {
               </div>
               <div className="min-w-0">
                 <p className="text-white font-semibold text-sm sm:text-base truncate">
-                  Ready to prequalify?
+                  {headline}
                 </p>
                 <p className="text-slate-400 text-xs sm:text-sm hidden sm:block">
-                  Get COI, EMR, and references within 24 hours
+                  {subtext}
                 </p>
               </div>
             </div>
 
             {/* Actions */}
             <div className="flex items-center gap-3 flex-shrink-0">
-              <Link to="/contact?type=commercial">
+              <Link to={linkTo}>
                 <Button
                   variant="secondary"
                   size="sm"
@@ -63,9 +75,9 @@ export function FloatingCTA(): React.JSX.Element {
 
                   <ArrowRight className="h-4 w-4" />
                   <span className="hidden sm:inline">
-                    Request Prequal Package
+                    {buttonText}
                   </span>
-                  <span className="sm:hidden">Get Prequal</span>
+                  <span className="sm:hidden">{buttonTextMobile}</span>
                 </Button>
               </Link>
 

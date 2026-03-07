@@ -11,6 +11,7 @@ import { ResidentialPage } from './pages/ResidentialPage';
 import { ContactPage } from './pages/ContactPage';
 import { CaseStudyPage } from './pages/CaseStudyPage';
 import { NotFoundPage } from './pages/NotFoundPage';
+import { FloatingCTA } from './components/FloatingCTA';
 export function App() {
   return (
     <ErrorBoundary>
@@ -30,6 +31,7 @@ export function App() {
             </Routes>
           </main>
           <Footer />
+          <FloatingCTA />
         </div>
       </Router>
     </ErrorBoundary>);
