@@ -34,13 +34,13 @@ Requirements for Design Review & UX Polish milestone. Each maps to roadmap phase
 
 ### Page Consistency
 
-- [ ] **PAGE-01**: Inner page headers (About, Projects, Contact, Residential) upgraded from plain navy banners to richer treatment
+- [x] **PAGE-01**: Inner page headers (About, Projects, Contact, Residential) upgraded from plain navy banners to richer treatment
 - [ ] **PAGE-02**: Project card front click navigates to case study page; separate "Quick Stats" button triggers flip
 - [ ] **PAGE-03**: Footer trimmed from 4 columns to 3 (Company, Contact, Certifications)
 
 ### About Page
 
-- [ ] **ABOUT-01**: About page image replaced with glazing-relevant photo (storefront/curtain wall detail)
+- [x] **ABOUT-01**: About page image replaced with glazing-relevant photo (storefront/curtain wall detail)
 
 ## Future Requirements
 
@@ -80,10 +80,10 @@ Which phases cover which requirements. Updated during roadmap creation.
 | UX-01 | Phase 10 | Complete |
 | UX-02 | Phase 10 | Complete |
 | UX-03 | Phase 10 | Complete |
-| PAGE-01 | Phase 11 | Pending |
+| PAGE-01 | Phase 11 | Complete |
 | PAGE-02 | Phase 11 | Pending |
 | PAGE-03 | Phase 11 | Pending |
-| ABOUT-01 | Phase 11 | Pending |
+| ABOUT-01 | Phase 11 | Complete |
 
 **Coverage:**
 - v1.3 requirements: 14 total

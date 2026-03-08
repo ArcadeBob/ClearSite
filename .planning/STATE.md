@@ -4,13 +4,13 @@ milestone: v1.3
 milestone_name: Design Review & UX Polish
 status: executing
 stopped_at: Phase 11 context gathered
-last_updated: "2026-03-08T14:00:33.163Z"
-last_activity: 2026-03-08 — Completed 10-01 service card images & timeline spacing
+last_updated: "2026-03-08T14:11:17.655Z"
+last_activity: 2026-03-08 — Completed 11-01 inner page headers upgrade
 progress:
   total_phases: 3
   completed_phases: 2
-  total_plans: 4
-  completed_plans: 4
+  total_plans: 6
+  completed_plans: 5
   percent: 75
 ---
 
@@ -21,16 +21,16 @@ progress:
 See: .planning/PROJECT.md (updated 2026-03-07)
 
 **Core value:** Professional credibility for a commercial glazing subcontractor — accurate project data, consistent visual presentation, and clear CTAs for general contractors.
-**Current focus:** Phase 10 — next phase of v1.3
+**Current focus:** Phase 11 — page structure & navigation polish
 
 ## Current Position
 
-Phase: 10 of 11 (Component UX Polish) — IN PROGRESS
+Phase: 11 of 11 (Page Structure & Navigation) — IN PROGRESS
 Plan: 1 of 2 complete
-Status: Active — executing Phase 10
-Last activity: 2026-03-08 — Completed 10-01 service card images & timeline spacing
+Status: Active — executing Phase 11
+Last activity: 2026-03-08 — Completed 11-01 inner page headers upgrade
 
-Progress: [████████░░] 75%
+Progress: [████████░░] 83%
 
 ## Performance Metrics
 
@@ -46,6 +46,7 @@ Progress: [████████░░] 75%
 | 09 | 2/2 | 7min | 4min |
 | 10 | 1/2 | 2min | 2min |
 | Phase 10 P02 | 2min | 2 tasks | 6 files |
+| Phase 11 P01 | 3min | 2 tasks | 4 files |
 
 ## Accumulated Context
 
@@ -61,6 +62,8 @@ See PROJECT.md Key Decisions table for full history.
 - [10-01] Reduced timeline py-24 to py-16 and mb-16 to mb-12 for tighter vertical rhythm
 - [Phase 10]: IntersectionObserver with threshold 0.5 and 80px rootMargin for FloatingCTA smart hide
 - [Phase 10]: stone-50/stone-200 palette for residential contact sidebar, differentiated from commercial amber
+- [11-01] Inner page header pattern: gradient bg + 7% diagonal stripe overlay + accent bottom bar + py-20
+- [11-01] Unsplash storefront image (photo-1545558014) for About Brand Story section
 
 ### Pending Todos
 
@@ -81,5 +84,5 @@ None.
 
 ## Session Continuity
 
-Last session: 2026-03-08T14:00:33.161Z
-Stopped at: Phase 11 context gathered
+Last session: 2026-03-08T14:13:00Z
+Stopped at: Completed 11-01-PLAN.md
