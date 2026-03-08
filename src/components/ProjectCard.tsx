@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import {
   MapPin,
   DollarSign,
@@ -8,7 +9,7 @@ import {
   Building2,
   Maximize2,
   RotateCcw,
-  Info } from
+  ArrowRight } from
 'lucide-react';
 
 interface ProjectCardProps {
@@ -24,6 +25,7 @@ interface ProjectCardProps {
   highlights?: string[];
   duration?: string;
   sqft?: string;
+  caseStudySlug?: string;
 }
 
 export function ProjectCard({
@@ -39,30 +41,30 @@ export function ProjectCard({
   highlights,
   duration,
   sqft,
+  caseStudySlug,
 }: ProjectCardProps): React.JSX.Element {
   const [isFlipped, setIsFlipped] = useState(false);
   const [isHovered, setIsHovered] = useState(false);
+  const navigate = useNavigate();
 
   const handleFlip = () => {
     setIsFlipped((prev) => !prev);
   };
 
-  const handleKeyDown = (e: React.KeyboardEvent) => {
-    if (e.key === 'Enter' || e.key === ' ') {
-      e.preventDefault();
+  const handleCardBodyClick = () => {
+    if (caseStudySlug) {
+      navigate(`/projects/${caseStudySlug}`);
+    } else {
       handleFlip();
     }
   };
 
   return (
     <div
-      className="h-[420px] cursor-pointer"
+      className="h-[460px] cursor-pointer"
       style={{ perspective: '1000px' }}
-      role="button"
-      tabIndex={0}
-      aria-label={`View details for ${title}`}
-      onClick={handleFlip}
-      onKeyDown={handleKeyDown}
+      aria-label={caseStudySlug ? `View case study for ${title}` : `View details for ${title}`}
+      onClick={handleCardBodyClick}
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
     >
@@ -111,15 +113,6 @@ export function ProjectCard({
               </div>
             )}
 
-            {/* Flip hint on hover */}
-            <div
-              className={`absolute bottom-3 right-3 flex items-center gap-1 bg-brand/80 text-white text-xs px-2.5 py-1.5 rounded-full transition-all duration-300 ${
-                isHovered && !isFlipped ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-2'
-              }`}
-            >
-              <Info className="h-3 w-3" />
-              Tap for details
-            </div>
           </div>
 
           {/* Content */}
@@ -151,6 +144,30 @@ export function ProjectCard({
                   {scope}
                 </span>
               </div>
+            </div>
+
+            {/* Action buttons */}
+            <div className="flex items-center gap-3 mt-3 pt-2 border-t border-slate-100">
+              <button
+                className="text-xs text-slate-500 hover:text-accent transition-colors flex items-center gap-1"
+                onClick={(e) => { e.stopPropagation(); handleFlip(); }}
+                role="button"
+                tabIndex={0}
+                aria-label={`Show quick stats for ${title}`}
+              >
+                <RotateCcw className="h-3 w-3" />
+                Quick Stats
+              </button>
+              {caseStudySlug && (
+                <button
+                  className="text-xs text-accent hover:text-accent-dark font-medium flex items-center gap-1 ml-auto"
+                  onClick={(e) => { e.stopPropagation(); navigate(`/projects/${caseStudySlug}`); }}
+                  aria-label={`View case study for ${title}`}
+                >
+                  View Case Study
+                  <ArrowRight className="h-3 w-3" />
+                </button>
+              )}
             </div>
           </div>
 
