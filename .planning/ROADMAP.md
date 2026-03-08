@@ -85,11 +85,11 @@ Plans:
   2. Clicking a project card navigates to its case study page; the flip animation only triggers via a dedicated "Quick Stats" button
   3. Footer displays 3 columns (Company, Contact, Certifications) instead of 4
   4. About page displays a glazing-relevant photo (storefront or curtain wall detail) instead of the current image
-**Plans**: TBD
+**Plans**: 2 plans
 
 Plans:
-- [ ] 11-01: TBD
-- [ ] 11-02: TBD
+- [ ] 11-01-PLAN.md — Upgrade inner page headers and replace About page image
+- [ ] 11-02-PLAN.md — Refactor project card interaction and consolidate footer
 
 ## Progress
 
@@ -108,4 +108,4 @@ Phases 10 and 11 can run in parallel after Phase 9 completes. Phase 10 touches c
 | 8. Client Presentation & UX | v1.2 | 1/1 | Complete | 2026-03-07 |
 | 9. Homepage & Visual Foundation | v1.3 | 2/2 | Complete | 2026-03-08 |
 | 10. Component UX Polish | 2/2 | Complete    | 2026-03-08 | - |
-| 11. Page Structure & Navigation | v1.3 | 0/? | Not started | - |
+| 11. Page Structure & Navigation | v1.3 | 0/2 | Not started | - |
