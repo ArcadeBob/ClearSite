@@ -39,7 +39,43 @@ const certifications = [
   description: OSHA_RECORD_DISPLAY
 }];
 
-export function CertificationsBadges() {
+export function CertificationsBadges({ variant = 'full' }: { variant?: 'full' | 'compact' }) {
+  if (variant === 'compact') {
+    return (
+      <div className="py-8 bg-brand relative">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid grid-cols-2 lg:grid-cols-4 gap-4">
+            {certifications.map((cert) =>
+            <div key={cert.title} className="group">
+                <div className="bg-white/5 rounded-xl p-4 text-center border border-white/10 transition-all duration-300 group-hover:border-accent/50 group-hover:bg-white/[0.07] h-full">
+                  <div className="inline-flex items-center justify-center h-10 w-10 rounded-full bg-accent/20 text-accent mb-2 group-hover:bg-accent group-hover:text-white transition-colors">
+                    {cert.icon}
+                  </div>
+                  <h3 className="text-sm font-bold text-white mb-0.5">
+                    {cert.title}
+                  </h3>
+                  <p className="text-xs font-semibold text-accent">
+                    {cert.subtitle}
+                  </p>
+                  {cert.verifyUrl && (
+                    <a
+                      href={cert.verifyUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-1 text-xs text-accent hover:text-white font-medium mt-1 transition-colors"
+                    >
+                      {cert.verifyLabel} <ExternalLink className="h-3 w-3" />
+                    </a>
+                  )}
+                </div>
+              </div>
+            )}
+          </div>
+        </div>
+      </div>
+    );
+  }
+
   return (
     <section className="py-20 bg-white border-y border-slate-100">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -58,7 +94,7 @@ export function CertificationsBadges() {
                 <div className="inline-flex items-center justify-center h-14 w-14 rounded-full bg-brand text-white mb-4 group-hover:bg-accent transition-colors">
                   {cert.icon}
                 </div>
-                <h3 className="font-heading uppercase tracking-wide text-lg font-bold text-brand mb-1">
+                <h3 className="text-lg font-bold text-brand mb-1">
                   {cert.title}
                 </h3>
                 <p className="text-sm font-semibold text-accent mb-2">

@@ -378,11 +378,9 @@ export function HomePage(): React.JSX.Element {
       {/* Client Logos */}
       <ClientLogos />
 
-      {/* GC Resources / Prequalification Section */}
+      {/* GC Resources / Prequalification + Certifications Trust Band */}
       <GCResourcesSection />
-
-      {/* Certifications & Badges */}
-      <CertificationsBadges />
+      <CertificationsBadges variant="compact" />
 
       {/* Prevailing Wage Experience */}
       <PrevailingWageBanner className="bg-amber-50/50" />
