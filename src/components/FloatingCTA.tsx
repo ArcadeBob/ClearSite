@@ -50,7 +50,7 @@ export function FloatingCTA(): React.JSX.Element {
       clearTimeout(timeoutId);
       observer?.disconnect();
     };
-  }, [pathname, isContactPage]);
+  }, [pathname]);
 
   // Scroll tracking
   useEffect(() => {

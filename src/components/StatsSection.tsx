@@ -119,7 +119,7 @@ function StatItem({
           className={`absolute inset-0 bg-accent/20 rounded-xl ${isVisible ? 'animate-ping' : ''}`}
           style={{
             animationDuration: '2s',
-            animationIterationCount: 'infinite'
+            animationIterationCount: '3'
           }}>
         </div>
         <div className="relative z-10">{stat.icon}</div>
