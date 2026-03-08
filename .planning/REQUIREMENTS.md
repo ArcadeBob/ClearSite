@@ -9,13 +9,13 @@ Requirements for Design Review & UX Polish milestone. Each maps to roadmap phase
 
 ### Bug Fix
 
-- [ ] **BUG-01**: Stats section counter animates to correct value (13+ years, not 7)
+- [x] **BUG-01**: Stats section counter animates to correct value (13+ years, not 7)
 
 ### Homepage Density
 
-- [ ] **HOME-01**: Hero height reduced to ~65vh so trust signals appear on initial load
+- [x] **HOME-01**: Hero height reduced to ~65vh so trust signals appear on initial load
 - [ ] **HOME-02**: Prequal cards and certifications combined into one compact trust band
-- [ ] **HOME-03**: Owner quote section moved to About page
+- [x] **HOME-03**: Owner quote section moved to About page
 
 ### Typography
 
@@ -23,7 +23,7 @@ Requirements for Design Review & UX Polish milestone. Each maps to roadmap phase
 
 ### Visual Variety
 
-- [ ] **VIZZ-01**: Alternating sections use warm gray/stone backgrounds instead of uniform slate-50
+- [x] **VIZZ-01**: Alternating sections use warm gray/stone backgrounds instead of uniform slate-50
 - [ ] **VIZZ-02**: Service cards include thumbnail images (stock/placeholder until real photos provided)
 
 ### UX Polish
@@ -70,12 +70,12 @@ Which phases cover which requirements. Updated during roadmap creation.
 
 | Requirement | Phase | Status |
 |-------------|-------|--------|
-| BUG-01 | Phase 9 | Pending |
-| HOME-01 | Phase 9 | Pending |
+| BUG-01 | Phase 9 | Complete |
+| HOME-01 | Phase 9 | Complete |
 | HOME-02 | Phase 9 | Pending |
-| HOME-03 | Phase 9 | Pending |
+| HOME-03 | Phase 9 | Complete |
 | TYPO-01 | Phase 9 | Pending |
-| VIZZ-01 | Phase 9 | Pending |
+| VIZZ-01 | Phase 9 | Complete |
 | VIZZ-02 | Phase 10 | Pending |
 | UX-01 | Phase 10 | Pending |
 | UX-02 | Phase 10 | Pending |
