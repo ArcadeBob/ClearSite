@@ -14,6 +14,8 @@ import {
   Heart,
   HelpCircle,
   ExternalLink,
+  Home,
+  CheckCircle,
 } from 'lucide-react';
 import {
   CSLB_LICENSE_CLASS,
@@ -200,35 +202,69 @@ export function ContactPage() {
               </div>
             </div>
 
-            {/* What's Included */}
-            <div className="bg-amber-50 p-6 rounded-xl border border-amber-100">
-              <h3 className="font-heading uppercase tracking-wide text-lg font-bold text-brand mb-4 flex items-center gap-2">
-                <Download className="h-5 w-5 text-amber-600" />
-                What's in the Prequal Packet
-              </h3>
-              <ul className="space-y-2 text-sm text-slate-700">
-                <li className="flex items-start gap-2">
-                  <span className="text-amber-500 mt-1">&#10003;</span>
-                  Certificate of Insurance (COI)
-                </li>
-                <li className="flex items-start gap-2">
-                  <span className="text-amber-500 mt-1">&#10003;</span>
-                  EMR &amp; Safety Documentation
-                </li>
-                <li className="flex items-start gap-2">
-                  <span className="text-amber-500 mt-1">&#10003;</span>
-                  Project References &amp; History
-                </li>
-                <li className="flex items-start gap-2">
-                  <span className="text-amber-500 mt-1">&#10003;</span>
-                  Company Profile &amp; Capabilities
-                </li>
-                <li className="flex items-start gap-2">
-                  <span className="text-amber-500 mt-1">&#10003;</span>
-                  Bonding &amp; License Information
-                </li>
-              </ul>
-            </div>
+            {/* Inquiry-type-aware sidebar section */}
+            {inquiryType === 'commercial' ? (
+              <div className="bg-amber-50 p-6 rounded-xl border border-amber-100">
+                <h3 className="font-heading uppercase tracking-wide text-lg font-bold text-brand mb-4 flex items-center gap-2">
+                  <Download className="h-5 w-5 text-amber-600" />
+                  What's in the Prequal Packet
+                </h3>
+                <ul className="space-y-2 text-sm text-slate-700">
+                  <li className="flex items-start gap-2">
+                    <span className="text-amber-500 mt-1">&#10003;</span>
+                    Certificate of Insurance (COI)
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-amber-500 mt-1">&#10003;</span>
+                    EMR &amp; Safety Documentation
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-amber-500 mt-1">&#10003;</span>
+                    Project References &amp; History
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-amber-500 mt-1">&#10003;</span>
+                    Company Profile &amp; Capabilities
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-amber-500 mt-1">&#10003;</span>
+                    Bonding &amp; License Information
+                  </li>
+                </ul>
+              </div>
+            ) : (
+              <div className="bg-stone-50 p-6 rounded-xl border border-stone-200">
+                <h3 className="font-heading uppercase tracking-wide text-lg font-bold text-brand mb-4 flex items-center gap-2">
+                  <Home className="h-5 w-5 text-stone-600" />
+                  Our Residential Services
+                </h3>
+                <ul className="space-y-2 text-sm text-slate-700">
+                  <li className="flex items-start gap-2">
+                    <CheckCircle className="h-4 w-4 text-green-500 mt-0.5 shrink-0" />
+                    Shower enclosures (frameless and semi-frameless)
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <CheckCircle className="h-4 w-4 text-green-500 mt-0.5 shrink-0" />
+                    Custom mirrors and mirror walls
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <CheckCircle className="h-4 w-4 text-green-500 mt-0.5 shrink-0" />
+                    Glass railings and balustrades
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <CheckCircle className="h-4 w-4 text-green-500 mt-0.5 shrink-0" />
+                    Interior glass partitions
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <CheckCircle className="h-4 w-4 text-green-500 mt-0.5 shrink-0" />
+                    Glass shelving and tabletops
+                  </li>
+                </ul>
+                <p className="text-xs text-stone-500 mt-4 italic">
+                  All residential projects include free on-site measurement
+                </p>
+              </div>
+            )}
 
             {/* Map Placeholder */}
             <div className="bg-slate-200 rounded-xl h-48 w-full flex items-center justify-center relative overflow-hidden shadow-inner border border-slate-300">
