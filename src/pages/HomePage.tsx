@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, useRef } from 'react';
 import { Link } from 'react-router-dom';
 import { Button } from '../components/ui/Button';
 import { StatsSection } from '../components/StatsSection';
@@ -169,14 +169,21 @@ const featuredProjects = [
 
 export function HomePage(): React.JSX.Element {
   const [scrollY, setScrollY] = useState(0);
+  const rafRef = useRef(0);
   useEffect(() => {
     const handleScroll = () => {
-      setScrollY(window.scrollY);
+      cancelAnimationFrame(rafRef.current);
+      rafRef.current = requestAnimationFrame(() => {
+        setScrollY(window.scrollY);
+      });
     };
     window.addEventListener('scroll', handleScroll, {
       passive: true
     });
-    return () => window.removeEventListener('scroll', handleScroll);
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+      cancelAnimationFrame(rafRef.current);
+    };
   }, []);
 
   return (

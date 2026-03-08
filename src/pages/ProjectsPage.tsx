@@ -249,7 +249,7 @@ const projects = [
 
 export function ProjectsPage() {
   const [filter, setFilter] = useState<
-    'All' | 'Completed' | 'Current' | 'Future'>(
+    'All' | 'Completed' | 'Current'>(
     'All');
 
   const filteredProjects =
@@ -272,7 +272,7 @@ export function ProjectsPage() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         {/* Filters */}
         <div className="flex flex-wrap gap-3 mb-12">
-          {(['All', 'Completed', 'Current', 'Future'] as const).map((status) =>
+          {(['All', 'Completed', 'Current'] as const).map((status) =>
           <Button
             key={status}
             variant={filter === status ? 'primary' : 'outline'}

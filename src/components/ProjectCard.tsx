@@ -63,8 +63,11 @@ export function ProjectCard({
     <div
       className="h-[460px] cursor-pointer"
       style={{ perspective: '1000px' }}
+      role="button"
+      tabIndex={0}
       aria-label={caseStudySlug ? `View case study for ${title}` : `View details for ${title}`}
       onClick={handleCardBodyClick}
+      onKeyDown={(e) => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); handleCardBodyClick(); } }}
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
     >

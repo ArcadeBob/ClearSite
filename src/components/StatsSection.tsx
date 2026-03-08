@@ -57,6 +57,7 @@ function useCountUp(
   useEffect(() => {
     if (!start) return;
     let startTime: number | null = null;
+    let rafHandle: number;
     const step = (timestamp: number) => {
       if (!startTime) startTime = timestamp;
       const progress = Math.min((timestamp - startTime) / duration, 1);
@@ -66,9 +67,10 @@ function useCountUp(
       }
       const easeOut = 1 - Math.pow(2, -10 * progress);
       setCount(Math.floor(easeOut * end));
-      window.requestAnimationFrame(step);
+      rafHandle = window.requestAnimationFrame(step);
     };
-    window.requestAnimationFrame(step);
+    rafHandle = window.requestAnimationFrame(step);
+    return () => cancelAnimationFrame(rafHandle);
   }, [end, duration, start]);
   return count;
 }

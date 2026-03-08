@@ -22,12 +22,14 @@ export function FloatingCTA(): React.JSX.Element {
     visibleCountRef.current = 0;
     setCtaVisible(false);
 
+    let observer: IntersectionObserver | null = null;
+
     // Small delay to let the DOM render after navigation
     const timeoutId = setTimeout(() => {
       const elements = document.querySelectorAll('[data-cta-inline]');
       if (elements.length === 0) return;
 
-      const observer = new IntersectionObserver(
+      observer = new IntersectionObserver(
         (entries) => {
           entries.forEach((entry) => {
             if (entry.isIntersecting) {
@@ -41,26 +43,27 @@ export function FloatingCTA(): React.JSX.Element {
         { threshold: 0.5, rootMargin: '0px 0px 80px 0px' }
       );
 
-      elements.forEach((el) => observer.observe(el));
-
-      return () => observer.disconnect();
+      elements.forEach((el) => observer?.observe(el));
     }, 100);
 
-    return () => clearTimeout(timeoutId);
+    return () => {
+      clearTimeout(timeoutId);
+      observer?.disconnect();
+    };
   }, [pathname, isContactPage]);
 
   // Scroll tracking
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY < SCROLL_RESET_THRESHOLD && isDismissed) {
+      const y = window.scrollY;
+      if (y < SCROLL_RESET_THRESHOLD) {
         setIsDismissed(false);
-        return;
       }
-      setScrollPastThreshold(window.scrollY > SCROLL_SHOW_THRESHOLD);
+      setScrollPastThreshold(y > SCROLL_SHOW_THRESHOLD);
     };
     window.addEventListener('scroll', handleScroll, { passive: true });
     return () => window.removeEventListener('scroll', handleScroll);
-  }, [isDismissed]);
+  }, []);
 
   const handleDismiss = useCallback(() => {
     setIsDismissed(true);
