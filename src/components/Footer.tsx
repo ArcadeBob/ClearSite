@@ -6,15 +6,14 @@ export function Footer() {
   return (
     <footer className="bg-brand text-slate-300">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-8 lg:gap-12">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 lg:gap-12">
           {/* Company Info */}
-          <div className="col-span-1 md:col-span-1">
+          <div>
             <div className="mb-6">
               <img
                 src="/logo.png"
                 alt="CGI Clean Glass Installation"
                 className="h-12 w-auto brightness-0 invert" />
-
             </div>
             <p className="text-sm text-slate-400 mb-6 leading-relaxed">
               Expert contract glazing on-time, on-budget. Serving Southern
@@ -24,52 +23,6 @@ export function Footer() {
               <ShieldCheck className="h-4 w-4" />
               <span>{CSLB_LICENSE_DISPLAY}</span>
             </div>
-          </div>
-
-          {/* Quick Links */}
-          <div>
-            <h3 className="font-heading uppercase tracking-wide text-white font-semibold mb-6 text-lg">
-              Quick Links
-            </h3>
-            <ul className="space-y-3 text-sm">
-              <li>
-                <Link to="/" className="hover:text-white transition-colors">
-                  Home
-                </Link>
-              </li>
-              <li>
-                <Link
-                  to="/about"
-                  className="hover:text-white transition-colors">
-
-                  About Us
-                </Link>
-              </li>
-              <li>
-                <Link
-                  to="/projects"
-                  className="hover:text-white transition-colors">
-
-                  Our Projects
-                </Link>
-              </li>
-              <li>
-                <Link
-                  to="/residential"
-                  className="hover:text-white transition-colors">
-
-                  Residential Services
-                </Link>
-              </li>
-              <li>
-                <Link
-                  to="/contact"
-                  className="hover:text-white transition-colors">
-
-                  Contact
-                </Link>
-              </li>
-            </ul>
           </div>
 
           {/* Services */}
@@ -113,7 +66,7 @@ export function Footer() {
             </ul>
           </div>
 
-          {/* Contact */}
+          {/* Contact & Links */}
           <div>
             <h3 className="font-heading uppercase tracking-wide text-white font-semibold mb-6 text-lg">
               Contact Us
@@ -132,7 +85,6 @@ export function Footer() {
                 <a
                   href="tel:8184924265"
                   className="hover:text-white transition-colors">
-
                   (818) 492-4265
                 </a>
               </li>
@@ -141,11 +93,21 @@ export function Footer() {
                 <a
                   href="mailto:bids@cginstall.com"
                   className="hover:text-white transition-colors">
-
                   bids@cginstall.com
                 </a>
               </li>
             </ul>
+
+            <div className="border-t border-slate-700 mt-5 pt-4">
+              <p className="text-xs uppercase tracking-wider text-slate-500 mb-3">Quick Links</p>
+              <div className="grid grid-cols-2 gap-2 text-sm">
+                <Link to="/" className="hover:text-white transition-colors">Home</Link>
+                <Link to="/about" className="hover:text-white transition-colors">About Us</Link>
+                <Link to="/projects" className="hover:text-white transition-colors">Our Projects</Link>
+                <Link to="/residential" className="hover:text-white transition-colors">Residential</Link>
+                <Link to="/contact" className="hover:text-white transition-colors">Contact</Link>
+              </div>
+            </div>
           </div>
         </div>
 
