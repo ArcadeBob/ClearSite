@@ -29,8 +29,8 @@ Requirements for Design Review & UX Polish milestone. Each maps to roadmap phase
 ### UX Polish
 
 - [x] **UX-01**: Process timeline dead space reduced, step icons scaled appropriately
-- [ ] **UX-02**: Contact page sidebar enhanced with prequal packet checklist or additional content
-- [ ] **UX-03**: FloatingCTA hides when an inline CTA is visible in viewport
+- [x] **UX-02**: Contact page sidebar enhanced with prequal packet checklist or additional content
+- [x] **UX-03**: FloatingCTA hides when an inline CTA is visible in viewport
 
 ### Page Consistency
 
@@ -78,8 +78,8 @@ Which phases cover which requirements. Updated during roadmap creation.
 | VIZZ-01 | Phase 9 | Complete |
 | VIZZ-02 | Phase 10 | Complete |
 | UX-01 | Phase 10 | Complete |
-| UX-02 | Phase 10 | Pending |
-| UX-03 | Phase 10 | Pending |
+| UX-02 | Phase 10 | Complete |
+| UX-03 | Phase 10 | Complete |
 | PAGE-01 | Phase 11 | Pending |
 | PAGE-02 | Phase 11 | Pending |
 | PAGE-03 | Phase 11 | Pending |

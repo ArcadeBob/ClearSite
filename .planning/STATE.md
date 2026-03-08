@@ -2,15 +2,15 @@
 gsd_state_version: 1.0
 milestone: v1.3
 milestone_name: Design Review & UX Polish
-status: Active — executing Phase 10
-stopped_at: Completed 10-01-PLAN.md
-last_updated: "2026-03-08T06:32:26.111Z"
+status: executing
+stopped_at: Completed 10-02-PLAN.md
+last_updated: "2026-03-08T06:36:26.856Z"
 last_activity: 2026-03-08 — Completed 10-01 service card images & timeline spacing
 progress:
   total_phases: 3
-  completed_phases: 1
+  completed_phases: 2
   total_plans: 4
-  completed_plans: 3
+  completed_plans: 4
   percent: 75
 ---
 
@@ -45,6 +45,7 @@ Progress: [████████░░] 75%
 |-------|-------|-------|----------|
 | 09 | 2/2 | 7min | 4min |
 | 10 | 1/2 | 2min | 2min |
+| Phase 10 P02 | 2min | 2 tasks | 6 files |
 
 ## Accumulated Context
 
@@ -58,6 +59,8 @@ See PROJECT.md Key Decisions table for full history.
 - [09-02] Typography hierarchy: font-heading reserved for h1/h2 only, sans-serif for card h3/h4
 - [10-01] Used h-28 image height for compact banner that adds visual context without dominating card
 - [10-01] Reduced timeline py-24 to py-16 and mb-16 to mb-12 for tighter vertical rhythm
+- [Phase 10]: IntersectionObserver with threshold 0.5 and 80px rootMargin for FloatingCTA smart hide
+- [Phase 10]: stone-50/stone-200 palette for residential contact sidebar, differentiated from commercial amber
 
 ### Pending Todos
 
@@ -78,5 +81,5 @@ None.
 
 ## Session Continuity
 
-Last session: 2026-03-08T06:32:00Z
-Stopped at: Completed 10-01-PLAN.md
+Last session: 2026-03-08T06:36:26.854Z
+Stopped at: Completed 10-02-PLAN.md
