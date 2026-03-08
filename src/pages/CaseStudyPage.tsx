@@ -527,7 +527,7 @@ export function CaseStudyPage() {
             </span>
           </div>
           <div className="flex flex-col sm:flex-row justify-center gap-4">
-            <Link to="/contact?type=commercial">
+            <Link to="/contact?type=commercial" data-cta-inline>
               <Button
                 size="lg"
                 variant="secondary"

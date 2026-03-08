@@ -398,7 +398,7 @@ export function AboutPage() {
             won't have to babysit our team—giving you more time for the many
             other tasks on your project.
           </p>
-          <Link to="/contact?type=commercial">
+          <Link to="/contact?type=commercial" data-cta-inline>
             <Button
               size="lg"
               variant="secondary"

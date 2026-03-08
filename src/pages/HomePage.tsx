@@ -285,7 +285,7 @@ export function HomePage(): React.JSX.Element {
                 opacity: Math.max(0, 1 - scrollY / 380)
               }}>
 
-              <Link to="/contact?type=commercial">
+              <Link to="/contact?type=commercial" data-cta-inline>
                 <Button
                   size="lg"
                   variant="secondary"
@@ -492,7 +492,7 @@ export function HomePage(): React.JSX.Element {
             </span>
           </div>
           <div className="flex flex-col sm:flex-row justify-center gap-4">
-            <Link to="/contact?type=commercial">
+            <Link to="/contact?type=commercial" data-cta-inline>
               <Button
                 size="lg"
                 variant="secondary"

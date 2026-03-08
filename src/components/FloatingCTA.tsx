@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, useRef, useCallback } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { Button } from './ui/Button';
 import { ArrowRight, X } from 'lucide-react';
@@ -7,29 +7,67 @@ const SCROLL_SHOW_THRESHOLD = 500;
 const SCROLL_RESET_THRESHOLD = 100;
 
 export function FloatingCTA(): React.JSX.Element {
-  const [isVisible, setIsVisible] = useState(false);
   const [isDismissed, setIsDismissed] = useState(false);
+  const [scrollPastThreshold, setScrollPastThreshold] = useState(false);
+  const [ctaVisible, setCtaVisible] = useState(false);
   const { pathname } = useLocation();
   const isResidential = pathname === '/residential';
+  const isContactPage = pathname === '/contact';
+  const visibleCountRef = useRef(0);
 
+  // Track inline CTA visibility via IntersectionObserver
+  useEffect(() => {
+    if (isContactPage) return;
+
+    visibleCountRef.current = 0;
+    setCtaVisible(false);
+
+    // Small delay to let the DOM render after navigation
+    const timeoutId = setTimeout(() => {
+      const elements = document.querySelectorAll('[data-cta-inline]');
+      if (elements.length === 0) return;
+
+      const observer = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              visibleCountRef.current++;
+            } else {
+              visibleCountRef.current = Math.max(0, visibleCountRef.current - 1);
+            }
+          });
+          setCtaVisible(visibleCountRef.current > 0);
+        },
+        { threshold: 0.5, rootMargin: '0px 0px 80px 0px' }
+      );
+
+      elements.forEach((el) => observer.observe(el));
+
+      return () => observer.disconnect();
+    }, 100);
+
+    return () => clearTimeout(timeoutId);
+  }, [pathname, isContactPage]);
+
+  // Scroll tracking
   useEffect(() => {
     const handleScroll = () => {
-      // Reset dismissal only near the top, but don't re-show on the same event
       if (window.scrollY < SCROLL_RESET_THRESHOLD && isDismissed) {
         setIsDismissed(false);
         return;
       }
-      setIsVisible(window.scrollY > SCROLL_SHOW_THRESHOLD && !isDismissed);
+      setScrollPastThreshold(window.scrollY > SCROLL_SHOW_THRESHOLD);
     };
-    window.addEventListener('scroll', handleScroll, {
-      passive: true
-    });
+    window.addEventListener('scroll', handleScroll, { passive: true });
     return () => window.removeEventListener('scroll', handleScroll);
   }, [isDismissed]);
-  const handleDismiss = () => {
+
+  const handleDismiss = useCallback(() => {
     setIsDismissed(true);
-    setIsVisible(false);
-  };
+  }, []);
+
+  // Combined visibility: past scroll threshold, not dismissed, no inline CTA visible, not on contact page
+  const isVisible = scrollPastThreshold && !isDismissed && !ctaVisible && !isContactPage;
 
   const headline = isResidential ? 'Ready for your project?' : 'Ready to prequalify?';
   const subtext = isResidential
