@@ -1,6 +1,6 @@
 import React from 'react';
 
-type SectionHeaderVariant = 'left-bar' | 'banner' | 'overlapping';
+type SectionHeaderVariant = 'left-bar' | 'banner';
 
 interface SectionHeaderProps {
   subheading: string;
@@ -42,24 +42,6 @@ export function SectionHeader({
             </p>
           )}
         </div>
-      </div>
-    );
-  }
-
-  if (variant === 'overlapping') {
-    return (
-      <div className={`border-l-4 border-accent pl-6 ${className}`}>
-        <p className={`text-sm font-semibold ${subheadingColor} uppercase tracking-wider mb-2`}>
-          {subheading}
-        </p>
-        <h2 className={`font-heading text-brand uppercase tracking-wide ${sizeClasses}`}>
-          {title}
-        </h2>
-        {description && (
-          <p className="text-lg text-slate-600 max-w-2xl mt-4">
-            {description}
-          </p>
-        )}
       </div>
     );
   }

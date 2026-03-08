@@ -328,7 +328,7 @@ export function AboutPage() {
       <section id="team" className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <SectionHeader
-            variant="overlapping"
+            variant="left-bar"
             subheading="Our Team"
             title="Meet the Leadership"
             description="Extremely talented people who understand our brand and practice clean, thoughtful craftsmanship."
