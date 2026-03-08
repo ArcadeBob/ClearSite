@@ -48,6 +48,7 @@ const services = [
   description:
   'Keep your project moving with storefront systems that install on your timeline, not ours. One crew handles framing, glazing, and hardware so you have a single point of coordination.',
   icon: <DoorOpen className="h-6 w-6" />,
+  image: 'https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=600&q=80',
   bullets: [
     'Same-day budgets on plan review',
     'Coordinates with framing and waterproofing trades',
@@ -59,6 +60,7 @@ const services = [
   description:
   'No schedule gaps between framing and glazing — we field-verify conditions early and show up ready. Our crews have installed window walls on projects from $50K to $2M+.',
   icon: <PanelTop className="h-6 w-6" />,
+  image: 'https://images.unsplash.com/photo-1545558014-8692077e9b5c?auto=format&fit=crop&w=600&q=80',
   bullets: [
     'Field verification before fabrication to prevent change orders',
     'Daily progress updates during installation',
@@ -70,6 +72,7 @@ const services = [
   description:
   'Your most complex glazing scope handled by one experienced sub. We manage the full curtain wall process from submittals through closeout so nothing falls through the cracks.',
   icon: <Building2 className="h-6 w-6" />,
+  image: 'https://images.unsplash.com/photo-1486325212027-8081e485255e?auto=format&fit=crop&w=600&q=80',
   bullets: [
     'Proactive lead time tracking with regular status updates',
     'Coordinates with structural, mechanical, and waterproofing trades',
@@ -81,6 +84,7 @@ const services = [
   description:
   'Overhead glazing that passes inspection the first time. We coordinate with roofing and waterproofing trades upfront so your skylight scope stays on schedule.',
   icon: <Sun className="h-6 w-6" />,
+  image: 'https://images.unsplash.com/photo-1494522855154-9297ac14b55f?auto=format&fit=crop&w=600&q=80',
   bullets: [
     'Pre-installation coordination with roofing contractors',
     'Engineered submittals for architect approval',
@@ -92,6 +96,7 @@ const services = [
   description:
   'Railing systems installed to code with no callbacks. We field-measure early and coordinate with your concrete and steel trades to keep the critical path clear.',
   icon: <Fence className="h-6 w-6" />,
+  image: 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=600&q=80',
   bullets: [
     'Early field measurements to prevent rework',
     'Coordinates with concrete and steel sub schedules',
@@ -103,6 +108,7 @@ const services = [
   description:
   'Pass your fire-rated inspections on the first walk-through. We handle the engineering, product selection, and documentation so you never chase missing paperwork.',
   icon: <Shield className="h-6 w-6" />,
+  image: 'https://images.unsplash.com/photo-1497366811353-6870744d04b2?auto=format&fit=crop&w=600&q=80',
   bullets: [
     'Complete inspection-ready documentation package',
     'Architect coordination on product approvals',
@@ -114,6 +120,7 @@ const services = [
   description:
   'Custom shower glass that fits the first time — no return trips. We template after tile is set and deliver finished enclosures that are ready for final walkthrough.',
   icon: <Bath className="h-6 w-6" />,
+  image: 'https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?auto=format&fit=crop&w=600&q=80',
   bullets: [
     'Template-after-tile process eliminates remakes',
     'Hospitality and multi-unit rollout experience',
@@ -125,6 +132,7 @@ const services = [
   description:
   'Simple scope, zero hassle. We measure, fabricate, and install mirrors on your timeline with no loose ends at turnover.',
   icon: <RectangleHorizontal className="h-6 w-6" />,
+  image: 'https://images.unsplash.com/photo-1618220179428-22790b461013?auto=format&fit=crop&w=600&q=80',
   bullets: [
     'Fast turnaround for tenant improvement schedules',
     'Single-visit installation for most scopes',

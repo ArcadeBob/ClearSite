@@ -4,12 +4,14 @@ interface ServiceCardProps {
   description: string;
   icon: React.ReactNode;
   bullets?: string[];  // Technical capability bullets -- optional for backward compat
+  image?: string;      // Optional banner image URL displayed above card content
 }
 export function ServiceCard({
   title,
   description,
   icon,
   bullets,
+  image,
 }: ServiceCardProps): React.JSX.Element {
   const [isHovered, setIsHovered] = useState(false);
   return (
@@ -17,6 +19,18 @@ export function ServiceCard({
       className="group h-full flex flex-col bg-white rounded-xl border border-slate-200 shadow-sm overflow-hidden transition-all duration-500 hover:shadow-xl hover:-translate-y-1 hover:border-brand/30"
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}>
+
+      {/* Optional image banner */}
+      {image && (
+        <div className="relative h-28 overflow-hidden">
+          <img
+            src={image}
+            alt={title}
+            className="w-full h-full object-cover"
+          />
+          <div className="absolute bottom-0 left-0 right-0 h-6 bg-gradient-to-t from-white/80 to-transparent" />
+        </div>
+      )}
 
       <div className="p-6 flex-1 flex flex-col relative">
         {/* Background Gradient on Hover */}
