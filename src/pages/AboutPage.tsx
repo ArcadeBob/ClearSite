@@ -154,8 +154,8 @@ export function AboutPage() {
             <div className="relative">
               <div className="absolute -inset-4 bg-amber-50 rounded-2xl transform -rotate-2"></div>
               <img
-                src="/images/cgi-building.jpg"
-                alt="Clean Glass Installation commercial building project"
+                src="/images/projects/Citrus-Commons.jpg"
+                alt="Citrus Commons commercial glazing project by Clean Glass Installation"
                 className="relative rounded-xl shadow-xl w-full object-cover h-[450px]"
               />
             </div>
