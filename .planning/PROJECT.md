@@ -43,7 +43,18 @@ Professional credibility for a commercial glazing subcontractor — accurate pro
 
 ### Active
 
-(None — start next milestone to define)
+## Current Milestone: v1.3 Design Review & UX Polish
+
+**Goal:** Address design review findings — fix stats bug, reduce homepage density, refine typography usage, improve visual variety, and polish UX interactions across the site.
+
+**Target features:**
+- Fix stats counter bug (7 → 13 years)
+- Reduce homepage hero height and consolidate sections
+- Refine Bebas Neue usage (hero/major headers only)
+- Add visual variety with alternating section backgrounds
+- Improve service cards, process timeline, contact sidebar
+- Smart FloatingCTA that hides near inline CTAs
+- Polish page headers, project card interaction, footer density
 
 ### Out of Scope
 
@@ -103,4 +114,4 @@ No test framework configured. No backend/API layer.
 | Closeout & Warranty as final timeline step | Covers both punchlist turnover and warranty documentation | ✓ Good |
 
 ---
-*Last updated: 2026-03-07 after v1.2 milestone*
+*Last updated: 2026-03-07 after v1.3 milestone started*
