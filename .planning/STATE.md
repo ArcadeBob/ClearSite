@@ -5,7 +5,7 @@ milestone_name: GC Appeal & Design Polish
 status: archived
 stopped_at: Milestone v1.2 archived
 last_updated: "2026-03-07"
-last_activity: 2026-03-07 - Completed quick task 2: Site review fixes (punch-list wording, draft banners, em-dashes, ghost text, privacy text)
+last_activity: 2026-03-07 - Completed quick task 3: Project card flip interaction with detail back panel
 progress:
   total_phases: 3
   completed_phases: 3
@@ -66,8 +66,9 @@ None.
 |---|-------------|------|--------|-----------|
 | 1 | Remove blurry drop-shadow glow from card header text site-wide | 2026-03-07 | df3530b | [1-remove-blurry-drop-shadow-glow-from-card](./quick/1-remove-blurry-drop-shadow-glow-from-card/) |
 | 2 | Site review fixes: punch-list wording, draft banners, em-dashes, ghost text, privacy text | 2026-03-07 | d7ff5db | [2-site-review-fixes-zero-punch-list-wordin](./quick/2-site-review-fixes-zero-punch-list-wordin/) |
+| 3 | Project card flip interaction with GC-relevant detail back panel | 2026-03-07 | 5988c57 | [3-project-card-flip-interaction-with-detai](./quick/3-project-card-flip-interaction-with-detai/) |
 
 ## Session Continuity
 
 Last session: 2026-03-07
-Stopped at: Completed quick task 2: Site review fixes
+Stopped at: Completed quick task 3: Project card flip interaction
