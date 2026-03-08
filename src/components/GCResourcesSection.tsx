@@ -72,7 +72,7 @@ function InfoCard({ title, icon, highlight, details, ctaText }: InfoCardData) {
         </div>
       </div>
 
-      <h3 className="font-heading uppercase tracking-wide text-lg font-bold text-white mb-4 group-hover:text-accent transition-colors">
+      <h3 className="text-lg font-bold text-white mb-4 group-hover:text-accent transition-colors">
         {title}
       </h3>
 
@@ -158,7 +158,7 @@ export function GCResourcesSection() {
               <div className="inline-flex items-center justify-center h-10 w-10 rounded-lg bg-accent/20 text-accent mb-3 group-hover:scale-110 transition-transform">
                 {fact.icon}
               </div>
-              <div className="font-heading text-2xl font-bold text-white mb-1">
+              <div className="text-2xl font-bold text-white mb-1">
                 {fact.value}
               </div>
               <div className="text-xs text-slate-400 uppercase tracking-wide">
@@ -182,7 +182,7 @@ export function GCResourcesSection() {
               <File className="h-6 w-6" />
             </div>
             <div>
-              <h3 className="font-heading uppercase tracking-wide text-lg font-bold text-white mb-1">
+              <h3 className="text-lg font-bold text-white mb-1">
                 Need More Details?
               </h3>
               <p className="text-slate-400 text-sm">

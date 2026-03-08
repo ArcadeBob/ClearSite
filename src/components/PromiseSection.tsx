@@ -48,7 +48,7 @@ export function PromiseSection() {
               <div className="inline-flex items-center justify-center h-12 w-12 rounded-lg bg-accent text-white mb-4">
                 {promise.icon}
               </div>
-              <h3 className="font-heading uppercase tracking-wide text-lg font-bold text-white mb-2">{promise.title}</h3>
+              <h3 className="text-lg font-bold text-white mb-2">{promise.title}</h3>
               <p className="text-slate-300 text-sm">{promise.description}</p>
             </div>
           )}

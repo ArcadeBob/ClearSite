@@ -124,7 +124,7 @@ export function ProjectCard({
 
           {/* Content */}
           <div className="p-5 flex-1 flex flex-col min-h-0">
-            <h3 className="font-heading uppercase tracking-wide text-lg font-bold text-brand mb-1 leading-tight">
+            <h3 className="text-lg font-bold text-brand mb-1 leading-tight">
               {title}
             </h3>
             <div className="flex items-center text-slate-500 text-sm mb-3">
@@ -169,7 +169,7 @@ export function ProjectCard({
           <div className="h-full flex flex-col p-5 text-white">
             {/* Header */}
             <div className="mb-3">
-              <h3 className="font-heading uppercase tracking-wide text-lg font-bold text-white leading-tight">
+              <h3 className="text-lg font-bold text-white leading-tight">
                 {title}
               </h3>
               <div className="flex items-center text-white/60 text-sm mt-0.5">

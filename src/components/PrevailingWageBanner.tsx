@@ -57,7 +57,7 @@ export function PrevailingWageBanner({ className = '' }: PrevailingWageBannerPro
                   {item.icon}
                 </div>
                 <div>
-                  <h3 className="font-heading uppercase tracking-wide text-lg font-bold text-brand mb-2">
+                  <h3 className="text-lg font-bold text-brand mb-2">
                     {item.label}
                   </h3>
                   <p className="text-sm text-slate-600 leading-relaxed">

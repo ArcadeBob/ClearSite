@@ -139,7 +139,7 @@ export function ProcessTimeline(): React.JSX.Element {
                   </div>
 
                   {/* Content */}
-                  <h3 className="font-heading uppercase tracking-wide text-lg font-bold text-brand mb-2">
+                  <h3 className="text-lg font-bold text-brand mb-2">
                     {step.title}
                   </h3>
                   <p className="text-sm text-slate-600 leading-relaxed">
@@ -187,7 +187,7 @@ export function ProcessTimeline(): React.JSX.Element {
                   {/* Content */}
                   <div className="flex-1 pt-2">
                     <div className="flex items-center gap-3 mb-2">
-                      <h3 className="font-heading uppercase tracking-wide text-lg font-bold text-brand">
+                      <h3 className="text-lg font-bold text-brand">
                         {step.title}
                       </h3>
                     </div>
