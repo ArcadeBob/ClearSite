@@ -70,11 +70,11 @@ Plans:
   2. Process timeline steps are visually compact with no excessive whitespace between steps
   3. Contact page sidebar includes additional useful content (prequal checklist or equivalent) beyond basic contact info
   4. FloatingCTA automatically hides when an inline CTA button is visible in the viewport, and reappears when scrolled past
-**Plans**: TBD
+**Plans**: 2 plans
 
 Plans:
-- [ ] 10-01: TBD
-- [ ] 10-02: TBD
+- [ ] 10-01-PLAN.md — Add service card thumbnail images and reduce timeline spacing
+- [ ] 10-02-PLAN.md — Inquiry-aware contact sidebar and FloatingCTA smart hide
 
 ### Phase 11: Page Structure & Navigation
 **Goal**: Inner pages feel polished and consistent — richer headers, intuitive project card interaction, streamlined footer, and a relevant About page image
@@ -107,5 +107,5 @@ Phases 10 and 11 can run in parallel after Phase 9 completes. Phase 10 touches c
 | 7. Service & Copy Refinement | v1.2 | 1/1 | Complete | 2026-03-07 |
 | 8. Client Presentation & UX | v1.2 | 1/1 | Complete | 2026-03-07 |
 | 9. Homepage & Visual Foundation | v1.3 | 2/2 | Complete | 2026-03-08 |
-| 10. Component UX Polish | v1.3 | 0/? | Not started | - |
+| 10. Component UX Polish | v1.3 | 0/2 | Not started | - |
 | 11. Page Structure & Navigation | v1.3 | 0/? | Not started | - |
