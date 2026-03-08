@@ -107,19 +107,6 @@ export function GCPainPoints() {
           )}
         </div>
 
-        {/* Bottom Quote */}
-        <div className="mt-16 text-center">
-          <div className="inline-block bg-brand text-white rounded-xl px-8 py-6 max-w-3xl">
-            <p className="text-lg italic mb-3 text-white/90">
-              "Let our experience make your job easier. With CGI, you won't have
-              to babysit our team—giving you more time for the many other tasks
-              on your project."
-            </p>
-            <p className="text-accent font-semibold">
-              — Daniel Kauffman, CEO/Owner/Master Glazier
-            </p>
-          </div>
-        </div>
       </div>
     </section>);
 

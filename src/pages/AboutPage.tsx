@@ -370,6 +370,22 @@ export function AboutPage() {
         </div>
       </section>
 
+      {/* Owner Quote */}
+      <section className="py-16 bg-slate-50">
+        <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="border-l-4 border-accent pl-6">
+            <p className="text-lg italic text-slate-700 mb-3">
+              "Let our experience make your job easier. With CGI, you won't have
+              to babysit our team—giving you more time for the many other tasks
+              on your project."
+            </p>
+            <p className="text-sm font-semibold text-brand">
+              — Daniel Kauffman, CEO/Owner/Master Glazier
+            </p>
+          </div>
+        </div>
+      </section>
+
       {/* CTA */}
       <section className="py-20 bg-brand text-white text-center">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
