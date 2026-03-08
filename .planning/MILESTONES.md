@@ -1,5 +1,28 @@
 # Milestones
 
+## v1.3 Design Review & UX Polish (Shipped: 2026-03-08)
+
+**Phases completed:** 3 phases, 6 plans, 12 tasks
+**Timeline:** 2 days (2026-03-07 → 2026-03-08)
+**Git range:** `c8bc38a` feat(09-01) → `d722b6e` feat(11-02)
+**LOC:** +292 / -179 across 17 files
+
+**Key accomplishments:**
+- Fixed stats counter bug (7→13+) and reduced homepage density with 65vh hero + consolidated trust band (prequal + certifications)
+- Refined typography hierarchy — Bebas Neue restricted to h1/h2 hero titles, sans-serif for card h3/h4 headings
+- Added Unsplash thumbnail images to all 8 service cards with gradient overlay treatment
+- Smart FloatingCTA with IntersectionObserver auto-hides when inline CTAs are in viewport
+- Inquiry-type-aware contact sidebar: commercial shows prequal checklist, residential shows service highlights
+- Upgraded all inner page headers from plain navy banners to gradient + diagonal stripe + accent bar treatment
+- Refactored ProjectCard: body click navigates to case study, dedicated Quick Stats button triggers flip animation
+- Footer consolidated from 4 columns to 3 (Quick Links merged into Contact column)
+
+**Tech debt carried forward:**
+- ContactPage.tsx line 269 — `{/* Map Placeholder */}` comment (pre-existing)
+- TS6133 warnings for unused React imports across multiple page files (pre-existing)
+
+---
+
 ## v1.2 GC Appeal & Design Polish (Shipped: 2026-03-07)
 
 **Phases completed:** 3 phases, 4 plans, 8 tasks

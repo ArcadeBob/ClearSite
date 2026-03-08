@@ -2,6 +2,53 @@
 
 *A living document updated after each milestone. Lessons feed forward into future planning.*
 
+## Milestone: v1.3 — Design Review & UX Polish
+
+**Shipped:** 2026-03-08
+**Phases:** 3 | **Plans:** 6 | **Sessions:** ~3
+
+### What Was Built
+- Stats counter bug fix (7→13+) and homepage density reduction with 65vh hero + consolidated trust band
+- Typography hierarchy refinement — Bebas Neue restricted to h1/h2, sans-serif for card headings
+- Service card thumbnail images (8 Unsplash stock photos) with gradient overlay
+- Smart FloatingCTA with IntersectionObserver that auto-hides near inline CTAs
+- Inquiry-type-aware contact sidebar (commercial prequal vs residential services)
+- Gradient + diagonal stripe inner page headers across all inner pages
+- Dual-interaction ProjectCard: body click navigates, Quick Stats button flips
+- Footer consolidation from 4 columns to 3
+
+### What Worked
+- Parallel execution of Phases 10 and 11 after Phase 9 — no file conflicts as predicted by roadmap
+- All 6 plans executed cleanly — research/planning accuracy continues to be strong
+- Design review findings translated well into actionable requirements (14 concrete items from subjective feedback)
+- IntersectionObserver pattern for FloatingCTA smart hide is clean and reusable
+- Fastest average plan execution (~2-4 min per plan)
+
+### What Was Inefficient
+- SUMMARY frontmatter `one_liner` fields still returning null — same issue as v1.2, not yet fixed in summary creation
+- ROADMAP.md progress table had misaligned columns for phases 10-11 (missing milestone column) — manual formatting drift
+- STATE.md percent showed 83% even after all 6 plans complete — progress tracking arithmetic off
+
+### Patterns Established
+- Inner page header pattern: gradient bg + 7% diagonal stripe overlay + accent bottom bar + py-20
+- Dual-interaction card pattern: body click for primary action (navigate), dedicated button for secondary action (flip)
+- IntersectionObserver + data-attribute coordination between components (data-cta-inline for FloatingCTA)
+- Inquiry-type-aware sidebar: useSearchParams to conditionally render commercial vs residential content
+- Footer column merging: Quick Links absorbed into Contact column with border-t divider
+
+### Key Lessons
+1. Design review feedback maps well to concrete requirements when broken into visual (VIZZ), UX, typography (TYPO), and page consistency (PAGE) categories
+2. IntersectionObserver is the right tool for scroll-based component visibility — cleaner than scroll event listeners
+3. Dual-interaction patterns (navigate vs detail) need explicit click target separation with stopPropagation
+4. Footer density is better reduced by merging related columns than by removing content
+
+### Cost Observations
+- Model mix: balanced profile (sonnet for agents, opus for orchestration)
+- Sessions: ~3
+- Notable: 6 plans across 3 phases in ~2 sessions of execution. Parallel phases saved wall-clock time.
+
+---
+
 ## Milestone: v1.2 — GC Appeal & Design Polish
 
 **Shipped:** 2026-03-07
@@ -132,6 +179,7 @@
 | v1.0 | ~3 | 2 | First milestone — established baseline |
 | v1.1 | ~5 | 3 | Optional prop pattern emerged; credential extraction as prerequisite pattern |
 | v1.2 | ~3 | 3 | Variant-based architecture; route-aware components; fastest execution yet |
+| v1.3 | ~3 | 3 | Parallel phase execution; IntersectionObserver pattern; design review → requirements pipeline |
 
 ### Cumulative Quality
 
@@ -140,6 +188,7 @@
 | v1.0 | 0 | N/A | 0 (clean build) |
 | v1.1 | 0 | N/A | 0 (clean build + lint) |
 | v1.2 | 0 | N/A | 0 (clean build + lint) |
+| v1.3 | 0 | N/A | 0 (clean build, minor TS6133 warnings pre-existing) |
 
 ### Top Lessons (Verified Across Milestones)
 
@@ -148,3 +197,5 @@
 3. Optional props with defaults enable incremental feature additions without breaking changes
 4. Variant-based component architecture scales well — SectionHeader serves 19 consumers with 3 variants
 5. Plans that execute with zero deviations correlate with thorough research phases
+6. Parallel phase execution works when roadmap accurately identifies non-conflicting file sets (v1.0 lesson applied in v1.3)
+7. Design review feedback translates to good requirements when categorized by concern type (visual, UX, typography, page)

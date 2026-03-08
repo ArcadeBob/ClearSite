@@ -2,7 +2,7 @@
 
 ## What This Is
 
-The marketing website for Clean Glass Installation (CGI), a commercial glazing subcontractor in Chatsworth, CA. Targets general contractors with project portfolio, safety credentials, prevailing wage experience, service depth, industrial typography, benefit-driven service copy, and prequalification flow. Built with React 18 + TypeScript + Vite + Tailwind CSS.
+The marketing website for Clean Glass Installation (CGI), a commercial glazing subcontractor in Chatsworth, CA. Targets general contractors with project portfolio, safety credentials, prevailing wage experience, service depth, industrial typography, benefit-driven service copy, smart UX interactions, and prequalification flow. Built with React 18 + TypeScript + Vite + Tailwind CSS.
 
 ## Core Value
 
@@ -40,44 +40,48 @@ Professional credibility for a commercial glazing subcontractor — accurate pro
 - ✓ Service descriptions rewritten with GC-benefit language (COPY-01) — v1.2
 - ✓ Process Timeline with GC-specific terminology (COPY-02) — v1.2
 - ✓ Route-aware FloatingCTA: residential vs commercial (UX-01) — v1.2
+- ✓ Stats counter bug fixed (13+ years, not 7) (BUG-01) — v1.3
+- ✓ Hero height reduced to ~65vh with trust signals above fold (HOME-01) — v1.3
+- ✓ Prequal cards and certifications combined into compact trust band (HOME-02) — v1.3
+- ✓ Owner quote moved to About page (HOME-03) — v1.3
+- ✓ Bebas Neue restricted to hero/major headers only (TYPO-01) — v1.3
+- ✓ Alternating warm/stone section backgrounds (VIZZ-01) — v1.3
+- ✓ Service cards include thumbnail images (VIZZ-02) — v1.3
+- ✓ Process timeline dead space reduced (UX-01) — v1.3
+- ✓ Contact sidebar enhanced with prequal checklist (UX-02) — v1.3
+- ✓ FloatingCTA hides when inline CTA visible (UX-03) — v1.3
+- ✓ Inner page headers upgraded with gradient treatment (PAGE-01) — v1.3
+- ✓ Project card click navigates; Quick Stats flips (PAGE-02) — v1.3
+- ✓ Footer trimmed from 4 to 3 columns (PAGE-03) — v1.3
+- ✓ About page image replaced with storefront photo (ABOUT-01) — v1.3
 
 ### Active
 
-## Current Milestone: v1.3 Design Review & UX Polish
-
-**Goal:** Address design review findings — fix stats bug, reduce homepage density, refine typography usage, improve visual variety, and polish UX interactions across the site.
-
-**Target features:**
-- Fix stats counter bug (7 → 13 years)
-- Reduce homepage hero height and consolidate sections
-- Refine Bebas Neue usage (hero/major headers only)
-- Add visual variety with alternating section backgrounds
-- Improve service cards, process timeline, contact sidebar
-- Smart FloatingCTA that hides near inline CTAs
-- Polish page headers, project card interaction, footer density
+(No active requirements — planning next milestone)
 
 ### Out of Scope
 
-- Content/copy changes to contact header — style only needed
 - Backend integration or data layer changes — site remains static/hardcoded
 - Real team photos — owner hasn't provided them yet, Unsplash placeholders work
 - Downloadable PDF prequal package — goes stale, worse than no PDF
-- Separate forms per audience — same form with auto-tagging is sufficient
 - Animated safety stat counters — trivializes serious data
 - OSHA 300 log display — legal exposure, not industry standard
-- Individual service pages — deferred to v2 (DSGN-06)
-- Real jobsite photography — deferred to v2 (DSGN-07)
-- Additional case study pages — deferred to v2 (DSGN-08)
-- Safety page with downloadable manual — deferred to v2
+- Individual service pages — deferred (DSGN-06)
+- Real jobsite photography — deferred (DSGN-07)
+- Additional case study pages — deferred (DSGN-08)
+- Safety page with downloadable manual — deferred
 
 ## Context
 
-Shipped v1.2 with 5,094 LOC TypeScript.
+Shipped v1.3 with 5,381 LOC TypeScript.
 Tech stack: React 18, TypeScript, Vite, Tailwind CSS 3, react-router-dom v6, Bebas Neue (Google Fonts).
 All credential data flows from `src/data/credentials.ts` (17 named constants, 8 consumers).
 SectionHeader supports 3 layout variants (left-bar, banner, overlapping) across 19 consumers.
 Service copy uses GC-benefit pattern: sentence 1 = GC benefit, sentence 2 = CGI differentiator.
-FloatingCTA renders globally from App.tsx with route-aware residential/commercial behavior.
+FloatingCTA renders globally from App.tsx with smart hide (IntersectionObserver on inline CTAs) and route-aware behavior.
+Inner page headers use shared gradient + diagonal stripe + accent bar pattern.
+ProjectCard uses dual interaction: body click navigates to case study, Quick Stats button triggers flip.
+Contact sidebar is inquiry-type-aware: commercial shows prequal checklist, residential shows service highlights.
 Safety and service content marked with draft banners pending owner review.
 All CTAs route through `?type=commercial` or `?type=residential` URL parameters.
 No test framework configured. No backend/API layer.
@@ -112,6 +116,14 @@ No test framework configured. No backend/API layer.
 | CSS grid (2/3/5 cols) for client logos | Cleaner responsive layout than flexbox | ✓ Good |
 | FloatingCTA in App.tsx after Footer | Global visibility, fixed positioning means no layout impact | ✓ Good |
 | Closeout & Warranty as final timeline step | Covers both punchlist turnover and warranty documentation | ✓ Good |
+| Owner quote after team section on About page | Natural flow from team intro to founder voice | ✓ Good — v1.3 |
+| CertificationsBadges variant prop (compact/full) | Reusable in trust band without breaking existing layout | ✓ Good — v1.3 |
+| Font hierarchy: Bebas Neue h1/h2 only | Card titles in sans-serif prevents overuse of display font | ✓ Good — v1.3 |
+| Service card h-28 image banner | Compact visual context without dominating card layout | ✓ Good — v1.3 |
+| IntersectionObserver for FloatingCTA smart hide | Threshold 0.5 + 80px rootMargin for reliable detection | ✓ Good — v1.3 |
+| Gradient + diagonal stripe inner page headers | Richer visual treatment consistent across all inner pages | ✓ Good — v1.3 |
+| Card body click = navigate, Quick Stats = flip | Clear interaction model separating navigation from detail view | ✓ Good — v1.3 |
+| Footer Quick Links merged into Contact column | 3-column layout reduces density without losing content | ✓ Good — v1.3 |
 
 ---
-*Last updated: 2026-03-07 after v1.3 milestone started*
+*Last updated: 2026-03-08 after v1.3 milestone*
