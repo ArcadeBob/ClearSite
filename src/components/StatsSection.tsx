@@ -60,11 +60,13 @@ function useCountUp(
     const step = (timestamp: number) => {
       if (!startTime) startTime = timestamp;
       const progress = Math.min((timestamp - startTime) / duration, 1);
-      const easeOut = progress === 1 ? 1 : 1 - Math.pow(2, -10 * progress);
-      setCount(Math.floor(easeOut * end));
-      if (progress < 1) {
-        window.requestAnimationFrame(step);
+      if (progress >= 1) {
+        setCount(end);
+        return;
       }
+      const easeOut = 1 - Math.pow(2, -10 * progress);
+      setCount(Math.floor(easeOut * end));
+      window.requestAnimationFrame(step);
     };
     window.requestAnimationFrame(step);
   }, [end, duration, start]);

@@ -174,7 +174,7 @@ export function HomePage(): React.JSX.Element {
   return (
     <div className="flex flex-col min-h-screen">
       {/* Hero Section - Compelling GC-Focused Copy */}
-      <section className="relative min-h-[85vh] flex items-center overflow-hidden">
+      <section className="relative min-h-[65vh] flex items-center overflow-hidden">
         {/* Background Image - Fixed position for clean parallax */}
         <div className="absolute inset-0 z-0">
           <div
@@ -345,7 +345,7 @@ export function HomePage(): React.JSX.Element {
       </section>
 
       {/* Quick Navigation Tabs */}
-      <section className="py-10 bg-slate-50">
+      <section className="py-10 bg-stone-50">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
             <Link to="/about" className="group">
@@ -385,13 +385,13 @@ export function HomePage(): React.JSX.Element {
       <CertificationsBadges />
 
       {/* Prevailing Wage Experience */}
-      <PrevailingWageBanner className="bg-slate-50" />
+      <PrevailingWageBanner className="bg-amber-50/50" />
 
       {/* GC Pain Points */}
       <GCPainPoints />
 
       {/* Services Grid */}
-      <section className="py-24 bg-slate-50">
+      <section className="py-24 bg-stone-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <SectionHeader
             variant="left-bar"
@@ -415,7 +415,7 @@ export function HomePage(): React.JSX.Element {
       <PromiseSection />
 
       {/* Featured Projects */}
-      <section className="py-24 bg-slate-50">
+      <section className="py-24 bg-stone-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex flex-col sm:flex-row justify-between items-end mb-12 gap-4">
             <div>
