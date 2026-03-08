@@ -39,7 +39,7 @@
 
 **Milestone Goal:** Address design review findings — fix stats bug, reduce homepage density, refine typography, improve visual variety, and polish UX interactions across the site.
 
-- [ ] **Phase 9: Homepage & Visual Foundation** - Fix stats bug, reduce hero/section density, refine typography and section backgrounds
+- [x] **Phase 9: Homepage & Visual Foundation** - Fix stats bug, reduce hero/section density, refine typography and section backgrounds
 - [ ] **Phase 10: Component UX Polish** - Improve service cards, process timeline, contact sidebar, and FloatingCTA behavior
 - [ ] **Phase 11: Page Structure & Navigation** - Upgrade inner page headers, project card interaction, footer, and About page image
 
@@ -58,8 +58,8 @@
 **Plans**: 2 plans
 
 Plans:
-- [ ] 09-01-PLAN.md — Fix stats bug, reduce hero height, move owner quote, alternate section backgrounds
-- [ ] 09-02-PLAN.md — Consolidate trust band, restrict Bebas Neue to major headers only
+- [x] 09-01-PLAN.md — Fix stats bug, reduce hero height, move owner quote, alternate section backgrounds
+- [x] 09-02-PLAN.md — Consolidate trust band, restrict Bebas Neue to major headers only
 
 ### Phase 10: Component UX Polish
 **Goal**: Individual components feel tighter and smarter — service cards show visual context, timeline wastes no space, contact sidebar adds value, and the FloatingCTA stays out of the way when not needed
@@ -106,6 +106,6 @@ Phases 10 and 11 can run in parallel after Phase 9 completes. Phase 10 touches c
 | 6. Typography & Layout Foundation | v1.2 | 2/2 | Complete | 2026-03-07 |
 | 7. Service & Copy Refinement | v1.2 | 1/1 | Complete | 2026-03-07 |
 | 8. Client Presentation & UX | v1.2 | 1/1 | Complete | 2026-03-07 |
-| 9. Homepage & Visual Foundation | v1.3 | 0/2 | Not started | - |
+| 9. Homepage & Visual Foundation | v1.3 | 2/2 | Complete | 2026-03-08 |
 | 10. Component UX Polish | v1.3 | 0/? | Not started | - |
 | 11. Page Structure & Navigation | v1.3 | 0/? | Not started | - |

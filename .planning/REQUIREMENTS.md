@@ -14,12 +14,12 @@ Requirements for Design Review & UX Polish milestone. Each maps to roadmap phase
 ### Homepage Density
 
 - [x] **HOME-01**: Hero height reduced to ~65vh so trust signals appear on initial load
-- [ ] **HOME-02**: Prequal cards and certifications combined into one compact trust band
+- [x] **HOME-02**: Prequal cards and certifications combined into one compact trust band
 - [x] **HOME-03**: Owner quote section moved to About page
 
 ### Typography
 
-- [ ] **TYPO-01**: Bebas Neue restricted to page hero titles and major section headers; card titles and smaller headings use body sans-serif
+- [x] **TYPO-01**: Bebas Neue restricted to page hero titles and major section headers; card titles and smaller headings use body sans-serif
 
 ### Visual Variety
 
@@ -72,9 +72,9 @@ Which phases cover which requirements. Updated during roadmap creation.
 |-------------|-------|--------|
 | BUG-01 | Phase 9 | Complete |
 | HOME-01 | Phase 9 | Complete |
-| HOME-02 | Phase 9 | Pending |
+| HOME-02 | Phase 9 | Complete |
 | HOME-03 | Phase 9 | Complete |
-| TYPO-01 | Phase 9 | Pending |
+| TYPO-01 | Phase 9 | Complete |
 | VIZZ-01 | Phase 9 | Complete |
 | VIZZ-02 | Phase 10 | Pending |
 | UX-01 | Phase 10 | Pending |
