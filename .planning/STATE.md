@@ -3,15 +3,15 @@ gsd_state_version: 1.0
 milestone: v1.3
 milestone_name: Design Review & UX Polish
 status: executing
-stopped_at: Phase 11 context gathered
-last_updated: "2026-03-08T14:11:17.655Z"
+stopped_at: Completed 11-02-PLAN.md
+last_updated: "2026-03-08T14:15:36.422Z"
 last_activity: 2026-03-08 — Completed 11-01 inner page headers upgrade
 progress:
   total_phases: 3
-  completed_phases: 2
+  completed_phases: 3
   total_plans: 6
-  completed_plans: 5
-  percent: 75
+  completed_plans: 6
+  percent: 83
 ---
 
 # Project State
@@ -47,6 +47,7 @@ Progress: [████████░░] 83%
 | 10 | 1/2 | 2min | 2min |
 | Phase 10 P02 | 2min | 2 tasks | 6 files |
 | Phase 11 P01 | 3min | 2 tasks | 4 files |
+| Phase 11 P02 | 2min | 2 tasks | 3 files |
 
 ## Accumulated Context
 
@@ -64,6 +65,8 @@ See PROJECT.md Key Decisions table for full history.
 - [Phase 10]: stone-50/stone-200 palette for residential contact sidebar, differentiated from commercial amber
 - [11-01] Inner page header pattern: gradient bg + 7% diagonal stripe overlay + accent bottom bar + py-20
 - [11-01] Unsplash storefront image (photo-1545558014) for About Brand Story section
+- [Phase 11]: Card body click navigates for case-study cards, flips for others; Quick Stats button always visible
+- [Phase 11]: Footer Quick Links merged into Contact column with border-t divider, 3-column layout
 
 ### Pending Todos
 
@@ -84,5 +87,5 @@ None.
 
 ## Session Continuity
 
-Last session: 2026-03-08T14:13:00Z
-Stopped at: Completed 11-01-PLAN.md
+Last session: 2026-03-08T14:15:36.420Z
+Stopped at: Completed 11-02-PLAN.md
