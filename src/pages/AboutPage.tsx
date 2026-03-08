@@ -100,8 +100,9 @@ export function AboutPage() {
   return (
     <div className="min-h-screen bg-white">
       {/* Header */}
-      <div className="bg-brand text-white py-16">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="relative bg-gradient-to-br from-brand-dark via-brand to-brand text-white py-20 overflow-hidden">
+        <div className="absolute inset-0 opacity-[0.07]" style={{ backgroundImage: 'repeating-linear-gradient(45deg, transparent, transparent 20px, currentColor 20px, currentColor 21px)' }} />
+        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h1 className="font-heading uppercase tracking-wide text-4xl font-bold text-white mb-4">
             About Clean Glass Installation
           </h1>
@@ -111,6 +112,7 @@ export function AboutPage() {
             time.
           </p>
         </div>
+        <div className="absolute bottom-0 left-0 right-0 h-1 bg-gradient-to-r from-accent via-accent-dark to-accent" />
       </div>
 
       {/* Brand Story */}
