@@ -24,11 +24,11 @@ Requirements for Design Review & UX Polish milestone. Each maps to roadmap phase
 ### Visual Variety
 
 - [x] **VIZZ-01**: Alternating sections use warm gray/stone backgrounds instead of uniform slate-50
-- [ ] **VIZZ-02**: Service cards include thumbnail images (stock/placeholder until real photos provided)
+- [x] **VIZZ-02**: Service cards include thumbnail images (stock/placeholder until real photos provided)
 
 ### UX Polish
 
-- [ ] **UX-01**: Process timeline dead space reduced, step icons scaled appropriately
+- [x] **UX-01**: Process timeline dead space reduced, step icons scaled appropriately
 - [ ] **UX-02**: Contact page sidebar enhanced with prequal packet checklist or additional content
 - [ ] **UX-03**: FloatingCTA hides when an inline CTA is visible in viewport
 
@@ -76,8 +76,8 @@ Which phases cover which requirements. Updated during roadmap creation.
 | HOME-03 | Phase 9 | Complete |
 | TYPO-01 | Phase 9 | Complete |
 | VIZZ-01 | Phase 9 | Complete |
-| VIZZ-02 | Phase 10 | Pending |
-| UX-01 | Phase 10 | Pending |
+| VIZZ-02 | Phase 10 | Complete |
+| UX-01 | Phase 10 | Complete |
 | UX-02 | Phase 10 | Pending |
 | UX-03 | Phase 10 | Pending |
 | PAGE-01 | Phase 11 | Pending |
