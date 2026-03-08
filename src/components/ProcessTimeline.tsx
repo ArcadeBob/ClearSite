@@ -95,14 +95,14 @@ export function ProcessTimeline(): React.JSX.Element {
   }, [isVisible]);
 
   return (
-    <section ref={sectionRef} className="py-24 bg-slate-50 overflow-hidden">
+    <section ref={sectionRef} className="py-16 bg-slate-50 overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <SectionHeader
           variant="left-bar"
           subheading="Our Process"
           title="How We Work"
           description="A streamlined process designed for GC efficiency—from bid to closeout."
-          className={`mb-16 transition-all duration-700 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}
+          className={`mb-12 transition-all duration-700 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}
         />
 
         {/* Desktop Timeline */}
@@ -164,7 +164,7 @@ export function ProcessTimeline(): React.JSX.Element {
               </div>
             </div>
 
-            <div className="space-y-8">
+            <div className="space-y-5">
               {steps.map((step, index) =>
               <div
                 key={step.title}
